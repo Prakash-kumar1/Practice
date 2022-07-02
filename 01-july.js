@@ -17,10 +17,10 @@ console.log(add)
 
 //         //    OR 
 
-// function getpin(id){
-//     return `this is ${id} in day`
-// }
-// console.log(getpin(1))
+function getpin(id){
+    return `this is ${id} in day`
+}
+console.log(getpin(1))
 
 // xxxxxxxxx Using Basic Operators xxxxxxxxx
 
