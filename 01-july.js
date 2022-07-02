@@ -77,12 +77,12 @@ console.log(spp(8,9))
 
 // xxx xxxxxxxxxxxx  Pure Function(Output same) xxxxxxxxxxxx
 
-//  function sum(num1,num2){
-//         return num1+num2
-//     }
-//     console.log(sum(8,9))
-//     console.log(sum(8,9))
-//     console.log(sum(8,9))
+ function sum(num1,num2){
+        return num1+num2
+    }
+    console.log(sum(8,9))
+    console.log(sum(8,9))
+    console.log(sum(8,9))
 
 
     // xxx xxxxxxxxxxxx  ImPure Function (Output not same)xxxxxxxxxxxx
