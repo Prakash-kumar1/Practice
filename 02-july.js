@@ -11,15 +11,25 @@
 
 // Using For Loop  
 
-function countdown(n){                                                                               
-    for(let i=n; i>0; i--){                                       
-        console.log(i) ;
-    }
-    console.log('ended')
-}
-countdown(10)
+// function countdown(n){                                                                               
+//     for(let i=n; i>0; i--){                                       
+//         console.log(i) ;
+//     }
+//     console.log('ended')
+// }
+// countdown(10)
 
 
 // Using Recursion
 
-function countdown(n)
+function countdown(n){
+//base condition
+if(n <= 0){
+    console.log('ended');
+    return ;
+}
+console.log(n) ;
+countdown(n-1)
+}
+countdown(10)
+countdown(5)
