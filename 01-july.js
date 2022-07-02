@@ -109,9 +109,9 @@ setTimeout(function(){
 
 // xxx xxxxxxxxxxxx  setInterval Function xxxxxxxxxxxx
 
-// setInterval(function(){
-//     console.log("Namaste Javascript")
-// }, 2000)
+setInterval(function(){
+    console.log("Namaste Javascript")
+}, 2000)
 //  After 2 -2  second it will print Namaste Javascript multiple Times.
 
 
