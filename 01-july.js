@@ -24,12 +24,12 @@ console.log(getpin(1))
 
 // xxxxxxxxx Using Basic Operators xxxxxxxxx
 
-// console.log(typeof 5)
-// console.log(typeof '5')
-// console.log(typeof parseInt('5'))
-// console.log( parseInt(5.9867))
-// console.log( parseFloat(5.9867))
-// console.log( parseInt(null))
+console.log(typeof 5)
+console.log(typeof '5')
+console.log(typeof parseInt('5'))
+console.log( parseInt(5.9867))
+console.log( parseFloat(5.9867))
+console.log( parseInt(null))
 
 
 // xxxxxxxxxx calling function from Another folder  xxxxxxxxxx 
