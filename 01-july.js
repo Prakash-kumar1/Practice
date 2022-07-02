@@ -101,9 +101,9 @@ console.log(spp(8,9))
 
 // xxx xxxxxxxxxxxx  setTimeout Function xxxxxxxxxxxx
 
-// setTimeout(function(){
-//     console.log("Namaste Javascript")
-// }, 2000)
+setTimeout(function(){
+    console.log("Namaste Javascript")
+}, 2000)
 //  After 2 second it will print Namaste Javascript only one Time
 
 
