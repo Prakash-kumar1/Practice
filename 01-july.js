@@ -118,77 +118,77 @@ setInterval(function(){
 
 // In JavaScript we can also pass a Function as a Parameter and Function as a Return .
 
-// function add() {
-//     console.log('add') ;
-// }
+function add() {
+    console.log('add') ;
+}
 
-// function printadd(a) {
-//     a() ;
-// }
+function printadd(a) {
+    a() ;
+}
 
-// printadd(add)
+printadd(add)
 
 
 // In JavaScript we can also pass a  Function as a Return .
 
-// function printadd() {
-//     return function() {
-//         console.log('Dragon Roars') ; 
-//     }
-// }
-// let returnfxn = printadd()
-// returnfxn()
+function printadd() {
+    return function() {
+        console.log('Dragon Roars') ; 
+    }
+}
+let returnfxn = printadd()
+returnfxn()
 
 // xxxxxxxxxx ->>  setTimeout and setInterval are web time API(Application programming interface)
 //                 when programs runs they go into web API's and rest part goes into Call-Stack.
 //                 when Call-Stack part is completed after that web time API printed .API
 //                 Javascript always gives the priority to  Call-Stack part.     xxxxxxx ->>
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// setTimeout(function(){
-//  console.log("Namaste Javascript")
-//     }, 0)
-//     console.log('sixth')
-// console.log('fifth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
-// console.log('first')
-// console.log('second')
-// console.log('third')
-// console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+setTimeout(function(){
+ console.log("Namaste Javascript")
+    }, 0)
+    console.log('sixth')
+console.log('fifth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
+console.log('first')
+console.log('second')
+console.log('third')
+console.log('fourth')
 
     //  OR 
 
-    // console.log('first')
-    // setTimeout(function(){
-    //  console.log("Namaste Javascript")
-    //  }, 0)
+    console.log('first')
+    setTimeout(function(){
+     console.log("Namaste Javascript")
+     }, 0)
 
-    //  let i = 0
-    //  while(i<=100){
-    //     console.log('second' , i)
-    //     i++ ;
-    //  }
+     let i = 0
+     while(i<=100){
+        console.log('second' , i)
+        i++ ;
+     }
 
 
     //  when Call-Stack part is completed after that web time API printed .
