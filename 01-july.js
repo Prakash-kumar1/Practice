@@ -87,13 +87,13 @@ console.log(spp(8,9))
 
     // xxx xxxxxxxxxxxx  ImPure Function (Output not same)xxxxxxxxxxxx
 
-//  function sum(num1,num2){
-//         return Math.random(num1+num2)
-//     }
-//     console.log(sum(8,9))
-//     console.log(sum(8,9))
-//     console.log(sum(8,9))
-//     console.log(sum(8,9))
+ function sum(num1,num2){
+        return Math.random(num1+num2)
+    }
+    console.log(sum(8,9))
+    console.log(sum(8,9))
+    console.log(sum(8,9))
+    console.log(sum(8,9))
 
 
 // xxxx  ->   setTimeout Function and setInterval Function both are "Higher Order Function" (HOF) because it taking function as a Parameter.  <- xxxx
