@@ -34,46 +34,46 @@ console.log( parseInt(null))
 
 // xxxxxxxxxx calling function from Another folder  xxxxxxxxxx 
 
-// const getsum = require('./Maths');
+const getsum = require('./Math');
 
-// let a = getsum(10,12)
-// console.log(a) ;
+let a = getsum(10,12)
+console.log(a) ;
 
-// let b = getsum(100,12)
-// console.log(b) ;
+let b = getsum(100,12)
+console.log(b) ;
 
-// let c = getsum(0,0)
-// console.log(c) ;
+let c = getsum(0,0)
+console.log(c) ;
 
-// let d = getsum(10,-12)
-// console.log(d) ;
+let d = getsum(10,-12)
+console.log(d) ;
 
 // getsubtract override the getsum function. the value of getsum not print in class.js Terminal.
 
 
-// const getsubtract = require('./Maths');
+const getsubtract = require('./Maths');
 
-// let l =  getsubtract(10,12)
-// console.log(l) ;
+let l =  getsubtract(10,12)
+console.log(l) ;
 
-// let m =  getsubtract(100,12)
-// console.log(m) ;
+let m =  getsubtract(100,12)
+console.log(m) ;
 
-// let n =  getsubtract(0,0)
-// console.log(n) ;
+let n =  getsubtract(0,0)
+console.log(n) ;
 
-// let k =  getsubtract(10,-12)
-// console.log(k) ;
+let k =  getsubtract(10,-12)
+console.log(k) ;
 
 
 // xxxxxxxxxxxx  completed xxxxxxxxxxxx
 
 
-// const spp = function(no1,no4){
-//     console.log('calling')
-//     return no1+no4
-// }
-// console.log(spp(8,9))
+const spp = function(no1,no4){
+    console.log('calling')
+    return no1+no4
+}
+console.log(spp(8,9))
 
 // xxx xxxxxxxxxxxx  Pure Function(Output same) xxxxxxxxxxxx
 
