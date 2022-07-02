@@ -9,11 +9,11 @@ changeNameInDB('PRAKASH')
 
 // With Argument with return
 
-// function greetuser(num){
-//     return( `Welcome !!! ${num}`)
-// }
-// const add = greetuser('PRAKASH')
-// console.log(add)
+function greetuser(num){
+    return( `Welcome !!! ${num}`)
+}
+const add = greetuser('PRAKASH')
+console.log(add)
 
 //         //    OR 
 
