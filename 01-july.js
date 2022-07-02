@@ -197,44 +197,44 @@ console.log('fourth')
 
 // xxxxxxx Using Recursion.  xxxxxxx
 
-// function add(n){
-//     let sum = n+10
-//     console.log(sum , n)
-//     add(sum)
-// } add(10)
+function add(n){
+    let sum = n+10
+    console.log(sum , n)
+    add(sum)
+} add(10)
 
 
 // Callback Function  --- > > > A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
 
 
-// function inhotel(message , Callback){
-//     console.log(message);
-//     Callback();
-// }
+function inhotel(message , Callback){
+    console.log(message);
+    Callback();
+}
 
-// function orderfood(){
-//     console.log('order the food');
-// }
+function orderfood(){
+    console.log('order the food');
+}
 
-// function paybill(){
-//     console.log(' paying the bill');
-// }
+function paybill(){
+    console.log(' paying the bill');
+}
 
-// function eatfood(){
-//     console.log('biryani');
-// }
+function eatfood(){
+    console.log('biryani');
+}
 
-// function zomato(){
-//     console.log('order in zomato');
-// }
+function zomato(){
+    console.log('order in zomato');
+}
 
 
-// function swiggy(){
-//     console.log('order in swiggy');
-// }
+function swiggy(){
+    console.log('order in swiggy');
+}
 
-// inhotel('going to hotel' , orderfood)
-// inhotel('eating the food' , eatfood)
-// inhotel('eating over' , paybill)
-// inhotel('My pizza' , zomato)
-// inhotel('My Samosa' , swiggy)
+inhotel('going to hotel' , orderfood)
+inhotel('eating the food' , eatfood)
+inhotel('eating over' , paybill)
+inhotel('My pizza' , zomato)
+inhotel('My Samosa' , swiggy)
