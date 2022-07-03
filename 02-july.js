@@ -22,19 +22,19 @@ function countdown(n){
 countdown(10)
 
 
-// Using Recursion
+//Using Recursion
 
-// function countdown(n){
-// //base condition
-// if(n <= 0){
-//     console.log('ended');
-//     return ;
-// }
-// console.log(n) ;
-// countdown(n-1)
-// }
-// countdown(10)
-// countdown(5)
+function countdown(n){
+//base condition
+if(n <= 0){
+    console.log('ended');
+    return ;
+}
+console.log(n) ;
+countdown(n-1)
+}
+countdown(10)
+countdown(5)
 
 // xxxxxxxxxxxxxxxx ------->> Example 1 Completed   <<--------xxxxxxxxxxxxxxxxx ------->>
 
