@@ -56,14 +56,14 @@ console.log(sumofRange(10))
 
 // Using Recursion
 
-// function sumofRange(n , total) {
-//     if(n <= 0){
-//         return total
-//     }
-//     total += n
-//     return sumofRange(n-1 , total)
-// }
-// console.log(sumofRange(10 , 0))
+function sumofRange(n , total) {
+    if(n <= 0){
+        return total
+    }
+    total += n
+    return sumofRange(n-1 , total)
+}
+console.log(sumofRange(10 , 0))
 
 
 // xxxxxxxxxxxxxxxx ------->> Example - 2 Completed   <<--------xxxxxxxxxxxxxxxxx ------->>
