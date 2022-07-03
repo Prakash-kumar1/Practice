@@ -1,11 +1,11 @@
 // Recursion -->>
 
-// function add(n){
-//     let sum = n+10 ;
-//    console.log(sum , n);
-//    add(sum)
-// }
-// add(10)
+function add(n){
+    let sum = n+10 ;
+   console.log(sum , n);
+   add(sum)
+}
+add(10)
 
 // Any Recursion problem solved by Loops.
 
