@@ -44,14 +44,14 @@ countdown(5)
 
 // Using For Loop 
 
-// function sumofRange(n) {
-//     let total = 0;
-//     for(let i=n; i>0; i--){
-//         total += i ;
-//     }
-//     return total ;
-// }
-// console.log(sumofRange(10))
+function sumofRange(n) {
+    let total = 0;
+    for(let i=n; i>0; i--){
+        total += i ;
+    }
+    return total ;
+}
+console.log(sumofRange(10))
 
 
 // Using Recursion
