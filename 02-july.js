@@ -17,9 +17,9 @@ function countdown(n){
     for(let i=n; i>0; i--){                                       
         console.log(i) ;
     }
-    console.log('ended')
+    console.log('ended') ;
 }
-countdown(10)
+countdown(10) ;
 
 
 //Using Recursion
