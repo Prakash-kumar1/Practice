@@ -12,83 +12,104 @@
 // Array used Square Brackets.
 // All the Array are named in Pulural in terms of Semantics.
 
-// let names = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(names);
-// console.log(names[7]);
-// console.log(names[6]);
-// console.log(names[5]);
-// console.log(names[4]);
-// console.log(names[3]);
-// console.log(names[2]);
-// console.log(names[1]);
-// console.log(names[17]);
+let names = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(names);
+console.log(names[7]);
+console.log(names[6]);
+console.log(names[5]);
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
+console.log(names[17]);
 
 
 
 // Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
 // Object used Curly Braces .
 
-// let rajnifamily = {
-//     name : "Santosh" ,
-//     age  : 30 ,
-//     Occupation : "Technitian" ,
-//     Food : "Chiken" ,
-//     Wife : {
-//          name : "Rinki" ,
-//          age : 25 ,
-//          Occupation : "House-wife" ,
-//          Food : "Mutton" ,
-//          Daughter : {
-//             name : "Gungun" ,
-//             age : 12 ,
-//             Occupation : "Student" ,
-//             Food : "Kurkure" , 
-//          }
-//     }
-// }
-// console.log(rajnifamily)
-// console.log(rajnifamily.name , rajnifamily.Wife.name )
-// console.log(rajnifamily.Occupation)
-// console.log(rajnifamily.Wife.Food)
-// console.log(rajnifamily.Wife.Daughter.name)
-// console.log(rajnifamily.Food , rajnifamily.Wife.Food , rajnifamily.Wife.Daughter.Food)
+let rajnifamily = {
+    name : "Santosh" ,
+    age  : 30 ,
+    Occupation : "Technitian" ,
+    Food : "Chiken" ,
+    Wife : {
+         name : "Rinki" ,
+         age : 25 ,
+         Occupation : "House-wife" ,
+         Food : "Mutton" ,
+         Daughter : {
+            name : "Gungun" ,
+            age : 12 ,
+            Occupation : "Student" ,
+            Food : "Kurkure" , 
+         }
+    }
+}
+console.log(rajnifamily)
+console.log(rajnifamily.name , rajnifamily.Wife.name )
+console.log(rajnifamily.Occupation)
+console.log(rajnifamily.Wife.Food)
+console.log(rajnifamily.Wife.Daughter.name)
+console.log(rajnifamily.Food , rajnifamily.Wife.Food , rajnifamily.Wife.Daughter.Food)
             //    OR 
-// console.log(rajnifamily)
-// console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
-// console.log(rajnifamily['Occupation'])
-// console.log(rajnifamily['Wife']['age'])
-// console.log(rajnifamily['Wife']['Daughter']['name'])
-// console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
+console.log(rajnifamily)
+console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
+console.log(rajnifamily['Occupation'])
+console.log(rajnifamily['Wife']['age'])
+console.log(rajnifamily['Wife']['Daughter']['name'])
+console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
 
 // Array accepts Boolean , Number ,String & Objects. 
 
-// let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
-//     name : "Rinki" ,
-//     age : 25 ,
-//     Occupation : "House-wife" ,
-//     Food : "Mutton" ,
-// }  ]
+let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
+    name : "Rinki" ,
+    age : 25 ,
+    Occupation : "House-wife" ,
+    Food : "Mutton" ,
+}  ]
 
-// console.log(names[4]);
-// console.log(names[3]);
-// console.log(names[2]);
-// console.log(names[1]);
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
 
 // In Array we can also change the Value.
 
-// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
-// peoples[2] = 'Anjali'
-// peoples[1] = 'Hema'
-// console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
+peoples[2] = 'Anjali'
+peoples[1] = 'Hema'
+console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
 
 
 // In Array we can also put the Value at any place.
 
-// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(peoples);
-//  peoples[6] = 'Mritunjay'
-//  console.log(peoples);
-// peoples[60] = 'Abhishek'
-// console.log(peoples);
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples);
+ peoples[6] = 'Mritunjay'
+ console.log(peoples);
+peoples[60] = 'Abhishek'
+console.log(peoples);
 
+
+// Array are contagious memory, it stores next to each other.
+// [10 , 20 , 30]  if the store- place of 10 is 2000 (because integer takes 4 Bytes It means 10 takes 2000 ,2001 , 2002 , 2003 .)then the place of 20 is 2004 & 30 is 2008.
+
+
+// If one changes another also changes. 
+let num = [10,20]
+let copy = num 
+console.log(num , copy)
+
+ copy[0] = 15 
+ num[1] = 30 
+console.log(num , copy)
+
+
+let nums = [1,2,3,true,'vasant']
+// console.log(nums.length)      printing the length of Array
+
+for(let i=0; i<nums.length; i++){
+    console.log(nums[i]);
+}
