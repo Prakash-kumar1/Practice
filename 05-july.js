@@ -28,24 +28,24 @@
 // Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
 // Object used Curly Braces .
 
-let rajnifamily = {
-    name : "Santosh" ,
-    age  : 30 ,
-    Occupation : "Technitian" ,
-    Food : "Chiken" ,
-    Wife : {
-         name : "Rinki" ,
-         age : 25 ,
-         Occupation : "House-wife" ,
-         Food : "Mutton" ,
-         Daughter : {
-            name : "Gungun" ,
-            age : 12 ,
-            Occupation : "Student" ,
-            Food : "Kurkure" , 
-         }
-    }
-}
+// let rajnifamily = {
+//     name : "Santosh" ,
+//     age  : 30 ,
+//     Occupation : "Technitian" ,
+//     Food : "Chiken" ,
+//     Wife : {
+//          name : "Rinki" ,
+//          age : 25 ,
+//          Occupation : "House-wife" ,
+//          Food : "Mutton" ,
+//          Daughter : {
+//             name : "Gungun" ,
+//             age : 12 ,
+//             Occupation : "Student" ,
+//             Food : "Kurkure" , 
+//          }
+//     }
+// }
 // console.log(rajnifamily)
 // console.log(rajnifamily.name , rajnifamily.Wife.name )
 // console.log(rajnifamily.Occupation)
@@ -53,9 +53,23 @@ let rajnifamily = {
 // console.log(rajnifamily.Wife.Daughter.name)
 // console.log(rajnifamily.Food , rajnifamily.Wife.Food , rajnifamily.Wife.Daughter.Food)
             //    OR 
-console.log(rajnifamily)
-console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
-console.log(rajnifamily['Occupation'])
-console.log(rajnifamily['Wife']['age'])
-console.log(rajnifamily['Wife']['Daughter']['name'])
-console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
+// console.log(rajnifamily)
+// console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
+// console.log(rajnifamily['Occupation'])
+// console.log(rajnifamily['Wife']['age'])
+// console.log(rajnifamily['Wife']['Daughter']['name'])
+// console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
+
+// Array accepts Boolean , Number ,String & Objects. 
+
+let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
+    name : "Rinki" ,
+    age : 25 ,
+    Occupation : "House-wife" ,
+    Food : "Mutton" ,
+}  ]
+
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
