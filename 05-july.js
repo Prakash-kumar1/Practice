@@ -23,6 +23,9 @@
 // console.log(names[1]);
 // console.log(names[17]);
 
+
+
+// Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
 // Object used Curly Braces .
 
 let rajnifamily = {
