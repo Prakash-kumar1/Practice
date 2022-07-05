@@ -62,14 +62,30 @@
 
 // Array accepts Boolean , Number ,String & Objects. 
 
-let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
-    name : "Rinki" ,
-    age : 25 ,
-    Occupation : "House-wife" ,
-    Food : "Mutton" ,
-}  ]
+// let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
+//     name : "Rinki" ,
+//     age : 25 ,
+//     Occupation : "House-wife" ,
+//     Food : "Mutton" ,
+// }  ]
 
-console.log(names[4]);
-console.log(names[3]);
-console.log(names[2]);
-console.log(names[1]);
+// console.log(names[4]);
+// console.log(names[3]);
+// console.log(names[2]);
+// console.log(names[1]);
+
+// In Array we can also change the Value.
+
+// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+// console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
+// peoples[2] = 'Anjali'
+// peoples[1] = 'Hema'
+// console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
+
+
+// In Array we can also put the Value at any place.
+
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples);
+peoples[6] = 'Mritunjay'
+console.log(peoples);
