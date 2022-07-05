@@ -85,7 +85,9 @@
 
 // In Array we can also put the Value at any place.
 
-let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-console.log(peoples);
-peoples[6] = 'Mritunjay'
-console.log(peoples);
+// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+// console.log(peoples);
+//  peoples[6] = 'Mritunjay'
+//  console.log(peoples);
+// peoples[60] = 'Abhishek'
+// console.log(peoples);
