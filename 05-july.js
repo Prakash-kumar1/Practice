@@ -169,16 +169,23 @@
 
 // In Queue , we use .unshift for Adding  &  .shift for Removing the element  from Array
 
-const students = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+// const students = ['soniv' , 'prakash' , 'shivansh' , 'govind']
 
-// .unshift added element in First . 
-students.unshift('Devanshu')
-students.push('Shrivastav')
-console.log(students)
+// // .unshift added element in First . 
+// students.unshift('Devanshu')
+// students.push('Shrivastav')
+// console.log(students)
 
-// .shift removes Element from First 
-students.shift()
-students.shift()
-students.shift()
-students.pop()
-console.log(students)
+// // .shift removes Element from First 
+// students.shift()
+// students.shift()
+// students.shift()
+// students.pop()
+// console.log(students)
+
+// xxxxxxxxxxxxxxxxxxx     How to delete an Array ??  xxxxxxxxxxxxxxxxxxx
+
+const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+
+delete friends[1,3]
+console.log('delete' , friends , friends[1 , 3])
