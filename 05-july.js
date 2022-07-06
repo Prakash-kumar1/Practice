@@ -197,5 +197,7 @@
 
 const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
+// we are using the property (.length) not Reassigning . so, const has no Problem
 friends.length = 0
 console.log(friends.length , friends)
+
