@@ -242,9 +242,14 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 // console.log(bros)
 
 
-// Replacing Element in Middle
-bros.splice( 4 , 2, 'Sachin')
+// // Replacing Element in Middle
+// bros.splice( 4 , 2, 'Sachin')
+// console.log(bros)
+
+// // Adding  &  Replacing  Multiple Element in Middle
+bros.splice( 4 , 1, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
 console.log(bros)
+
 
 
 
