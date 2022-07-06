@@ -156,13 +156,29 @@
 
 
 // In nums we store address not value so we can use "const" in place of Let 
-const nums = ['soniv' , 'prakash' , 'shivansh' , 'govind']
-nums.pop()
-nums.pop()
-nums.pop()
-nums.pop()
-console.log(nums)
-nums.push(1)
-nums.push(9)
-nums.push(5)
-console.log(nums)
+// const nums = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+// nums.pop()
+// nums.pop()
+// nums.pop()
+// nums.pop()
+// console.log(nums)
+// nums.push(1)
+// nums.push(9)
+// nums.push(5)
+// console.log(nums)
+
+// In Queue , we use .unshift for Adding  &  .shift for Removing the element  from Array
+
+const students = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+
+// .unshift added element in First . 
+students.unshift('Devanshu')
+students.push('Shrivastav')
+console.log(students)
+
+// .shift removes Element from First 
+students.shift()
+students.shift()
+students.shift()
+students.pop()
+console.log(students)
