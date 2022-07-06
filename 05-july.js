@@ -229,7 +229,7 @@
 // console.log(friends.length , friends)
 
 // xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
-
+// Linked List Example
 
 let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
@@ -247,14 +247,17 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 // console.log(bros)
 
 // // Adding  &  Replacing  Multiple Element in Middle
-bros.splice( 4 , 1, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
+// bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
+// console.log(bros)
+
+
+// How to find which element remove : -->  By Printing splice value.
+// console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
+
+
+// Using Slice property to get data 
+console.log(bros.slice( 0 , 2))
 console.log(bros)
-
-
-
-
-
-
 
 
 
