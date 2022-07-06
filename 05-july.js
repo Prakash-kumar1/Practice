@@ -195,9 +195,47 @@
 // we should never-ever use delete because this is not a good Practice .
 // For Deleting every Element from Array use: 
 
-const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// we are using the property (.length) not Reassigning . so, const has no Problem
-friends.length = 0
+// // we are using the property (.length) not Reassigning . so, const has no Problem
+// friends.length = 0
+// console.log(friends.length , friends)
+
+
+const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// friends.length = 3
+// console.log(friends.length , friends)
+    //  OR 
+friends.length = 34
 console.log(friends.length , friends)
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+console.log(friends.length , friends)
+
+friends.push('Dosa')
+friends.push('Burger')
+friends.push('Chicken')
+friends.push('Egg Roll')
+console.log(friends.length , friends)
+
+
+
+
+
+
+
+
+
+
+
+
 
