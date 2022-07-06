@@ -131,29 +131,38 @@
 // Removing the Element from Array is called "Popping" . (removes from last never remove middle or Ist element . )
 
 // In nums we stores Address not values . 
-let nums = [1,2,3,4,5,6,7,8]
-console.log('intial value',nums)
+// let nums = [1,2,3,4,5,6,7,8]
+// console.log('intial value',nums)
 
-// Adding Element in Array use ( .push )
-nums.push("Prakash");
-console.log('adding value', nums)
+// // Adding Element in Array use ( .push )
+// nums.push("Prakash");
+// console.log('adding value', nums)
 
-// Removing Element from Array use ( .pop )
-nums.pop()
-console.log('Removing',nums)
+// // Removing Element from Array use ( .pop )
+// nums.pop()
+// console.log('Removing',nums)
 
-console.log(nums.pop())
-console.log('Removing 2nd value',nums)
+// console.log(nums.pop())
+// console.log('Removing 2nd value',nums)
 
-nums.pop()
-console.log('Removing 3rd value',nums)
+// nums.pop()
+// console.log('Removing 3rd value',nums)
 
-// Always Remember , If we want to remove the element from middle we can't removed . because all element stored in stack ( Last in First Out ) .so the element is in last only that Removed.it removes only step by step.
+// // Always Remember , If we want to remove the element from middle we can't removed . because all element stored in stack ( Last in First Out ) .so the element is in last only that Removed.it removes only step by step.
 
-console.log(nums.pop(2))
-// It doesn't care what parameter passed. 
-console.log('Removing 2nd value',nums)
+// console.log(nums.pop(2))
+// // It doesn't care what parameter passed. 
+// console.log('Removing 2nd value',nums)
 
 
 // In nums we store address not value so we can use "const" in place of Let 
-// const nums = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+const nums = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+nums.pop()
+nums.pop()
+nums.pop()
+nums.pop()
+console.log(nums)
+nums.push(1)
+nums.push(9)
+nums.push(5)
+console.log(nums)
