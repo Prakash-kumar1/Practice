@@ -185,9 +185,17 @@
 
 // xxxxxxxxxxxxxxxxxxx     How to delete an Array ??  xxxxxxxxxxxxxxxxxxx
 
+// const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+
+// delete friends[1] ;
+// delete friends[3] ;
+// delete friends[6] ;
+// console.log('delete' , friends, friends[1] , friends[3] , friends[6]) ;
+
+// we should never-ever use delete because this is not a good Practice .
+// For Deleting every Element from Array use: 
+
 const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-delete friends[1] ;
-delete friends[3] ;
-delete friends[6] ;
-console.log('delete' , friends, friends[1] , friends[3] , friends[6]) ;
+friends.length = 0
+console.log(friends.length , friends)
