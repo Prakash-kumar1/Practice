@@ -185,7 +185,9 @@
 
 // xxxxxxxxxxxxxxxxxxx     How to delete an Array ??  xxxxxxxxxxxxxxxxxxx
 
-const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind']
+const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-delete friends[1,3]
-console.log('delete' , friends , friends[1 , 3])
+delete friends[1] ;
+delete friends[3] ;
+delete friends[6] ;
+console.log('delete' , friends, friends[1] , friends[3] , friends[6]) ;
