@@ -362,20 +362,28 @@ let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki'
 // console.log(bros.indexOf('shivansh'))
 // console.log(bros.indexOf('rinki'))
 
-// we also give starting index position from which we satrt 
-console.log(bros.indexOf('shivansh' ,4))
-console.log(bros.indexOf('rinki',8))
-console.log(bros.indexOf('hema',4))
+// // we also give starting index position from which we satrt 
+// console.log(bros.indexOf('shivansh' ,4))
+// console.log(bros.indexOf('rinki',8))
+// console.log(bros.indexOf('hema',4))
 
-// Reversing the Array
-bros.reverse()
-console.log(bros) ;
+// // Reversing the Array
+// bros.reverse()
+// console.log(bros) ;
 
+// // Sorting the Array
+// bros.sort()
+// console.log(bros)
 
+// let nums = [3,9,5,2,6,1,0,4,7]
+// console.log(nums.sort()) ;
 
-
-
-
+// Sorting always sorts from First Digit 
+let nums = [3,29,6,52,9,81,20,44,17]
+console.log(nums.sort()) ;
+    //   OR 
+   nums = [3,2,6,4,9,21,12,39,1000]
+    console.log(nums.sort()) ; 
 
 
 
