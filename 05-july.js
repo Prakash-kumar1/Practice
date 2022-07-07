@@ -232,7 +232,7 @@
 // // xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
 // // Linked List Example
 
-let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // // Adding Element in Middle
 // splice syntax : .splice(index-value , values want to be removed , adding values)
@@ -263,19 +263,22 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 // // it will start from index value 1 and stopped at index value 3 before index value 4
 // console.log(bros)
 
-let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
-console.log(sisters.slice(1,2))
+// let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
+// console.log(sisters.slice(1,2))
 
-// slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
-// (statrting value >= ending value ) then it give an empty Array . 
-console.log(sisters.slice(3,2))
-console.log(sisters.slice(3,3))        
+// // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
+// // (statrting value >= ending value ) then it give an empty Array . 
+// console.log(sisters.slice(3,2))
+// console.log(sisters.slice(3,3))        
 
-// if only give start value then it starts from that value and print whole data to the end.
-console.log(sisters.slice(2))    
+// // if only give start value then it starts from that value and print whole data to the end.
+// console.log(sisters.slice(2))    
 
-
-
+// // all other methods affect the original Array but only slice doesn't affect original array because it 
+// // create a new Array for data . 
+// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+// let slicedpets = pets.slice(1,5)
+// console.log(pets,slicedpets)
 
 
 
