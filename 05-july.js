@@ -271,8 +271,8 @@ console.log(sisters.slice(1,2))
 console.log(sisters.slice(3,2))
 console.log(sisters.slice(3,3))        
 
-
-
+// if only give start value then it starts from that value and print whole data to the end.
+console.log(sisters.slice(2))    
 
 
 
