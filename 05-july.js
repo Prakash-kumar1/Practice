@@ -318,26 +318,34 @@
 //     console.log(bros.includes('hema' , 5))
 //     console.log(bros.includes('govind', 2))   
 
-//Question no. - 1 : print first Repeating numbers??
+// //Question no. - 1 : print first Repeating numbers??
 
-let lefthand = [1,3,4,3,2,5,7,1,4]
-let righthand = [ ]
+// let lefthand = [1,3,4,3,2,5,7,1,4]
+// let righthand = [ ]
 
-for(let i=0; i<lefthand.length; i++){
-    if(righthand.includes(lefthand[i])){
-    console.log(lefthand[i])
-    // if we use break then it only print the Number which repeat itself First 
-    break ;
+// for(let i=0; i<lefthand.length; i++){
+//     if(righthand.includes(lefthand[i])){
+//     console.log(lefthand[i])
+//     // if we use break then it only print the Number which repeat itself First 
+//     break ;
+// }else{
+//     righthand.push(lefthand[i])
+// }
+// }
+
+
+// Question no -2 : Print first non-repeating Number ??
+
+let nums = [1,3,4,3,2,5,7,1,4]
+for(let i=0; i<nums.length; i++){
+let value = nums[i]
+if (nums.includes(value,i+1) == false){
+console.log(value);
+break
 }else{
-    righthand.push(lefthand[i])
+nums.shift()
 }
 }
-
-
-
-
-
-
 
 
 
