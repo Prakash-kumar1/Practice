@@ -362,13 +362,14 @@ let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki'
 // console.log(bros.indexOf('shivansh'))
 // console.log(bros.indexOf('rinki'))
 
-// if we want to start from a index position then we pass index position from which we satrt 
+// we also give starting index position from which we satrt 
 console.log(bros.indexOf('shivansh' ,4))
 console.log(bros.indexOf('rinki',8))
 console.log(bros.indexOf('hema',4))
 
-
-
+// Reversing the Array
+bros.reverse()
+console.log(bros) ;
 
 
 
