@@ -306,12 +306,17 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 
     //  OR we can use .includes method 
 
-    console.log(bros.includes('shivansh'))
-    console.log(bros.includes('shiva'))
-    console.log(bros.includes('hema'))
-    console.log(bros.includes('anish'))   
+    // console.log(bros.includes('shivansh'))
+    // console.log(bros.includes('shiva'))
+    // console.log(bros.includes('hema'))
+    // console.log(bros.includes('anish'))   
 
+// if we don't want to search whole array we can put starting value in includes method
 
+console.log(bros.includes('shivansh' , 4))
+    console.log(bros.includes('rinki', 7))
+    console.log(bros.includes('hema' , 5))
+    console.log(bros.includes('govind', 2))   
 
 
 
