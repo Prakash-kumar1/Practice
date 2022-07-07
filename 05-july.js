@@ -288,9 +288,21 @@
 // // it change index value . 
 
 // In slice , we can only print Reverse of an Array. this is special property of slice method 
-// slice negative value method explain in Notes . check there  
+// slice negative value method explain in Notes . check there 
 
+// Checking present values in Array using Loop
+let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
+function brothers(bro){
+    for(let i=0; i<bros.length; i++){
+        if(bros[i] == bro) return true
+    }
+    return false
+}
+console.log(brothers('shivansh'))
+console.log(brothers('shiva'))
+console.log(brothers('hema'))
+console.log(brothers('anish'))
 
 
 
