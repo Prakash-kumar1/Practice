@@ -293,16 +293,23 @@
 // Checking present values in Array using Loop
 let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-function brothers(bro){
-    for(let i=0; i<bros.length; i++){
-        if(bros[i] == bro) return true
-    }
-    return false
-}
-console.log(brothers('shivansh'))
-console.log(brothers('shiva'))
-console.log(brothers('hema'))
-console.log(brothers('anish'))
+// function brothers(bro){
+//     for(let i=0; i<bros.length; i++){
+//         if(bros[i] == bro) return true
+//     }
+//     return false
+// }
+// console.log(brothers('shivansh'))
+// console.log(brothers('shiva'))
+// console.log(brothers('hema'))
+// console.log(brothers('anish'))
+
+    //  OR we can use .includes method 
+
+    console.log(bros.includes('shivansh'))
+    console.log(bros.includes('shiva'))
+    console.log(bros.includes('hema'))
+    console.log(bros.includes('anish'))   
 
 
 
