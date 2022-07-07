@@ -287,11 +287,11 @@
 // console.log(pets[0],pets[1],pets[2],pets[3])
 // // it change index value . 
 
-// In slice , we can only print Reverse of an Array. this is special property of slice method 
-// slice negative value method explain in Notes . check there 
+// // In slice , we can only print Reverse of an Array. this is special property of slice method 
+// // slice negative value method explain in Notes . check there 
 
-// Checking present values in Array using Loop
-let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// // Checking present values in Array using Loop
+// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // function brothers(bro){
 //     for(let i=0; i<bros.length; i++){
@@ -304,19 +304,21 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 // console.log(brothers('hema'))
 // console.log(brothers('anish'))
 
-    //  OR we can use .includes method 
+//     //  OR we can use .includes method 
 
-    // console.log(bros.includes('shivansh'))
-    // console.log(bros.includes('shiva'))
-    // console.log(bros.includes('hema'))
-    // console.log(bros.includes('anish'))   
+//     console.log(bros.includes('shivansh'))
+//     console.log(bros.includes('shiva'))
+//     console.log(bros.includes('hema'))
+//     console.log(bros.includes('anish'))   
 
-// if we don't want to search whole array we can put starting value in includes method
+// // if we don't want to search whole array we can put starting value in includes method
 
-console.log(bros.includes('shivansh' , 4))
-    console.log(bros.includes('rinki', 7))
-    console.log(bros.includes('hema' , 5))
-    console.log(bros.includes('govind', 2))   
+// console.log(bros.includes('shivansh' , 4))
+//     console.log(bros.includes('rinki', 7))
+//     console.log(bros.includes('hema' , 5))
+//     console.log(bros.includes('govind', 2))   
+
+print
 
 
 
