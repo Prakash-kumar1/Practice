@@ -162,6 +162,7 @@
 // nums.pop()
 // nums.pop()
 // console.log(nums)
+// if we don't pass any parameter in push , it simply returns the length .
 // nums.push(1)
 // nums.push(9)
 // nums.push(5)
@@ -228,12 +229,13 @@
 // friends.push('Egg Roll')
 // console.log(friends.length , friends)
 
-// xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
-// Linked List Example
+// // xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
+// // Linked List Example
 
 let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // // Adding Element in Middle
+// splice syntax : .splice(index-value , values want to be removed , adding values)
 // bros.splice( 4 , 0 , 'Sachin')
 // console.log(bros)
 
@@ -251,13 +253,19 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 // console.log(bros)
 
 
-// How to find which element remove : -->  By Printing splice value.
+// // How to find which element remove : -->  By Printing splice value.
 // console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
 
 
-// Using Slice property to get data 
-console.log(bros.slice( 0 , 2))
-console.log(bros)
+// // Using Slice property to get data 
+// // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
+// console.log(bros.slice( 1 , 4))
+// // it will start from index value 1 and stopped at index value 3 before index value 4
+// console.log(bros)
+
+let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
+console.log(sisters.slice(1,2))
+
 
 
 
