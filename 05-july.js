@@ -287,6 +287,9 @@
 // console.log(pets[0],pets[1],pets[2],pets[3])
 // // it change index value . 
 
+// In slice , we can only print Reverse of an Array. this is special property of slice method 
+// slice negative value method explain in Notes . check there  
+
 
 
 
