@@ -378,15 +378,19 @@ let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki'
 // let nums = [3,9,5,2,6,1,0,4,7]
 // console.log(nums.sort()) ;
 
-// Sorting always sorts from First Digit 
-let nums = [3,29,6,52,9,81,20,44,17]
-console.log(nums.sort()) ;
-    //   OR 
-   nums = [3,2,6,4,9,21,12,39,1000]
-    console.log(nums.sort()) ; 
+// // Sorting always sorts from First Digit 
+// let nums = [3,29,6,52,9,81,20,44,17]
+// console.log(nums.sort()) ;
+//     //   OR 
+//    nums = [3,2,6,4,9,21,12,39,1000]
+//     console.log(nums.sort()) ; 
 
-
-
+// // if we want sorting in reverse order 
+// let nums = [3,29,6,52,9,81,20,44,17]
+// console.log(nums.sort().reverse()) ;
+//     //   OR 
+//    nums = [3,2,6,4,9,21,12,39,1000]
+//     console.log(nums.sort().reverse()) ; 
 
 
 
