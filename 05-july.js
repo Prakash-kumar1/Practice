@@ -326,6 +326,8 @@ let righthand = [ ]
 for(let i=0; i<lefthand.length; i++){
     if(righthand.includes(lefthand[i])){
     console.log(lefthand[i])
+    // if we use break then it only print the Number which repeat itself First 
+    break ;
 }else{
     righthand.push(lefthand[i])
 }
