@@ -274,14 +274,18 @@
 // // if only give start value then it starts from that value and print whole data to the end.
 // console.log(sisters.slice(2))    
 
-// // all other methods affect the original Array but only slice doesn't affect original array because it 
-// // create a new Array for data . 
+// // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
 // let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
 // let slicedpets = pets.slice(1,5)
 // console.log(pets,slicedpets)
 
+// // splice method also affect original Array
+// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+// console.log(pets[0],pets[1],pets[2])
 
-
+// pets.splice(1,0,'Lion')
+// console.log(pets[0],pets[1],pets[2],pets[3])
+// // it change index value . 
 
 
 
