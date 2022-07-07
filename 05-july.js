@@ -334,24 +334,38 @@
 // }
 
 
-// Question no -2 : Print first non-repeating Number ??
+// // Question no -2 : Print first non-repeating Number ??
 
-let nums = [1,3,4,3,2,5,7,1,4]
-for(let i=0; i<nums.length; i++){
-let value = nums[i]
-if (nums.includes(value,i+1) == false){
-console.log(value);
-break
-}else{
-nums.shift()
-}
-}
+// let nums = [1,3,4,3,2,5,7,1,4]
+// for(let i=0; i<nums.length; i++){
+// let value = nums[i]
+// if (nums.includes(value,i+1) == false){
+// console.log(value);
+// break
+// }else{
+// nums.shift()
+// }
+// }
 
+// Finding Index Value of data 
+let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+// // if value is present , it give index position .
+// console.log(bros.indexOf('sameer'))
+// console.log(bros.indexOf('shivansh'))
+// console.log(bros.indexOf('rajesh'))
 
+// // if value is not present , it give (-1) .
+// console.log(bros.indexOf('pinki'))
+// console.log(bros.indexOf('gayatari'))
 
+// // if value is present at both places then it will give index position of First value
+// console.log(bros.indexOf('shivansh'))
+// console.log(bros.indexOf('rinki'))
 
-
-
+// if we want to start from a index position then we pass index position from which we satrt 
+console.log(bros.indexOf('shivansh' ,4))
+console.log(bros.indexOf('rinki',8))
+console.log(bros.indexOf('hema',4))
 
 
 
