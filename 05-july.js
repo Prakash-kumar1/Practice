@@ -467,7 +467,7 @@
 // console.log(names.concat(nums))
 
 
-let nums = [1,2,1,2,3,4,2,8,9]
+// let nums = [1,2,1,2,3,4,2,8,9]
 // print the number in new array which is greater than 3
 // let newArr = []
 
@@ -480,12 +480,20 @@ let nums = [1,2,1,2,3,4,2,8,9]
  
 //         // OR  use  filter()  method
 
- let newArr = nums.filter((nums) => {
-console.log(`${nums} ---->>  ${nums >= 3}`);
-return nums >= 3
- })        
-console.log(newArr)
+//  let newArr = nums.filter((nums) => {
+// console.log(`${nums} ---->>  ${nums >= 3}`);
+// return nums >= 3
+//  })        
+// console.log(newArr)
 
+// // Example number - 2 :
+
+let names = ['soniv','prakash','shivansh','hema','govind','sameer','Rinki','Santosh','kai','ox','mr']
+let newArr = names.filter((names) => {
+    console.log(`${names} ---->>  ${names >= 3}`);
+    return names.length >= 3
+     })        
+    console.log(newArr)
 
 
 
