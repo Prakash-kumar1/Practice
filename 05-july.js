@@ -411,24 +411,26 @@
 
 // Find the smallest Number in an Array in +ve case and also in -ve case?? 
 
-let nums = [1,20,12,17,89,10,27,100,65,675,345,987,234,56,23,6785]
-            // OR 
-nums = [-1,-20,-12,-17,-89,-10,-27,-100,-65,-675,-345,-987,-234,-56,-23,-6785]
-// we have to taken intial maximum number is Zero
-let min = nums[0] ;                                      
+// let nums = [1,20,12,17,89,10,27,100,65,675,345,987,234,56,23,6785]
+//             // OR 
+// nums = [-1,-20,-12,-17,-89,-10,-27,-100,-65,-675,-345,-987,-234,-56,-23,-6785]
+// // we have to taken intial maximum number is Zero
+// let min = nums[0] ;                                      
 
-for(let i=0; i<nums.length; i++){
-    let currentvalue = nums[i]
-    if(min > currentvalue){
-        min = currentvalue
-    }
-}
-console.log(min)
-
-
+// for(let i=0; i<nums.length; i++){
+//     let currentvalue = nums[i]
+//     if(min > currentvalue){
+//         min = currentvalue
+//     }
+// }
+// console.log(min)
 
 
-
+// Find the First index and Last index of a Number?? 
+let nums = [1,2,3,3,4,5,6,1,7,8,9,2]
+console.log(nums.indexOf(2))
+console.log(nums.lastIndexOf(2))
+console.log(nums.lastIndexOf(1))
 
 
 
