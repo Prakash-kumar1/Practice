@@ -457,11 +457,14 @@ bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','ra
 // console.log(bros.toString())
 
 // // .join method - it joins two string with any parameter which  passes.
-console.log(bros.join("*"))
-console.log(bros.join("----->"))
-console.log(bros.join("+-*/----->"))
+// console.log(bros.join("*"))
+// console.log(bros.join("----->"))
+// console.log(bros.join("+-*/----->"))
 
-
+// // .concat method - it joins two Array in one Array
+let names = ['soniv','prakash','shivansh','hema','govind','sameer']
+let nums = [1,2,3,4,5,6,7,8]
+console.log(names.concat(nums))
 
 
 
