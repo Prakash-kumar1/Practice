@@ -531,31 +531,71 @@
 // console.log(factorialArray)
 
 // // **** How to find Truthyvalues in an Array OR remove falseyvalue ?? ****
-let nums = [1  ,  ''  ,  []  ,  {}  ,  false , true , 'vasanth' , null  , undefined  , 0  ,  -1]
+// let nums = [1  ,  ''  ,  []  ,  {}  ,  false , true , 'vasanth' , null  , undefined  , 0  ,  -1]
 
-let Truthyvalues = nums.filter(Boolean)
-console.log(Truthyvalues)
+// let Truthyvalues = nums.filter(Boolean)
+// console.log(Truthyvalues)
 
-// Printing Falseyvalues
-let falseyvalues = nums.filter((num) => !num)
-console.log(falseyvalues)
-
-
+// // Printing Falseyvalues
+// let falseyvalues = nums.filter((num) => !num)
+// console.log(falseyvalues)
 
 
+// // Find the sum of all Element of an Array 
+// let nums = [1,2,3,4,5,6,7,8,9]
+// let sum = 0 ;
+// for (let i=0; i<nums.length; i++){
+//     sum += nums[i]
+// }
+// console.log(sum) ;
+
+//     //   OR use reduce method : - perform different Arithmetic Oprations.(+.-,*,/) and it changed array into 
+                                    //    a single Number
+
+// let nums = [1,2,3,4,5,6,7,8,9]
+// let sum = nums.reduce(function(previous,currentvalue){
+// // previous is also called as Accumulator(storing in a place)
+//     return previous + currentvalue
+//  })    
+//   console.log(sum) ;
+
+// // Example Number-9: 
+// let nums = [1,2,3,4,5,6,7,8,9]
+// let sum = nums.reduce(function(previous,currentvalue){
+// console.log('previous' , previous , previous+currentvalue)
+//     return previous + currentvalue
+//  }, 10)
+// //  here 10 becomes previous value so it starts from 10    
+//   console.log(sum) ;
 
 
+// // Every method : - It checkes all the values and passes through condition , if all the value passes condition
+// //                   it gives "true"  , any one value not passes the condition it gives "false"
+// // Example Number-1:
+// let nums = [1,2,3,4,5,6,1]
+// console.log(nums.every((num) => {
+//     return num <= 5 ;
+// }));
 
+// //  Example Number-2:
+// let nums = [1,2,3,4,1]
+// console.log(nums.every((num) => {
+//     return num <= 5 ;
+// }));
 
+// // SOME method : - It checkes all the values and passes through condition , if any value passes condition it gives
+// //              "true"  , if all value not passes the condition it gives "false"(opposite of every method)
+// // Example Number-1:
+// let nums = [1,6,7,8,5,9,11]
+// console.log(nums.some((num) => {
+//     return num < 5 ;
+// }));
 
-
-
-
-
-
-
-
-
+// //  Example Number-2:
+// let nums = [6,7,8,14,9]
+// console.log(nums.every((num) => {
+//     return num <= 5 ;
+// }));
 
 
 
