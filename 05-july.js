@@ -334,7 +334,7 @@
 // }
 
 
-// // Question no -2 : Print first non-repeating Number ??
+// // Question no -2 : Print only first non-repeating Number ??
 
 // let nums = [1,3,4,3,2,5,7,1,4]
 // for(let i=0; i<nums.length; i++){
@@ -347,8 +347,8 @@
 // }
 // }
 
-// Finding Index Value of data 
-let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+// // Finding Index Value of data 
+// let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
 // // if value is present , it give index position .
 // console.log(bros.indexOf('sameer'))
 // console.log(bros.indexOf('shivansh'))
@@ -393,11 +393,19 @@ let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki'
 //     console.log(nums.sort().reverse()) ; 
 
 
+// Find the largest Number in an Array ?? 
 
+let nums = [1,20,12,17,89,10,27,100,65,675,345,987,234,56,23,6785]
+// we have to taken intial maximum number is Zero
+let max = 0 ;                                      
 
-
-
-
+for(let i=0; i<nums.length; i++){
+    let currentvalue = nums[i]
+    if(max < currentvalue){
+        max = currentvalue
+    }
+}
+console.log(max)
 
 
 
