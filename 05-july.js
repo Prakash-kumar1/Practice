@@ -444,14 +444,17 @@
 
 //             //   OR 
 
- let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
- for(let i=0; i<bros.length; i++){
-    if (bros.indexOf(bros[i]) === bros.lastIndexOf(bros[i])){
-        console.log(bros[i]);
-    }
-    }
+//  let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+//  for(let i=0; i<bros.length; i++){
+//     if (bros.indexOf(bros[i]) === bros.lastIndexOf(bros[i])){
+//         console.log(bros[i]);
+//     }
+//     }
 
-
+// // Array change into String
+// .toString change Array into String
+bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+console.log(bros.toString())
 
 
 
