@@ -393,11 +393,13 @@
 //     console.log(nums.sort().reverse()) ; 
 
 
-// Find the largest Number in an Array ?? 
+// Find the largest Number in an Array in +ve case and also in -ve case?? 
 
 let nums = [1,20,12,17,89,10,27,100,65,675,345,987,234,56,23,6785]
+            // OR 
+nums = [-1,-20,-12,-17,-89,-10,-27,-100,-65,-675,-345,-987,-234,-56,-23,-6785]
 // we have to taken intial maximum number is Zero
-let max = 0 ;                                      
+let max = nums[0] ;                                      
 
 for(let i=0; i<nums.length; i++){
     let currentvalue = nums[i]
