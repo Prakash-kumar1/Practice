@@ -435,17 +435,21 @@
 
 // // Question no -3 : Print only first non-repeating Number ??
 
-let nums = [1,3,4,3,2,5,7,1,4]
-for(let i=0; i<nums.length; i++){
-if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])){
-    console.log(nums[i]);
-}
-}
+// let nums = [1,3,4,3,2,5,7,1,4]
+// for(let i=0; i<nums.length; i++){
+// if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])){
+//     console.log(nums[i]);
+// }
+// }
 
+//             //   OR 
 
-
-
-
+ let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+ for(let i=0; i<bros.length; i++){
+    if (bros.indexOf(bros[i]) === bros.lastIndexOf(bros[i])){
+        console.log(bros[i]);
+    }
+    }
 
 
 
