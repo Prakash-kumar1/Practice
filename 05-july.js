@@ -453,7 +453,7 @@
 
 // // Array change into String
 // .toString change Array into String
-bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+// bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
 // console.log(bros.toString())
 
 // // .join method - it joins two string with any parameter which  passes.
@@ -462,13 +462,29 @@ bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','ra
 // console.log(bros.join("+-*/----->"))
 
 // // .concat method - it joins two Array in one Array
-let names = ['soniv','prakash','shivansh','hema','govind','sameer']
-let nums = [1,2,3,4,5,6,7,8]
-console.log(names.concat(nums))
+// let names = ['soniv','prakash','shivansh','hema','govind','sameer']
+// let nums = [1,2,3,4,5,6,7,8]
+// console.log(names.concat(nums))
 
 
+let nums = [1,2,1,2,3,4,2,8,9]
+// print the number in new array which is greater than 3
+// let newArr = []
 
+// for(let i=0; i<nums.length; i++){
+//     if(nums[i] >= 3){
+//         newArr.push(nums[i])
+//     }
+// }
+// console.log(newArr)
+ 
+//         // OR  use  filter()  method
 
+ let newArr = nums.filter((nums) => {
+console.log(`${nums} ---->>  ${nums >= 3}`);
+return nums >= 3
+ })        
+console.log(newArr)
 
 
 
