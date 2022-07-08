@@ -520,19 +520,21 @@
 
 
 // // Example Number-7: Find the factorial of an Array using map() ?? 
-let nums = [1,2,3,4,5]
-let factorialArray = nums.map((num) => {
-     let fact = 1;
-     for(let i=num; i>0; i--){
-        fact *= i
-    }
-     return fact
-})
-console.log(factorialArray)
+// let nums = [1,2,3,4,5]
+// let factorialArray = nums.map((num) => {
+//      let fact = 1;
+//      for(let i=num; i>0; i--){
+//         fact *= i
+//     }
+//      return fact
+// })
+// console.log(factorialArray)
 
+// // **** How to find Truthyvalues in an Array OR remove falseyvalue ?? ****
+let nums = [1,'',false,true,'vasanth',null,undefined]
 
-
-
+let Truthyvalues = nums.filter(Boolean)
+console.log(Truthyvalues)
 
 
 
