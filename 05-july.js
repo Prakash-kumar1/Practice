@@ -488,22 +488,47 @@
 
 // // Example number - 2 :
 
-let names = ['soniv','prakash','shivansh','hema','govind','sameer','Rinki','Santosh','kai','ox','mr']
-let newArr = names.filter((names) => {
-    console.log(`${names} ---->>  ${names >= 3}`);
-    return names.length >= 3
-     })        
-    console.log(newArr)
+// let names = ['soniv','prakash','shivansh','hema','govind','sameer','Rinki','Santosh','kai','ox','mr']
+// let newArr = names.filter((names) => {
+//     console.log(`${names} ---->>  ${names >= 3}`);
+//     return names.length >= 3
+//      })        
+//     console.log(newArr)
 
 
+// // Question Number - 5 : print the square of all digits of an Array ?? 
+
+// let nums = [1,2,3,4,5,6,7,8,9,10]
+// function square(num){
+//     return num*num
+// }
+
+// let squaredArray = []
+// for(let i=0; i<nums.length; i++){
+//     squaredArray.push(square(nums[i]))
+// }
+// console.log(squaredArray)
+
+//     //   OR use Map() - it helps in using different operations.
+
+// nums = [1,2,3,4,5,6,7,8,9,10]    
+// let newArr = nums.map(function(num){
+// // console.log(`${num} ---->>  ${num >= 3}`)
+// return num*num
+// })
+// console.log(newArr)
 
 
-
-
-
-
-
-
+// // Example Number-7: Find the factorial of an Array using map() ?? 
+let nums = [1,2,3,4,5]
+let factorialArray = nums.map((num) => {
+     let fact = 1;
+     for(let i=num; i>0; i--){
+        fact *= i
+    }
+     return fact
+})
+console.log(factorialArray)
 
 
 
