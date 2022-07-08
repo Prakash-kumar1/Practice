@@ -427,13 +427,20 @@
 
 
 // Find the First index and Last index of a Number?? 
-let nums = [1,2,3,3,4,5,6,1,7,8,9,2]
-console.log(nums.indexOf(2))
-console.log(nums.lastIndexOf(2))
-console.log(nums.lastIndexOf(1))
+// let nums = [1,2,3,3,4,5,6,1,7,8,9,2]
+// console.log(nums.indexOf(2))
+// console.log(nums.lastIndexOf(2))
+// console.log(nums.lastIndexOf(1))
 
 
+// // Question no -3 : Print only first non-repeating Number ??
 
+let nums = [1,3,4,3,2,5,7,1,4]
+for(let i=0; i<nums.length; i++){
+if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])){
+    console.log(nums[i]);
+}
+}
 
 
 
