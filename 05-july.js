@@ -454,8 +454,12 @@
 // // Array change into String
 // .toString change Array into String
 bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
-console.log(bros.toString())
+// console.log(bros.toString())
 
+// // .join method - it joins two string with any parameter which  passes.
+console.log(bros.join("*"))
+console.log(bros.join("----->"))
+console.log(bros.join("+-*/----->"))
 
 
 
