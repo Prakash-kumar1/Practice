@@ -531,14 +531,14 @@
 // console.log(factorialArray)
 
 // // **** How to find Truthyvalues in an Array OR remove falseyvalue ?? ****
-let nums = [1,'',false,true,'vasanth',null,undefined,0,-1]
+let nums = [1  ,  ''  ,  []  ,  {}  ,  false , true , 'vasanth' , null  , undefined  , 0  ,  -1]
 
 let Truthyvalues = nums.filter(Boolean)
 console.log(Truthyvalues)
 
-
-
-
+// Printing Falseyvalues
+let falseyvalues = nums.filter((num) => !num)
+console.log(falseyvalues)
 
 
 
