@@ -12,16 +12,16 @@
 // Array used Square Brackets.
 // All the Array are named in Pulural in terms of Semantics.
 
-// let names = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(names);
-// console.log(names[7]);
-// console.log(names[6]);
-// console.log(names[5]);
-// console.log(names[4]);
-// console.log(names[3]);
-// console.log(names[2]);
-// console.log(names[1]);
-// console.log(names[17]);
+let names = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(names);
+console.log(names[7]);
+console.log(names[6]);
+console.log(names[5]);
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
+console.log(names[17]);
 
 
 
