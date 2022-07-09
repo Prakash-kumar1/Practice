@@ -592,10 +592,10 @@
 // }));
 
 // //  Example Number-2:
-// let nums = [6,7,8,14,9]
-// console.log(nums.every((num) => {
-//     return num <= 5 ;
-// }));
+let nums = [6,7,8,14,9]
+console.log(nums.every((num) => {
+    return num <= 5 ;
+}));
 
 
 
