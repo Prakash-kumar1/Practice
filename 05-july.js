@@ -62,17 +62,17 @@ console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wif
 
 // // Array accepts Boolean , Number ,String & Objects. 
 
-// let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
-//     name : "Rinki" ,
-//     age : 25 ,
-//     Occupation : "House-wife" ,
-//     Food : "Mutton" ,
-// }  ]
+let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
+    name : "Rinki" ,
+    age : 25 ,
+    Occupation : "House-wife" ,
+    Food : "Mutton" ,
+}  ]
 
-// console.log(names[4]);
-// console.log(names[3]);
-// console.log(names[2]);
-// console.log(names[1]);
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
 
 // // In Array we can also change the Value.
 
