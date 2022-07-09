@@ -53,12 +53,12 @@ console.log(rajnifamily.Wife.Food)
 console.log(rajnifamily.Wife.Daughter.name)
 console.log(rajnifamily.Food , rajnifamily.Wife.Food , rajnifamily.Wife.Daughter.Food)
 //             //    OR 
-// console.log(rajnifamily)
-// console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
-// console.log(rajnifamily['Occupation'])
-// console.log(rajnifamily['Wife']['age'])
-// console.log(rajnifamily['Wife']['Daughter']['name'])
-// console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
+console.log(rajnifamily)
+console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
+console.log(rajnifamily['Occupation'])
+console.log(rajnifamily['Wife']['age'])
+console.log(rajnifamily['Wife']['Daughter']['name'])
+console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
 
 // // Array accepts Boolean , Number ,String & Objects. 
 
