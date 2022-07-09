@@ -520,15 +520,15 @@
 
 
 // // Example Number-7: Find the factorial of an Array using map() ?? 
-let nums = [1,2,3,4,5]
-let factorialArray = nums.map((num) => {
-     let fact = 1;
-     for(let i=num; i>0; i--){
-        fact *= i
-    }
-     return fact
-})
-console.log(factorialArray)
+// let nums = [1,2,3,4,5]
+// let factorialArray = nums.map((num) => {
+//      let fact = 1;
+//      for(let i=num; i>0; i--){
+//         fact *= i
+//     }
+//      return fact
+// })
+// console.log(factorialArray)
 
 // // **** How to find Truthyvalues in an Array OR remove falseyvalue ?? ****
 // let nums = [1  ,  ''  ,  []  ,  {}  ,  false , true , 'vasanth' , null  , undefined  , 0  ,  -1]
@@ -552,21 +552,21 @@ console.log(factorialArray)
 //     //   OR use reduce method : - perform different Arithmetic Oprations.(+.-,*,/) and it changed array into 
                                     //    a single Number
 
-// let nums = [1,2,3,4,5,6,7,8,9]
-// let sum = nums.reduce(function(previous,currentvalue){
-// // previous is also called as Accumulator(storing in a place)
-//     return previous + currentvalue
-//  })    
-//   console.log(sum) ;
+let nums = [1,2,3,4,5,6,7,8,9]
+let sum = nums.reduce(function(previous,currentvalue){
+// previous is also called as Accumulator(storing in a place)
+    return previous + currentvalue
+ })    
+  console.log(sum) ;
 
-// // Example Number-9: 
-// let nums = [1,2,3,4,5,6,7,8,9]
-// let sum = nums.reduce(function(previous,currentvalue){
-// console.log('previous' , previous , previous+currentvalue)
-//     return previous + currentvalue
-//  }, 10)
-// //  here 10 becomes previous value so it starts from 10    
-//   console.log(sum) ;
+// Example Number-9: 
+let nums = [1,2,3,4,5,6,7,8,9]
+let sum = nums.reduce(function(previous,currentvalue){
+console.log('previous' , previous , previous+currentvalue)
+    return previous + currentvalue
+ }, 10)
+//  here 10 becomes previous value so it starts from 10    
+  console.log(sum) ;
 
 
 // // Every method : - It checkes all the values and passes through condition , if all the value passes condition
