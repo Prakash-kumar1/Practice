@@ -98,30 +98,30 @@ console.log(peoples);
 
 
 // // If one changes another also changes. 
-// let num = [10,20]
-// let copy = num 
-// console.log(num , copy)
+let num = [10,20]
+let copy = num 
+console.log(num , copy)
 
-//  copy[0] = 15 
-//  num[1] = 30 
-// console.log(num , copy)
+ copy[0] = 15 
+ num[1] = 30 
+console.log(num , copy)
 
 
 // let nums = [1,2,3,true,'vasant']
 // console.log(nums.length)      printing the length of Array
 
-// for(let i=0; i<nums.length; i++){
-//     console.log(nums[i]);
-// }
+for(let i=0; i<nums.length; i++){
+    console.log(nums[i]);
+}
 
 
-// let nums = [1,2,3,4,5,6,7,8,'Prakash']
-// // print Ist & Last Element of Array
-// console.log(nums[0] , nums[nums.length-1])
-// // printing all Element of Array
-// for(let i=0; i<nums.length; i++){
-//         console.log(nums[i]);
-//     }
+let nums = [1,2,3,4,5,6,7,8,'Prakash']
+// print Ist & Last Element of Array
+console.log(nums[0] , nums[nums.length-1])
+// printing all Element of Array
+for(let i=0; i<nums.length; i++){
+        console.log(nums[i]);
+    }
 
 
 // // Adding Element in Array and  Removing the Element from Array
