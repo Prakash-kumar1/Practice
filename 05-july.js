@@ -76,21 +76,21 @@ console.log(names[1]);
 
 // // In Array we can also change the Value.
 
-// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
-// peoples[2] = 'Anjali'
-// peoples[1] = 'Hema'
-// console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
+peoples[2] = 'Anjali'
+peoples[1] = 'Hema'
+console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
 
 
 // // In Array we can also put the Value at any place.
 
-// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(peoples);
-//  peoples[6] = 'Mritunjay'
-//  console.log(peoples);
-// peoples[60] = 'Abhishek'
-// console.log(peoples);
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples);
+ peoples[6] = 'Mritunjay'
+ console.log(peoples);
+peoples[60] = 'Abhishek'
+console.log(peoples);
 
 
 // // Array are contagious memory, it stores next to each other.
