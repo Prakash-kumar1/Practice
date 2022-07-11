@@ -1,16 +1,13 @@
-                     // Array
+//                      // Array
 
-// Defination : JavaScript मे Array एक Special Variable होता है. Javascript Arrays मे आप एक या एक से ज्यादा Value को एक ही समय मे Add कर सकते है.
-
-// JavaScript मे Array को एक Unit या लगातार Memory Location मे Elements के Group को Represent करने के लिए उपयोग किया जाता है. प्रत्येक Elements जो आप Array मे Enter करते हो वह Zero से Start होने वाले Unique Number के साथ Array मे Stored किया जाता है.
-
-
+// // Defination : JavaScript मे Array एक Special Variable होता है. Javascript Arrays मे आप एक या एक से ज्यादा Value को एक ही समय मे Add कर सकते है
+// // JavaScript मे Array को एक Unit या लगातार Memory Location मे Elements के Group को Represent करने के लिए उपयोग किया जाता है. प्रत्येक Elements जो आप Array मे Enter करते हो वह Zero से Start होने वाले Unique Number के साथ Array मे Stored किया जाता है.
  
-// JavaScript मे Arrays का उपयोग एक Single Variable मे एक से अधिक Value को Store करने के लिये किया जाता है. Array एक ही प्रकार के Elements को एक Fixed Size मे Sequential के रूप मे Store करता है.
+// // JavaScript मे Arrays का उपयोग एक Single Variable मे एक से अधिक Value को Store करने के लिये किया जाता है. Array एक ही प्रकार के Elements को एक Fixed Size मे Sequential के रूप मे Store करता है.
 
-// उदाहरण के लिए यदि आप कुछ समय मे किसी User की Location को Track करना चाहते है तो आप एक Array मे X और y Value को Included कर सकते है Array x और y के Examples की तुलना मे अधिक है Indexed के माध्यम से आप Data या Elements को Array मे Stored कर सकते है या और आप Elements को Array से प्राप्त कर सकते है.
-// Array used Square Brackets.
-// All the Array are named in Pulural in terms of Semantics.
+// // उदाहरण के लिए यदि आप कुछ समय मे किसी User की Location को Track करना चाहते है तो आप एक Array मे X और y Value को Included कर सकते है Array x और y के Examples की तुलना मे अधिक है Indexed के माध्यम से आप Data या Elements को Array मे Stored कर सकते है या और आप Elements को Array से प्राप्त कर सकते है.
+// // Array used Square Brackets.
+// // All the Array are named in Pulural in terms of Semantics.
 
 // let names = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
 // console.log(names);
@@ -25,8 +22,8 @@
 
 
 
-// Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
-// Object used Curly Braces .
+// // Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
+// // Object used Curly Braces .
 
 // let rajnifamily = {
 //     name : "Santosh" ,
@@ -47,7 +44,7 @@
 //     }
 // }
 // console.log(rajnifamily)
-// console.log(rajnifamily.name , rajnifamily.Wife.name )
+// console.log(rajnifamily.name , rajnifamily.Wife.name , rajnifamily.Wife.Daughter.name )
 // console.log(rajnifamily.Occupation)
 // console.log(rajnifamily.Wife.Food)
 // console.log(rajnifamily.Wife.Daughter.name)
@@ -108,10 +105,11 @@
 
 
 // let nums = [1,2,3,true,'vasant']
-// console.log(nums.length)      printing the length of Array
+// printing the length of Array
+// console.log(nums.length)                                
 
 // for(let i=0; i<nums.length; i++){
-//     console.log(nums[i]);
+    // console.log(nums[i]);
 // }
 
 
@@ -130,15 +128,15 @@
 // // In Array , we can add any Datatype like Number , String , Boolean & also a Array
 // // Removing the Element from Array is called "Popping" . (removes from last never remove middle or Ist element . )
 
-// // // In nums we stores Address not values . 
+// // In nums we stores Address not values . 
 // let nums = [1,2,3,4,5,6,7,8]
 // console.log('intial value',nums)
 
-// // // Adding Element in Array use ( .push )
+// // // // Adding Element in Array use ( .push )
 // nums.push("Prakash");
 // console.log('adding value', nums)
 
-// // // Removing Element from Array use ( .pop )
+// // // // Removing Element from Array use ( .pop )
 // nums.pop()
 // console.log('Removing',nums)
 
@@ -150,7 +148,7 @@
 
 // // // Always Remember , If we want to remove the element from middle we can't removed . because all element stored in stack ( Last in First Out ) .so the element is in last only that Removed.it removes only step by step.
 
-// console.log(nums.pop(2))
+// console.log(nums.pop(209775))
 // // It doesn't care what parameter passed. 
 // console.log('Removing 2nd value',nums)
 
@@ -162,7 +160,8 @@
 // nums.pop()
 // nums.pop()
 // console.log(nums)
-// if we don't pass any parameter in push , it simply returns the length .
+// // if we don't pass any parameter in push , it simply returns the length .
+
 // nums.push(1)
 // nums.push(9)
 // nums.push(5)
@@ -174,10 +173,12 @@
 
 // // .unshift added element in First . 
 // students.unshift('Devanshu')
-// students.push('Shrivastav')
+// students.unshift('Shrivastav')
+// students.unshift('Sardar')
+// students.push('Shri')
 // console.log(students)
 
-// // .shift removes Element from First 
+// // // .shift removes Element from First 
 // students.shift()
 // students.shift()
 // students.shift()
@@ -203,8 +204,8 @@
 // console.log(friends.length , friends)
 
 
-// const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
-// friends.length = 3
+const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// friends.length = 4
 // console.log(friends.length , friends)
 //     //  OR 
 // friends.length = 34
@@ -234,7 +235,7 @@
 
 // let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// // Adding Element in Middle
+// Adding Element in Middle
 // splice syntax : .splice(index-value , values want to be removed , adding values)
 // bros.splice( 4 , 0 , 'Sachin')
 // console.log(bros)
@@ -257,13 +258,14 @@
 // console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
 
 
-// // Using Slice property to get data 
-// // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
+// // // Using Slice property to get data 
+// // // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
+// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 // console.log(bros.slice( 1 , 4))
-// // it will start from index value 1 and stopped at index value 3 before index value 4
+// // // it will start from index value 1 and stopped at index value 3 before index value 4
 // console.log(bros)
 
-// let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
+let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
 // console.log(sisters.slice(1,2))
 
 // // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
@@ -274,24 +276,24 @@
 // // if only give start value then it starts from that value and print whole data to the end.
 // console.log(sisters.slice(2))    
 
-// // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
+// // // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
 // let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
 // let slicedpets = pets.slice(1,5)
 // console.log(pets,slicedpets)
 
-// // splice method also affect original Array
+// // // splice method also affect original Array
 // let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
 // console.log(pets[0],pets[1],pets[2])
 
 // pets.splice(1,0,'Lion')
 // console.log(pets[0],pets[1],pets[2],pets[3])
-// // it change index value . 
+// // // it change index value . 
 
-// // In slice , we can only print Reverse of an Array. this is special property of slice method 
-// // slice negative value method explain in Notes . check there 
+// // // In slice , we can only print Reverse of an Array. this is special property of slice method 
+// // // slice negative value method explain in Notes . check there 
 
 // // Checking present values in Array using Loop
-// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // function brothers(bro){
 //     for(let i=0; i<bros.length; i++){
@@ -304,14 +306,14 @@
 // console.log(brothers('hema'))
 // console.log(brothers('anish'))
 
-//     //  OR we can use .includes method 
+// //     //  OR we can use .includes method 
 
 //     console.log(bros.includes('shivansh'))
 //     console.log(bros.includes('shiva'))
 //     console.log(bros.includes('hema'))
 //     console.log(bros.includes('anish'))   
 
-// // if we don't want to search whole array we can put starting value in includes method
+// // // if we don't want to search whole array we can put starting value in includes method
 
 // console.log(bros.includes('shivansh' , 4))
 //     console.log(bros.includes('rinki', 7))
@@ -468,7 +470,7 @@
 
 
 // let nums = [1,2,1,2,3,4,2,8,9]
-// print the number in new array which is greater than 3
+// // print the number in new array which is greater than 3
 // let newArr = []
 
 // for(let i=0; i<nums.length; i++){
@@ -592,10 +594,10 @@
 // }));
 
 // //  Example Number-2:
-let nums = [6,7,8,14,9]
-console.log(nums.every((num) => {
-    return num <= 5 ;
-}));
+// let nums = [6,7,8,14,9]
+// console.log(nums.every((num) => {
+//     return num <= 5 ;
+// }));
 
 
 
