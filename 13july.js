@@ -184,22 +184,41 @@
 //    }
 // console.log(sum)
 
-// Question Number-6 : find the sum of Reverse Diagonals using Start in matrix ?
+// // Question Number-6 : find the sum of Reverse Diagonals using Start in matrix ?
 
-let matrix = [
-   [1, 2, 3, 4],
+// let matrix = [
+//    [1, 2, 3, 4],
+//    [5, 6, 7, 8],
+//    [9, 10, 11, 12],
+//    [16, 14, 15, 16]
+// ]
+// let Rows = matrix.length
+// // change the value of start like 0,1,2,3 and you will get the sum of each Column.
+// let start = matrix[0].length - 1
+// // There is no need of J loop.
+// let sum = 0;
+// for(let i=0; i<Rows; i++){
+// sum += matrix[i][start]
+//    start -= 1 ; 
+//    }
+// console.log(sum)
+
+// Question Number -7: Print the even Number of Rows ?
+
+let matrix = [[1, 2, 3, 4],
    [5, 6, 7, 8],
    [9, 10, 11, 12],
    [16, 14, 15, 16]
-]
-let Rows = matrix.length
-// change the value of start like 0,1,2,3 and you will get the sum of each Column.
-let start = matrix[0].length - 1
-// There is no need of J loop.
-let sum = 0;
+   ]
+
+   let Rows = matrix.length
+   let cols = matrix[0].length
 for(let i=0; i<Rows; i++){
-sum += matrix[i][start]
-   start -= 1 ; 
+   if(i%2 == 0){
+   for(let j=0; j<cols; j++){
+      console.log(matrix[i][j])
    }
-console.log(sum)
+   }
+}
+
 
