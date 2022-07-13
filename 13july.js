@@ -127,7 +127,26 @@
 //     }
 //     console.log(sum)
 
-// Question Number-5 : find the sum of first column in matrix ?
+// // Question Number-5 : find the sum of first column in matrix ?
+
+// let matrix = [
+//    [1, 2, 3, 4],
+//    [5, 6, 7, 8],
+//    [9, 10, 11, 12],
+//    [13, 14, 15, 16]
+// ]
+// let Rows = matrix.length
+// // change the value of start like 0,1,2,3 and you will get the sum of each Column.
+// let start = 3
+// // There is no need of J loop.
+// let sum = 0;
+// for(let i=0; i<Rows; i++){
+// sum += matrix[i][start]
+//    }
+// console.log(sum)
+
+
+// Question Number-5 : find the sum of first Row in matrix ?
 
 let matrix = [
    [1, 2, 3, 4],
@@ -136,11 +155,11 @@ let matrix = [
    [13, 14, 15, 16]
 ]
 let Rows = matrix.length
-// change the value of start like 0,1,2,3 and you will get the sum of each Column.
+// change the value of start like 0,1,2,3 and you will get the sum of each Row.
 let start = 3
 // There is no need of J loop.
 let sum = 0;
 for(let i=0; i<Rows; i++){
-sum += matrix[i][start]
+sum += matrix[start][i]
    }
 console.log(sum)
