@@ -146,20 +146,60 @@
 // console.log(sum)
 
 
-// Question Number-5 : find the sum of first Row in matrix ?
+// // Question Number-5 : find the sum of first Row in matrix ?
+
+// let matrix = [
+//    [1, 2, 3, 4],
+//    [5, 6, 7, 8],
+//    [9, 10, 11, 12],
+//    [13, 14, 15, 16]
+// ]
+// let cols = matrix[0].length
+// // change the value of start like 0,1,2,3 and you will get the sum of each Row.
+// let start = 0
+// // There is no need of J loop.
+// let sum = 0;
+// for(let i=0; i<cols; i++){
+// sum += matrix[start][i]
+//    }
+// console.log(sum)
+
+
+// // Question Number-5 : find the sum of Diagonals using Start in matrix ?
+
+// let matrix = [
+//    [1, 2, 3, 4],
+//    [5, 6, 7, 8],
+//    [9, 10, 11, 12],
+//    [16, 14, 15, 16]
+// ]
+// let Rows = matrix.length
+// // change the value of start like 0,1,2,3 and you will get the sum of each Column.
+// let start = 0
+// // There is no need of J loop.
+// let sum = 0;
+// for(let i=0; i<Rows; i++){
+// sum += matrix[i][start]
+//    start += 1 ; 
+//    }
+// console.log(sum)
+
+// Question Number-6 : find the sum of Reverse Diagonals using Start in matrix ?
 
 let matrix = [
    [1, 2, 3, 4],
    [5, 6, 7, 8],
    [9, 10, 11, 12],
-   [13, 14, 15, 16]
+   [16, 14, 15, 16]
 ]
 let Rows = matrix.length
-// change the value of start like 0,1,2,3 and you will get the sum of each Row.
-let start = 3
+// change the value of start like 0,1,2,3 and you will get the sum of each Column.
+let start = matrix[0].length - 1
 // There is no need of J loop.
 let sum = 0;
 for(let i=0; i<Rows; i++){
-sum += matrix[start][i]
+sum += matrix[i][start]
+   start -= 1 ; 
    }
 console.log(sum)
+
