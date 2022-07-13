@@ -136,6 +136,7 @@ let matrix = [
    [13, 14, 15, 16]
 ]
 let Rows = matrix.length
+// change the value of start like 0,1,2,3 and you will get the sum of each Column.
 let start = 3
 // There is no need of J loop.
 let sum = 0;
