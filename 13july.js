@@ -36,7 +36,8 @@ let Rows = matrix.length
 console.log(Rows)
 
 // Question Number-2 : how many Columns are there ?
-
+let cols = matrix[0].length
+console.log(cols)
 
 
 
