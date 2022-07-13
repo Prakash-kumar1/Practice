@@ -203,7 +203,26 @@
 //    }
 // console.log(sum)
 
-// Question Number -7: Print the even Number of Rows ?
+// // Question Number -7: Print the even Number of Rows ?
+
+// let matrix = [[1, 2, 3, 4],
+//    [5, 6, 7, 8],
+//    [9, 10, 11, 12],
+//    [16, 14, 15, 16]
+//    ]
+
+//    let Rows = matrix.length
+//    let cols = matrix[0].length
+// for(let i=0; i<Rows; i++){
+//    if(i%2 == 0){
+//    for(let j=0; j<cols; j++){
+//       console.log(matrix[i][j])
+//    }
+//    }
+// }
+
+
+// Question Number -8: Print the  Number of cols ?
 
 let matrix = [[1, 2, 3, 4],
    [5, 6, 7, 8],
@@ -218,7 +237,9 @@ for(let i=0; i<Rows; i++){
    for(let j=0; j<cols; j++){
       console.log(matrix[i][j])
    }
+   }else{
+      for(let j=cols-1; j>=0; j--){
+         console.log(matrix[i][j])
+      }  
    }
 }
-
-
