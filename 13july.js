@@ -39,6 +39,7 @@
 // let cols = matrix[0].length
 // console.log(cols)
 
+
 // // Question Number-3 : find the sum of all Element in matrix ?
 // let sum = 0;
 // for(let i=0; i<Rows; i++){
@@ -51,13 +52,39 @@
 
 // // Question Number-3 : find the sum of all Element in matrix with another method ?
 
-// // formula : Sum of first 'n'  Numbers --->   (n(n+1)/2) 
+// // formula : Sum of first 1  to  'n'  Numbers --->   (n(n+1)/2) 
 
-let sum = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12],
-    [13, 14, 15, 16],
-    [17, 18, 19, 20]
-]
+// let sum = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9, 10, 11, 12],
+//     [13, 14, 15, 16],
+//     [17, 18, 19, 20],
+//     [21,22,23,24,25]
+// ]
+// // this is wrong ask sir
+// let n= 20 ;
+// let Element = n(n+1)/2 ;
+// console.log(Element)
+
+
+// Question Number-4 : find the sum of Diagonal Element in matrix ?
+let matrix = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16]
+    ]
+let Rows = matrix.length
+let cols = matrix[0].length
+
+     let sum = 0;
+    for(let i=0; i<Rows; i++){
+       for(let j=0; j<cols; j++){
+       if(i == j){
+    sum += matrix[i][j]
+       }
+       }
+    }
+    console.log(sum)
 
