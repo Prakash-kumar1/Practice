@@ -26,14 +26,16 @@ let matrix = [
     [9, 10, 11, 12],
     [13, 14, 15, 16]
 ]
-
-
 console.log(matrix[2][2])
 console.log(matrix[3][2])
 console.log(matrix[1][2])
 console.log(matrix[3][4])
 
+// Question Number-1 : how many Rows are there ?
+let Rows = matrix.length
+console.log(Rows)
 
+// Question Number-2 : how many Columns are there ?
 
 
 
