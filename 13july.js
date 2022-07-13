@@ -32,3 +32,9 @@ console.log(matrix[2][2])
 console.log(matrix[3][2])
 console.log(matrix[1][2])
 console.log(matrix[3][4])
+
+
+
+
+
+
