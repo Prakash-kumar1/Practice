@@ -39,5 +39,12 @@ console.log(Rows)
 let cols = matrix[0].length
 console.log(cols)
 
-
+// Question Number-3 : find the sum of all Element in matrix ?
+let sum = 0;
+for(let i=0; i<Rows; i++){
+   for(let j=0; j<cols; j++){
+    sum += matrix[i][j]
+   }
+}
+console.log(sum)
 
