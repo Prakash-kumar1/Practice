@@ -68,23 +68,38 @@
 // console.log(Element)
 
 
-// Question Number-4 : find the sum of Diagonal Element in matrix ?
+// // Question Number-4 : find the sum of Diagonal Element in matrix ?
+// let matrix = [
+//         [1, 2, 3, 4],
+//         [5, 6, 7, 8],
+//         [9, 10, 11, 12],
+//         [13, 14, 15, 16]
+//     ]
+// let Rows = matrix.length
+// let cols = matrix[0].length
+
+//      let sum = 0;
+//     for(let i=0; i<Rows; i++){
+//        for(let j=0; j<cols; j++){
+//        if(i == j){
+//     sum += matrix[i][j]
+//        }
+//        }
+//     }
+//     console.log(sum)
+
+// // OR WE can use short method
 let matrix = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16]
-    ]
+   [1, 2, 3, 4],
+   [5, 6, 7, 8],
+   [9, 10, 11, 12],
+   [13, 14, 15, 16]
+]
 let Rows = matrix.length
 let cols = matrix[0].length
-
-     let sum = 0;
-    for(let i=0; i<Rows; i++){
-       for(let j=0; j<cols; j++){
-       if(i == j){
-    sum += matrix[i][j]
-       }
-       }
-    }
-    console.log(sum)
-
+// There is no need of J loop.
+let sum = 0;
+for(let i=0; i<Rows; i++){
+sum += matrix[i][i]
+   }
+console.log(sum)
