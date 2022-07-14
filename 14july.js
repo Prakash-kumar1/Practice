@@ -70,10 +70,33 @@
 //     }
 // }
 // console.log(count)
-//  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
-for(var i=0; i<5; i++){
-    setTimeout( () => { 
-        console.log(i) ;
-    },1000)
-}
+// //  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
+// for(var i=0; i<5; i++){
+//     setTimeout( () => { 
+//         console.log(i) ;
+//     },1000)
+// }
+
+// // // for of loop
+// let nums = [1,2,3,4,5]
+// for(let i=0; i<nums.length;i++){
+//     console.log(i)
+// }
+// // OR used this method
+
+//  for (let num of nums){
+//     console.log(num)
+//  }
+
+// // Example-2:
+// let names = ['sachin', 'tendulkar', 'prakash']
+// for(let name of names){
+//     console.log(name)
+// }
+
+
+
+
+
+
 
