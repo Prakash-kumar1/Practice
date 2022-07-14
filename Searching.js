@@ -84,6 +84,13 @@
 // // Also using negative value of slice which is written in copy
 // console.log(fname.slice(-15, -10))
 
+// // Printing Characters in Strings
+// let cname = 'Prakash-kumar-singh'
+// console.log(cname.charAt(7))
+// console.log(cname.charAt(12))
+// console.log(cname.charAt(17))
+// // when the position is not present it will give Empty Space
+// console.log(cname.charAt(70))
 // // // // Loadash website is very Important
 
 // // Chang String into uppercase  and lowercase
