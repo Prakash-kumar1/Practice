@@ -101,11 +101,24 @@
 //  let news = 'India won the world cup. India won the world cup after 2011. India is a bad country, and also India is a poor country'
 // console.log(news.replaceAll('India' , 'pakistan'))
 
-//  Concat method-:
-let mums1 = [1, 2, 3]
+// //  Concat method-:
+// let mums1 = [1, 2, 3]
+// let mums2 = [4, 5, 6]
+// let mums3 = [7, 8, 9]
+
+// console.log(mums1.concat(mums2))
+// // in concat we can pass many parameters
+// console.log(mums1.concat('vasanth', 'prakash' , mums2, mums3))
+
+
+// Spread Operator( ... ) -: it works only in Arrays and Sets not in normal numbers.
+ let mums1 = [1, 2, 3]
 let mums2 = [4, 5, 6]
 let mums3 = [7, 8, 9]
+console.log([mums1, 'vasanth', 'prakash' , mums2, mums3])
+// it will give Array but we want values
+console.log([...mums1, 'vasanth', 'prakash' , ...mums2, ...mums3])
 
-console.log(mums1.concat(mums2))
-// in concat we can pass many parameters
-console.log(mums1.concat('vasanth', 'prakash' , mums2, mums3))
+
+
+
