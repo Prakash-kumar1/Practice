@@ -139,13 +139,36 @@
 //  let news = 'India won the world cup. India won the world cup after 2011. India is a bad country, and also India is a poor country'
 // console.log(news.replaceAll('India' , 'pakistan'))
 
-// OR we can use replace , for using replace just put the value into /value/ two slashes which want to change and also write  'i' which means it become case sensetitive and g means global . there is no need of replaceAll()
+// // // OR we can use replace , for using replace just put the value into /value/ two slashes which want to change and also write  'i' means in-sensetitive and g means global . there is no need of replaceAll()
 
- let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
- console.log(news.replace(/india/i , 'pakistan'))
-console.log(news.replace(/india/g , 'pakistan'))
+// let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
+//  console.log(news.replace(/india/i , 'pakistan'))
+// console.log(news.replace(/india/g , 'pakistan'))
+// console.log(news.replace(/india/gi , 'pakistan'))
 
-// //  Concat method-:
+
+// How to count the number of Words -: using Split , split converts into Array.
+
+let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
+// // it converts into Array
+// console.log(news.split(' '))
+// console.log(news.split(' ').length)
+// // it also removes character, numbers and words, just pass that character into parameter
+// console.log(news.split('a'))
+// console.log(news.split(1))
+// console.log(news.split('i'))
+// console.log(news.split('india'))
+// // when we pass two characters or words , it gives empty array because it finds the whole string
+console.log(news.split('i','a'))
+console.log(news.split('india','won'))
+
+
+
+
+
+
+
+// // //  Concat method-:
 // let mums1 = [1, 2, 3]
 // let mums2 = [4, 5, 6]
 // let mums3 = [7, 8, 9]
