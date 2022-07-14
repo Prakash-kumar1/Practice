@@ -115,24 +115,35 @@
 // let kname = 'PRAKASHKUMAR'
 // console.log(kname.toLowerCase())
 
-// // Remove spaces : trim method used in all chat application , in all search engine etc.
+// // // Remove spaces : trim method used in all chat application , in all search engine etc.
 // let kname = '           PRAKASHKUMAR         '
+// console.log(kname)
 // console.log(kname.trim())
+// // it removes Right side space 
 // console.log(kname.trimEnd())
-// console.log(kname.trimStart())
+// // it removes left side space 
+// console.log(kname.trimStart())                   
 
-// // Replacing Characters
+// // // Replacing Characters
 // let fname = 'vasantha' ;
 // console.log(fname.replace('a' , 'j'))
+// console.log(fname.replace('a' , 'good'))
 
 // // Replacing all characters
 // console.log(fname.replaceAll('a' , 'j'))
+// console.log(fname.replaceAll('a' , 'bad'))
 
 // let news = 'India won the world cup'
 // console.log(news.replace('India' , 'pakistan'))
 
 //  let news = 'India won the world cup. India won the world cup after 2011. India is a bad country, and also India is a poor country'
 // console.log(news.replaceAll('India' , 'pakistan'))
+
+// OR we can use replace , for using replace just put the value into /value/ two slashes which want to change and also write  'i' which means it become case sensetitive and g means global . there is no need of replaceAll()
+
+ let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
+ console.log(news.replace(/india/i , 'pakistan'))
+console.log(news.replace(/india/g , 'pakistan'))
 
 // //  Concat method-:
 // let mums1 = [1, 2, 3]
