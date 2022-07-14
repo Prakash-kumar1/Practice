@@ -35,8 +35,6 @@
 //     console.log('Invalid mobilenumber')
 // }
 
-
-
 // // Example-2:  
 // let mobile = '96489962769'
 
