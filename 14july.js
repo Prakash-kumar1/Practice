@@ -58,15 +58,22 @@
 // ----->   AFTER INTEVAL    <-------
 
 
-// how many 'a' are present? 
+// // how many 'a' are present? 
 
-let word = 'sachin tendulkar'
-let target = 'a' ;
-let count = 0 ;
+// let word = 'vasanth kumar vinayagam'
+// let target = 'a' ;
+// let count = 0 ;
 
-for(let i=0; i<word.length; i++){
-    if(word[i] === target){
-        count += 1 ;
-    }
+// for(let i=0; i<word.length; i++){
+//     if(word[i] === target){
+//         count += 1 ;
+//     }
+// }
+// console.log(count)
+//  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
+for(var i=0; i<5; i++){
+    setTimeout( () => { 
+        console.log(i) ;
+    },1000)
 }
-console.log(count)
+
