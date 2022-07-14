@@ -55,3 +55,18 @@
 //     console.log('Invalid number')
 // }
 
+// ----->   AFTER INTEVAL    <-------
+
+
+// how many 'a' are present? 
+
+let word = 'sachin tendulkar'
+let target = 'a' ;
+let count = 0 ;
+
+for(let i=0; i<word.length; i++){
+    if(word[i] === target){
+        count += 1 ;
+    }
+}
+console.log(count)
