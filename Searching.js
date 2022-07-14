@@ -36,23 +36,25 @@
 //     }
 // }
 
-// // Strings -: This is a Spread Operator.
+// // // Strings -: This is also a  Spread Operator.
 // let fname = 'Prakash'
 // let lname = 'kumar'
 // console.log(fname+" "+lname)
 
-// // how to get "Prakash kumar" in single quotes? 
+// // // how to get "Prakash kumar" in single quotes? 
 // console.log(`"${fname}"'${lname}'`)
 // console.log(fname[0],lname[2])
+
+// // Find the length of fname and lname ?
+// console.log(`"${fname.length}"'${lname.length}'`)
 
 // // Print all the alphabets or characters? 
 // for(let i=0; i<fname.length; i++){
 //     console.log(fname[i])
-
 // }
 
-// // String are immutable means we can't change their characters
-// // in string we can't change one value but we can change whole string
+// // // String are immutable(not changeable) means we can't change their characters
+// // // in string we can't change one value but we can change whole string
 
 // let gname = 'vasantkumarvingyam'
 // // it can't change but only give index value at 1 
@@ -63,17 +65,26 @@
 // // we can change only whole string
 // console.log(gname)
 
-// // comparing two strings=: it compares value not addresses. 
+// // // comparing two strings=: it compares value not addresses. 
 // let fname = 'Prakash'
 // let lname = 'Prakash'
 // console.log(fname === lname)
 
-// // // in case of array it gives false because array stores address.
-// let fname = ['Prakash']
-// let lname = ['Prakash']
+// // // // in case of array it gives false because array stores address.
+//  fname = ['Prakash']
+//  lname = ['Prakash']
 // console.log(fname === lname)
 
-// // // Loadash website is very Important
+
+// // Using slice in String
+// let fname = 'vasanthkumarvinayagamr'
+// console.log(fname.slice(7,12))
+// // it will not affect original array
+// console.log(fname.slice(0,7) , fname)
+// // Also using negative value of slice which is written in copy
+// console.log(fname.slice(-15, -10))
+
+// // // // Loadash website is very Important
 
 // // Chang String into uppercase  and lowercase
 // let tname = 'shivanshrawat'
@@ -111,13 +122,14 @@
 // console.log(mums1.concat('vasanth', 'prakash' , mums2, mums3))
 
 
-// Spread Operator( ... ) -: it works only in Arrays and Sets not in normal numbers.
- let mums1 = [1, 2, 3]
-let mums2 = [4, 5, 6]
-let mums3 = [7, 8, 9]
-console.log([mums1, 'vasanth', 'prakash' , mums2, mums3])
-// it will give Array but we want values
-console.log([...mums1, 'vasanth', 'prakash' , ...mums2, ...mums3])
+// // Spread Operator( ... ) -: it works only in Arrays and Sets not in normal numbers.
+//  let mums1 = [1, 2, 3]
+// let mums2 = [4, 5, 6]
+// let mums3 = [7, 8, 9]
+// console.log([mums1, 'vasanth', 'prakash' , mums2, mums3])
+// // it will give Array but we want values and for using values we should wrap into [ ] (arrays)
+// console.log([...mums1, 'vasanth', 'prakash' , ...mums2, ...mums3])
+// // this is a way of copy because it creates new Array
 
 
 
