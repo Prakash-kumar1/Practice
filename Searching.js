@@ -91,7 +91,22 @@
 // console.log(cname.charAt(17))
 // // when the position is not present it will give Empty Space
 // console.log(cname.charAt(70))
-// // // // Loadash website is very Important
+
+
+// // // Loadash website is very Important
+
+// // There are two methods in javascript Substring  &  Substr  which is not used Currently
+// // Substring method :- Before the creation of Slice we used Substring . in substring we can't Pass -ve values. there is no need of substring
+// let fname = 'vasanthkumarvinayagamr'
+// console.log(fname.substring(7,12))
+
+
+// // substr method -: in this method it will take length  not Ending value. IInd value give how many characters i want
+// let Aname = 'vasanthkumarvinayagamr'
+// // we want 12 characters
+// console.log(fname.substr(7,12))
+
+
 
 // // Chang String into uppercase  and lowercase
 // let tname = 'shivanshrawat'
