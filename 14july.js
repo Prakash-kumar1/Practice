@@ -30,18 +30,18 @@
 // console.log(isPresent)
 
 
-// // // // Using endswith method-:
+// // // // Using endswith method-: it checks the string ends with the parameter or not.
 
 // // // Example-1:  
-let email = 'kumarsanju4881@gmail.com'
+// let email = 'kumarsanju4881@gmail.coxfgh'
 
-if(email.endsWith('m')){
-    console.log('valid email')
-}else{
-    console.log('Invalid email')
-}
+// if(email.endsWith('xfgh')){
+//     console.log('valid email')
+// }else{
+//     console.log('Invalid email')
+// }
 
-// // // // Using startsswith method-:
+// // // // Using startsswith method-: it checks string starts with parameter or not
 // let mobilenumber = '+91 8127874881'
 
 // if(mobilenumber.startsWith('+91')){
@@ -50,7 +50,7 @@ if(email.endsWith('m')){
 //     console.log('Invalid mobilenumber')
 // }
 
-// // Example-2:  
+// // // Example-2:  
 // let mobile = '96489962769'
 
 // if(mobile.length == 10){
@@ -61,14 +61,14 @@ if(email.endsWith('m')){
 
 
 // // // Example-3:  
-// let mobile = '    9648996276    '
-// // if we can't remove space it counts the spaces
+let mobile = '    9648996276    '
+// if we can't remove space it counts the spaces
 
-// if(mobile.trim().length == 10){
-//     console.log('valid number')
-// }else{
-//     console.log('Invalid number')
-// }
+if(mobile.trim().length == 10){
+    console.log('valid number')
+}else{
+    console.log('Invalid number')
+}
 
 // ----->   AFTER INTEVAL    <-------
 
