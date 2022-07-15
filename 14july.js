@@ -1,3 +1,19 @@
+// Pushing values of a array to a NewArray
+
+let array = [1, 2, 3, 4, 5, 6]
+let NewArray = []
+for(let i=0; i<array.length; i++){
+    NewArray.push(array[i])
+}
+console.log(NewArray)
+    
+
+
+
+
+
+
+
 // // How to find a word in Paragraph? - : in array we used includes method but in string we used Flag method
 
 // let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
@@ -71,11 +87,11 @@
 // }
 // console.log(count)
 // //  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
-for(let i=0; i<6; i++){
-    setTimeout( () => { 
-        console.log(i) ;
-    },1000)
-}
+// for(var i=0; i<6; i++){
+//     setTimeout( () => { 
+//         console.log(i) ;
+//     },1000)
+// }
 
 // // // for of loop
 // let nums = [1,2,3,4,5]
