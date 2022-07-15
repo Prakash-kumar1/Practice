@@ -120,124 +120,23 @@
 // console.log(teachers.match(/in/))
 // console.log(teachers.match(/P/))
 
-// Anagram :-  characters are same . like God , Dog  and  sheep,heeps
-// first we make each element a Array then we need to sort . after this both are equal but it gives 'not an anagram' because both array stores different address so , we need to again make string by using 'join'. 
-let word1 = 'god' ;
-let word2 = 'dog' ;
-
-if(word1.split('').sort().join('') == word2.split('').sort().join('')){
-    console.log('anagram')
-}else{
-    console.log('not an anagram')
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// // Anagram :-  characters are same . like God , Dog  and  sheep,heeps
+// // first we make each element a Array then we need to sort . after this both are equal but it gives 'not an anagram' because both array stores different address so , we need to again make string by using 'join'. 
+// let word1 = 'god' ;
+// let word2 = 'dog' ;
+
+// if(word1.split('').sort().join('') == word2.split('').sort().join('')){
+//     console.log('anagram')
+// }else{
+//     console.log('not anagram')
+// }
+// // All Palindromes are Anagrams and not vice-versa
 
 
 // ----->   AFTER INTEVAL    <-------
 
 
-// // how many 'a' are present? 
+// // // how many 'a' are present? 
 
 // let word = 'vasanth kumar vinayagam'
 // let target = 'a' ;
@@ -249,7 +148,10 @@ if(word1.split('').sort().join('') == word2.split('').sort().join('')){
 //     }
 // }
 // console.log(count)
-// //  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
+
+
+// //  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure". Read about scopes on MDN.
+
 // for(var i=0; i<6; i++){
 //     setTimeout( () => { 
 //         console.log(i) ;
@@ -257,15 +159,16 @@ if(word1.split('').sort().join('') == word2.split('').sort().join('')){
 // }
 
 // // // for of loop
-// let nums = [1,2,3,4,5]
-// for(let i=0; i<nums.length;i++){
-//     console.log(i)
-// }
-// // OR used this method
+let nums = [1,2,3,4,5]
+for(let i=0; i<nums.length;i++){
+    console.log(i)
+}
+// OR used this method
 
-//  for (let num of nums){
-//     console.log(num)
-//  }
+ for (let num of nums){
+    console.log(num)
+ }
+
 
 // // Example-2:
 // let names = ['sachin', 'tendulkar', 'prakash']
