@@ -111,22 +111,25 @@
 //     console.log(Reverse) ;
 
 
-// match property :
+// // match property :
 
-let teachers = 'Prakash is a genius programmer of this world'
+// let teachers = 'prakash is a genius programmer of this world'
 
-console.log(teachers.match(/is/))
-// if not presents it gives null
-console.log(teachers.match(/in/))
+// console.log(teachers.match(/is/))
+// // if not presents it gives null
+// console.log(teachers.match(/in/))
+// console.log(teachers.match(/P/))
 
+// Anagram :-  characters are same . like God , Dog  and  sheep,heeps
+// first we make each element a Array then we need to sort . after this both are equal but it gives 'not an anagram' because both array stores different address so , we need to again make string by using 'join'. 
+let word1 = 'god' ;
+let word2 = 'dog' ;
 
-
-
-
-
-
-
-
+if(word1.split('').sort().join('') == word2.split('').sort().join('')){
+    console.log('anagram')
+}else{
+    console.log('not an anagram')
+}
 
 
 
