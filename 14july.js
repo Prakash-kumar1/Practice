@@ -96,25 +96,28 @@
 // }
 // console.log(reversedName) ;
 
-//  How to reverse each word in a sentence ??
-// for reversing each word we need to use spilt and make each word a Array after that we reverse each array
+// //  How to reverse each word in a sentence ??
+// // for reversing each word we need to use spilt and make each word a Array after that we reverse each array
+
+// let teachers = 'Prakash is a genius programmer of this world'
+ 
+// let Reverse = '' 
+
+// console.log(teachers.split(''))
+
+// for(let i= teachers.length-1; i>=0; i--){
+//         Reverse += teachers[i] ;
+//     }
+//     console.log(Reverse) ;
+
+
+// match property :
 
 let teachers = 'Prakash is a genius programmer of this world'
- 
-let Reverse = '' 
 
-console.log(teachers.split(''))
-
-for(let i= teachers.length-1; i>=0; i--){
-        Reverse += teachers[i] ;
-    }
-    console.log(Reverse) ;
-
-
-
-
-
-
+console.log(teachers.match(/is/))
+// if not presents it gives null
+console.log(teachers.match(/in/))
 
 
 
