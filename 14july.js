@@ -76,9 +76,9 @@ let number = '8765895483780281873987658'
 // removes 8 
 console.log(number.replace(/8/g , '')) ;
 
-
-
-
+// how to reverse a number ??
+ number = '8765895483780281873987658'
+console.log(number.split('').reverse().join('--->'))
 
 
 
