@@ -71,11 +71,11 @@
 // }
 // console.log(count)
 // //  in case of var  it gives output '5' 5btimes & in case of let it gives  0,1,2,3,4 . this property is called "closure"
-// for(var i=0; i<5; i++){
-//     setTimeout( () => { 
-//         console.log(i) ;
-//     },1000)
-// }
+for(let i=0; i<6; i++){
+    setTimeout( () => { 
+        console.log(i) ;
+    },1000)
+}
 
 // // // for of loop
 // let nums = [1,2,3,4,5]
