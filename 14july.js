@@ -60,15 +60,159 @@
 // }
 
 
-// // // Example-3:  
-let mobile = '    9648996276    '
-// if we can't remove space it counts the spaces
+// // // // Example-3:  
+// let mobile = '    9648996276    '
+// // if we can't remove space it counts the spaces
 
-if(mobile.trim().length == 10){
-    console.log('valid number')
-}else{
-    console.log('Invalid number')
-}
+// if(mobile.trim().length == 10){
+//     console.log('valid number')
+// }else{
+//     console.log('Invalid number')
+// }
+
+// how to remove a single digit from a number ??
+
+let number = '8765895483780281873987658'
+// removes 8 
+console.log(number.replace(/8/g , '')) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ----->   AFTER INTEVAL    <-------
 
