@@ -70,31 +70,45 @@
 //     console.log('Invalid number')
 // }
 
-// how to remove a single digit from a number ??
+// // how to remove a single digit from a number ??
 
-let number = '8765895483780281873987658'
-// removes 8 
-console.log(number.replace(/8/g , '')) ;
+// let number = '8765895483780281873987658'
+// // removes 8 
+// console.log(number.replace(/8/g , '')) ;
 
-// how to reverse a number ??
- number = '8765895483780281873987658'
-console.log(number.split('').reverse().join('--->'))
+// // how to reverse a number ??
+//  number = '8765895483780281873987658'
+// console.log(number.split('').reverse().join('--->'))
 
+// // Example number - 2:
+//  let name ='Prakash'
+//  let reversedName = ''
 
+// for(let i=0; i<name.length; i++){
+//     reversedName = name[i] + reversedName ;
+// }
+// console.log(reversedName) ;
 
+// //  or also use this way
 
+// for(let i= name.length-1; i>=0; i--){
+//     reversedName += name[i] ;
+// }
+// console.log(reversedName) ;
 
+//  How to reverse each word in a sentence ??
+// for reversing each word we need to use spilt and make each word a Array after that we reverse each array
 
+let teachers = 'Prakash is a genius programmer of this world'
+ 
+let Reverse = '' 
 
+console.log(teachers.split(''))
 
-
-
-
-
-
-
-
-
+for(let i= teachers.length-1; i>=0; i--){
+        Reverse += teachers[i] ;
+    }
+    console.log(Reverse) ;
 
 
 
