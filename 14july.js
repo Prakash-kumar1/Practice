@@ -159,26 +159,33 @@
 // }
 
 // // // for of loop
-let nums = [1,2,3,4,5] ;
-for(let i=0; i<nums.length;i++){
-    console.log(i) ;
-}
-// OR used this method
+// let nums = [1,2,3,4,5] ;
+// for(let i=0; i<nums.length;i++){
+//     console.log(i) ;
+// }
+// // OR used this method
 
- for (let num of nums){
-    console.log(num) ;
- }
+//  for (let num of nums){
+//     console.log(num) ;
+//  }
 
 
-// // Example-2:
+// // // Example-2:
 // let names = ['sachin', 'tendulkar', 'prakash']
 // for(let name of names){
 //     console.log(name)
 // }
 
+// // Normal for loop doesn't wait for others functions (Asynchronus Function) to complete . i will wait of will not wait . (for more clarity watch 14 july session from 02:14:20 to 02:34:00)
 
 
-
-
-
+async function printName() {
+    let names = ['prakash' , 'kumar']
+    for(let name of names){
+        await setTimeout(() => {
+            console.log(name) ;
+        } , 1000);
+    }
+}
+printName()
 
