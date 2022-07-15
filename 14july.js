@@ -1,18 +1,18 @@
-// Pushing values of a array to a NewArray
+// // Pushing values of a array to a NewArray
 
-let array = [1, 2, 3, 4, 5, 6]
-let NewArray = []
-for(let i=0; i<array.length; i++){
-    NewArray.push(array[i])
-}
-console.log(NewArray)
+// let array = [1, 2, 3, 4, 5, 6]
+// let NewArray = []
+// for(let i=0; i<array.length; i++){
+//     NewArray.push(array[i])
+// }
+// console.log(NewArray)
 
-//     OR use Spread Operator
- array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
- NewArray = [...array]
- console.log(NewArray)
+// //     OR use Spread Operator
+//  array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+//  NewArray = [...array]
+//  console.log(NewArray)
 
-    
+   
 
 
 
