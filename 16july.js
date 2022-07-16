@@ -17,7 +17,7 @@ let uniqueChars = chars.filter((char,index)=>{
 })
 console.log(uniqueChars) ;
 
-// Example -2
+// Example -2 for beeter understanding of question
 
 let arr = [1, 2,3, 1];
 for(let i=0; i<arr.length; i++){
