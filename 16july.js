@@ -45,12 +45,22 @@
 // console.log(getLargest(nums , 1))
 
 
+// Question no.-4 : Find A String of bracket is valid or not ??
 
+function isValid(String){
+ let map = {
+    "{":"}",
+    "[":"]" ,
+    "(":")" ,
+ };
+ console.log(map["("])
+}
 
-
-
-
-
+console.log(isValid("{([])}")) ;
+console.log(isValid("{([]}")) ;
+console.log(isValid("}{")) ;
+console.log(isValid("{[]")) ;
+console.log(isValid("{[]}")) ;
 
 
 
