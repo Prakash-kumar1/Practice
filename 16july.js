@@ -1,0 +1,29 @@
+// Question No.-1: find unique characters ?
+
+let chars = ["a", "b", "a", "c", "b"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
