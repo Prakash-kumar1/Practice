@@ -45,40 +45,49 @@
 // console.log(getLargest(nums , 1))
 
 
-// Question no.-4 : Find A String of bracket is valid or not ??
+// // Question no.-4 : Find A String of bracket is valid or not ??
 
-function isValid(String){
- let map = {
-    "{":"}",
-    "[":"]" ,
-    "(":")" ,
- };
- let stack = [] ;
- for(let i=0; i<String.length; i++){
-    // console.log(String[i]);
-if(String[i] == '[' || String[i] == '(' || String[i] == '{'){
-    stack.push(String[i]) ;
-}else{
-    let closeingBracket = String[i] ;
-    // console.log("closing" , closeingBrackets) ;
-    let openingBracket = stack.pop() ;
-    // console.log(openingBracket , closeingBracket) ;
-    if(closeingBracket  !==  map[openingBracket]){
-        return false ;
-    }
-}
- }
- if(stack.length !== 0){
-    return false ;
- }
- return true ;
-}
+// function isValid(String){
+//  let map = {
+//     "{":"}",
+//     "[":"]" ,
+//     "(":")" ,
+//  };
+//  let stack = [] ;
+//  for(let i=0; i<String.length; i++){
+//     // console.log(String[i]);
+// if(String[i] == '[' || String[i] == '(' || String[i] == '{'){
+//     stack.push(String[i]) ;
+// }else{
+//     let closeingBracket = String[i] ;
+//     // console.log("closing" , closeingBrackets) ;
+//     let openingBracket = stack.pop() ;
+//     // console.log(openingBracket , closeingBracket) ;
+//     if(closeingBracket  !==  map[openingBracket]){
+//         return false ;
+//     }
+// }
+//  }
+//  if(stack.length !== 0){
+//     return false ;
+//  }
+//  return true ;
+// }
 
-console.log(isValid("{([])}")) ;
-console.log(isValid("{([]}")) ;
-console.log(isValid("}{")) ;
-console.log(isValid("{[]")) ;
-console.log(isValid("{[]}")) ;
+// console.log(isValid("{([])}")) ;
+// console.log(isValid("{([]}")) ;
+// console.log(isValid("}{")) ;
+// console.log(isValid("{[]")) ;
+// console.log(isValid("{[]}")) ;
+
+
+
+// Question no.-5 : Rotate the number by 1 character ??
+let string = 'Aircampus' ;
+let rotatingString = string.slice(0,2) ;
+let slicedString = string.slice(1) ;
+console.log(`'${slicedString}' '${rotatingString}'`) ;
+
 
 
 
