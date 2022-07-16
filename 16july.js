@@ -11,11 +11,18 @@ console.log(uniqueArray) ;
 
 //  solving above question using Callback Function.
 
-let uniqueChars = chars.filter((char,index,arr)=>{
-    console.log(char,index,arr)
+let uniqueChars = chars.filter((char,index)=>{
+    // console.log(char,index)
+    return chars.indexOf(char) === index ;
 })
+console.log(uniqueChars) ;
 
+// Example -2
 
+let arr = [1, 2,3, 1];
+for(let i=0; i<arr.length; i++){
+    console.log(i, arr.indexOf(arr[i]))
+}
 
 
 
