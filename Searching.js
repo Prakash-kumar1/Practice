@@ -76,13 +76,18 @@
 // console.log(fname === lname)
 
 
-// // Using slice in String
+// // // Using slice in String
 // let fname = 'vasanthkumarvinayagamr'
 // console.log(fname.slice(7,12))
 // // it will not affect original array
 // console.log(fname.slice(0,7) , fname)
 // // Also using negative value of slice which is written in copy
 // console.log(fname.slice(-15, -10))
+
+// // example-2 : Print last 4 characters ?
+// let hname = 'aircampus'
+// console.log(hname.slice(-4))
+
 
 // // Printing Characters in Strings
 // let cname = 'Prakash-kumar-singh'
@@ -108,7 +113,7 @@
 
 
 
-// // Chang String into uppercase  and lowercase
+// // // Chang String into uppercase  and lowercase
 // let tname = 'shivanshrawat'
 // console.log(tname.toUpperCase())
 
@@ -147,7 +152,7 @@
 // console.log(news.replace(/india/gi , 'pakistan'))
 
 
-// How to count the number of Words -: using Split , split converts into Array.
+// How to count the number of Words -: using Split , string converts into Array.
 
 let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
 // // it converts into Array
@@ -159,8 +164,8 @@ let news = 'india won the world cup. India won the world cup after 2011. india i
 // console.log(news.split('i'))
 // console.log(news.split('india'))
 // // when we pass two characters or words , it gives empty array because it finds the whole string
-console.log(news.split('i','a'))
-console.log(news.split('india','won'))
+// console.log(news.split('i','a'))
+// console.log(news.split('india','won'))
 
 
 
