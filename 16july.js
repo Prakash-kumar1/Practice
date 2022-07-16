@@ -11,7 +11,9 @@ console.log(uniqueArray) ;
 
 //  solving above question using Callback Function.
 
-
+let uniqueChars = chars.filter((char,index,arr)=>{
+    console.log(char,index,arr)
+})
 
 
 
