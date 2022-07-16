@@ -53,7 +53,25 @@ function isValid(String){
     "[":"]" ,
     "(":")" ,
  };
- console.log(map["("])
+ let stack = [] ;
+ for(let i=0; i<String.length; i++){
+    // console.log(String[i]);
+if(String[i] == '[' || String[i] == '(' || String[i] == '{'){
+    stack.push(String[i]) ;
+}else{
+    let closeingBracket = String[i] ;
+    // console.log("closing" , closeingBrackets) ;
+    let openingBracket = stack.pop() ;
+    // console.log(openingBracket , closeingBracket) ;
+    if(closeingBracket  !==  map[openingBracket]){
+        return false ;
+    }
+}
+ }
+ if(stack.length !== 0){
+    return false ;
+ }
+ return true ;
 }
 
 console.log(isValid("{([])}")) ;
