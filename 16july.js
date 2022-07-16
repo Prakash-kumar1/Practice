@@ -9,7 +9,7 @@ for(let i=0; i< chars.length; i++){
 }
 console.log(uniqueArray) ;
 
-//  solving above question using Callback Function.
+//  solving above question using Callback Method.
 
 let uniqueChars = chars.filter((char,index)=>{
     // console.log(char,index)
