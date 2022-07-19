@@ -32,58 +32,58 @@
 
 
 
-// Using Function we can find  Radius and location of many Circles.
+// // Using Function we can find  Radius and location of many Circles.
 
-function createCircle(radius , location) {
-    const Circle = {
-            radius : radius,
-            location: location ,
-            draw: function() {
-                return "drawing circle" ;
-            },
-            paint : function() {
-                return ("Painting the circle Radius")
-            },
-        };  
-        return Circle ;
-}
+// function createCircle(radius , location) {
+//     const Circle = {
+//             radius : radius,
+//             location: location ,
+//             draw: function() {
+//                 return "drawing circle" ;
+//             },
+//             paint : function() {
+//                 return ("Painting the circle Radius")
+//             },
+//         };  
+//         return Circle ;
+// }
 
-let Circle1 = createCircle(1,{
-    x : 2 ,
-    y : 2 ,
-}) ;
+// let Circle1 = createCircle(1,{
+//     x : 2 ,
+//     y : 2 ,
+// }) ;
 
-console.log(Circle1) ;
-console.log(Circle1.radius , Circle1.draw()) ;
-console.log(Circle1.location , Circle1.paint()) ;
+// console.log(Circle1) ;
+// console.log(Circle1.radius , Circle1.draw()) ;
+// console.log(Circle1.location , Circle1.paint()) ;
 
-let Circle2 = createCircle(16,{
-    x : 23 ,
-    y : 28 ,
-}) ;
+// let Circle2 = createCircle(16,{
+//     x : 23 ,
+//     y : 28 ,
+// }) ;
 
-console.log(Circle2) ;
-console.log(Circle2.radius , Circle2.draw()) ;
-console.log(Circle2.location , Circle2.paint()) ;
+// console.log(Circle2) ;
+// console.log(Circle2.radius , Circle2.draw()) ;
+// console.log(Circle2.location , Circle2.paint()) ;
 
 
-// Example :- 2  using Function we can find many person Datas.
+// // Example :- 2  using Function we can find many person Datas.
 
-function createPerson(fullname,job,place,food){
-    return{
-        fullname: fullname ,
-        job: job,
-        place: place,
-        food: food,
-    };
-}
+// function createPerson(fullname,job,place,food){
+//     return{
+//         fullname: fullname ,
+//         job: job,
+//         place: place,
+//         food: food,
+//     };
+// }
 
-let prakash = createPerson("PrakashKumarSingh","Frontend-Engineer","Noida","Dosa")
-console.log(prakash);
-console.log(prakash.job);
-console.log(prakash["food"]);
+// let prakash = createPerson("PrakashKumarSingh","Frontend-Engineer","Noida","Dosa")
+// console.log(prakash);
+// console.log(prakash.job);
+// console.log(prakash["food"]);
 
-let santosh = createPerson("SantoshGond","Technition","Obra","Chicken")
-console.log(santosh);
-console.log(santosh.fullname);
-console.log(santosh["place"]);
+// let santosh = createPerson("SantoshGond","Technition","Obra","Chicken")
+// console.log(santosh);
+// console.log(santosh.fullname);
+// console.log(santosh["place"]);
