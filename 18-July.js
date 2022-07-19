@@ -134,6 +134,21 @@
 // Chicken() ;
 
 
+// function Chicken(breed){
+//     this.breed = breed ;
+//     this.cut = function() {
+//         return "cutting the Chicken" ;
+//     };
+//     return this ;
+// }
+// let shop = Chicken("desi murga")  ;
+// console.log(shop , shop.cut()) ;
+
+// let shopkeeper = Chicken("Farm murga")  ;
+// console.log(shopkeeper , shopkeeper.cut()) ;
+
+// in output we can see so many global objects which doesn't need so for creating new objects we use --->>> " new keyword "
+
 function Chicken(breed){
     this.breed = breed ;
     this.cut = function() {
@@ -141,8 +156,11 @@ function Chicken(breed){
     };
     return this ;
 }
-let shop = Chicken("desi murga")  ;
+let shop = new Chicken("desi murga")  ;
 console.log(shop , shop.cut()) ;
+
+let shopkeeper = new Chicken("Farm murga")  ;
+console.log(shopkeeper , shopkeeper.cut()) ;
 
 
 
