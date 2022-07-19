@@ -126,13 +126,23 @@
 
 // // // Constructor  Method : in Javascrript  function and classes are same .
 
-function Chicken(breed){
-    name = "Prakash"
-// this is a global object read on MDN .
-    console.log(this) ;
-}
-Chicken() ;
+// function Chicken(breed){
+//     name = "Prakash"
+// // this is a global object read on MDN .
+//     console.log(this) ;
+// }
+// Chicken() ;
 
+
+function Chicken(breed){
+    this.breed = breed ;
+    this.cut = function() {
+        return "cutting the Chicken" ;
+    };
+    return this ;
+}
+let shop = Chicken("desi murga")  ;
+console.log(shop , shop.cut()) ;
 
 
 
