@@ -116,3 +116,5 @@
 // console.log(santosh["place"]);
 
 
+// Any function which creating Objects is called --> "Factory"
+// Any function which taking Arguments returns new Objects is called --> "Factory method"
