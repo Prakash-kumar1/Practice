@@ -26,5 +26,5 @@ Circle = {
         console.log("Painting the circle Radius")
     },
 };
-console.log(Circle.draw())
-console.log(Circle.paint())
+console.log(Circle.draw() , Circle.radius)
+console.log(Circle.paint() , Circle.location)
