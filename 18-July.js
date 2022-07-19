@@ -182,7 +182,9 @@ let Circle1 = createCircle(10) ;
 // Adding new Object
 Circle1.name = "Prakash" ;
 
+console.log(Circle1) ;
 console.log(Circle1.radius , Circle1.draw() , Circle1.name) ;
+console.log(Circle1.paint() , Circle1.name) ;
 
 
 
