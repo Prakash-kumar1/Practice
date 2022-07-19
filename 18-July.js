@@ -69,3 +69,21 @@ console.log(Circle2.location , Circle2.paint()) ;
 
 // Example :- 2 
 
+function createPerson(fullname,job,place,food){
+    return{
+        fullname: fullname ,
+        job: job,
+        place: place,
+        food: food,
+    };
+}
+
+let prakash = createPerson("PrakashKumarSingh","Frontend-Engineer","Noida","Dosa")
+console.log(prakash);
+console.log(prakash.job);
+console.log(prakash["food"]);
+
+let santosh = createPerson("SantoshGond","Technition","Obra","Chicken")
+console.log(santosh);
+console.log(santosh.fullname);
+console.log(santosh["place"]);
