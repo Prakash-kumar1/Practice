@@ -121,7 +121,7 @@
 // // // Any variable Present inside the Object is known as "Property"  and Present outside the Object is called Variable .
 
 
-// // Read about ------->  "DOM"    &     "window Object"       <------------  
+// // Read about ------->  "DOM"    &     "window Object" (it uses renders html on web pages)       <------------  
 
 
 // // // Constructor  Method : in Javascrript  function and classes are same .
