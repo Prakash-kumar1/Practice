@@ -87,3 +87,30 @@
 // console.log(santosh);
 // console.log(santosh.fullname);
 // console.log(santosh["place"]);
+
+
+
+// Example-3: in a function if we take default parameter and we can't pass any value it will automatically take default value.
+
+function createEmployees(fullname, job = "TG-IInd" ,place, food = "paneer"){
+    return{
+        fullname: fullname ,
+        job: job,
+        place: place,
+        food: food,
+    };
+}
+
+
+// here we not pass food value it will take default value "Paneer"
+let prakash = createEmployees("prakashKumar","Frontend-Engineer","Noida")
+console.log(prakash);
+console.log(prakash.job);
+console.log(prakash["food"]);
+
+
+//  here we not pass job value it will take default value "TG-IInd"
+let santosh = createEmployees("SantoshGond","Obra","Chicken")
+console.log(santosh);
+console.log(santosh.fullname);
+console.log(santosh["place"]);
