@@ -121,6 +121,11 @@
 // Any variable Present inside the Object is known as "Property"  and Present outside the Object is called Variable .
 
 
-// Constructor  Method :
+// Constructor  Method : in Javascrript  function and classes are same .
+
+function Chicken(breed){
+    console.log(this) ;
+}
+Chicken() ;
 
 
