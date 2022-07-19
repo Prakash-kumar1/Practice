@@ -163,11 +163,26 @@ let shopkeeper = new Chicken("Farm murga")  ;
 console.log(shopkeeper , shopkeeper.cut()) ;
 
 
+//  we can add oject in function
 
 
+function createCircle(radius , location) {
+    const Circle = {
+            radius : radius,
+            draw: function() {
+                return "drawing circle" ;
+            },
+            paint : function() {
+                return ("Painting the circle Radius")
+            },
+        };  
+        return Circle ;
+}
+let Circle1 = createCircle(10) ;
+// Adding new Object
+Circle1.name = "Prakash" ;
 
-
-
+console.log(Circle1.radius , Circle1.draw() , Circle1.name) ;
 
 
 
