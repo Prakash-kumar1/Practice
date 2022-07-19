@@ -127,8 +127,68 @@
 // // // Constructor  Method : in Javascrript  function and classes are same .
 
 function Chicken(breed){
+    name = "Prakash"
+// this is a global object read on MDN .
     console.log(this) ;
 }
 Chicken() ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
