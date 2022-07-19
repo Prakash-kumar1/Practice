@@ -20,7 +20,7 @@ Circle = {
         y : 2,
     },
     draw: function() {
-      console.log("Drawing Circle") 
+    //   console.log("Drawing Circle") 
         return "drawing circle" ;
     },
     paint : function() {
