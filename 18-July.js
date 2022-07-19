@@ -1,4 +1,4 @@
-// // Objects -: 
+// // // Objects -: 
 
 Circle = {
     radius : 1,
@@ -32,7 +32,7 @@ console.log(Circle.paint() , Circle.location)
 
 
 
-// Using Function we can find  Radius and location of many Circles.
+// // Using Function we can find  Radius and location of many Circles.
 
 function createCircle(radius , location) {
     const Circle = {
@@ -102,7 +102,7 @@ function createEmployees(fullname, job = "TG-IInd" ,place, food = "paneer"){
 }
 
 
-// // here we not pass food value it will take default value "Paneer"
+// // // here we not pass food value it will take default value "Paneer"
 let praksh = createEmployees("prakashKumar","Frontend-Engineer","Noida")
 console.log(praksh);
 console.log(praksh.job);
@@ -187,7 +187,7 @@ console.log(Circle3.radius , Circle3.draw() , Circle3.name) ;
 console.log(Circle3.paint() , Circle3.name) ;
 
 
-// Some examples of  "new "  keyword : when we are writing any function , string , number it will store by creating Objects.
+// // Some examples of  "new "  keyword : when we are writing any function , string , number it will store by creating Objects.
 
 let num =  10 ;
 let num1 = new Number(78) ;
@@ -199,41 +199,12 @@ let names = "Prakash"  ;
 let lname = new String("Kumar")  ;
 console.log(names , lname)
 
+// // Basic Function
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function add(num1){
+    console.log(num1) ;
+    console.log(num1 + 10) ;
+    console.log(num1 - 10) ;
+    console.log(num1 * 10) ;
+}
+add(234) ;
