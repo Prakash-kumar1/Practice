@@ -20,7 +20,8 @@ Circle = {
         y : 2,
     },
     draw: function() {
-        console.log("Drawing Circle") ;
+        // console.log("Drawing Circle") ;
+        return "drawing circle" ;
     },
     paint : function() {
         console.log("Painting the circle Radius")
@@ -28,3 +29,4 @@ Circle = {
 };
 console.log(Circle.draw() , Circle.radius)
 console.log(Circle.paint() , Circle.location)
+
