@@ -65,3 +65,7 @@ let Circle2 = createCircle(16,{
 console.log(Circle2) ;
 console.log(Circle2.radius , Circle2.draw()) ;
 console.log(Circle2.location , Circle2.paint()) ;
+
+
+// Example :- 2 
+
