@@ -67,7 +67,7 @@ console.log(Circle2.radius , Circle2.draw()) ;
 console.log(Circle2.location , Circle2.paint()) ;
 
 
-// Example :- 2 
+// Example :- 2  using Function we can find many person Datas.
 
 function createPerson(fullname,job,place,food){
     return{
