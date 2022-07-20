@@ -1,23 +1,23 @@
 // // Findind each value in Object
 
-// // in array we use For loop  for finding values
+// // in array we use For loop  for finding values but in Object we use "For in loop" .
 
 
-// let car = {
-//     company : "BMW",
-//     model : "Q3" ,
-//     year : 2022 ,
-//     type : "SUV"
-// };
+let car = {
+    company : "BMW",
+    model : "Q3" ,
+    year : 2022 ,
+    type : "SUV"
+};
 
 // it will convert object Into String.
 // console.log(JSON.stringify(car))
 
 
-// for(let key in car){
-//     console.log(key)
-//     console.log(key , car[key])
-// }
+for(let key in car){
+    console.log(key) ;
+    console.log(key , car[key]) ;
+}
 
 // //   OR Use this 
 
@@ -75,13 +75,13 @@
 // change(num) ;
 
 
-// // Reference Data Type
+// // // Reference Data Type
 
-let nums = [1,2,3,4,5];
+// let nums = [1,2,3,4,5];
 
-function change(arr) {
-    console.log("before changing" , nums , arr)
-    arr[0] = 20 ;
-    console.log("after changing" , nums , arr)
-}
-change(nums) ;
+// function change(arr) {
+//     console.log("before changing" , nums , arr)
+//     arr[0] = 20 ;
+//     console.log("after changing" , nums , arr)
+// }
+// change(nums) ;
