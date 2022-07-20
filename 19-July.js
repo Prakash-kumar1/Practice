@@ -57,7 +57,7 @@ console.log(carProperties[1])
  console.log(carProperties[0][0],carProperties[0][1]) ;
  console.log(carProperties[1][1],carProperties[2][1]) ;
 
-// // //   OR Simple Way
+// //   OR Simple Way
 
 console.log(car["company"])
 console.log(car["model"])

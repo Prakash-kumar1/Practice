@@ -116,15 +116,15 @@ console.log(santsh.fullname);
 console.log(santsh["place"]);
 
 
-// // // Any function which creating Objects is called --> "Factory"
-// // // Any function which taking Arguments returns new Objects is called --> "Factory method"
-// // // Any variable Present inside the Object is known as "Property"  and Present outside the Object is called Variable .
+// // Any function which creating Objects is called --> "Factory"
+// // Any function which taking Arguments returns new Objects is called --> "Factory method"
+// // Any variable Present inside the Object is known as "Property"  and Present outside the Object is called Variable .
 
 
 // // Read about ------->  "DOM"    &     "window Object" (it uses renders html on web pages)       <------------  
 
 
-// // // Constructor  Method : in Javascrript  function and classes are same .
+ // // Constructor  Method : in Javascrript  function and classes are same .
 
 function Chicken(breed){
     name = "Prakash"
