@@ -313,7 +313,7 @@ let obj = {
 
 console.log(Object.keys(obj).length) ;
 
-//  OR we can use For loop 
+// //  OR we can use For loop 
 let count = 0 ;
 for(let key in obj){
    count+=1 ;
@@ -323,7 +323,7 @@ console.log(count) ;
 // Problem-2: how to Sorted by Keys ??
 //  Ask the sir ?
 
-let rajni = {
+let raj = {
     name : "Santosh" ,
     age  : 30 ,
     Occupation : "Technitian" ,
@@ -334,15 +334,16 @@ let rajni = {
     place : "obra",
     country : "India",
     state : "Uttar-Pradesh",
-}
+} ;
 
-let sortedkeys = Object.keys(rajni).sort() ;
+let sortedkeys = Object.keys(raj).sort();
 // console.log(sortedkeys) ;
 
 let sortedfamily = {} ;
 for(let key of sortedkeys){
     // console.log(key) ;
     // console.log(rajni[key]) ;
-    sortedfamily[key] = rajni[key] ;
+    sortedfamily[key] = raj[key] ;
 }
 console.log(sortedfamily) ;
+
