@@ -49,7 +49,17 @@ let car = {
 
 // // Printing car values in array
 
-console.log(Object.entries(car));
+// console.log(Object.entries(car));
+
+// // // for printing Particular(specific) Values in array
+
+let carProperties =  (Object.entries(car));
+console.log(carProperties[1])
+console.log(carProperties[0][0],carProperties[0][1]) ;
+console.log(carProperties[1][1],carProperties[2][1]) ;
+
+
+
 
 
 // // Applying Object Method in Array
