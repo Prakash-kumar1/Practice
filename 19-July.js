@@ -211,7 +211,7 @@
 
 // console.log(person , copy);
 
-// // But in case of nested objects only Original object doesn,t change but copy changes.
+// // But in case of nested objects only Original object  change but copy Doesn't  changes.
 
 let rajnifamily = {
     name : "Santosh" ,
@@ -232,12 +232,22 @@ let rajnifamily = {
     }
 }
 
+// spread operator creates shallow copy it means it will copy only in original object but in case of nested object
+//  if we make any change object inside parent object the both original and copy show changes.
+
 let copy = {...rajnifamily}
 
-copy["name"] = "Prakash" ;
-copy["age"] = 22 ;
+rajnifamily["name"] = "Prakash" ;
+rajnifamily["age"] = 22 ;
 
 console.log(rajnifamily , copy)
+
+    //    OR 
+
+
+rajnifamily["Wife"]["name"] = "katrina" ;
+rajnifamily["Wife"]["Daughter"]["Food"] = "TakaTak" ;
+console.log(rajnifamily , copy) ;
 
 // // Primitive Data Type
 
