@@ -400,3 +400,4 @@ console.log(Bike) ;
 
 delete Bike.Tyre ;
 console.log(Bike) ;
+
