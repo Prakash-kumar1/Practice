@@ -129,3 +129,39 @@ console.log(person.fullname) ;
 
 
 
+
+// this : - object that is executing current function.
+
+const video = {
+    title : "cricket" ,
+    play(){
+        console.log(this) ;
+    } ,
+    stop : function(){
+        console.log(this); 
+    },
+};
+
+video.play() ;
+video.stop() ;
+console.log(video["play"]) ;
+
+
+
+const match = {
+    title : "football" ,
+    players : ["messi","ronaldo","dhoni","kohli"],
+    displayPlayers(){
+        // console.log(this.title , this.players)
+        // for printing each player name
+        this.players.forEach (function(player){
+            console.log(this) ;
+        }) ;
+    },
+};
+match.displayPlayers() ;
+
+
+
+
+
