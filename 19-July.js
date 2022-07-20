@@ -320,30 +320,83 @@ for(let key in obj){
 }
 console.log(count) ;
 
-// Problem-2: how to Sorted by Keys ??
-//  Ask the sir ?
+
+// // Problem-2: how to Sorted by Keys ??
+
 
 let raj = {
     name : "Santosh" ,
     age  : 30 ,
-    Occupation : "Technitian" ,
-    Food : "Chicken" ,
-    Wife : "rinki" ,
-    Daughter : "gingun",
+    occupation : "Technitian" ,
+    food : "Chicken" ,
+    wife : "rinki" ,
+    daughter : "gingun",
     son : "Arnab" ,
     place : "obra",
     country : "India",
     state : "Uttar-Pradesh",
 } ;
 
-let sortedkeys = Object.keys(raj).sort();
-// console.log(sortedkeys) ;
+let sortedkeys = Object.keys(raj).sort() ;
+console.log(sortedkeys) ;
 
 let sortedfamily = {} ;
 for(let key of sortedkeys){
     // console.log(key) ;
-    // console.log(rajni[key]) ;
+    // console.log(raj[key]) ;
     sortedfamily[key] = raj[key] ;
 }
 console.log(sortedfamily) ;
 
+
+// // Problem-2: how to Sorted by values ??
+
+let scores = {
+    vasanth : 10 ,
+    anjali : 45 ,
+    gayatri : 98,
+    shivansh : 78,
+    Prakash : 100 ,
+    govind : 67,
+};
+
+let result = Object.entries(scores).sort((a,b) => a[1] - b[1]);    
+console.log(result) ;
+// By looping we get Each value
+
+let sortedScore = {} ;
+for(let i =0 ; i < result.length; i++){
+    // console.log(result[i][0] , result[i][1]) ;
+    let key = result[i][0]
+    let value =  result[i][1]
+    sortedScore[key] = result  ;
+}
+console.log(sortedScore) ;
+
+
+//  Adding  &  Deleting 
+
+let Bike = {
+    name : "maruti",
+    model : 2022 ,
+};
+
+// Adding new Property
+
+Bike["color"] = "Red" ;
+console.log(Bike) ;
+
+// OR 
+
+Bike["Tyre"] = "Plastic" ;
+for(let key in Bike){
+    console.log(Bike[key]) ;
+}
+
+// Deleting : only delete one element like Array  not whole Object
+ 
+delete Bike.name ;
+console.log(Bike) ;
+
+delete Bike.Tyre ;
+console.log(Bike) ;
