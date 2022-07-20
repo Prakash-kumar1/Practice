@@ -232,22 +232,49 @@ let rajnifamily = {
     }
 }
 
-// spread operator creates shallow copy it means it will copy only in original object but in case of nested object
-//  if we make any change object inside parent object the both original and copy show changes.
+// // spread operator creates shallow copy it means it will copy only in original object but in case of nested object
+// //  if we make any change object inside parent object the both original and copy show changes.
 
-let copy = {...rajnifamily}
+// let copy = {...rajnifamily}
 
-rajnifamily["name"] = "Prakash" ;
-rajnifamily["age"] = 22 ;
+// rajnifamily["name"] = "Prakash" ;
+// rajnifamily["age"] = 22 ;
 
-console.log(rajnifamily , copy)
+// console.log(rajnifamily , copy)
 
-    //    OR 
+//     //    OR 
 
 
-rajnifamily["Wife"]["name"] = "katrina" ;
-rajnifamily["Wife"]["Daughter"]["Food"] = "TakaTak" ;
-console.log(rajnifamily , copy) ;
+// rajnifamily["Wife"]["name"] = "katrina" ;
+// rajnifamily["Wife"]["Daughter"]["Food"] = "TakaTak" ;
+// console.log(rajnifamily , copy) ;
+
+// Converting Object Into "String"
+let copi = JSON.stringify(rajnifamily);
+console.log(copi) ;
+
+// Converting "String" Into Object
+let inter = JSON.parse(copi);
+console.log(inter) ;
+
+// After the whole process Rajnifamily value changes but "inter" value remains Same
+rajnifamily["Wife"]["Food"] = "Hyderabadi Biryani" ;
+rajnifamily["Wife"]["name"] = "Dipika-Padukone" ;
+console.log(inter , rajnifamily)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // // Primitive Data Type
 
