@@ -37,19 +37,19 @@ let car = {
 // console.log(Object.keys(car)) ;
 // console.log(Object.keys(names)) ;
 
-// // // for printing Values
+// // // // for printing Values
 
-console.log(Object.values(car)) ;
+// console.log(Object.values(car)) ;
 
-// // // for printing Particular(specific) Values
+// // // // for printing Particular(specific) Values
 
-console.log(car["year"]) ;
-console.log(car["model"]) ;
+// console.log(car["year"]) ;
+// console.log(car["model"]) ;
 
 
 // // Printing car values in array
 
-// console.log(Object.entries(car));
+console.log(Object.entries(car));
 
 
 // // Applying Object Method in Array
