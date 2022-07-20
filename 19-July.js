@@ -51,14 +51,33 @@ let car = {
 
 // console.log(Object.entries(car));
 
-// // // for printing Particular(specific) Values in array
+// // // // for printing Particular(specific) Values in array
 
-let carProperties =  (Object.entries(car));
-console.log(carProperties[1])
-console.log(carProperties[0][0],carProperties[0][1]) ;
-console.log(carProperties[1][1],carProperties[2][1]) ;
+// let carProperties =  (Object.entries(car));
+// console.log(carProperties[1])
+// console.log(carProperties[0][0],carProperties[0][1]) ;
+// console.log(carProperties[1][1],carProperties[2][1]) ;
+// //   OR Simple Way
+console.log(car["company"])
+console.log(car["year"])
+console.log(car["model"])
+
+// Adding keys and values using For in Loop
 
 
+let keys = [];
+let values=[];
+
+for(let key in car){
+    (keys.push(key)) ;
+    // console.log(keys) ;
+
+    values.push(car[key]);
+    // console.log(values) ;
+}
+
+console.log(keys) ;
+console.log(values) ;
 
 
 
