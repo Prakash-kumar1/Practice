@@ -100,15 +100,18 @@ let family = {
 //     console.log(key , family[key]) ;
 // }
 
-// // OR using In-built method for printing "Keys"
+// // // OR using In-built method for printing "Keys"
 
-console.log(Object.keys(family)) ;
+// console.log(Object.keys(family)) ;
 
+// for printing  Values
 
+console.log(Object.values(family)) ;
 
+// // for printing Particular(specific) Values
 
-
-
+console.log(family["son"]) ;
+console.log(family["mother"]) ;
 
 
 
