@@ -1,87 +1,119 @@
-// // Findind each value in Object
+// // // Findind each value in Object
 
-// // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
-// Object.
+// // // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
+// // Object.
 
-// In object if i want to access one by one then using ""For in Loop " "
-// if i want only keys i used " Object.keys "
-// / if i want only values i used " Object.values "
+// // In object if i want to access one by one then using ""For in Loop " "
+// // if i want only keys i used " Object.keys "
+// // / if i want only values i used " Object.values "
 
 
-let car = {
-    company : "BMW",
-    model : "Q3" ,
-    year : 2022 ,
-    type : "SUV"
-};
+// let car = {
+//     company : "BMW",
+//     model : "Q3" ,
+//     year : 2022 ,
+//     type : "SUV"
+// };
 
-// // it will convert object Into String.
-// console.log(JSON.stringify(car)) ;
+// // // it will convert object Into String.
+// // console.log(JSON.stringify(car)) ;
 
-// // Using "For in Loop " to print all the values
+// // // Using "For in Loop " to print all the values
+// // for(let key in car){
+// //     console.log(key) ;
+// //     console.log(key , car[key]) ;
+// // }
+
+// // // Example-2: using  " " For in Loop " " in Array 
+
+// // let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
+// // for(let name in names){
+//     // console.log(name) ;
+// //     console.log(name , names[name]) ;
+// // }
+
+// // // //   OR Use this 
+
+// // console.log(Object.keys(car)) ;
+// // console.log(Object.keys(names)) ;
+
+// // // // // for printing Values
+
+// // console.log(Object.values(car)) ;
+
+// // // // // for printing Particular(specific) Values
+
+// // console.log(car["year"]) ;
+// // console.log(car["model"]) ;
+
+
+// // // Printing car values in array
+
+// // console.log(Object.entries(car));
+
+// // // // // for printing Particular(specific) Values in array
+
+// // let carProperties =  (Object.entries(car));
+// // console.log(carProperties[1])
+// // console.log(carProperties[0][0],carProperties[0][1]) ;
+// // console.log(carProperties[1][1],carProperties[2][1]) ;
+// // //   OR Simple Way
+// console.log(car["company"])
+// console.log(car["year"])
+// console.log(car["model"])
+
+// // Adding keys and values using For in Loop
+
+
+// let keys = [];
+// let values=[];
+
 // for(let key in car){
-//     console.log(key) ;
-//     console.log(key , car[key]) ;
+//     (keys.push(key)) ;
+//     // console.log(keys) ;
+
+//     values.push(car[key]);
+//     // console.log(values) ;
 // }
 
-// // Example-2: using  " " For in Loop " " in Array 
-
-// let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
-// for(let name in names){
-    // console.log(name) ;
-//     console.log(name , names[name]) ;
-// }
-
-// // //   OR Use this 
-
-// console.log(Object.keys(car)) ;
-// console.log(Object.keys(names)) ;
-
-// // // // for printing Values
-
-// console.log(Object.values(car)) ;
-
-// // // // for printing Particular(specific) Values
-
-// console.log(car["year"]) ;
-// console.log(car["model"]) ;
+// console.log(keys) ;
+// console.log(values) ;
 
 
-// // Printing car values in array
 
-// console.log(Object.entries(car));
+//  Revising the whole Object which Study Above
 
-// // // // for printing Particular(specific) Values in array
-
-// let carProperties =  (Object.entries(car));
-// console.log(carProperties[1])
-// console.log(carProperties[0][0],carProperties[0][1]) ;
-// console.log(carProperties[1][1],carProperties[2][1]) ;
-// //   OR Simple Way
-console.log(car["company"])
-console.log(car["year"])
-console.log(car["model"])
-
-// Adding keys and values using For in Loop
-
-
-let keys = [];
-let values=[];
-
-for(let key in car){
-    (keys.push(key)) ;
-    // console.log(keys) ;
-
-    values.push(car[key]);
-    // console.log(values) ;
+let family = {
+    father : "Santosh" ,
+    mother : "Rinki" ,
+    son  :  "Arnab"  ,
+    Daughter : "GunGun",
+    place : "Obra" ,
 }
+// console.log(family) ;
+// console.log(family["son"]) ;
 
-console.log(keys) ;
-console.log(values) ;
+// // Using " For-in-loop " to print all the keys in Family  Object
+
+// for(let key in family){
+//     // console.log(key) ;
+//     console.log(key , family[key]) ;
+// }
+
+// // OR using In-built method for printing "Keys"
+
+console.log(Object.keys(family)) ;
 
 
 
-// // Applying Object Method in Array
+
+
+
+
+
+
+
+// // // // Applying Object Method in Array
 
 // let nums = [1,2,3,4];
 // console.log(Object.entries(nums)) ;
