@@ -120,21 +120,31 @@ let family = {
 
 // // // for printing Particular(specific) Values in array
 
-let familyPeople =  (Object.entries(family));
-console.log(familyPeople[1])
-console.log(familyPeople[3])
-console.log(familyPeople[0][0],familyPeople[0][1]) ;
-console.log(familyPeople[1][1],familyPeople[2][1]) ;
-// // //   OR Simple Way
-console.log(family["father"])
-console.log(family["son"])
-console.log(family["mother"])
+// let familyPeople =  (Object.entries(family));
+// console.log(familyPeople[1])
+// console.log(familyPeople[3])
+// console.log(familyPeople[0][0],familyPeople[0][1]) ;
+// console.log(familyPeople[1][1],familyPeople[2][1]) ;
+// // // //   OR Simple Way
+// console.log(family["father"]) ;
+// console.log(family["son"]) ;
+// console.log(family["mother"]) ;
 
 
+// // Adding keys and values using For in Loop
 
+let keys = []
+let values = []
 
+for(let key in family){
+    keys.push(key) ;
+    // console.log(keys) ;
 
-
+    values.push(family[key]);
+    // console.log(values) ;
+}
+console.log(keys) ;
+console.log(values) ;
 
 
 
