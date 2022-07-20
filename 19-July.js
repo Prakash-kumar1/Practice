@@ -300,3 +300,22 @@ let copy = JSON.parse(JSON.stringify(str)) ;
     console.log("after" ,pets , copy)
 }
 animals(pets) ;
+
+
+// Problem-1: how to find length of Object ??
+
+let obj = {
+    name : "David" ,
+    gender : "male",
+    age : 56 ,
+    state : "new-york",
+}
+
+console.log(Object.keys(obj).length) ;
+
+//  OR we can use For loop 
+let count = 0 ;
+for(let key in obj){
+   count+=1 ;
+}
+console.log(count) ;
