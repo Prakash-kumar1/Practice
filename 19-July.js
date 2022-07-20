@@ -156,45 +156,88 @@
 // console.log(Object.keys(nums)) ;
 
 
-// // Flat method : - Converting nth Dimensional array into  1-D Array and in parameter default value is 1 but we can pass no. of Array
+// // // Flat method : - Converting nth Dimensional array into  1-D Array and in parameter default value is 1 but we can pass no. of Array
 
-// Example number -: 1
-let nos = [
-    [1,2],
-    [3,4],
-    [5,6]
-]
-console.log(nos.flat());
+// // Example number -: 1
+// let nos = [
+//     [1,2],
+//     [3,4],
+//     [5,6]
+// ]
+// console.log(nos.flat());
 
-// Example number -: 2
-nos = [
-    [1,2],
-    [3,4],
-    [5,6],
-    [[7,8],'vasanth']
-]
-console.log(nos.flat(2));
+// // Example number -: 2
+// nos = [
+//     [1,2],
+//     [3,4],
+//     [5,6],
+//     [[7,8],'vasanth']
+// ]
+// console.log(nos.flat(2));
 
-// Example number -: 3
-nos = [
-    [1,2],
-    [3,4],
-    [5,6],
-    [[[7,8],'Shivansh'] ,true ]
-]
-console.log(nos.flat(3));
-
-
-// Example no-2 
-
-// Javascript object notation (JSON)
+// // Example number -: 3
+// nos = [
+//     [1,2],
+//     [3,4],
+//     [5,6],
+//     [[[7,8],'Shivansh'] ,true ]
+// ]
+// console.log(nos.flat(3));
 
 
+// // In case of array if we change one value another values also change , similarly in object .
 
+// let person = {
+//     name : "Prakash" ,
+//     age : "22" ,
+//     place : "Obra",
+//     food  : "Dosa" ,
+// }
 
+// let copy = person ;
+// // if we change person then copy also changes
+// copy["name"] = "Shivansh" ;
 
+// console.log(person , copy);
 
+// // Spread operator used to copying Objects
 
+// let copy = {...person} ;
+
+// // changing the value of age and Place
+
+// copy["age"] = 120 ;
+// copy["place"] = "Uttrakhand" ;
+
+// console.log(person , copy);
+
+// // But in case of nested objects only Original object doesn,t change but copy changes.
+
+let rajnifamily = {
+    name : "Santosh" ,
+    age  : 30 ,
+    Occupation : "Technitian" ,
+    Food : "Chiken" ,
+    Wife : {
+         name : "Rinki" ,
+         age : 25 ,
+         Occupation : "House-wife" ,
+         Food : "Mutton" ,
+         Daughter : {
+            name : "Gungun" ,
+            age : 12 ,
+            Occupation : "Student" ,
+            Food : "Kurkure" , 
+         }
+    }
+}
+
+let copy = {...rajnifamily}
+
+copy["name"] = "Prakash" ;
+copy["age"] = 22 ;
+
+console.log(rajnifamily , copy)
 
 // // Primitive Data Type
 
