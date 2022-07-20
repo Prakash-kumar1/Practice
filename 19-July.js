@@ -11,12 +11,20 @@ let car = {
 };
 
 // it will convert object Into String.
-// console.log(JSON.stringify(car))
+console.log(JSON.stringify(car)) ;
 
-
+// Using "For in Loop " to print all the values
 for(let key in car){
     console.log(key) ;
     console.log(key , car[key]) ;
+}
+
+// Example-2: using  " " For in Loop " " in Array 
+
+let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
+for(let name in names){
+    // console.log(name) ;
+    console.log(name , names[name]) ;
 }
 
 // //   OR Use this 
