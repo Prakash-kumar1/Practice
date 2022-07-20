@@ -47,14 +47,15 @@
 // // console.log(car["model"]) ;
 
 
-// // // Printing car values in array
+// // // Printing car Object values in array
 
 // // console.log(Object.entries(car));
 
+
 // // // // // for printing Particular(specific) Values in array
 
-// // let carProperties =  (Object.entries(car));
-// // console.log(carProperties[1])
+// // let familyPeople =  (Object.entries(car));
+// // console.log(familyPeople[1])
 // // console.log(carProperties[0][0],carProperties[0][1]) ;
 // // console.log(carProperties[1][1],carProperties[2][1]) ;
 // // //   OR Simple Way
@@ -104,14 +105,93 @@ let family = {
 
 // console.log(Object.keys(family)) ;
 
-// for printing  Values
+// // for printing  Values
 
-console.log(Object.values(family)) ;
+// console.log(Object.values(family)) ;
 
-// // for printing Particular(specific) Values
+// // // for printing Particular(specific) Values
 
-console.log(family["son"]) ;
-console.log(family["mother"]) ;
+// console.log(family["son"]) ;
+// console.log(family["mother"]) ;
+
+// // for printing Object values into Arrays
+// console.log(Object.entries(family)) ;
+
+
+// // // for printing Particular(specific) Values in array
+
+let familyPeople =  (Object.entries(family));
+console.log(familyPeople[1])
+console.log(familyPeople[3])
+console.log(familyPeople[0][0],familyPeople[0][1]) ;
+console.log(familyPeople[1][1],familyPeople[2][1]) ;
+// // //   OR Simple Way
+console.log(family["father"])
+console.log(family["son"])
+console.log(family["mother"])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
