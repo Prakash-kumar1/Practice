@@ -1,6 +1,7 @@
 // // Findind each value in Object
 
-// // in array we use For loop  for finding values but in Object we use "For in loop" .
+// // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
+// Object.
 
 
 let car = {
@@ -10,26 +11,26 @@ let car = {
     type : "SUV"
 };
 
-// it will convert object Into String.
-console.log(JSON.stringify(car)) ;
+// // it will convert object Into String.
+// console.log(JSON.stringify(car)) ;
 
-// Using "For in Loop " to print all the values
-for(let key in car){
-    console.log(key) ;
-    console.log(key , car[key]) ;
-}
+// // Using "For in Loop " to print all the values
+// for(let key in car){
+//     console.log(key) ;
+//     console.log(key , car[key]) ;
+// }
 
-// Example-2: using  " " For in Loop " " in Array 
+// // Example-2: using  " " For in Loop " " in Array 
 
-let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
-for(let name in names){
+// let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
+// for(let name in names){
     // console.log(name) ;
-    console.log(name , names[name]) ;
-}
+//     console.log(name , names[name]) ;
+// }
 
 // //   OR Use this 
 
-// console.log(Object.keys(car)) ;
+console.log(Object.keys(car)) ;
 
 // // for printing Values
 
