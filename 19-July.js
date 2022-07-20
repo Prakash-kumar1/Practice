@@ -3,6 +3,10 @@
 // // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
 // Object.
 
+// In object if i want to access one by one then using ""For in Loop " "
+// if i want only keys i used " Object.keys "
+// / if i want only values i used " Object.values "
+
 
 let car = {
     company : "BMW",
@@ -28,14 +32,20 @@ let car = {
 //     console.log(name , names[name]) ;
 // }
 
-// //   OR Use this 
+// // //   OR Use this 
 
-console.log(Object.keys(car)) ;
+// console.log(Object.keys(car)) ;
+// console.log(Object.keys(names)) ;
 
-// // for printing Values
+// // // for printing Values
 
-// console.log(Object.values(car)) ;
-// console.log(car["year"]) ;
+console.log(Object.values(car)) ;
+
+// // // for printing Particular(specific) Values
+
+console.log(car["year"]) ;
+console.log(car["model"]) ;
+
 
 // // Printing car values in array
 
