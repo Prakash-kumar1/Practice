@@ -232,7 +232,7 @@ let rajnifamily = {
     }
 }
 
-// // spread operator creates shallow copy it means it will copy only in original object but in case of nested object
+// // spread operator creates shallow copy(level-1) it means it will copy only in original object but in case of nested object
 // //  if we make any change object inside parent object the both original and copy show changes.
 
 // let copy = {...rajnifamily}
@@ -249,30 +249,18 @@ let rajnifamily = {
 // rajnifamily["Wife"]["Daughter"]["Food"] = "TakaTak" ;
 // console.log(rajnifamily , copy) ;
 
-// Converting Object Into "String"
-let copi = JSON.stringify(rajnifamily);
-console.log(copi) ;
+// // Converting Object Into "String"
+// let copi = JSON.stringify(rajnifamily);
+// console.log(copi) ;
 
-// Converting "String" Into Object
-let inter = JSON.parse(copi);
-console.log(inter) ;
+// // Converting "String" Into Object
+// let inter = JSON.parse(copi);
+// console.log(inter) ;
 
-// After the whole process Rajnifamily value changes but "inter" value remains Same
-rajnifamily["Wife"]["Food"] = "Hyderabadi Biryani" ;
-rajnifamily["Wife"]["name"] = "Dipika-Padukone" ;
-console.log(inter , rajnifamily)
-
-
-
-
-
-
-
-
-
-
-
-
+// // After the whole process Rajnifamily value changes but "inter" value remains Same
+// rajnifamily["Wife"]["Food"] = "Hyderabadi Biryani" ;
+// rajnifamily["Wife"]["name"] = "Dipika-Padukone" ;
+// console.log(inter , rajnifamily)
 
 
 
@@ -288,13 +276,27 @@ console.log(inter , rajnifamily)
 // change(num) ;
 
 
-// // // Reference Data Type
+// // Reference Data Type : passing address , it is also known call by reference
 
-// let nums = [1,2,3,4,5];
+let numbers = [1,2,3,4,5];
 
-// function change(arr) {
-//     console.log("before changing" , nums , arr)
-//     arr[0] = 20 ;
-//     console.log("after changing" , nums , arr)
-// }
-// change(nums) ;
+function value(arr) {
+    console.log("before changing" , numbers , arr)
+    // In this both numbers and arr will changes
+    arr[0] = 20 ;
+    console.log("after changing" , numbers , arr)
+}
+value(numbers) ;
+
+// Only For changing the value of arr , we use this : in this case pets changes but copy stores original values
+
+let pets = ['dogs','cows','goats','buffalos','birds']
+function animals(str) {
+
+let copy = JSON.parse(JSON.stringify(str)) ;
+    console.log("before" , pets , str) ;
+    
+    str[0] = 'Lion' ;
+    console.log("after" ,pets , copy)
+}
+animals(pets) ;
