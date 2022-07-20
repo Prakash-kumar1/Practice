@@ -22,8 +22,13 @@ let name = function Prakash (){
 name() ;
 
 
+//  Hoisting : Calling Function Before Declaration
 
+pets();
 
+function pets(){
+    console.log("Pets in the home") ;
+}
 
 
 
