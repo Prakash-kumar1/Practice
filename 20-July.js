@@ -1,196 +1,196 @@
 // // function declaration --> using function keyword
 
-// function log(){
-//     console.log("Declaration logging") ;
-// }
-// log() ;
+function log(){
+    console.log("Declaration logging") ;
+}
+log() ;
 
 
-// // Function Expression ( " Anonymous Function " )
+// Function Expression ( " Anonymous Function " )
 
-// let printing = function(){
-//     console.log("Expression logging") ;
-// };
+let printing = function(){
+    console.log("Expression logging") ;
+};
 
-// printing() ;
-
-
-// // Named Function Expression (Not  useful)
-
-// let name = function Prakash (){
-//     console.log("Named Expression") ;
-// };
-// name() ;
+printing() ;
 
 
-// //  Hoisting : Calling Function Before Declaration . 
+// Named Function Expression (Not  useful)
 
-// pets();
-
-// function pets(){
-//     console.log("Pets in the home") ;
-// } ;
-
-// // Function Expression can't be Hoisted it will give  -->  Error   because  we can't access before  Intialization
+let name = function Prakash (){
+    console.log("Named Expression") ;
+};
+name() ;
 
 
-// //  Arguments  in Function 
+//  Hoisting : Calling Function Before Declaration . 
 
-// function add(num1 , num2 ){
-//     // console.log(arguments) ;
-//     return (num1+num2);
-// }
+pets();
 
-// console.log(add(5,10))
+function pets(){
+    console.log("Pets in the home") ;
+} ;
 
-// //  in Javascript if we don't pass any value it will considered as "Undefined" and if we pass extra value it will considered as "Ignore"
-
-// function add(num1 , num2){
-//     return (num1+num2);
-// }
-// // Extra values ignored
-// console.log(add(15,10,34))
+// Function Expression can't be Hoisted it will give  -->  Error   because  we can't access before  Intialization
 
 
+//  Arguments  in Function 
 
-// function add(num1 , num2,num3,num4){
-//     // num3 , num4 are undefined
-//     console.log(num1 , num2,num3,num4)
-//     // it will give None
-//     console.log(num1 + num4)
-//         return (num1+num2);
-//     }
+function add(num1 , num2 ){
+    // console.log(arguments) ;
+    return (num1+num2);
+}
+
+console.log(add(5,10))
+
+//  in Javascript if we don't pass any value it will considered as "Undefined" and if we pass extra value it will considered as "Ignore"
+
+function add(num1 , num2){
+    return (num1+num2);
+}
+// Extra values ignored
+console.log(add(15,10,34))
+
+
+
+function add(num1 , num2,num3,num4){
+    // num3 , num4 are undefined
+    console.log(num1 , num2,num3,num4)
+    // it will give None
+    console.log(num1 + num4)
+        return (num1+num2);
+    }
     
-//     console.log(add(10,34)) ;
+    console.log(add(10,34)) ;
 
 
-// // // Rest operator(...) : whatever value passing it will converting into Array.
+// // Rest operator(...) : whatever value passing it will converting into Array.
 
-// function shoppingCart(...prices){
-//     console.log(prices) ;
-//     let total = 0;
-//     for(let i=0; i<prices.length; i++){
-//         total += prices[i] ;
-//     }
-//     console.log(total) ;
-// }
-// shoppingCart(100,150,50,300)
+function shoppingCart(...prices){
+    console.log(prices) ;
+    let total = 0;
+    for(let i=0; i<prices.length; i++){
+        total += prices[i] ;
+    }
+    console.log(total) ;
+}
+shoppingCart(100,150,50,300)
 
-// //  whenever we use Rest operator , always use in last as a parameter . if we write anything after rest operator it will gives error
+//  whenever we use Rest operator , always use in last as a parameter . if we write anything after rest operator it will gives error
 
-// function shoppingCart(discount , ...prices){
-// console.log(discount , prices )
-//     let total = 0;
-//     for(let i=0; i<prices.length; i++){
-//         total += prices[i] ;
-//     }
-//     console.log(total) ;
-// }
-// shoppingCart(10,50,50,30)
-
-
-// function shoppingCart(discount ,coupan , ...prices){
-//     // console.log(discount , prices , coupan)
-//         let total = 0;
-//         for(let i=0; i<prices.length; i++){
-//             total += prices[i] ;
-//             total = (total * discount) / 100 - coupan ;
-//         }
-//         return total ;
-//     }
-//     console.log(shoppingCart(5,60,150,300,100)) ;
+function shoppingCart(discount , ...prices){
+console.log(discount , prices )
+    let total = 0;
+    for(let i=0; i<prices.length; i++){
+        total += prices[i] ;
+    }
+    console.log(total) ;
+}
+shoppingCart(10,50,50,30)
 
 
-// // Function Inside Object
-
-// let person = {
-//     fname : "Prakash" ,
-//     lname : "kumar" ,
-//     fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
-// }; 
-// console.log(person.fullname()) ;
-
-
-//  person = {
-//     fname : "Prakash" ,
-//     lname : "kumar" ,
-//     fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
-// }; 
-// //  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
-// person.fullname = "Virat Kohli";
-// console.log(person) ;
+function shoppingCart(discount ,coupan , ...prices){
+    // console.log(discount , prices , coupan)
+        let total = 0;
+        for(let i=0; i<prices.length; i++){
+            total += prices[i] ;
+            total = (total * discount) / 100 - coupan ;
+        }
+        return total ;
+    }
+    console.log(shoppingCart(5,60,150,300,100)) ;
 
 
-// // // Using getter and setter 
+// Function Inside Object
+
+let person = {
+    fname : "Prakash" ,
+    lname : "kumar" ,
+    fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
+}; 
+console.log(person.fullname()) ;
 
 
-// // Using "get" keyword there is no need to call'()' a function
-
-//  person = {
-//     fname : "shivansh" ,
-//     lname : "rawat" ,
-//     get fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
-// };
-// // if we write "console.log(person.fullname()) ;" it will show Error because now it is a Getter not a Function
-// console.log(person.fullname) ;
-
+ person = {
+    fname : "Prakash" ,
+    lname : "kumar" ,
+    fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
+}; 
+//  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
+person.fullname = "Virat Kohli";
+console.log(person) ;
 
 
-// // for changing the function value we use --> "set" keyword
+// // Using getter and setter 
 
-// person = {
-//     fname : "Swami" ,
-//     lname : "Vivekanand" ,
-//     get fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
 
-//     set fullname(newName){
-//         // console.log("new-name" , newName) ;
-//       let parts = newName.split(" ") ;
-//     //   console.log(parts) ;
-//     person.fname = parts[0] ;
-//     person.lname = parts[1] ;
-//     },
-// };
-// person.fullname = "Ramkrishan Paramhans" ;
-// console.log(person.fullname) ;
+// Using "get" keyword there is no need to call'()' a function
+
+ person = {
+    fname : "shivansh" ,
+    lname : "rawat" ,
+    get fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
+};
+// if we write "console.log(person.fullname()) ;" it will show Error because now it is a Getter not a Function
+console.log(person.fullname) ;
 
 
 
-// // // this : - object that is executing current function.
-// // method(function inside object)
-// // In normal function "this"  represents Global Object.
-// // In method "this"  represents Parent Object.
+// for changing the function value we use --> "set" keyword
 
-// const video = {
-//     title : "cricket" ,
-// // here play is a method , this represents parent object "Video"
-//     play(){
-//         console.log(this) ;
-//     } ,
-//     stop : function(){
-//         console.log(this); 
-//     },
-// };
+person = {
+    fname : "Swami" ,
+    lname : "Vivekanand" ,
+    get fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
 
-// video.play() ;
-// video.stop() ;
-// console.log(video["play"]) ;
-// console.log(video["stop"]) ;
-
-// for(let key in video){
-//     console.log(video[key]) ;
-// }
+    set fullname(newName){
+        // console.log("new-name" , newName) ;
+      let parts = newName.split(" ") ;
+    //   console.log(parts) ;
+    person.fname = parts[0] ;
+    person.lname = parts[1] ;
+    },
+};
+person.fullname = "Ramkrishan Paramhans" ;
+console.log(person.fullname) ;
 
 
-const match = {
+
+// // this : - object that is executing current function.
+// method(function inside object)
+// In normal function "this"  represents Global Object.
+// In method "this"  represents Parent Object.
+
+const video = {
+    title : "cricket" ,
+// here play is a method , this represents parent object "Video"
+    play(){
+        console.log(this) ;
+    } ,
+    stop : function(){
+        console.log(this); 
+    },
+};
+
+video.play() ;
+video.stop() ;
+console.log(video["play"]) ;
+console.log(video["stop"]) ;
+
+for(let key in video){
+    console.log(video[key]) ;
+}
+
+
+let match = {
     title : "football" ,
     players : ["messi","ronaldo","dhoni","kohli"],
     displayPlayers(){
@@ -199,7 +199,7 @@ const match = {
         // for printing each player name
         this.players.forEach (function(player){
             console.log(player) ;
-            
+
 // for this function there is no parent object , so, "this" will print Global object
         //     console.log(this) ;
         }) ;
@@ -207,7 +207,21 @@ const match = {
 };
 match.displayPlayers() ;
 
+// in case of THIS if there is no parent object ,print global object. but when we use "Arrow function" "THIS" will grand-parent object. and print values
 
 
+ match = {
+    title : "Bollywood" ,
+    players : ["Dipika","Ranveer","Hritik","Shahrukh"],
+    displayPlayers(){
+        console.log(this.title , this.players) ;
 
-
+        // for printing each player name
+        this.players.forEach ((player) => {
+// here due to Arrow Function it will take match as a "grand-parent object"
+            console.log(this) ;
+            
+        }) ;
+    },
+};
+match.displayPlayers() ;
