@@ -137,6 +137,7 @@ console.log(person) ;
         return `${person.fname} ${person.lname}` ;
     },
 };
+// if we write "console.log(person.fullname()) ;" it will show Error because now it is a Getter not a Function
 console.log(person.fullname) ;
 
 
