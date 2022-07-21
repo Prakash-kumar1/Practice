@@ -103,14 +103,14 @@
 
 // // Function Inside Object
 
-let person = {
-    fname : "Prakash" ,
-    lname : "kumar" ,
-    fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
-}; 
-console.log(person.fullname()) ;
+// let person = {
+//     fname : "Prakash" ,
+//     lname : "kumar" ,
+//     fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
+// }; 
+// console.log(person.fullname()) ;
 
 
 //  person = {
@@ -142,43 +142,47 @@ console.log(person.fullname()) ;
 
 
 
-// for changing the function value we use --> "set" keyword
+// // for changing the function value we use --> "set" keyword
 
-person = {
-    fname : "Swami" ,
-    lname : "Vivekanand" ,
-    get fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
+// person = {
+//     fname : "Swami" ,
+//     lname : "Vivekanand" ,
+//     get fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
 
-    set fullname(newName){
-        // console.log("new-name" , newName) ;
-      let parts = newName.split(" ") ;
-    //   console.log(parts) ;
-    person.fname = parts[0] ;
-    person.lname = parts[1] ;
-    },
-};
-person.fullname = "Ramkrishan Paramhans" ;
-console.log(person.fullname) ;
-
-
-
-// // this : - object that is executing current function.
-// method(function inside object)
-// const video = {
-//     title : "cricket" ,
-//     play(){
-//         console.log(this) ;
-//     } ,
-//     stop : function(){
-//         console.log(this); 
+//     set fullname(newName){
+//         // console.log("new-name" , newName) ;
+//       let parts = newName.split(" ") ;
+//     //   console.log(parts) ;
+//     person.fname = parts[0] ;
+//     person.lname = parts[1] ;
 //     },
 // };
+// person.fullname = "Ramkrishan Paramhans" ;
+// console.log(person.fullname) ;
 
-// video.play() ;
-// video.stop() ;
-// console.log(video["play"]) ;
+
+
+// // // this : - object that is executing current function.
+// // method(function inside object)
+// // In normal function "this"  represents Global Object.
+// // In method "this"  represents Parent Object.
+
+const video = {
+    title : "cricket" ,
+// here play is a method , this represents parent object "Video"
+    play(){
+        console.log(this) ;
+    } ,
+    stop : function(){
+        console.log(this); 
+    },
+};
+
+video.play() ;
+video.stop() ;
+console.log(video["play"]) ;
 
 
 
