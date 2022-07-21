@@ -89,16 +89,16 @@ console.log(discount , prices )
 shoppingCart(10,50,50,30)
 
 
-// function shoppingCart(discount ,coupan , ...prices){
-//     // console.log(discount , prices , coupan)
-//         let total = 0;
-//         for(let i=0; i<prices.length; i++){
-//             total += prices[i] ;
-//             total = (total * discount) / 100 - coupan ;
-//         }
-//         console.log(total) ;
-//     }
-//     shoppingCart(5,60,150,300,50) ;
+function shoppingCart(discount ,coupan , ...prices){
+    // console.log(discount , prices , coupan)
+        let total = 0;
+        for(let i=0; i<prices.length; i++){
+            total += prices[i] ;
+            total = (total * discount) / 100 - coupan ;
+        }
+        return total ;
+    }
+    console.log(shoppingCart(5,60,150,300,100)) ;
 
 
 // // Function Inside Object
