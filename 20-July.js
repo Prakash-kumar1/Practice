@@ -169,39 +169,43 @@
 // // In normal function "this"  represents Global Object.
 // // In method "this"  represents Parent Object.
 
-const video = {
-    title : "cricket" ,
-// here play is a method , this represents parent object "Video"
-    play(){
-        console.log(this) ;
-    } ,
-    stop : function(){
-        console.log(this); 
-    },
-};
-
-video.play() ;
-video.stop() ;
-console.log(video["play"]) ;
-console.log(video["stop"]) ;
-
-for(let key in video){
-    console.log(video[key]) ;
-}
-
-
-// const match = {
-//     title : "football" ,
-//     players : ["messi","ronaldo","dhoni","kohli"],
-//     displayPlayers(){
-//         // console.log(this.title , this.players)
-//         // for printing each player name
-//         this.players.forEach (function(player){
-//             console.log(this) ;
-//         }) ;
+// const video = {
+//     title : "cricket" ,
+// // here play is a method , this represents parent object "Video"
+//     play(){
+//         console.log(this) ;
+//     } ,
+//     stop : function(){
+//         console.log(this); 
 //     },
 // };
-// match.displayPlayers() ;
+
+// video.play() ;
+// video.stop() ;
+// console.log(video["play"]) ;
+// console.log(video["stop"]) ;
+
+// for(let key in video){
+//     console.log(video[key]) ;
+// }
+
+
+const match = {
+    title : "football" ,
+    players : ["messi","ronaldo","dhoni","kohli"],
+    displayPlayers(){
+        console.log(this.title , this.players) ;
+
+        // for printing each player name
+        this.players.forEach (function(player){
+            console.log(player) ;
+            
+// for this function there is no parent object , so, "this" will print Global object
+        //     console.log(this) ;
+        }) ;
+    },
+};
+match.displayPlayers() ;
 
 
 
