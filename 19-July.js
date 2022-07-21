@@ -402,3 +402,14 @@ console.log(Bike) ;
 
 delete Bike.Tyre ;
 console.log(Bike) ;
+
+
+//  if we use "for in loop" in array it will give index values, and using " for of loop " gives values.
+
+for(let i in [1,2,3,"prakash",true,6]){
+    console.log(i) ;
+}
+
+for(let i of [1,2,3,"prakash",true,6]){
+    console.log(i) ;
+}
