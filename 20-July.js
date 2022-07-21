@@ -155,8 +155,8 @@ person = {
         // console.log("new-name" , newName) ;
       let parts = newName.split(" ") ;
     //   console.log(parts) ;
-    this.fname = parts[0] ;
-    this.lname = parts[1] ;
+    person.fname = parts[0] ;
+    person.lname = parts[1] ;
     },
 };
 person.fullname = "Ramkrishan Paramhans" ;
