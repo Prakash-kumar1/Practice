@@ -103,14 +103,14 @@
 
 // // Function Inside Object
 
-// let person = {
-//     fname : "Prakash" ,
-//     lname : "kumar" ,
-//     fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
-// }; 
-// console.log(person.fullname()) ;
+let person = {
+    fname : "Prakash" ,
+    lname : "kumar" ,
+    fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
+}; 
+console.log(person.fullname()) ;
 
 
  person = {
@@ -125,22 +125,19 @@ person.fullname = "Virat Kohli";
 console.log(person) ;
 
 
-// // Using get and set 
+// // Using getter and setter 
 
-//  person = {
-//     fname : "shivansh" ,
-//     lname : "rawat" ,
-//     get fullname() {
-//         return `${person.fname} ${person.lname}` ;
-//     },
 
-//     set fullname(newName){
-//         console.log("new-name" , newName);
-//     },
-// };
+// Using "get" keyword there is no need to call'()' a function
 
-// person.fullname = "sachin tendulkar"
-// console.log(person.fullname) ;
+ person = {
+    fname : "shivansh" ,
+    lname : "rawat" ,
+    get fullname() {
+        return `${person.fname} ${person.lname}` ;
+    },
+};
+console.log(person.fullname) ;
 
 
 
