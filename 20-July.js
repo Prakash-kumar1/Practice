@@ -185,6 +185,10 @@ video.stop() ;
 console.log(video["play"]) ;
 console.log(video["stop"]) ;
 
+for(let key in video){
+    console.log(video[key]) ;
+}
+
 
 // const match = {
 //     title : "football" ,
