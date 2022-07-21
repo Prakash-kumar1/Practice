@@ -113,33 +113,54 @@ let person = {
 console.log(person.fullname()) ;
 
 
- person = {
-    fname : "Prakash" ,
-    lname : "kumar" ,
-    fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
-}; 
-//  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
-person.fullname = "Virat Kohli";
-console.log(person) ;
+//  person = {
+//     fname : "Prakash" ,
+//     lname : "kumar" ,
+//     fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
+// }; 
+// //  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
+// person.fullname = "Virat Kohli";
+// console.log(person) ;
 
 
-// // Using getter and setter 
+// // // Using getter and setter 
 
 
-// Using "get" keyword there is no need to call'()' a function
+// // Using "get" keyword there is no need to call'()' a function
 
- person = {
-    fname : "shivansh" ,
-    lname : "rawat" ,
+//  person = {
+//     fname : "shivansh" ,
+//     lname : "rawat" ,
+//     get fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
+// };
+// // if we write "console.log(person.fullname()) ;" it will show Error because now it is a Getter not a Function
+// console.log(person.fullname) ;
+
+
+
+// for changing the function value we use --> "set" keyword
+
+person = {
+    fname : "Swami" ,
+    lname : "Vivekanand" ,
     get fullname() {
         return `${person.fname} ${person.lname}` ;
     },
-};
-// if we write "console.log(person.fullname()) ;" it will show Error because now it is a Getter not a Function
-console.log(person.fullname) ;
 
+    set fullname(newName){
+        // console.log("new-name" , newName) ;
+      let parts = newName.split(" ") ;
+    //   console.log(parts) ;
+    this.fname = parts[0] ;
+    this.lname = parts[1] ;
+    },
+};
+person.fullname = "Ramkrishan Paramhans" ;
+console.log(person.fullname) ;
 
 
 
