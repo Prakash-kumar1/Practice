@@ -5,6 +5,7 @@ function log(){
 }
 log() ;
 
+
 // Function Expression ( " Anonymous Function " )
 
 let printing = function(){
@@ -31,6 +32,7 @@ function pets(){
 } ;
 
 // Function Expression can't be Hoisted it will give  -->  Error   because  we can't access before  Intialization
+
 
 //  Arguments  in Function 
 
@@ -60,6 +62,7 @@ function add(num1 , num2,num3,num4){
     }
     
     console.log(add(10,34)) ;
+
 
 // // Rest operator(...) : whatever value passing it will converting into Array.
 
