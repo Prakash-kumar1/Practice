@@ -183,7 +183,7 @@ const video = {
 video.play() ;
 video.stop() ;
 console.log(video["play"]) ;
-
+console.log(video["stop"]) ;
 
 
 // const match = {
