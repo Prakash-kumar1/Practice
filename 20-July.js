@@ -165,7 +165,7 @@ console.log(person.fullname) ;
 
 
 // // this : - object that is executing current function.
-
+// method(function inside object)
 // const video = {
 //     title : "cricket" ,
 //     play(){
