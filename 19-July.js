@@ -376,6 +376,21 @@ for(let i =0 ; i < result.length; i++){
 console.log(sortedScore) ;
 
 
+
+// Adding keys and values 
+
+let keyss = ["name","age","country"]
+let valuess = ["Ritesh",56,"America"]
+
+let objec = {};
+
+for(let i =0 ; i < keyss.length; i++){
+    objec[keyss[i]] = valuess[i]  ;
+}
+console.log(objec) ;
+
+
+
 //  Adding  &  Deleting 
 
 let Bike = {
