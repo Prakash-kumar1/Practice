@@ -67,7 +67,7 @@ function add(num1 , num2,num3,num4){
 // // Rest operator(...) : whatever value passing it will converting into Array.
 
 function shoppingCart(...prices){
-    console.log(prices)
+    console.log(prices) ;
     let total = 0;
     for(let i=0; i<prices.length; i++){
         total += prices[i] ;
@@ -89,80 +89,80 @@ console.log(discount , prices )
 shoppingCart(10,50,50,30)
 
 
-function shoppingCart(discount ,coupan , ...prices){
-    // console.log(discount , prices , coupan)
-        let total = 0;
-        for(let i=0; i<prices.length; i++){
-            total += prices[i] ;
-            total = (total * discount) / 100 - coupan ;
-        }
-        console.log(total) ;
-    }
-    shoppingCart(5,60,150,300,50) ;
+// function shoppingCart(discount ,coupan , ...prices){
+//     // console.log(discount , prices , coupan)
+//         let total = 0;
+//         for(let i=0; i<prices.length; i++){
+//             total += prices[i] ;
+//             total = (total * discount) / 100 - coupan ;
+//         }
+//         console.log(total) ;
+//     }
+//     shoppingCart(5,60,150,300,50) ;
 
 
-// Function Inside Object
+// // Function Inside Object
 
-let person = {
-    fname : "Prakash" ,
-    lname : "kumar" ,
-    fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
-}; 
-console.log(person.fullname()) ;
-
-
-// Using get and set 
-
- person = {
-    fname : "shivansh" ,
-    lname : "rawat" ,
-    get fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
-
-    set fullname(newName){
-        console.log("new-name" , newName);
-    },
-};
-
-person.fullname = "sachin tendulkar"
-console.log(person.fullname) ;
+// let person = {
+//     fname : "Prakash" ,
+//     lname : "kumar" ,
+//     fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
+// }; 
+// console.log(person.fullname()) ;
 
 
+// // Using get and set 
 
+//  person = {
+//     fname : "shivansh" ,
+//     lname : "rawat" ,
+//     get fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
 
-// this : - object that is executing current function.
+//     set fullname(newName){
+//         console.log("new-name" , newName);
+//     },
+// };
 
-const video = {
-    title : "cricket" ,
-    play(){
-        console.log(this) ;
-    } ,
-    stop : function(){
-        console.log(this); 
-    },
-};
-
-video.play() ;
-video.stop() ;
-console.log(video["play"]) ;
+// person.fullname = "sachin tendulkar"
+// console.log(person.fullname) ;
 
 
 
-const match = {
-    title : "football" ,
-    players : ["messi","ronaldo","dhoni","kohli"],
-    displayPlayers(){
-        // console.log(this.title , this.players)
-        // for printing each player name
-        this.players.forEach (function(player){
-            console.log(this) ;
-        }) ;
-    },
-};
-match.displayPlayers() ;
+
+// // this : - object that is executing current function.
+
+// const video = {
+//     title : "cricket" ,
+//     play(){
+//         console.log(this) ;
+//     } ,
+//     stop : function(){
+//         console.log(this); 
+//     },
+// };
+
+// video.play() ;
+// video.stop() ;
+// console.log(video["play"]) ;
+
+
+
+// const match = {
+//     title : "football" ,
+//     players : ["messi","ronaldo","dhoni","kohli"],
+//     displayPlayers(){
+//         // console.log(this.title , this.players)
+//         // for printing each player name
+//         this.players.forEach (function(player){
+//             console.log(this) ;
+//         }) ;
+//     },
+// };
+// match.displayPlayers() ;
 
 
 
