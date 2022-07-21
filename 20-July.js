@@ -103,14 +103,26 @@
 
 // // Function Inside Object
 
-let person = {
+// let person = {
+//     fname : "Prakash" ,
+//     lname : "kumar" ,
+//     fullname() {
+//         return `${person.fname} ${person.lname}` ;
+//     },
+// }; 
+// console.log(person.fullname()) ;
+
+
+ person = {
     fname : "Prakash" ,
     lname : "kumar" ,
     fullname() {
         return `${person.fname} ${person.lname}` ;
     },
 }; 
-console.log(person.fullname()) ;
+//  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
+person.fullname = "Virat Kohli";
+console.log(person) ;
 
 
 // // Using get and set 
