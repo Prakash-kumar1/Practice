@@ -371,7 +371,7 @@ for(let i =0 ; i < result.length; i++){
     // console.log(result[i][0] , result[i][1]) ;
     let key = result[i][0]
     let value =  result[i][1]
-    sortedScore[key] = result  ;
+    sortedScore[key] = value  ;
 }
 console.log(sortedScore) ;
 
