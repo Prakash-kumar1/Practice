@@ -76,6 +76,8 @@ function getFactorial(num){
   console.log(getFactorial(5));
   console.log(getFactorial(-4));
 
+
+
 // //  Question no-2 find sum of all elements in array using Recursion ?
 
 
@@ -107,7 +109,15 @@ function getSumRange(first , last){
     return first + getSumRange(first+1 , last)
 }
 console.log(getSumRange(5,7)) ;
-console.log(getSumRange(15,57)) ;
+console.log(getSumRange(5,5)) ;
 
 
-
+// // if we want sum range till last number
+function getRange(first , last){
+    if(first === last){
+        return first ;
+    }
+    return first + getRange(first+1 , last)
+}
+console.log(getRange(5,7)) ;
+console.log(getRange(5,5)) ;
