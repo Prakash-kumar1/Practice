@@ -10,6 +10,7 @@ let nums = [1,2,3,4,5] ;
 
 let [num1 , num2, ...num3] = nums ;
 console.log(num1 , num2 , num3)
+// This called "Array Destructuring"
 
 
 // if we pass extra parameter , it will gives Defined
@@ -31,9 +32,10 @@ let obj = {
 let {name , age} = obj ;
 console.log(name , age)
 
-// Using rest operator it will give all elements
+// Using rest operator it will print new object with all elements
 let {Class , ...rest} = obj ;
 console.log(obj)
+
 
 // // Recursion : - Calling function again and again. it is based on "Divide & Conquere approaches" . Recursion are mostly use tree data structure , graph algorithm etc.
 
@@ -54,11 +56,25 @@ function getFactorial(num){
   return num * getFactorial(num-1) ;
 }
 console.log(getFactorial(5));
+console.log(getFactorial(4));
 
-// // JavaScript has limit of 260 after that it will gives Infinity
-// console.log(getFactorial(265));
+// // JavaScript has limit of 16 digits as output after that it will gives Infinity
+console.log(getFactorial(265));
 
 
+// // Question no-1 find factorial of negative number using Recursion ?
+
+function getFactorial(num){
+    if(num < 0){
+      return  -1 ;
+    }
+    if(num === 1 || num === 0){
+        return  1 ;
+      }
+    return num * getFactorial(num-1) ;
+  }
+  console.log(getFactorial(5));
+  console.log(getFactorial(-4));
 
 // //  Question no-2 find sum of all elements in array using Recursion ?
 
