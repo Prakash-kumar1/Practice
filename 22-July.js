@@ -33,3 +33,19 @@ function Power(base , exponent){
     return  base * Power(base , exponent - 1) ;
     }
     console.log(Power(2,5));
+
+
+
+// Question no-3 Write a program to make nth dimensional array into 1-D Array not use "Flat()" ??
+
+
+
+
+
+
+
+
+
+
+
+
