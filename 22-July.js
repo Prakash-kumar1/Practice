@@ -55,8 +55,42 @@ for(let i=0; i<arr.length;i++){
 }
 
 console.log(flatter(arr)) ;
-console.log(flatter([1,2,['vasanth',4],5])) ;
+console.log(flatter([1,2,['vasanth',4],[],5])) ;
 console.log(flatter([1,2,['vasanth',[4,'Prakash','govind',[67],'pooja'],'shivansh'],5])) ;
+console.log(flatter([1,2,3,[4,5,6,[7,8,9],[],10,null,"hello"]])) ;
+
+
+//  ------>>> Sorting  Algorithms  
+
+
+// Selection Sort 
+
+function SelectionSort(arr){
+  for(let i=0; i < arr.length; i++){
+    let min = arr[i] ;
+    for(let j=i+1 ; j < arr.length; j++){
+        if(arr[j] < min){
+            min = arr[j] ;
+        }
+    }
+    let minIndex = arr.indexOf(min);
+    console.log(minIndex) ;
+//   }
+let temp = arr[i] ;
+arr[i] = arr[minIndex] ;
+arr[minIndex] = temp ;
+  }
+  return arr ;
+}
+console.log(SelectionSort([9,8,7,6,5,4,3,2,1])) ;
+console.log(SelectionSort([3,5,1,6,2,9,4])) ;
+
+
+
+
+
+
+
 
 
 
