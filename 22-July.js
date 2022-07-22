@@ -86,7 +86,25 @@ console.log(SelectionSort([9,8,7,6,5,4,3,2,1])) ;
 console.log(SelectionSort([3,5,1,6,2,9,4])) ;
 
 
+// // Bubble sort : 
 
+function bubbleSort(arr){
+    for(let i=0; i < arr.length; i++){
+      for(let j=0 ; j < arr.length; j++){
+          if(arr[j] > arr[j+1]){
+              let temp = arr[j] ;
+              arr[j] = arr[j+1] ;
+              arr[j+1] = temp ;
+          }
+          console.log(arr) ;
+        }
+
+    }
+    return arr ;
+  }
+  console.log(bubbleSort([9,8,7,6])) ;
+
+    
 
 
 
