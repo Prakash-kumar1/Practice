@@ -38,7 +38,11 @@ function Power(base , exponent){
 
 // Question no-3 Write a program to make nth dimensional array into 1-D Array not use "Flat()" ??
 
+let arr = [1, 2, [3, 4]] ;
 
+function flatter(arr){
+
+}
 
 
 
