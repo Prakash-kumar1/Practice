@@ -33,8 +33,7 @@
 
 
 function Power(base , exponent){
-        if(exponent == 0) return 1 ;
+        if(exponent === 0) return 1 ;
     return  base * Power(base , exponent - 1) ;
     }
-    console.log(Power(2,3));
-    console.log(Power(2,-1))
+    console.log(Power(2,4));
