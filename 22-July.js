@@ -43,20 +43,20 @@ let arr =  [[1, 2, 3, 4]] ;
 
 function flatter(arr){
   let flatterArray = [] ;
-if(Array.isArray(arr) === false){
-    return arr ;
-}
+
 for(let i=0; i<arr.length;i++){
     if(Array.isArray(arr[i])){
-        return flatter(arr[i]) ;
+        flatterArray = [...flatterArray , ...flatter(arr[i])] ;
     }else{
         flatterArray.push(arr[i]) ;
     }
 }
    return flatterArray ;
 }
-console.log(flatter(arr)) ;
 
+console.log(flatter(arr)) ;
+console.log(flatter([1,2,['vasanth',4],5])) ;
+console.log(flatter([1,2,['vasanth',[4,'Prakash','govind',[67],'pooja'],'shivansh'],5])) ;
 
 
 
