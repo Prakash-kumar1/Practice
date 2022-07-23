@@ -180,7 +180,7 @@ function createCircle(radius , location) {
 }
 let Circle3 = createCircle(10) ;
 // Adding new Object
-Circle1.name = "Prakash" ;
+Circle3.name = "Prakash" ;
 
 console.log(Circle3) ;
 console.log(Circle3.radius , Circle3.draw() , Circle3.name) ;
