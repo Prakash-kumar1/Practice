@@ -28,8 +28,8 @@ for(let key in car){
 
 let names = ["Prakash" , "vasanth" , "shivansh" , "govind"]
 for(let name in names){
-  // console.log(name) ;
-   console.log(name , names[name]) ;
+//   console.log(name) ;
+   console.log(name ,names[name]) ;
  }
 
 // //  OR Use this 
