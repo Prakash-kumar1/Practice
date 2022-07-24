@@ -281,13 +281,12 @@ console.log(sisters.slice(2));
 // let slicedpets = pets.slice(1,5) ;
 // console.log(pets,slicedpets) ;
 
-// // // splice method also affect original Array
-let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
-console.log(pets[0],pets[1],pets[2])
+// // // splice method also affect original Array , it change index value .
+let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo'] ;
+console.log(pets[0],pets[1],pets[2]) ;
 
-pets.splice(1,0,'Lion')
-console.log(pets[0],pets[1],pets[2],pets[3])
-// // // it change index value . 
+pets.splice(1,0,'Lion') ;
+console.log(pets[0],pets[1],pets[2],pets[3]) ; 
 
 // // // In slice , we can only print Reverse of an Array. this is special property of slice method 
 // // // slice negative value method explain in Notes . check there 
@@ -295,23 +294,24 @@ console.log(pets[0],pets[1],pets[2],pets[3])
 // // Checking present values in Array using Loop
 // let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// function brothers(bro){
-//     for(let i=0; i<bros.length; i++){
-//         if(bros[i] == bro) return true
-//     }
-//     return false
-// }
-// console.log(brothers('shivansh'))
-// console.log(brothers('shiva'))
-// console.log(brothers('hema'))
-// console.log(brothers('anish'))
+function brothrs(bro){
+    for(let i=0; i<bros.length; i++){
+        if(bros[i] == bro) return true
+    }
+    return false
+}
+
+console.log(brothrs('shivansh')) ;
+console.log(brothrs('shiva')) ;
+console.log(brothrs('hema')) ;
+console.log(brothrs('anish')) ;
 
 // //     //  OR we can use .includes method 
 
-//     console.log(bros.includes('shivansh'))
-//     console.log(bros.includes('shiva'))
-//     console.log(bros.includes('hema'))
-//     console.log(bros.includes('anish'))   
+    // console.log(bros.includes('shivansh'))
+    // console.log(bros.includes('shiva'))
+    // console.log(bros.includes('hema'))
+    // console.log(bros.includes('anish'))   
 
 // // // if we don't want to search whole array we can put starting value in includes method
 
