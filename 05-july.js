@@ -261,12 +261,12 @@ console.log(bros) ;
 // // // Using Slice property to get data 
 // // // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
 let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
-console.log(brothers.slice( 1 , 4)) ;
-// // it will start from index value 1 and stopped at index value 3 before index value 4
 
+// // it will start from index value 1 and stopped at index value 3 before index value 4
+console.log(brothers.slice( 1 , 4)) ;
 
 let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
-// console.log(sisters.slice(1,2))
+console.log(sisters.slice(1,2)) ;
 
 // // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
 // // (statrting value >= ending value ) then it give an empty Array . 
