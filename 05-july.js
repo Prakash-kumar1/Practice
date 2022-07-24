@@ -59,25 +59,25 @@
 
 // // // Array accepts Boolean , Number ,String & Objects. 
 
-// let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
-//     name : "Rinki" ,
-//     age : 25 ,
-//     Occupation : "House-wife" ,
-//     Food : "Mutton" ,
-// }  ]
+let names = ["Vasanath" , "Shivansh" , 12 , true ,  Wife = {
+    name : "Rinki" ,
+    age : 25 ,
+    Occupation : "House-wife" ,
+    Food : "Mutton" ,
+}  ]
 
-// console.log(names[4]);
-// console.log(names[3]);
-// console.log(names[2]);
-// console.log(names[1]);
+console.log(names[4]);
+console.log(names[3]);
+console.log(names[2]);
+console.log(names[1]);
 
 // // In Array we can also change the Value.
 
-// let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
-// console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
-// peoples[2] = 'Anjali'
-// peoples[1] = 'Hema'
-// console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
+let peoples = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
+console.log(peoples[4],peoples[5],peoples[3],peoples[2],peoples[0],peoples[10]);
+peoples[2] = 'Anjali'
+peoples[1] = 'Hema'
+console.log(peoples[4],peoples[1],peoples[3],peoples[2],peoples[0],peoples[100]);
 
 
 // // In Array we can also put the Value at any place.
@@ -95,31 +95,31 @@
 
 
 // // If one changes another also changes. 
-// let num = [10,20]
-// let copy = num 
-// console.log(num , copy)
+let num = [10,20]
+let copy = num 
+console.log(num , copy)
 
-//  copy[0] = 15 
-//  num[1] = 30 
-// console.log(num , copy)
+ copy[0] = 15 
+ num[1] = 30 
+console.log(num , copy)
 
 
 // let nums = [1,2,3,true,'vasant']
-// printing the length of Array
+// // printing the length of Array
 // console.log(nums.length)                                
 
 // for(let i=0; i<nums.length; i++){
-    // console.log(nums[i]);
+//     console.log(nums[i]);
 // }
 
 
-// let nums = [1,2,3,4,5,6,7,8,'Prakash']
-// // print Ist & Last Element of Array
-// console.log(nums[0] , nums[nums.length-1])
-// // printing all Element of Array
-// for(let i=0; i<nums.length; i++){
-//         console.log(nums[i]);
-//     }
+let nums = [1,2,3,4,5,6,7,8,'Prakash']
+// print Ist & Last Element of Array
+console.log(nums[0] , nums[nums.length-1])
+// printing all Element of Array
+for(let i=0; i<nums.length; i++){
+        console.log(nums[i]);
+    }
 
 
 // // Adding Element in Array and  Removing the Element from Array
@@ -187,12 +187,12 @@
 
 // // xxxxxxxxxxxxxxxxxxx     How to delete an Array ??  xxxxxxxxxxxxxxxxxxx
 
-// const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+let friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// delete friends[1] ;
-// delete friends[3] ;
-// delete friends[6] ;
-// console.log('delete' , friends, friends[1] , friends[3] , friends[6]) ;
+delete friends[1] ;
+delete friends[3] ;
+delete friends[6] ;
+console.log('delete' , friends, friends[1] , friends[3] , friends[6]) ;
 
 // // we should never-ever use delete because this is not a good Practice .
 // // For Deleting every Element from Array use: 
@@ -204,54 +204,54 @@
 // console.log(friends.length , friends)
 
 
-const friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
-// friends.length = 4
-// console.log(friends.length , friends)
-//     //  OR 
-// friends.length = 34
-// console.log(friends.length , friends)
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.pop()
-// friends.push('Idli')
-// console.log(friends.length , friends)
+friends = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+friends.length = 4
+console.log(friends.length , friends)
+    //  OR 
+friends.length = 34
+console.log(friends.length , friends)
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.pop()
+friends.push('Idli')
+console.log(friends.length , friends)
 
-// friends.push('Dosa')
-// friends.push('Burger')
-// friends.push('Chicken')
-// friends.push('Egg Roll')
-// console.log(friends.length , friends)
+friends.push('Dosa')
+friends.push('Burger')
+friends.push('Chicken')
+friends.push('Egg Roll')
+console.log(friends.length , friends)
 
 // // xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
 // // Linked List Example
 
-// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // Adding Element in Middle
 // splice syntax : .splice(index-value , values want to be removed , adding values)
-// bros.splice( 4 , 0 , 'Sachin')
-// console.log(bros)
+bros.splice( 4 , 0 , 'Sachin')
+console.log(bros)
 
 // // / Adding same Element in two places
-// bros.splice( 7 , 0 , 'Sachin')
-// console.log(bros)
+bros.splice( 7 , 0 , 'Sachin')
+console.log(bros)
 
 
 // // Replacing Element in Middle
-// bros.splice( 4 , 2, 'Sachin')
-// console.log(bros)
+bros.splice( 4 , 2, 'Sachin')
+console.log(bros)
 
 // // Adding  &  Replacing  Multiple Element in Middle
-// bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
-// console.log(bros)
+bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
+console.log(bros)
 
 
 // // How to find which element remove : -->  By Printing splice value.
@@ -293,7 +293,7 @@ let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
 // // // slice negative value method explain in Notes . check there 
 
 // // Checking present values in Array using Loop
-let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // function brothers(bro){
 //     for(let i=0; i<bros.length; i++){
