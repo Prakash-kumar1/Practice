@@ -277,9 +277,9 @@ console.log(sisters.slice(3,3))
 console.log(sisters.slice(2));    
 
 // // // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
-// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
-// let slicedpets = pets.slice(1,5)
-// console.log(pets,slicedpets)
+let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+let slicedpets = pets.slice(1,5)
+console.log(pets,slicedpets)
 
 // // // splice method also affect original Array
 // let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
