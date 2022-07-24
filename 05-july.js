@@ -270,8 +270,8 @@ console.log(sisters.slice(1,2)) ;
 
 // // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
 // // (statrting value >= ending value ) then it give an empty Array . 
-// console.log(sisters.slice(3,2))
-// console.log(sisters.slice(3,3))        
+console.log(sisters.slice(3,2))
+console.log(sisters.slice(3,3))        
 
 // // if only give start value then it starts from that value and print whole data to the end.
 // console.log(sisters.slice(2))    
