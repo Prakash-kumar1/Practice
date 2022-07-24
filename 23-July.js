@@ -69,3 +69,16 @@ console.log(array3);
 // let array=[1,23,4,5,6];
 // array.forEach((res,i,output)=>output[i]=res+10)
 // console.log(array)
+
+
+
+//Square each element of an array:-
+
+const numbers = [1, 2, 3, 4, 5];
+function power2(array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = array[i] * array[i];
+  }
+}
+power2(numbers)
+console.log(numbers); //[1,4,9,16,25]
