@@ -277,16 +277,16 @@ console.log(sisters.slice(3,3))
 console.log(sisters.slice(2));    
 
 // // // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
-let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
-let slicedpets = pets.slice(1,5)
-console.log(pets,slicedpets)
+// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+// let slicedpets = pets.slice(1,5) ;
+// console.log(pets,slicedpets) ;
 
 // // // splice method also affect original Array
-// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
-// console.log(pets[0],pets[1],pets[2])
+let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+console.log(pets[0],pets[1],pets[2])
 
-// pets.splice(1,0,'Lion')
-// console.log(pets[0],pets[1],pets[2],pets[3])
+pets.splice(1,0,'Lion')
+console.log(pets[0],pets[1],pets[2],pets[3])
 // // // it change index value . 
 
 // // // In slice , we can only print Reverse of an Array. this is special property of slice method 
