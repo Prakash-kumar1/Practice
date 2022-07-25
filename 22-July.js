@@ -75,7 +75,7 @@ function SelectionSort(arr){
     }
     let minIndex = arr.indexOf(min);
     console.log(minIndex) ;
-//   }
+
 let temp = arr[i] ;
 arr[i] = arr[minIndex] ;
 arr[minIndex] = temp ;
