@@ -84,6 +84,8 @@ power2(numbers)
 console.log(numbers); //[1,4,9,16,25]
 
 
+// Converting 1D array into 2D array
+
 let arr5 = [1,2,3,4,5,6,7,8] ;
 let NewArr = [] ;
 while (arr5.length > 0){
