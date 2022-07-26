@@ -2,16 +2,16 @@
 
 // // // Linear Search
 
-// let nums = [11, 23, 69, 45, 36, 87]
-// let target =  45
-// //  for finding 45 we can use "includes method" . icludes method uses "linear search"
-// function isPresent(nums , target){
-//     for(let i=0; i<nums.length; i++){
-//         if(nums[i] === target)  return true
-//         }
-//         return false ;
-//     }
-// console.log(isPresent(nums , target));
+let nums = [11, 23, 69, 45, 36, 87]
+let target =  45
+//  for finding 45 we can use "includes method" . icludes method uses "linear search"
+function isPresent(nums , target){
+    for(let i=0; i<nums.length; i++){
+        if(nums[i] === target)  return true
+        }
+        return false ;
+    }
+console.log(isPresent(nums , target));
 
 
 // // Binary Search-: First sort the Array
@@ -37,33 +37,33 @@
 // }
 
 // // // Strings -: This is also a  Spread Operator.
-// let fname = 'Prakash'
-// let lname = 'kumar'
-// console.log(fname+" "+lname)
+let fname = 'Prakash'
+let lname = 'kumar'
+console.log(fname+" "+lname)
 
-// // // how to get "Prakash kumar" in single quotes? 
-// console.log(`"${fname}"'${lname}'`)
-// console.log(fname[0],lname[2])
+// // how to get "Prakash kumar" in single quotes? 
+console.log(`"${fname}"'${lname}'`)
+console.log(fname[0],lname[2])
 
-// // Find the length of fname and lname ?
-// console.log(`"${fname.length}"'${lname.length}'`)
+// Find the length of fname and lname ?
+console.log(`"${fname.length}"'${lname.length}'`)
 
 // // Print all the alphabets or characters? 
-// for(let i=0; i<fname.length; i++){
-//     console.log(fname[i])
-// }
+for(let i=0; i<fname.length; i++){
+    console.log(fname[i])
+}
 
 // // // String are immutable(not changeable) means we can't change their characters
 // // // in string we can't change one value but we can change whole string
 
-// let gname = 'vasantkumarvingyam'
+let gname = 'vasantkumarvingyam' ;
 // // it can't change but only give index value at 1 
-// gname[1] = 'j'
-// console.log(gname[1])
+gname[1] = 'j'
+console.log(gname[1])
 
-// gname = 'dore'
-// // we can change only whole string
-// console.log(gname)
+gname = 'dore'
+// we can change only whole string
+console.log(gname)
 
 // // // comparing two strings=: it compares value not addresses. 
 // let fname = 'Prakash'
@@ -85,17 +85,17 @@
 // console.log(fname.slice(-15, -10))
 
 // // example-2 : Print last 4 characters ?
-// let hname = 'aircampus'
-// console.log(hname.slice(-4))
+let hname = 'aircampus'
+console.log(hname.slice(-4))
 
 
-// // Printing Characters in Strings
-// let cname = 'Prakash-kumar-singh'
-// console.log(cname.charAt(7))
-// console.log(cname.charAt(12))
-// console.log(cname.charAt(17))
-// // when the position is not present it will give Empty Space
-// console.log(cname.charAt(70))
+// Printing Characters in Strings
+let cname = 'Prakash-kumar-singh'
+console.log(cname.charAt(7))
+console.log(cname.charAt(12))
+console.log(cname.charAt(17))
+// when the position is not present it will give Empty Space
+console.log(cname.charAt(70))
 
 
 // // // Loadash website is very Important
@@ -107,18 +107,18 @@
 
 
 // // substr method -: in this method it will take length  not Ending value. IInd value give how many characters i want
-// let Aname = 'vasanthkumarvinayagamr'
-// // we want 12 characters
-// console.log(fname.substr(7,12))
+let Aname = 'vasanthkumarvinayagamr'
+// we want 12 characters
+console.log(fname.substr(7,12))
 
 
 
 // // // Chang String into uppercase  and lowercase
-// let tname = 'shivanshrawat'
-// console.log(tname.toUpperCase())
+let tname = 'shivanshrawat'
+console.log(tname.toUpperCase())
 
-// let kname = 'PRAKASHKUMAR'
-// console.log(kname.toLowerCase())
+let kname = 'PRAKASHKUMAR'
+console.log(kname.toLowerCase())
 
 // // // Remove spaces : trim method used in all chat application , in all search engine etc.
 // let kname = '           PRAKASHKUMAR         '
@@ -146,41 +146,36 @@
 
 // // // OR we can use replace , for using replace just put the value into /value/ two slashes which want to change and also write  'i' means in-sensetitive and g means global . there is no need of replaceAll()
 
-// let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
-//  console.log(news.replace(/india/i , 'pakistan'))
-// console.log(news.replace(/india/g , 'pakistan'))
-// console.log(news.replace(/india/gi , 'pakistan'))
+let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
+ console.log(news.replace(/india/i , 'pakistan')) ;
+console.log(news.replace(/india/g , 'pakistan'))  ;
+console.log(news.replace(/india/gi , 'pakistan')) ;
 
 
 // How to count the number of Words -: using Split , string converts into Array.
 
-let news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
-// // it converts into Array
-// console.log(news.split(' '))
-// console.log(news.split(' ').length)
-// // it also removes character, numbers and words, just pass that character into parameter
-// console.log(news.split('a'))
-// console.log(news.split(1))
-// console.log(news.split('i'))
-// console.log(news.split('india'))
-// // when we pass two characters or words , it gives empty array because it finds the whole string
-// console.log(news.split('i','a'))
-// console.log(news.split('india','won'))
-
-
-
-
-
+ news = 'india won the world cup. India won the world cup after 2011. india is a bad country, and also India is a poor country'
+// it converts into Array
+console.log(news.split(' '))
+console.log(news.split(' ').length)
+// it also removes character, numbers and words, just pass that character into parameter
+console.log(news.split('a'))
+console.log(news.split(1))
+console.log(news.split('i'))
+console.log(news.split('india'))
+// when we pass two characters or words , it gives empty array because it finds the whole string
+console.log(news.split('i','a'))
+console.log(news.split('india','won'))
 
 
 // // //  Concat method-:
-// let mums1 = [1, 2, 3]
-// let mums2 = [4, 5, 6]
-// let mums3 = [7, 8, 9]
+let mums1 = [1, 2, 3]
+let mums2 = [4, 5, 6]
+let mums3 = [7, 8, 9]
 
-// console.log(mums1.concat(mums2))
-// // in concat we can pass many parameters
-// console.log(mums1.concat('vasanth', 'prakash' , mums2, mums3))
+console.log(mums1.concat(mums2)) ;
+// in concat we can pass many parameters
+console.log(mums1.concat('vasanth', 'prakash' , mums2, mums3)) ;
 
 
 // // Spread Operator( ... ) -: it works only in Arrays and Sets not in normal numbers.
