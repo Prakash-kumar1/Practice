@@ -11,8 +11,6 @@ for(let i=0; i<arr.length; i++){
 console.log(max);
 
 
-
-
 //Find min 
 let arr1=[1,-23,45,70];
 let min=0;
