@@ -90,3 +90,6 @@ while (arr5.length > 0){
   NewArr.push(arr5.splice(0,3)) ;
 }
 console.log(NewArr) ;
+
+
+// Printing the numbers which Index Position is Odd as well as element is Odd
