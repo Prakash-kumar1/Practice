@@ -82,3 +82,11 @@ function power2(array) {
 }
 power2(numbers)
 console.log(numbers); //[1,4,9,16,25]
+
+
+let arr5 = [1,2,3,4,5,6,7,8] ;
+let NewArr = [] ;
+while (arr5.length > 0){
+  NewArr.push(arr5.splice(0,3)) ;
+}
+console.log(NewArr) ;
