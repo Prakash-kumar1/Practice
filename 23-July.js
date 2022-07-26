@@ -93,3 +93,13 @@ console.log(NewArr) ;
 
 
 // Printing the numbers which Index Position is Odd as well as element is Odd
+
+let arr6 = [1,2,3,7,5,9] ;
+let NewArray = [] ;
+
+for(let i in arr6){
+  if( i%2 != 0 && arr6[i]%2 != 0){
+    NewArray.push(arr6[i]) ;
+  }
+}
+console.log(NewArray) ;
