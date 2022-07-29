@@ -163,15 +163,15 @@ setTimeout(function(){
  console.log("Namaste Javascript")
     }, 0)
     console.log('sixth')
-console.log('fifth')
-console.log('first')
-console.log('second')
-console.log('third')
-console.log('fourth')
-console.log('first')
-console.log('second')
-console.log('third')
-console.log('fourth')
+console.log('fifth') ;
+console.log('first') ; 
+console.log('second') ;
+console.log('third') ;
+console.log('fourth') ;
+console.log('first') ;
+console.log('second') ;
+console.log('third') ; 
+console.log('fourth') ;
 console.log('first')
 console.log('second')
 console.log('third')
