@@ -13,7 +13,7 @@ alert("changing the text") ;
 document.querySelector("h1").innerText = "Good Bye ! class is over"
 
 
-// Accessing IInd h1 tag
+// // Accessing IInd h1 tag
 
 console.log(document.querySelector(".IInd").innerText)    // Welcome Prakash
 
@@ -42,12 +42,64 @@ for (let i = 0; i < change.length; i++) {
     // console.log(i);                                    // it give index values of list
 console.log(change[i].innerText) ;                               // it will give all values
 
-//  changing "vasanth"  to  "Shivansh Rawat"
+//  changing "vasanth"  to  "Shivansh Rawat" on web page
 if (change[i].innerText === "vasanth") {
     change[i].innerText = " Shivansh Rawat"    
 }
     console.log(change[i].innerText) ;                         // it change see on console
 }
+
+
+// An important property : 
+
+// space --> represent inside the tag
+console.log(document.querySelector("div .container")) ;                /* <p class="container">This is example of space</p> */
+
+// Without space --> represent same tag
+console.log(document.querySelector("div.contain"))  ;                  // null
+
+// Accessing firstChild , FirstElementChild ,  LastChild , LastElementChild
+
+console.log(document.firstChild)    ;               // <! DOCTYPE html>
+console.log(document.firstElementChild) ;             // gives whole <html>
+console.log(document.firstElementChild.firstElementChild) ;        // gives head tag
+console.log(document.firstElementChild.lastElementChild) ;              // gives Body tag
+console.log(document.firstElementChild.lastElementChild.firstElementChild)   // gives heading tag statement
+
+// Changing Color : it gives red color on h1 tag and on console
+
+let colr=document.querySelector('h1').style.color = 'red' ;
+console.log(colr) ;
+
+colr=document.querySelector('.IInd').style.color = 'blue' ;
+console.log(colr) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
