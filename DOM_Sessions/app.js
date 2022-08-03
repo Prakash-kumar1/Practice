@@ -74,18 +74,41 @@ console.log(colr) ;
 colr=document.querySelector('.IInd').style.color = 'blue' ;
 console.log(colr) ;
 
+colr=document.querySelector('div').style.color = 'violet' ;
+console.log(colr) ;
 
+colr=document.querySelector('#col').style.color = 'yellow' ;
+console.log(colr) ;
 
+colr=document.querySelector('.contain').style.backgroundColor = 'pink' ;
+console.log(colr) ;
 
+// Changing Font size
 
+colr=document.querySelector('.contain').style.fontSize = '30px' ;
+console.log(colr) ;
 
+colr=document.querySelector('.container').style.fontSize = '50px' ;
+console.log(colr) ;
 
+// Changing anchor tag
 
+let link = document.querySelector('a')
+console.log(link) ;                     /* <a href="http://google.com">Go to Google</a> */
 
+// Finding link
+link = document.querySelector('a').getAttribute('href')
+console.log(link) ; 
+// it returns Google link : -  "http://google.com" 
 
+// Changing link
+link = document.querySelector('a').setAttribute('href' , 'https://javascript.info/')
+console.log(link) ; 
+// we click on "Go to Google" , but we go on Javascript tutorial
 
-
-
+link = document.querySelector('a').setAttribute('href' , 'https://www.facebook.com/')
+console.log(link) ; 
+// we click on "Go to Google" , but we go on Facebook Log in Page
 
 
 
