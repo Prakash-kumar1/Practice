@@ -7,13 +7,41 @@
     <title>Document</title>
 </head>
 <body>
+    <a id="anchor" href="https://google.com"></a>
     <div class="container">
+
         <p class="para">Vasanth</p>
+<!-- let paraTags = document.getElementsByClassName('para')
+undefined
+paraTags[0]
+<p class=​"para">​Vasanth​</p>​
+paraTags[0].innerText
+'Vasanth' -->
+
+<!-- When we use innerText it gives only Text but when we use innerHTML it gives whole element -->
+
         <p class="para">Prakash</p>
 
         <p class="para">
-            <span class="spanClass">Govind</span>
-            <span class="spanClass">Rajesh</span>
+            <span class="spanClass"><span>Govind</span></span>
+
+<!-- let paraTags = document.getElementsByClassName('spanClass')
+undefined
+paraTags[0].innerText
+'Govind'
+paraTags[0].innerHTML
+'<span>Govind</span>' -->
+
+    <span class="spanlass"><span><span>Rajesh</span></span></span>
+ <!-- let paraTags = document.getElementsByClassName('spanlass')
+undefined
+paraTags[0].getElementsByTagName('span')
+HTMLCollection(2) [span, span]
+paraTags[0].getElementsByTagName('span')[1]
+<span>​Rajesh​</span>​
+paraTags[0].getElementsByTagName('span')[1].innerText
+    'Rajesh' -->
+
         </p>
 
         <p class="para">
@@ -25,7 +53,7 @@
             <span class="spanClass"></span>
             <span class="spanClass"></span>
         </p>
-        
+    <!-- document.getElementsByName mostly used in Forms -->
     </div>
 </body>
 </html>
