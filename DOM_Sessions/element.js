@@ -46,13 +46,49 @@ const Child = document.querySelector(".child") ;
 // // because when we click on body it will check that html is an event or not , if it is an Event then print ,if it is not an Event then don't print . similarly , for document , it will check
 
 
-// event capturing : it is also called Trippling
+// // event capturing : it is also called Trippling
+
+// grandParent.addEventListener("click" , () => {
+//     console.log("grandParent Bubbling");                                      
+// }) ;
+
+// Parent.addEventListener("click" , () => {
+//     console.log("Parent Bubbling") ;
+// });
+
+// Child.addEventListener("click" , () => {
+//     console.log("Child Bubbling");                                       
+// }) ;
+
+// grandParent.addEventListener("click" , () => {
+//     console.log("grandParent Capturing");                                      
+// },{capture : true}) ;
+
+// Parent.addEventListener("click" , () => {
+//     console.log("Parent Capturing") ;
+// },{capture : true});
+
+// Child.addEventListener("click" , () => {
+//     console.log("Child Capturing");                                       
+// },{capture : true}) ;
+
+// // Output :- grandParent Capturing
+// //           Parent Capturing
+// //           Child Capturing
+// //           Child Bubbling
+// //           Parent Bubbling
+// //           grandParent Bubbling
+
+
+// // Stop Propogation:- if we want to stop.
+// // here we apply on parent , so it will not go to grandParent.
 
 grandParent.addEventListener("click" , () => {
     console.log("grandParent Bubbling");                                      
 }) ;
 
-Parent.addEventListener("click" , () => {
+Parent.addEventListener("click" , (event) => {
+    event.stopPropagation() ;
     console.log("Parent Bubbling") ;
 });
 
@@ -71,14 +107,6 @@ Parent.addEventListener("click" , () => {
 Child.addEventListener("click" , () => {
     console.log("Child Capturing");                                       
 },{capture : true}) ;
-
-// Output :- grandParent Capturing
-//           Parent Capturing
-//           Child Capturing
-//           Child Bubbling
-//           Parent Bubbling
-//           grandParent Bubbling
-
 
 
 
