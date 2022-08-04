@@ -80,15 +80,51 @@ const Child = document.querySelector(".child") ;
 // //           grandParent Bubbling
 
 
-// // Stop Propogation:- if we want to stop.
+// // Stop Propogation:- if we want to stop on Bubbling  and  Capturing , pass event as a parameter , use event.stopPropagation() ; on that  function.
 // // here we apply on parent , so it will not go to grandParent.
 
-grandParent.addEventListener("click" , () => {
-    console.log("grandParent Bubbling");                                      
-}) ;
+// grandParent.addEventListener("click" , () => {
+//     console.log("grandParent Bubbling");                                      
+// }) ;
 
-Parent.addEventListener("click" , (event) => {
-    event.stopPropagation() ;
+// Parent.addEventListener("click" , (event) => {
+//     event.stopPropagation() ;
+//     console.log("Parent Bubbling") ;
+// });
+
+// Child.addEventListener("click" , () => {
+//     console.log("Child Bubbling");                                       
+// }) ;
+
+// grandParent.addEventListener("click" , () => {
+//     console.log("grandParent Capturing");                                      
+// },{capture : true}) ;
+
+// Parent.addEventListener("click" , () => {
+//     console.log("Parent Capturing") ;
+// },{capture : true});
+
+// Child.addEventListener("click" , () => {
+//     console.log("Child Capturing");                                       
+// },{capture : true}) ;
+
+
+// an Important Property on Bubbling :- 'if we want to print only one time on click not IInd time'
+
+function printGrandParent(){
+    console.log("grandParent Bubbling");    
+}
+
+grandParent.addEventListener("click" ,printGrandParent);   
+// passing reference , removeEventListener automatically calls the function
+
+
+setTimeout(() => {
+    console.log("removing Grandparent")
+    grandParent.removeEventListener("click" ,printGrandParent); 
+}, 2000);
+
+Parent.addEventListener("click" , () => {
     console.log("Parent Bubbling") ;
 });
 
@@ -96,26 +132,34 @@ Child.addEventListener("click" , () => {
     console.log("Child Bubbling");                                       
 }) ;
 
-grandParent.addEventListener("click" , () => {
-    console.log("grandParent Capturing");                                      
-},{capture : true}) ;
 
-Parent.addEventListener("click" , () => {
-    console.log("Parent Capturing") ;
-},{capture : true});
-
-Child.addEventListener("click" , () => {
-    console.log("Child Capturing");                                       
-},{capture : true}) ;
-
-
+// output :- Child Bubbling
+//               Parent Bubbling
+//                grandParent Bubbling
+//                removing Grandparent
+//                Child Bubbling
+//                Parent Bubbling
+//                Child Bubbling
+//                Parent Bubbling
+//                Child Bubbling
+//                Parent Bubbling
 
 
 
+// Adding  new  elements :  use "Append"
+
+const newDiv = document.createElement("div")
+newDiv.style.width = "10rem" ;
+newDiv.style.height = "10rem" ;
+newDiv.style.backgroundColor = "blue"  ;
+const para = document.createElement("p");
+para.innerText = "Prakash Kumar" ;
+newDiv.append(para) ;
+document.body.append(newDiv) ;
 
 
-
-
-
-
+// Adding in Grand parent
+const par = document.createElement("p");
+par.innerText = "vasanth Kumar" ;
+grandParent.append(par) ;
 
