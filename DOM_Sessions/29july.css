@@ -1,0 +1,27 @@
+.child {
+    height: 4rem;
+    width: 4rem;
+    background-color: dodgerblue;
+}
+
+.parent {
+    height: 8rem;
+    width: 8rem;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grandParent {
+    height: 14rem;
+    width: 14rem;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    padding: 5rem;
+}
