@@ -46,7 +46,7 @@ const Child = document.querySelector(".child") ;
 // // because when we click on body it will check that html is an event or not , if it is an Event then print ,if it is not an Event then don't print . similarly , for document , it will check
 
 
-// event capturing
+// event capturing : it is also called Trippling
 
 grandParent.addEventListener("click" , () => {
     console.log("grandParent Bubbling");                                      
@@ -71,6 +71,13 @@ Parent.addEventListener("click" , () => {
 Child.addEventListener("click" , () => {
     console.log("Child Capturing");                                       
 },{capture : true}) ;
+
+// Output :- grandParent Capturing
+//           Parent Capturing
+//           Child Capturing
+//           Child Bubbling
+//           Parent Bubbling
+//           grandParent Bubbling
 
 
 
