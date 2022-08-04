@@ -185,3 +185,17 @@ for(let i=0; i<5; i++){
 // if we use newDiv1.remove() , it will only remove last one (purple div) in case "var" but not in let . so write 
 // var newDiv1 = document.createElement("div") then use ,  newDiv1.remove()
 
+// "This" in DOM
+
+function test(){
+    console.log(this) ;
+}
+grandParent.addEventListener("click" , test) ;
+// when we click on grandParent , it will give "<div class="grandParent">"gp"  similarly for child
+Child.addEventListener("click" , test) ;
+// "<div class="child">"c"
+
+
+// eval() Function :- all mathematical expressions are evaluated
+console.log(eval(10*5 / 2)) ;
+console.log(eval(10**5 / 2)) ;
