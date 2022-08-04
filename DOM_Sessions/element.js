@@ -163,3 +163,25 @@ const par = document.createElement("p");
 par.innerText = "vasanth Kumar" ;
 grandParent.append(par) ;
 
+// Taking Input 
+function change(event){
+    console.log(event.target.value) ;
+}
+
+// Read about some event and apply them on their own
+
+// using For loop to make some new Divs
+
+let colors = ["red" , "pink" , "yellow" , "tomato" , "purple"]
+
+for(let i=0; i<5; i++){
+ let newDiv1 = document.createElement("div")
+    newDiv1.style.width = "10rem" ;
+    newDiv1.style.height = "5rem" ;
+    newDiv1.style.backgroundColor = colors[i]  ;
+    newDiv1.style.marginTop = "10px" ;
+    document.body.append(newDiv1) ;
+}
+// if we use newDiv1.remove() , it will only remove last one (purple div) in case "var" but not in let . so write 
+// var newDiv1 = document.createElement("div") then use ,  newDiv1.remove()
+
