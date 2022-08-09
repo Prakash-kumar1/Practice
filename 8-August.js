@@ -100,6 +100,7 @@ coin() ;
 coin() ;
 
 
+// In this we access the  data  but we can't  change 
 
 function getCredentials(){
     let username = "Prakash" ;
@@ -118,3 +119,33 @@ function getCredentials(){
 
 let prakashCredentials =  getCredentials() ;
 console.log(prakashCredentials()) ;
+
+
+// for changing  the  data , we are going to use  Closures .
+
+
+
+function getCredent(){
+    let username = "Prakash Kumar" ;
+    let password =  "zyx#123@31"  ;
+    let count = 1 ;
+
+    return function() {
+      let credentials = {
+        username : username ,
+        password :  password ,
+      } ;
+      if(count % 3 == 0){
+        count += 1 ;
+        return credentials ;
+      }
+      count += 1 ;
+        } ;
+    } ;
+
+
+let fhgf =  getCredent() ;
+username = "Govind Verma" ;
+console.log(fhgf()) ;
+console.log(fhgf()) ;
+console.log(fhgf()) ;
