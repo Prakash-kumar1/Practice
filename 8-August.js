@@ -1,4 +1,4 @@
-// Closures
+// Concepts of Closures  property
  
 
 // var has a functional scope . so, Outside " console.log(name)"  shows Reference error .(name is not defined) 
@@ -168,3 +168,5 @@ for(var i = 0; i<5; i++){
         }, 1000);
     })(i) ;
 }
+
+// we can't use let because let has Block - Scoped.
