@@ -56,17 +56,28 @@ counter() ;                                           // 3
 counter() ;                                         // 4
 
 
+// Lexical Environment :-   A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to 
+// the name of variables/functions, and the variable is the reference to actual object [including function object or primitive value]. 
+// Lexical in general means in hierarchy or in a sequence.
 
 
+function createCounter(){
+    let count = 1 ;
+    // let age =  10 ;
 
+    function  counterIncrement(){
+        count++ ;
+        return count ;
+    }
 
+    return counterIncrement ;
+}
 
+let county = createCounter() ;
+console.log(county()) ;                          // 2 
+console.log(county()) ;                         // 3
 
-
-
-
-
-
+// In this case , whenever I  return  a function it will take a reference of variable count and return . this is known as Lexical  Environment
 
 
 
