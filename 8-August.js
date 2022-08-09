@@ -76,6 +76,8 @@ function createCounter(){
 let county = createCounter() ;
 console.log(county()) ;                          // 2 
 console.log(county()) ;                         // 3
+console.log(county()) ;                         // 4 
+console.log(county()) ;                         // 5
 
 // In this case , whenever I  return  a function it will take a reference of variable count and return . this is known as Lexical  Environment
 
