@@ -121,7 +121,8 @@ let prakashCredentials =  getCredentials() ;
 console.log(prakashCredentials()) ;
 
 
-// for changing  the  data , we are going to use  Closures .
+// for changing  the  data , we are going to use  Closures . similarly , like above it will print 3rd
+// time .
 
 
 
@@ -145,7 +146,15 @@ function getCredent(){
 
 
 let fhgf =  getCredent() ;
-username = "Govind Verma" ;
 console.log(fhgf()) ;
 console.log(fhgf()) ;
 console.log(fhgf()) ;
+
+
+// setTimeout will go into WebAPI with reference  of  i , then it will print 5 times 5 .
+
+for(var i = 0; i<5; i++){
+    setTimeout(() => {
+        console.log(i) ; 
+    }, 1000);
+}
