@@ -101,69 +101,20 @@ coin() ;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function getCredentials(){
+    let username = "Prakash" ;
+    let password =  "12345"  ;
+
+
+    return function () {
+        let credentials  =  {
+            username : username ,
+            password :  password ,
+        } ;
+        return credentials ;
+    } ;
+
+}
+
+let prakashCredentials =  getCredentials() ;
+console.log(prakashCredentials()) ;
