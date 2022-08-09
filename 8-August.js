@@ -158,3 +158,13 @@ for(var i = 0; i<5; i++){
         console.log(i) ; 
     }, 1000);
 }
+
+// For printing  numbers , making IIFE function ,passing i as a parameter .
+
+for(var i = 0; i<5; i++){
+    (function(j){
+        setTimeout(() => {
+            console.log(j) ; 
+        }, 1000);
+    })(i) ;
+}
