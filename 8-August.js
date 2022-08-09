@@ -81,14 +81,23 @@ console.log(county()) ;                         // 5
 
 // In this case , whenever I  return  a function it will take a reference of variable count and return . this is known as Lexical  Environment
 
+// Print only on when 3rd  time calls . 
 
+function print(){
+    let count = 1 ;
+    return function() {
+  if(count % 3 === 0){
+    console.log("Printing" , count) ;
+  } 
+  console.log(count) ;
+      count += 1 ;   
+    };
+}
 
-
-
-
-
-
-
+let coin = print() ;
+coin() ;
+coin() ;
+coin() ;
 
 
 
