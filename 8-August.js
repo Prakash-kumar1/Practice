@@ -169,4 +169,15 @@ for(var i = 0; i<5; i++){
     })(i) ;
 }
 
-// we can't use let because let has Block - Scoped.
+//  let has Block - Scoped.
+
+ for(let i = 0; i<5; i++){
+    (function(j){
+        setTimeout(() => {
+            console.log(j) ; 
+        }, 1000);
+    })(i) ;
+}
+
+// closures create Memory Leak (Heap memory filled out)Problem 
+
