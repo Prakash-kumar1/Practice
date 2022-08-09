@@ -26,9 +26,27 @@ demo() ;
 
 // // In this case counter create only one new execution context on calling because var is declared outside. so the value starts from 1 and increases on clling.
 
+// var count = 1;
+
+// function counter(){
+//     count++ ;
+// console.log(count) ;
+// }
+//                                                  // Output
+// counter() ;                                       // 2 
+// counter() ;                                           // 3 
+// counter() ;                                         // 4
+
+
+// In this case variable age  &  function check present inside the counter execution context 
 var count = 1;
 
 function counter(){
+    var age = 10; 
+    function check(){
+        console.log("Inside counter" , age , count) ;
+    }
+    check() ;
     count++ ;
 console.log(count) ;
 }
@@ -36,8 +54,6 @@ console.log(count) ;
 counter() ;                                       // 2 
 counter() ;                                           // 3 
 counter() ;                                         // 4
-
-
 
 
 
