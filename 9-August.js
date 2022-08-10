@@ -23,51 +23,70 @@
 // //           reading data from the database....
 
 
-// // If we want to print {id: id , githubUserName: "Prakash-kumar"} ; then used  Callback function .
+// // // If we want to print {id: id , githubUserName: "Prakash-kumar"} ; then used  Callback function .
 
-function getUser(id , callback){
-    console.log(callback) ;
+// function getUser(id , callback){
+//     console.log(callback) ;
+//     setTimeout(() => {
+//         console.log("reading data from the database....") ;
+//         let object = ( {id: id , githubUserName: "Prakash-kumar"} );
+//         callback(object) ;
+//     }, 2000) ;
+// }
+
+// console.log('before') ;
+// const object = getUser(1 , function callback(object){
+//     console.log(object) ;
+//  }) ;
+
+// console.log('after') ;
+
+// // we can also used  Arrow Function
+
+// function gitUser(id , callbackfn){
+//     console.log(callbackfn) ;
+//     setTimeout(() => {
+//         console.log("I am eating my Breakfast") ;
+//         let object = ( {id: id , githubUserName: "Govind-verma"} );
+//         callbackfn(object) ;
+//     }, 20000) ;
+// }
+
+// console.log('Lunch') ;
+// const objec = gitUser(5 , (objec) => {
+//     console.log(objec) ;
+//  }) ;
+
+// console.log('Dinner') ;
+
+
+// // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
+
+function prepareFood(startEating){
     setTimeout(() => {
-        console.log("reading data from the database....") ;
-        let object = ( {id: id , githubUserName: "Prakash-kumar"} );
-        callback(object) ;
-    }, 2000) ;
+        console.log("food is prepared") ;
+        console.log("deliever to the table") ;
+        startEating() ;
+    }, 10000);
 }
 
-console.log('before') ;
-const object = getUser(1 , function callback(object){
-    console.log(object) ;
- }) ;
-
-console.log('after') ;
-
-// we can also used  Arrow Function
-
-function gitUser(id , callbackfn){
-    console.log(callbackfn) ;
+function eatRotis(){
     setTimeout(() => {
-        console.log("I am eating my Breakfast") ;
-        let object = ( {id: id , githubUserName: "Govind-verma"} );
-        callbackfn(object) ;
-    }, 20000) ;
+        console.log("Eating Rotis with Daal") ;
+        console.log("Paying the Bill") ;
+    }, 5000);
 }
 
-console.log('Lunch') ;
-const objec = gitUser(5 , (objec) => {
-    console.log(objec) ;
- }) ;
+function hotelVisit() {
+    console.log("Entering into the hotel") ;
+    console.log("order 2 rotis with butter chicken") ;
+    console.log("Chef preparing the order") ;
 
-console.log('Dinner') ;
+    prepareFood(eatRotis) ;
+}
+hotelVisit() ;
 
-
-
-
-
-
-
-
-
-
+// prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
 
 
 
