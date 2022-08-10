@@ -123,6 +123,26 @@
 // dinnerScenario() 
 
 
+  async function dinnerScenario() {
+    console.log("entering into the Hotel")
+    console.log("Calling  the server and order PavBhaji")
+    console.log("server informing the chef to prepare food");
+    try{
+        let foodMsg = await preparationofFood()
+        console.log(foodMsg)
+        
+        let ateMsg = await eatingFood()
+        console.log(ateMsg)
+        
+        let paymentMsg = await payment()
+        console.log(paymentMsg)
+    } catch (err){
+        console.log("error block-->>" , err)
+    }
+
+}
+
+
 // parellel  OR  concurrent  execution
 
 // function fn1() {
@@ -152,27 +172,34 @@
 // ) ;
 
 
-function fn1() {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            console.log("process 1")
-            reject("1") ;
-        }, 5000);
-    })
-}
+// function fn1() {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             console.log("process 1")
+//             reject("1") ;
+//         }, 5000);
+//     })
+// }
 
-function fn2() {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            console.log("process 2")
-            resolve("2") ;
-        }, 5000);
-    }) ;
-}
+// function fn2() {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             console.log("process 2")
+//             resolve("2") ;
+//         }, 5000);
+//     }) ;
+// }
 
-Promise.all([fn1() , fn2()])
-.then((result) => console.log("process over" , result))
+// Promise.all([fn1() , fn2()])
+// .then((result) => console.log("process over" , result))
 
-.catch((err) => console.log("error block-->>" , err))  
- 
-.finally(() => console.log("closing connection")) ;
+// .catch((err) => console.log("error block-->>" , err))  
+
+// .finally(() => console.log("closing connection")) ;
+
+// Promise.race([fn1() , fn2()])
+// .then((result) => console.log("process over" , result))
+
+// .catch((err) => console.log("error block-->>" , err))  
+
+// .finally(() => console.log("closing connection")) ;
