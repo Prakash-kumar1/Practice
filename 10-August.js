@@ -67,21 +67,29 @@ function preparationofFood(){
 
 function payment() {
     return new Promise((resolve , reject) => {
-        console.log("paying the bill") ;
-        console.log("leaving the hotel ") ;
-        resolve() ;
+        let pursePresent = true ;
+        if(pursePresent){
+            console.log("paying the bill") ;
+            console.log("leaving the hotel ") ;
+            resolve() ;
+        }else{
+            reject("go and washing the Plates ")
+        }
+        
     }) ;
 }
-
-
-
-
 
 function dinnerScenario() {
     console.log("entering into the Hotel")
     console.log("Calling  the server and order PavBhaji")
     console.log("server informing the chef to prepare food")
-preparationofFood(eatingFood) ;    
+preparationofFood()
+          .then(() => console.log("food prepared succesfully & delievered"))
+          .catch((error) => console.log("error block-->>" , error)) ;
+
+        //   eatingFood()
+        //   .then(() => console.log(" succesfully ate the food"))
+         
 }
 
 dinnerScenario() 
