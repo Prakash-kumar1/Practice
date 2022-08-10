@@ -84,12 +84,17 @@ function dinnerScenario() {
     console.log("Calling  the server and order PavBhaji")
     console.log("server informing the chef to prepare food")
 preparationofFood()
-          .then(() => console.log("food prepared succesfully & delievered"))
-          .catch((error) => console.log("error block-->>" , error)) ;
-
-        //   eatingFood()
-        //   .then(() => console.log(" succesfully ate the food"))
-         
+          .then(() =>{
+           console.log("food prepared succesfully & delievered") ;
+            eatingFood().then(() => {
+                console.log(" succesfully ate the food");
+                payment()
+                .then(()=> console.log("process over go to bed and sleep"))
+                .catch((error) => console.log("error " , error)) ;    
+            } )
+           
+})
+          .catch((error) => console.log("error block-->>" , error)) ;        
 }
 
 dinnerScenario() 
