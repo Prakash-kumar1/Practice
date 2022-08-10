@@ -60,33 +60,57 @@
 // console.log('Dinner') ;
 
 
-// // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
+// // Example :- 1
 
-function prepareFood(startEating){
-    setTimeout(() => {
-        console.log("food is prepared") ;
-        console.log("deliever to the table") ;
-        startEating() ;
-    }, 10000);
+// // // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
+
+// function prepareFood(startEating){
+//     setTimeout(() => {
+//         console.log("food is prepared") ;
+//         console.log("deliever to the table") ;
+//         startEating() ;
+//     }, 10000);
+// }
+
+// function eatRotis(){
+//     setTimeout(() => {
+//         console.log("Eating Rotis with Daal") ;
+//         console.log("Paying the Bill") ;
+//     }, 5000);
+// }
+
+// function hotelVisit() {
+//     console.log("Entering into the hotel") ;
+//     console.log("order 2 rotis with butter chicken") ;
+//     console.log("Chef preparing the order") ;
+
+//     prepareFood(eatRotis) ;
+// }
+// hotelVisit() ;
+
+// // prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
+
+
+// Example :- 2
+
+// enter userID --> calling my database with userID --> get the userData --> display the userData in Github page .
+
+function readDataInDB(display) {
+ setTimeout(() => {
+    console.log("reading account date in the DataBase") ;
+    let user = ( {id: 11 , githubUserName: "Pro-Abhi"} );
+        display(user) ;
+ }, 2000);
 }
 
-function eatRotis(){
-    setTimeout(() => {
-        console.log("Eating Rotis with Daal") ;
-        console.log("Paying the Bill") ;
-    }, 5000);
+function displayDataonScreen(userData){
+    console.log("returning the user data" , userData) ;
+    console.log("display the content in the Github Page") ;
 }
 
-function hotelVisit() {
-    console.log("Entering into the hotel") ;
-    console.log("order 2 rotis with butter chicken") ;
-    console.log("Chef preparing the order") ;
-
-    prepareFood(eatRotis) ;
+function githubLogin(){
+    console.log("Enterning the user ID as 11") ;
+    console.log("Clicking the Submit Button") ;
+    readDataInDB(displayDataonScreen) ;
 }
-hotelVisit() ;
-
-// prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
-
-
-
+githubLogin() ;
