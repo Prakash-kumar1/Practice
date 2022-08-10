@@ -172,5 +172,7 @@ function fn2() {
 
 Promise.all([fn1() , fn2()])
 .then((result) => console.log("process over" , result))
-.catch((err) => console.log("error block-->>" , err))   
+
+.catch((err) => console.log("error block-->>" , err))  
+ 
 .finally(() => console.log("closing connection")) ;
