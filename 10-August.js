@@ -81,48 +81,49 @@ function payment() {
     }) ;
 }
 
-function dinnerScenario() {
-    console.log("entering into the Hotel") ;
-    console.log("Calling  the server and order PavBhaji") ;
-    console.log("server informing the chef to prepare food") ;
-preparationofFood()
-          .then(() =>{
-           console.log("food prepared succesfully & delievered") ;
-            eatingFood().then(() => {
-                console.log(" succesfully ate the food");
-                payment()
-                .then(()=> console.log("process over go to bed and sleep"))
-                .catch((error) => console.log("error " , error)) ;    
-            } )
-            .catch((error) => console.log(error.message)) ; 
-})
-          .catch((error) => console.log("error block-->>" , error)) ;        
-}
-
-dinnerScenario() 
-
-
-
+// // main code
 // function dinnerScenario() {
-//     console.log("entering into the Hotel")
-//     console.log("Calling  the server and order PavBhaji")
-//     console.log("server informing the chef to prepare food")
+//     console.log("entering into the Hotel") ;
+//     console.log("Calling  the server and order PavBhaji") ;
+//     console.log("server informing the chef to prepare food") ;
 // preparationofFood()
-// .then((success) =>{
-//     console.log("food prepared succesfully & delievered" , success) ;
-//     return eatingFood()
+//           .then(() =>{
+//            console.log("food prepared succesfully & delievered") ;
+//             eatingFood().then(() => {
+//                 console.log(" succesfully ate the food");
+//                 payment()
+//                 .then(()=> console.log("process over go to bed and sleep"))
+//                 .catch((error) => console.log("error " , error)) ;    
+//             } )
+//             .catch((error) => console.log(error.message)) ; 
 // })
-
-// .then((atemsg) =>{
-//     console.log("succesfully ate food" , atemsg) ;
-//     return payment() ;
-// })
-// .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg))
-// .catch((error) => console.log("error block-->>" , error)) ;     
-
+//           .catch((error) => console.log("error block-->>" , error)) ;        
 // }
 
 // dinnerScenario() 
+
+// OR  we can write main code this way
+
+function dinnerScenario() {
+    console.log("entering into the Hotel")
+    console.log("Calling  the server and order PavBhaji")
+    console.log("server informing the chef to prepare food")
+preparationofFood()
+.then((success) =>{
+    console.log("food prepared succesfully & delievered" , success) ;
+    return eatingFood()
+})
+
+.then((atemsg) =>{
+    console.log("succesfully ate food" , atemsg) ;
+    return payment() ;
+})
+.then((payMsg)=> console.log("process over go to bed and sleep" , payMsg))
+.catch((error) => console.log("error block-->>" , error)) ;     
+
+}
+
+dinnerScenario() 
 
 
 //   async function dinnerScenario() {
