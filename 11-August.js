@@ -43,51 +43,62 @@
 // //           Set-Time Out
 
 
-// Classes ==>>  JS is  Multi  Paradigm  Programming  Language
-// OOPs ==>>  Object  Oriented  Programming  system
-// Functional  Programming
-// Class  ==  Function
-// Class  is  a  syntactic  sugar  of  function .
-// async await  is  a syntactic  of  Promise .
+// // Classes ==>>  JS is  Multi  Paradigm  Programming  Language
+// // OOPs ==>>  Object  Oriented  Programming  system
+// // Functional  Programming
+// // Class  ==  Function
+// // Class  is  a  syntactic  sugar  of  function .
+// // async await  is  a syntactic  of  Promise .
 
 
-function  person(name , age) {
-    this.name = name ;
-    this.age = age ;
+// function  person(name , age) {
+//     this.name = name ;
+//     this.age = age ;
 
-    console.log(this) ;
-    return this ;
+//     console.log(this) ;
+//     return this ;
+// }
+// const vasanth = new person("vasanth" , 30) ;
+// console.log("this Returned" , vasanth) ;
+// const govind = new person("govind" , 3) ;
+// const rajesh = new person("rajesh" , 13) ;
+
+
+
+
+// class Person {
+//     constructor(name , age) {
+//         this.name = name ;
+//         this.age = age ;
+//     }
+//     getName() {
+//         return this.name ;
+//     }
+//     getAge() {
+//         return this.age ;
+//     }
+// }
+
+// let prakash = new Person("govind" , 56) ;
+// console.log(prakash.age , prakash.name) ;
+
+
+
+// Function Declaration are hoisted but  classes are not hoisted .
+people() ;
+
+function people() {
+    console.log("villagers") ;
 }
-const vasanth = new person("vasanth" , 30) ;
-console.log("this Returned" , vasanth) ;
-const govind = new person("govind" , 3) ;
-const rajesh = new person("rajesh" , 13) ;
 
 
-
-
-class Person {
-    constructor(name , age) {
-        this.name = name ;
-        this.age = age ;
-    }
-    getName() {
-        return this.name ;
-    }
-    getAge() {
-        return this.age ;
+class peoples1 {
+    constructor() {
+        console.log("villagers") ;   
     }
 }
 
-let prakash = new Person("govind" , 56) ;
-console.log(prakash.age , prakash.name) ;
-
-
-
-
-
-
-
+new peoples1() ;
 
 
 
