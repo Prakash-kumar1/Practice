@@ -29,9 +29,9 @@ setTimeout(() => {
     console.log("Set-Time Out") ; 
 }, 0);
 
-Promise.resolve(1).then(() => console.log("Promise 1") )
-Promise.resolve(1).then(() => console.log("Promise-2") )
-Promise.resolve(1).then(() => console.log("Promise-3") )
+Promise.resolve(1).then(() => console.log("Promise 1") )  ;
+Promise.resolve(1).then(() => console.log("Promise-2") )  ;
+Promise.resolve(1).then(() => console.log("Promise-3") )  ;
 
 console.log("end") ;
 
@@ -41,3 +41,25 @@ console.log("end") ;
 // //           Promise-2
 // //           Promise-3
 // //           Set-Time Out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
