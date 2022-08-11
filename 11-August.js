@@ -7,17 +7,37 @@
 // console.log(p1 , p2) ;
 
 
+// console.log("starting") ;
+
+// setTimeout(() => {
+//     console.log("Set-Time Out") ; 
+// }, 4000);
+
+// Promise.resolve(1).then(() => console.log("Promise") )
+
+// console.log("end") ;
+
+// // Output : starting
+// //            end
+// //           Promise
+// //           Set-Time Out
+
+
 console.log("starting") ;
 
 setTimeout(() => {
-    console.log("settime Out") ; 
-}, 4000);
+    console.log("Set-Time Out") ; 
+}, 0);
 
-Promise.resolve(1).then(() => console.log("Promise") )
+Promise.resolve(1).then(() => console.log("Promise 1") )
+Promise.resolve(1).then(() => console.log("Promise-2") )
+Promise.resolve(1).then(() => console.log("Promise-3") )
 
 console.log("end") ;
 
-// Output : starting
-//            end
-//           Promise
-//           settime Out
+// // Output : starting
+// //            end
+// //           Promise 1
+// //           Promise-2
+// //           Promise-3
+// //           Set-Time Out
