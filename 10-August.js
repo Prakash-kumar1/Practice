@@ -120,6 +120,7 @@ preparationofFood()
     console.log("succesfully ate food" , atemsg) ;
     return payment() ;
 })
+
 .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
 // But if we write false anywhere , it will throw error . so for catching error , we use ' .catch '
 .catch((error) => console.log("error block-->>" , error)) ;     
@@ -202,6 +203,7 @@ dinnerScenario()
 // .catch((err) => console.log("error block-->>" , err))  
 
 // .finally(() => console.log("closing connection")) ;
+
 
 // Promise.race([fn1() , fn2()])
 // .then((result) => console.log("process over" , result))
