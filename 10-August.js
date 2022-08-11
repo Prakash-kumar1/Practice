@@ -170,14 +170,16 @@ function fn2() {
     }) ;
 }
 
-fn1()
-   .then(() => fn2())
-   .then(() => console.log("Process over")) ;
+// fn1()
+//    .then(() => fn2())
+//    .then(() => console.log("Process over")) ;
+// //    it takes 10 seconds to print . so, we used Promises
 
-// Promise.all([fn1() , fn2()]).then((result) =>
-// console.log("process over" , result)
-// ) ;
 
+Promise.all([fn1() , fn2()]).then((result) =>
+console.log("process over" , result)
+) ;
+// it takes 5 seconds to print .
 
 // function fn1() {
 //     return new Promise((resolve , reject) => {
