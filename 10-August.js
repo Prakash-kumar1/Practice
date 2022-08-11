@@ -150,14 +150,46 @@ function payment() {
 // }
 
 
-// Interview  Question : -->>  How  to  Optimized the Process ??
-// parellel  OR  concurrent  execution :
+// // Interview  Question : -->>  How  to  Optimized the Process ??
+// // parellel  OR  concurrent  execution :
+
+// function fn1() {
+//     return new Promise((res , rej) => {
+//         setTimeout(() => {
+//             console.log("process 1")
+//             res("1") ;
+//         }, 5000);
+//     })
+// }
+
+// function fn2() {
+//     return new Promise((res , rej) => {
+//         setTimeout(() => {
+//             console.log("process 2")
+//             res("2") ;
+//         }, 5000);
+//     }) ;
+// }
+
+// // fn1()
+// //    .then(() => fn2())
+// //    .then(() => console.log("Process over")) ;
+// // //    it takes 10 seconds to print . so, we used Promises
+
+
+// Promise.all([fn1() , fn2()]).then((result) =>
+// console.log("process over" , result)
+// ) ;
+// // it takes 5 seconds to print .
+
+
+// if i reject any of the function then it will automatically reject whole function . we can solve problem this way
 
 function fn1() {
     return new Promise((res , rej) => {
         setTimeout(() => {
             console.log("process 1")
-            res("1") ;
+            rej("rejected") ;
         }, 5000);
     })
 }
@@ -166,48 +198,17 @@ function fn2() {
     return new Promise((res , rej) => {
         setTimeout(() => {
             console.log("process 2")
-            res("2") ;
+            res("Accepted") ;
         }, 5000);
     }) ;
 }
 
-// fn1()
-//    .then(() => fn2())
-//    .then(() => console.log("Process over")) ;
-// //    it takes 10 seconds to print . so, we used Promises
+Promise.all([fn1() , fn2()])
+.then((result) => console.log("process over" , result))
 
+.catch((err) => console.log("error block-->>" , err))  
 
-Promise.all([fn1() , fn2()]).then((result) =>
-console.log("process over" , result)
-) ;
-// it takes 5 seconds to print .
-
-
-// if i reject any of the function then it will automatically reject whole function . we can solve problem this way
-// function fn1() {
-//     return new Promise((resolve , reject) => {
-//         setTimeout(() => {
-//             console.log("process 1")
-//             reject("1") ;
-//         }, 5000);
-//     })
-// }
-
-// function fn2() {
-//     return new Promise((resolve , reject) => {
-//         setTimeout(() => {
-//             console.log("process 2")
-//             resolve("2") ;
-//         }, 5000);
-//     }) ;
-// }
-
-// Promise.all([fn1() , fn2()])
-// .then((result) => console.log("process over" , result))
-
-// .catch((err) => console.log("error block-->>" , err))  
-
-// .finally(() => console.log("closing connection")) ;
+.finally(() => console.log("closing connection")) ;
 
 
 // Promise.race([fn1() , fn2()])
