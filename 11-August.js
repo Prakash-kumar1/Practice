@@ -23,17 +23,17 @@
 // //           Set-Time Out
 
 
-console.log("starting") ;
+// console.log("starting") ;
 
-setTimeout(() => {
-    console.log("Set-Time Out") ; 
-}, 0);
+// setTimeout(() => {
+//     console.log("Set-Time Out") ; 
+// }, 0);
 
-Promise.resolve(1).then(() => console.log("Promise 1") )  ;
-Promise.resolve(1).then(() => console.log("Promise-2") )  ;
-Promise.resolve(1).then(() => console.log("Promise-3") )  ;
+// Promise.resolve(1).then(() => console.log("Promise 1") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-2") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-3") )  ;
 
-console.log("end") ;
+// console.log("end") ;
 
 // // Output : starting
 // //            end
@@ -43,16 +43,44 @@ console.log("end") ;
 // //           Set-Time Out
 
 
+// Classes ==>>  JS is  Multi  Paradigm  Programming  Language
+// OOPs ==>>  Object  Oriented  Programming  system
+// Functional  Programming
+// Class  ==  Function
+// Class  is  a  syntactic  sugar  of  function .
+// async await  is  a syntactic  of  Promise .
+
+
+function  person(name , age) {
+    this.name = name ;
+    this.age = age ;
+
+    console.log(this) ;
+    return this ;
+}
+const vasanth = new person("vasanth" , 30) ;
+console.log("this Returned" , vasanth) ;
+const govind = new person("govind" , 3) ;
+const rajesh = new person("rajesh" , 13) ;
 
 
 
 
+class Person {
+    constructor(name , age) {
+        this.name = name ;
+        this.age = age ;
+    }
+    getName() {
+        return this.name ;
+    }
+    getAge() {
+        return this.age ;
+    }
+}
 
-
-
-
-
-
+let prakash = new Person("govind" , 56) ;
+console.log(prakash.age , prakash.name) ;
 
 
 
