@@ -182,6 +182,8 @@ console.log("process over" , result)
 ) ;
 // it takes 5 seconds to print .
 
+
+// if i reject any of the function then it will automatically reject whole function . we can solve problem this way
 // function fn1() {
 //     return new Promise((resolve , reject) => {
 //         setTimeout(() => {
