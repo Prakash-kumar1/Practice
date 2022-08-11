@@ -61,7 +61,7 @@ function preparationofFood(){
     function eatingFood() {
         return new Promise((resolve , reject) => {
     setTimeout(() => {
-        console.log("eating the PavBhaji... ")
+        console.log("eating the PavBhaji... ") ;
         resolve() ;
     }, 2000);
 });
@@ -75,16 +75,16 @@ function payment() {
             console.log("leaving the hotel ") ;
             resolve() ;
         }else{
-            reject("go and washing the Plates ")
+            reject("go and washing the Plates ") ;
         }
         
     }) ;
 }
 
 function dinnerScenario() {
-    console.log("entering into the Hotel")
-    console.log("Calling  the server and order PavBhaji")
-    console.log("server informing the chef to prepare food")
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
 preparationofFood()
           .then(() =>{
            console.log("food prepared succesfully & delievered") ;
