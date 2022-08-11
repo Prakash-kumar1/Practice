@@ -25,7 +25,7 @@ function payingBillandTips() {
 function eatingFood(callbackOfPayment) {
     setTimeout(() => {
         console.log("eating the PavBhaji... ") ;
-        callbackOfPayment() ;
+        callbackOfPayment() ;                                      // payingBillandTips
     }, 2000);
 }
 
