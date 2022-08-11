@@ -29,6 +29,8 @@ function eatingFood(callbackOfPayment) {
     }, 2000);
 }
 
+//main code
+ 
 function dinnerScenario() {
     console.log("entering into the Hotel") ;
     console.log("Calling  the server and order PavBhaji") ;
