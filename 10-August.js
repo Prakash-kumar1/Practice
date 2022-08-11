@@ -152,27 +152,27 @@ function payment() {
 
 // parellel  OR  concurrent  execution
 
-// function fn1() {
-//     return new Promise((resolve , reject) => {
-//         setTimeout(() => {
-//             console.log("process 1")
-//             resolve("1") ;
-//         }, 5000);
-//     })
-// }
+function fn1() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 1")
+            res("1") ;
+        }, 5000);
+    })
+}
 
-// function fn2() {
-//     return new Promise((resolve , reject) => {
-//         setTimeout(() => {
-//             console.log("process 2")
-//             resolve("2") ;
-//         }, 5000);
-//     }) ;
-// }
+function fn2() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 2")
+            res("2") ;
+        }, 5000);
+    }) ;
+}
 
-// // fn1()
-// //    .then(() => fn2())
-// //    .then(() => console.log("Process over")) ;
+fn1()
+   .then(() => fn2())
+   .then(() => console.log("Process over")) ;
 
 // Promise.all([fn1() , fn2()]).then((result) =>
 // console.log("process over" , result)
