@@ -150,7 +150,8 @@ function payment() {
 // }
 
 
-// parellel  OR  concurrent  execution
+// Interview  Question : -->>  How  to  Optimized the Process ??
+// parellel  OR  concurrent  execution :
 
 function fn1() {
     return new Promise((res , rej) => {
