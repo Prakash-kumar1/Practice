@@ -105,10 +105,12 @@ function payment() {
 // OR  we can write main code this way
 
 function dinnerScenario() {
-    console.log("entering into the Hotel")
-    console.log("Calling  the server and order PavBhaji")
-    console.log("server informing the chef to prepare food")
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
+    
 preparationofFood()
+
 .then((success) =>{
     console.log("food prepared succesfully & delievered" , success) ;
     return eatingFood()
