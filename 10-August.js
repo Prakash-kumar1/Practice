@@ -11,28 +11,28 @@
 
 function preparationofFood(callbackOfeatingFood){
     setTimeout(() => {
-        console.log("Prepareing the PavBhaji... ")
-        console.log("server  delivering food to the table ")
-        callbackOfeatingFood(payingBillandTips) ;
+        console.log("Prepareing the PavBhaji... ") ;
+        console.log("server  delivering food to the table") ;
+        callbackOfeatingFood(payingBillandTips) ;                  // eatingFood
     }, 3000);
 }
 
 function payingBillandTips() {
-        console.log("paying the bill")
-        console.log("leaving the hotel ")
+        console.log("paying the bill") ;
+        console.log("leaving the hotel ") ;
 }
 
 function eatingFood(callbackOfPayment) {
     setTimeout(() => {
-        console.log("eating the PavBhaji... ")
+        console.log("eating the PavBhaji... ") ;
         callbackOfPayment() ;
     }, 2000);
 }
 
 function dinnerScenario() {
-    console.log("entering into the Hotel")
-    console.log("Calling  the server and order PavBhaji")
-    console.log("server informing the chef to prepare food")
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
 preparationofFood(eatingFood) ;    
 }
 dinnerScenario() ;
