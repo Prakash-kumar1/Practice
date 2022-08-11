@@ -203,17 +203,19 @@ function fn2() {
     }) ;
 }
 
-Promise.all([fn1() , fn2()])
-.then((result) => console.log("process over" , result))
-
-.catch((err) => console.log("error block-->>" , err))  
-
-.finally(() => console.log("closing connection")) ;
-
-
-// Promise.race([fn1() , fn2()])
+// Promise.all([fn1() , fn2()])
 // .then((result) => console.log("process over" , result))
 
 // .catch((err) => console.log("error block-->>" , err))  
 
 // .finally(() => console.log("closing connection")) ;
+
+
+// Whoever completeing first , i want to print that data
+
+Promise.race([fn1() , fn2()])
+.then((result) => console.log("process over" , result))
+
+.catch((err) => console.log("error block-->>" , err))  
+
+.finally(() => console.log("closing connection")) ;
