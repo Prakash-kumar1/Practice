@@ -29,3 +29,4 @@ sleep() {
 
 let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
 console.log(prakash , prakash.think()) ;
+let rani =  new Human ("Rinki" , 20 , "Female") ;
