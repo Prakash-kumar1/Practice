@@ -118,41 +118,42 @@
 // //                     Set - Time out
 
 
-// Question number-5: if we don't  have  time ??
-
-console.log("starting") ;
-
-setTimeout(() => {
-    console.log("Set-Time Out") ; 
-}, 4000);
-
-Promise.resolve(1).then(() => console.log("Promise") )
-// promise also go into web-API . so, it will come after "end"
-console.log("end") ;
-
-// // Output : starting
-// //            end
-// //           Promise
-// //           Set-Time Out
-
+// // Question number-5: if we don't  have  time ??
 
 // console.log("starting") ;
 
 // setTimeout(() => {
 //     console.log("Set-Time Out") ; 
-// }, 0);
+// }, 4000);
 
-// Promise.resolve(1).then(() => console.log("Promise 1") )  ;
-// Promise.resolve(1).then(() => console.log("Promise-2") )  ;
-// Promise.resolve(1).then(() => console.log("Promise-3") )  ;
-
+// Promise.resolve(1).then(() => console.log("Promise") ) ;
+// // promise also go into web-API . so, it will come after "end"
 // console.log("end") ;
+
+// // // Output : starting
+// // //            end
+// // //           Promise
+// // //           Set-Time Out
+
+
+
+console.log("starting") ;
+
+setTimeout(() => {
+    console.log("Set-Time Out") ; 
+}, 0);
+
+Promise.resolve(1).then(() => console.log("Promise 1st") )  ;
+Promise.resolve(1).then(() => console.log("Promise-2nd") )  ;
+Promise.resolve(1).then(() => console.log("Promise-3rd") )  ;
+
+console.log("end") ;
 
 // // Output : starting
 // //            end
-// //           Promise 1
-// //           Promise-2
-// //           Promise-3
+// //           Promise 1st
+// //           Promise-2nd
+// //           Promise-3rd
 // //           Set-Time Out
 
 
