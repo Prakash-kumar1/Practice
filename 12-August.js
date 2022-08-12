@@ -12,14 +12,19 @@ class Human {
     }
 
 eat() {
-    console.log("eating") ;
+    // console.log("eating") ;
+    return eating ;
 }
 
 think() {
-    console.log("thinking") ;
+    // console.log("thinking") ;
+    return thinking ;
 }
 
 sleep() {
-    console.log("sleeping") ;
+    // console.log("sleeping") ;
+    return sleeping ;
 }
 }
+
+let prakash = new Human ()
