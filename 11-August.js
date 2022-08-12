@@ -8,7 +8,96 @@
 
 // // Output : -   Promise { 'p1 data' } Promise { 'p2 Print' }
 
+
+// // if set-time out and Promise have different time
+// console.log("starting") ;
+
+// function p1() {
+//     return new Promise((res , rej) => {
+//         setTimeout(() => {
+//             console.log("promise") ;    
+//         }, 5000);
+//     })
+// }
+
+// p1() ;
+
+// setTimeout(() => {
+//     console.log("Set - Time out") ;
+// }, 4000);
+
+// console.log("Ending") ;
+
+// // Output          - starting
+// //                    Ending
+// //                    Set - Time out
+// //                     promise
+
+
+// // if set-time out and Promise have Same time
+
+// console.log("starting") ;
+
+// function p1() {
+//     return new Promise((res , rej) => {
+//         setTimeout(() => {
+//             console.log("promise") ;    
+//         }, 5000);
+//     })
+// }
+
+// p1() ;
+
+// setTimeout(() => {
+//     console.log("Set - Time out") ;
+// }, 5000);
+
+// console.log("Ending") ;
+
+// // Output          - starting
+// //                    Ending
+// //                     promise
+// //                     Set - Time out
+
+
+// // if set-time out put above Promise with Same time
+
+// console.log("starting") ;
+
+
+// setTimeout(() => {
+//     console.log("Set - Time out") ;
+// }, 5000);
+
+
+// function p1() {
+//     return new Promise((res , rej) => {
+//         setTimeout(() => {
+//             console.log("promise") ;    
+//         }, 5000);
+//     })
+// }
+
+// p1() ;
+
+
+// console.log("Ending") ;
+
+// // Output          - starting
+// //                    Ending
+// //                     Set - Time out
+// //                     promise
+
+// Question number-4: what happens if we calling function Before
+
 console.log("starting") ;
+
+p1() ;
+
+setTimeout(() => {
+    console.log("Set - Time out") ;
+}, 5000);
+
 
 function p1() {
     return new Promise((res , rej) => {
@@ -18,19 +107,13 @@ function p1() {
     })
 }
 
-p1() ;
-
-setTimeout(() => {
-    console.log("Set - Time out") ;
-}, 4000);
 
 console.log("Ending") ;
 
 // Output          - starting
 //                    Ending
-//                    Set - Time out
 //                     promise
-
+//                     Set - Time out
 
 
 // console.log("starting") ;
