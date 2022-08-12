@@ -39,7 +39,7 @@ class Parent {
     }
 }
 
-class Child {} 
+class Child extends Parent{} 
 
 let vaanth = new Parent() ;
 vaanth.car () ;
