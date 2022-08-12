@@ -41,8 +41,8 @@ class Parent {
 
 class Child extends Parent{} 
 
-let vaanth = new Parent() ;
+let vaanth = new Parent() 
 vaanth.car () ;
 
-let aditya = new Child() ;
+let aditya = new Child() 
 aditya.car() ;
