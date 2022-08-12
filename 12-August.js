@@ -27,4 +27,5 @@ sleep() {
 }
 }
 
-let prakash = new Human ()
+let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
+console.log(prakash , prakash.think()) ;
