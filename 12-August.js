@@ -46,3 +46,5 @@ vaanth.car () ;
 
 let aditya = new Child() 
 aditya.car() ;
+
+// Polymorphism :
