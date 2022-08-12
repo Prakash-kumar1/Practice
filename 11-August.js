@@ -84,21 +84,21 @@
 
 
 
-// Function Declaration are hoisted but  classes are not hoisted .
-people() ;
+// // Function Declaration are hoisted but  classes are not hoisted .
+// people() ;
 
-function people() {
-    console.log("villagers") ;
-}
+// function people() {
+//     console.log("villagers") ;
+// }
 
 
-class peoples1 {
-    constructor() {
-        console.log("villagers") ;   
-    }
-}
+// class peoples1 {
+//     constructor() {
+//         console.log("villagers") ;   
+//     }
+// }
 
-new peoples1() ;
+// new peoples1() ;
 
 
 
