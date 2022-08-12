@@ -30,3 +30,19 @@ sleep() {
 let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
 console.log(prakash , prakash.think()) ;
 let rani =  new Human ("Rinki" , 20 , "Female") ;
+
+// Inheritance :
+
+class Parent {
+    car() {
+        console.log("maruti espresso") ;
+    }
+}
+
+class Child {} 
+
+let vaanth = new Parent() ;
+vaanth.car () ;
+
+let aditya = new Child() ;
+aditya.car() ;
