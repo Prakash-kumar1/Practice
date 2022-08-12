@@ -4,3 +4,22 @@
 
 // Advantage  of class using  over  Function ??
 
+class Human {
+    constructor(name , age , color) {
+        this.name = name ;
+        this.age = age ;
+        this.color = color ;
+    }
+
+eat() {
+    console.log("eating") ;
+}
+
+think() {
+    console.log("thinking") ;
+}
+
+sleep() {
+    console.log("sleeping") ;
+}
+}
