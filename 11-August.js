@@ -137,17 +137,25 @@
 
 
 
-console.log("starting") ;
+// // Micro-Task Queue :-->
 
-setTimeout(() => {
-    console.log("Set-Time Out") ; 
-}, 0);
+// // In javascript , event queue is Macrotask queue Promises don't come this way . Promises have another 
+// // Which is known as - MicroTask Queue . through this promises come in call stack .
+// // Promises are Like VIP's
 
-Promise.resolve(1).then(() => console.log("Promise 1st") )  ;
-Promise.resolve(1).then(() => console.log("Promise-2nd") )  ;
-Promise.resolve(1).then(() => console.log("Promise-3rd") )  ;
 
-console.log("end") ;
+// console.log("starting") ;
+
+// setTimeout(() => {
+//     console.log("Set-Time Out") ; 
+// }, 0);
+
+// Promise.resolve(1).then(() => console.log("Promise 1st") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-2nd") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-3rd") )  ;
+
+// console.log("end") ;
+
 
 // // Output : starting
 // //            end
@@ -155,6 +163,54 @@ console.log("end") ;
 // //           Promise-2nd
 // //           Promise-3rd
 // //           Set-Time Out
+
+
+
+// // Question number- 6: If there is Reject Present ??
+// // Resolve has more priority than Reject . so, Reject will be pushed to last
+
+
+// console.log("starting") ;
+
+// setTimeout(() => {
+//     console.log("Set-Time Out") ; 
+// }, 0);
+
+
+// Promise.reject(1)
+// .then(() => console.log("Promise 1st") )  
+// .catch((err) => console.log("Promise 1 has error"))
+
+// Promise.resolve(1).then(() => console.log("Promise-2nd") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-3rd") )  ;
+// Promise.resolve(1).then(() => console.log("Promise 4th") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-5th") )
+  
+// Promise.reject(1)
+// .then(() => console.log("Promise-6th ==>> Govind") ) 
+// .catch((error) => console.log("Promise 6 ==>> Govind has error"))
+
+// Promise.resolve(1).then(() => console.log("Promise 7th") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-8th") )  ;
+// Promise.resolve(1).then(() => console.log("Promise-9th") )  ;
+
+// console.log("end") ;
+
+
+// // Output :=>>  starting
+// //                end
+// //                 Promise-2nd
+// //                  Promise-3rd
+// //                   Promise 4th
+// //                   Promise-5th
+// //                    Promise 7th
+// //                     Promise-8th
+// //                      Promise-9th
+// //                       Promise 1 has error
+// //                         Promise 6 ==>> Govind has error
+// //                           Set-Time Out
+
+
 
 
 // // Classes ==>>  JS is  Multi  Paradigm  Programming  Language
