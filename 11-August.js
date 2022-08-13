@@ -235,8 +235,12 @@ const govind = new person("govind" , 3) ;
 const rajesh = new person("rajesh" , 13) ;
 
 
+function add() {
+    console.log("Example")
+}
 
-
+let sum = new add() ;
+console.log("Return Empty Object" , sum)
 // class Person {
 //     constructor(name , age) {
 //         this.name = name ;
