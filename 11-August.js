@@ -222,48 +222,50 @@
 // // async await  is  a syntactic sugar (easy way of writing) of  Promise .
 
 
-function  person(name , age) {
-    this.name = name ;
-    this.age = age ;
+// function  person(name , age) {
+//     this.name = name ;
+//     this.age = age ;
 
-    console.log(this) ;
-    return this ;
-}
-const vasu = new person("Prakash Kumar" , 23) ;
-console.log("this Returned" , vasu) ;
-const govind = new person("govind" , 3) ;
-const rajesh = new person("rajesh" , 13) ;
-
-
-function add() {
-    console.log("Example") ;
-    this.name = "anjali" ;
-    // if I remove new then it will return 10 , because new excepts Empty Objects
-    // return 10 ;
-}
-
-let sum = new add() ;
-console.log("Return Empty Object" , sum);
-
-// Output ==>>       Example
-//                   Return Empty Object add { name: 'anjali' }
+//     console.log(this) ;
+//     return this ;
+// }
+// const vasu = new person("Prakash Kumar" , 23) ;
+// console.log("this Returned" , vasu) ;
+// const govind = new person("govind" , 3) ;
+// const rajesh = new person("rajesh" , 13) ;
 
 
-// class Person {
-//     constructor(name , age) {
-//         this.name = name ;
-//         this.age = age ;
-//     }
-//     getName() {
-//         return this.name ;
-//     }
-//     getAge() {
-//         return this.age ;
-//     }
+// function add() {
+//     console.log("Example") ;
+//     this.name = "anjali" ;
+//     // if I remove new then it will return 10 , because new excepts Empty Objects
+//     // return 10 ;
 // }
 
-// let prakash = new Person("govind" , 56) ;
-// console.log(prakash.age , prakash.name) ;
+// let sum = new add() ;
+// console.log("Return Empty Object" , sum);
+
+// // Output ==>>       Example
+// //                   Return Empty Object add { name: 'anjali' }
+
+
+// In Industries , we use Constructor Function
+
+class Person {
+    constructor(name , age) {
+        this.name = name ;
+        this.age = age ;
+    }
+    getName() {
+        return this.name ;
+    }
+    getAge() {
+        return this.age ;
+    }
+}
+
+let prakash = new Person("govind" , 56) ;
+console.log(prakash.age , prakash.name) ;
 
 
 
