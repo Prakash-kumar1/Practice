@@ -304,29 +304,34 @@ class Person {
         this.age = age ;
     }
 
-    // Using  =>  Setter  , we can  
+    // Using  =>  Setter  , we can  set the values .  in setter , we have to pass one Parameter.
 
     get getName() {
-        return this.name + "verma" ;
+        return this.name + "Verma" ;
     }
 
     set  getName(name) {
          this.name = name ;
     }
 
-     getAge() {
-        return this.age  ;
+    get getAge() {
+        return this.age ** 2 ;
     }
+
+    set  getAge(age) {
+        this.age = age ;
+   }
 
 }
 
 let prak = new Person("govind" , 6) ;
 console.log(prak.age , prak.name) ;            // calling Functions
 
-prak.fullName = "Rajesh" ;
-console.log(prak.fullName)
-// // Output ==>>  36 govindverma
+prak.getName = "Rajesh" ;
+console.log(prak.getName)
 
+prak.getAge = 8 ;
+console.log(prak.getAge)
 
 
 
