@@ -248,6 +248,7 @@
 // // Output ==>>       Example
 // //                   Return Empty Object add { name: 'anjali' }
 
+//    OR  in the place of return and new keyword , we use Constructor method
 
 // In Industries , we use Constructor Function
 
