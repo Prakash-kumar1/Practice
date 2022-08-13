@@ -298,56 +298,51 @@
 // // // Output ==>>  36 govindverma
 
 
-class Person {
-    constructor(name , age) {
-        this.name = name ;
-        this.age = age ;
-    }
+// class Person {
+//     constructor(name , age) {
+//         this.name = name ;
+//         this.age = age ;
+//     }
 
-    // Using  =>  Setter  , we can  set the values .  in setter , we have to pass one Parameter.
+//     // Using  =>  Setter  , we can  set the values .  in setter , we have to pass one Parameter.
 
-    get getName() {
-        return this.name + "Verma" ;
-    }
+//     get getName() {
+//         return this.name + "Verma" ;
+//     }
 
-    set  getName(name) {
-         this.name = name ;
-    }
+//     set  getName(name) {
+//          this.name = name ;
+//     }
 
-    get getAge() {
-        return this.age ** 2 ;
-    }
+//     get getAge() {
+//         return this.age ** 2 ;
+//     }
 
-    set  getAge(age) {
-        this.age = age ;
-   }
+//     set  getAge(age) {
+//         this.age = age ;
+//    }
 
-}
+// }
 
-let prak = new Person("govind" , 6) ;
-console.log(prak.age , prak.name) ;            // calling Functions
-
-prak.getName = "Rajesh" ;
-console.log(prak.getName)
-
-prak.getAge = 8 ;
-console.log(prak.getAge)
+// let prak = new Person("govind" , 6) ;
+// console.log(prak.getAge , prak.getName) ;            // calling Functions
 
 
+// prak.getName = "Rajesh" ;
+// console.log(prak.getName)
+
+// prak.getAge = 8 ;
+// console.log(prak.getAge)
 
 
-
-
-
-
-
-
-
-
-
+// // Output ==>>        36 govindVerma
+// //                    RajeshVerma
+// //                    64
 
 
 // // Function Declaration are hoisted but  classes are not hoisted .
+
+
 // people() ;
 
 // function people() {
