@@ -343,20 +343,23 @@
 // // Function Declaration are hoisted but  classes are not hoisted .
 
 
-// people() ;
+people() ;
 
-// function people() {
-//     console.log("villagers") ;
-// }
+class peoples1 {
+    constructor() {
+        console.log("peoples1 in Class") ;   
+    }
+}
+
+new peoples1() ;
 
 
-// class peoples1 {
-//     constructor() {
-//         console.log("villagers") ;   
-//     }
-// }
+function people() {
+    console.log("people in function ") ;
+}
 
-// new peoples1() ;
+
+
 
 
 
