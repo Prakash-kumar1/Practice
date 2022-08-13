@@ -269,6 +269,25 @@ let praku = new Person("govind" , 56) ;
 console.log(praku.age , praku.name) ;
 
 
+// Changing Properties using Constructor Method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // // Function Declaration are hoisted but  classes are not hoisted .
 // people() ;
