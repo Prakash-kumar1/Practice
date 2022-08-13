@@ -274,31 +274,58 @@
 // // Changing Properties using Constructor Method
 
 
+// class Person {
+//     constructor(name , age) {
+//         this.name = name ;
+//         this.age = age ;
+//     }
+
+//     // Using  =>  getter  , we can  also perform  different  operations
+
+//     get getName() {
+//         return this.name + "verma" ;
+//     }
+
+//     get getAge() {
+//         return this.age ** 2 ;
+//     }
+
+// }
+
+// let prak = new Person("govind" , 6) ;
+// console.log(prak.getAge , prak.getName) ;            // calling Functions
+
+// // // Output ==>>  36 govindverma
+
+
 class Person {
     constructor(name , age) {
         this.name = name ;
         this.age = age ;
     }
 
-    // Using  =>  getter  , we can  also perform  different  operations
+    // Using  =>  Setter  , we can  
 
     get getName() {
         return this.name + "verma" ;
     }
 
-    get getAge() {
-        return this.age ** 2 ;
+    set  getName(name) {
+         this.name = name ;
+    }
+
+     getAge() {
+        return this.age  ;
     }
 
 }
 
 let prak = new Person("govind" , 6) ;
-console.log(prak.getAge , prak.getName) ;            // calling Functions
+console.log(prak.age , prak.name) ;            // calling Functions
 
+prak.fullName = "Rajesh" ;
+console.log(prak.fullName)
 // // Output ==>>  36 govindverma
-
-
-
 
 
 
