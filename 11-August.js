@@ -236,11 +236,15 @@ const rajesh = new person("rajesh" , 13) ;
 
 
 function add() {
-    console.log("Example")
+    console.log("Example") ;
+    // if I remove new then it will return 10 , because new excepts Empty Objects
+    // return 10 ;
 }
 
 let sum = new add() ;
-console.log("Return Empty Object" , sum)
+console.log("Return Empty Object" , sum);
+
+
 // class Person {
 //     constructor(name , age) {
 //         this.name = name ;
