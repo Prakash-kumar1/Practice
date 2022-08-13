@@ -218,8 +218,8 @@
 
 // // In JavaScript Class and Function  both are  same .
 
-// // Class  is  a  syntactic  sugar  of  function .
-// // async await  is  a syntactic  of  Promise .
+// // Class  is  a  syntactic  sugar (easy way of writing) of  function .
+// // async await  is  a syntactic sugar (easy way of writing) of  Promise .
 
 
 // function  person(name , age) {
