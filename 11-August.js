@@ -248,28 +248,54 @@
 // // Output ==>>       Example
 // //                   Return Empty Object add { name: 'anjali' }
 
-//    OR  in the place of return and new keyword , we use Constructor method
+// //    OR  in the place of return and new keyword , we use Constructor method
 
-// In Industries , we use Constructor Function
+// // In Industries , we use Constructor Function
+
+// class Person {
+//     constructor(name , age) {
+//         this.name = name ;
+//         this.age = age ;
+//     }
+//     getName() {
+//         return this.name ;
+//     }
+//     getAge() {
+//         return this.age ;
+//     }
+// }
+
+// let praku = new Person("govind" , 56) ;
+// console.log(praku.age , praku.name) ;
+
+// // Output ==>> 56 govind
+
+
+// // Changing Properties using Constructor Method
+
 
 class Person {
     constructor(name , age) {
         this.name = name ;
         this.age = age ;
     }
-    getName() {
-        return this.name ;
+
+    // Using  =>  getter
+
+    get getName() {
+        return this.name + "verma" ;
     }
-    getAge() {
-        return this.age ;
+
+    get getAge() {
+        return this.age ** 2 ;
     }
+
 }
 
-let praku = new Person("govind" , 56) ;
-console.log(praku.age , praku.name) ;
+let prak = new Person("govind" , 6) ;
+console.log(prak.getAge , prak.getName) ;            // calling Functions
 
-
-// Changing Properties using Constructor Method
+// // Output ==>>  36 govindverma
 
 
 
