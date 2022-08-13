@@ -213,9 +213,9 @@
 
 
 
-// // Classes ==>>  JS is  Multi  Paradigm  Programming  Language
-// // OOPs ==>>  Object  Oriented  Programming  system
-// // Functional  Programming
+// //  JS is  Multi  Paradigm  Programming  Language , it supports 
+// // OOPs (" Object  Oriented  Programming  system")   and  Functional  Programming
+
 // // Class  ==  Function
 // // Class  is  a  syntactic  sugar  of  function .
 // // async await  is  a syntactic  of  Promise .
