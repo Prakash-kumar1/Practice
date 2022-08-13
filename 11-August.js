@@ -280,7 +280,7 @@ class Person {
         this.age = age ;
     }
 
-    // Using  =>  getter
+    // Using  =>  getter  , we can  also perform  different  operations
 
     get getName() {
         return this.name + "verma" ;
