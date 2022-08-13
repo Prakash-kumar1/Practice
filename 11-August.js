@@ -264,8 +264,8 @@ class Person {
     }
 }
 
-let prakash = new Person("govind" , 56) ;
-console.log(prakash.age , prakash.name) ;
+let praku = new Person("govind" , 56) ;
+console.log(praku.age , praku.name) ;
 
 
 
