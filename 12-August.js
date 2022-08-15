@@ -96,6 +96,7 @@ let aditya = new Child() ;
 aditya.car() ;                                                             // Output :-   maruti espresso
 
 
+// If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
 
 
 // // Polymorphism :
