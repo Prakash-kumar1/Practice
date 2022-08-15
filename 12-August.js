@@ -74,9 +74,11 @@ class Parent {
 class Child {}
 
 let vasant =  new Parent() ;
-vasant.car() ;                                                                    // Output :-   maruti espresso
+vasant.car() ;                                                                // Output :-   maruti espresso
 
-
+let aditi = new Child() ;
+console.log(aditi) ;                                                        // Output :-   Child{}
+aditi.car() ;                                                              // Output :- TypeError: aditi.car is not a function 
 
 
 
