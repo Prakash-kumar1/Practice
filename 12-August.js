@@ -48,4 +48,7 @@ let rani =  new Human ("Rinki" , 20 , "Female") ;
 // let aditya = new Child() 
 // aditya.car() ;
 
+
+
 // // Polymorphism :
+
