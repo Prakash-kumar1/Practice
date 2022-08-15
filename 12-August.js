@@ -30,6 +30,7 @@ let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
 // console.log(prakash) ;                                        // Output :-    Human { name: 'Prakash', age: 22, gender: 'Alpha Male' }
 
 console.log(prakash , prakash.think()) ;                         // Output :-    Human { name: 'Prakash', age: 22, gender: 'Alpha Male' } thinking
+
 // let rani =  new Human ("Rinki" , 20 , "Female") ;
 
 
