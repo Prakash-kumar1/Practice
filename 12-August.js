@@ -62,14 +62,25 @@
 // // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
 
 
-
 // // Inheritance :
 
-// class Parent {
-//     car() {
-//         console.log("maruti espresso") ;
-//     }
-// }
+
+class Parent {
+    car() {
+        console.log("maruti espresso") ;
+    }
+}
+
+class Child {}
+
+let vasant =  new Parent() ;
+vasant.car() ;                                                                    // Output :-   maruti espresso
+
+
+
+
+
+
 
 // class Child extends Parent{} 
 
