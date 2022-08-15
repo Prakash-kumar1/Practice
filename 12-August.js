@@ -1,7 +1,8 @@
-// How  Internet  works , Server , OSI Model  read it on your own??
+// How  Internet  works , Server , OSI Model , Computer Networks read it on your own ??
 
 // class -->  it is a blue-print
-// objects -->  instance of class
+// objects -->  instance of class  OR   Real time entity
+
 
 class Human {
     constructor(name , age , gender) {
@@ -27,11 +28,13 @@ sleep() {
 }
 
 let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
-// console.log(prakash) ;                                        // Output :-    Human { name: 'Prakash', age: 22, gender: 'Alpha Male' }
-
 console.log(prakash , prakash.think()) ;                         // Output :-    Human { name: 'Prakash', age: 22, gender: 'Alpha Male' } thinking
 
-// let rani =  new Human ("Rinki" , 20 , "Female") ;
+
+let rani =  new Human ("Rinki" , 20 , "Female") ;
+console.log(rani , rani.eat()) ;                                  // Output :-      Human { name: 'Rinki', age: 20, gender: 'Female' } eating
+
+
 
 
 
