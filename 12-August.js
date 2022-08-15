@@ -62,6 +62,7 @@ console.log(hondaCity , hondaCity.run()) ;
 // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
 
 
+
 // // Inheritance :
 
 // class Parent {
