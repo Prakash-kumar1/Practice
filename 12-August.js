@@ -39,27 +39,27 @@
 // // Example no. ==>> 2
 
 
-class Car {
-    constructor(model , color , brand , type) {
-        this.model = model ;
-        this.color = color ;
-        this.brand = brand ;
-        this.type = type ;
-    }
+// class Car {
+//     constructor(model , color , brand , type) {
+//         this.model = model ;
+//         this.color = color ;
+//         this.brand = brand ;
+//         this.type = type ;
+//     }
 
-    run() {
-        return ("running") ;
-    }
+//     run() {
+//         return ("running") ;
+//     }
 
-    playSongs() {
-        console.log("Hollywood Songs")
-    }
-}
+//     playSongs() {
+//         console.log("Hollywood Songs")
+//     }
+// }
 
-let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
-console.log(hondaCity , hondaCity.run()) ;
+// let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
+// console.log(hondaCity , hondaCity.run()) ;
 
-// Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
+// // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
 
 
 
