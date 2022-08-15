@@ -123,6 +123,10 @@ class Child extends Parent{
     bike() {
         console.log("Ducati") ;
     }
+// If child want his own property
+    car() {
+        console.log("Rolls Royce") ;
+    }
 }
 
 let vinay = new grandParent() ;
@@ -139,4 +143,6 @@ aditya.bike() ;                                                              // 
 
 vasanth.house() ;                                                            // Output :-  Bunglow
 aditya.house() ;                                                             // Output :-  Bunglow
+aditya.car() ;                                                              // Output :-  Rolls Royce
+
 
