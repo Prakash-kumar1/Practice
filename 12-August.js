@@ -65,11 +65,11 @@
 // // Inheritance :
 
 
-class Parent {
-    car() {
-        console.log("maruti espresso") ;
-    }
-}
+// class Parent {
+//     car() {
+//         console.log("maruti espresso") ;
+//     }
+// }
 
 // class Child {}
 
@@ -84,20 +84,59 @@ class Parent {
 
 
 
-// For removing This error we use  " extends "
+// // For removing This error we use  " extends "
+
+// class Parent {
+//     car() {
+//         console.log("maruti espresso") ;
+//     }
+// }
+
+// class Child extends Parent{}
+
+// let vasanth =  new Parent() ;
+// vasanth.car() ;                                                              // Output :-   maruti espresso
+
+// let aditya = new Child() ;
+// aditya.car() ;                                                             // Output :-   maruti espresso
 
 
-class Child extends Parent{}
+// // If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
+
+
+// // // Polymorphism :
+
+class grandParent {
+    house() {
+        console.log("Bunglow") ;
+    }
+}
+
+class Parent extends grandParent {
+    car() {
+        console.log("maruti espresso") ;
+    }
+}
+
+
+class Child extends Parent{
+    bike() {
+        console.log("Ducati") ;
+    }
+}
+
+let vinay = new grandParent() ;
+vinay.house() ;                                                            // Output :-  Bunglow
 
 let vasanth =  new Parent() ;
 vasanth.car() ;                                                              // Output :-   maruti espresso
 
 let aditya = new Child() ;
-aditya.car() ;                                                             // Output :-   maruti espresso
+aditya.car() ;                                                              // Output :-   maruti espresso
+aditya.bike() ;                                                              // Output :-   Ducati
 
+// Vasanth and aditya are children of grandParent so , they access it 
 
-// If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
-
-
-// // Polymorphism :
+vasanth.house() ;                                                            // Output :-  Bunglow
+aditya.house() ;                                                             // Output :-  Bunglow
 
