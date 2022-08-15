@@ -71,26 +71,30 @@ class Parent {
     }
 }
 
-class Child {}
+// class Child {}
 
-let vasant =  new Parent() ;
-vasant.car() ;                                                                // Output :-   maruti espresso
+// let vasant =  new Parent() ;
+// vasant.car() ;                                                                // Output :-   maruti espresso
 
-let aditi = new Child() ;
-console.log(aditi) ;                                                        // Output :-   Child{}
-aditi.car() ;                                                              // Output :- TypeError: aditi.car is not a function 
+// But grand child don't access the Properties
+
+// let aditi = new Child() ;
+// console.log(aditi) ;                                                        // Output :-   Child{}
+// aditi.car() ;                                                              // Output :- TypeError: aditi.car is not a function 
 
 
 
+// For removing This error we use  " extends "
 
 
-// class Child extends Parent{} 
+class Child extends Parent{}
 
-// let vaanth = new Parent() 
-// vaanth.car () ;
+let vasanth =  new Parent() ;
+vasanth.car() ;                                                              // Output :-   maruti espresso
 
-// let aditya = new Child() 
-// aditya.car() ;
+let aditya = new Child() ;
+aditya.car() ;                                                             // Output :-   maruti espresso
+
 
 
 
