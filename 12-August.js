@@ -101,7 +101,7 @@
 // aditya.car() ;                                                             // Output :-   maruti espresso
 
 
-// // If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
+// // // If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
 
 
 // // // Polymorphism :
@@ -124,10 +124,11 @@ class Child extends Parent{
         console.log("Ducati") ;
     }
 // If child want his own property
-    car() {
-        console.log("Rolls Royce") ;
-    }
+car() {
+    console.log("Rolls Royce") ;
 }
+}
+
 
 let vinay = new grandParent() ;
 vinay.house() ;                                                            // Output :-  Bunglow
@@ -143,6 +144,7 @@ aditya.bike() ;                                                              // 
 
 vasanth.house() ;                                                            // Output :-  Bunglow
 aditya.house() ;                                                             // Output :-  Bunglow
-aditya.car() ;                                                              // Output :-  Rolls Royce
-
+vasanth.car() ;                                                               // Output :-   maruti espresso  
+// This is called Method Over-riding in polymorphism . Child property overides parent class 
+aditya.car() ;                                                               // Output :-   Rolls Royce
 
