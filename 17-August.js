@@ -29,25 +29,26 @@
 //   .catch(error => console.log(error.message))
 
 
-// 18 August session
+// // 18 August session
 
 
-// Question no. => 3  Basic  Question
+// // Question no. => 3  Basic  Question
 
-var sum = 0.1+0.2
-// console.log(sum)
+// var sum = 0.1+0.2
+// // console.log(sum)
 
-if(sum == 0.3){
-  console.log("true")
-}else{
-  console.log("false") ;
-}
+// if(sum == 0.3){
+//   console.log("true")
+// }else{
+//   console.log("false") ;
+// }
 
 
 // Question no. => 4  Closures Question
 
 (function immediateA(a) {
-  return (function immediateA(b) {
+  return (function immediateB(b) {
     console.log(a) ;
+    console.log(b) ;
   })(1) ;
 })(0) ;
