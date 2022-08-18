@@ -44,11 +44,38 @@
 // }
 
 
-// Question no. => 4  Closures Question
+// // closure is the combination of a function with References to its the Lexical Environment
+// // var => Global / Fuctional  scope , start from  point top of the Document / Function
+// // Let / Const => Block scope ,  start from  point where it is declared
 
-(function immediateA(a) {
-  return (function immediateB(b) {
-    console.log(a) ;
-    console.log(b) ;
-  })(1) ;
-})(0) ;
+
+// // Closures Question
+
+// // Question no. => 4   what will be the Output ??
+
+// (function immediateA(a) {
+//   return (function immediateB(b) {
+//     console.log(a) ;
+//     console.log(b) ;
+//   })(1) ;
+// })(0) ;
+
+
+// // / Question no.=> 5  print  1 to  5  in a interval of  1 second ??. 
+
+// // Solution ==>> 1
+// for(let i=1 ; i<=5; i++){
+//   setTimeout( function log() {
+//     console.log(i) ;
+//   }, i*1000);
+// }
+
+
+function multiply(num1,num2) {
+  console.log(num1*num2)
+ return (num1*num2)
+}
+
+const triple = multiply(3) ;
+triple() ;
+
