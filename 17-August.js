@@ -1,5 +1,7 @@
 // // 17 August session
 
+// Question no. => 1  Promise Question
+
 // Promise.resolve('Success!')
 //   .then(() => {
 //     throw Error('Oh noes!')
@@ -13,6 +15,7 @@
 //   .catch(error => console.log(error.message))
 
 
+// Question no. => 2  Promise Question
 
 //   new Promise((resolve, reject) => {
 //     resolve('Welcome!!')
@@ -25,8 +28,12 @@
 //   })
 //   .catch(error => console.log(error.message))
 
+
 // 18 August session
- 
+
+
+// Question no. => 3  Basic  Question
+
 var sum = 0.1+0.2
 // console.log(sum)
 
@@ -37,4 +44,10 @@ if(sum == 0.3){
 }
 
 
+// Question no. => 4  Closures Question
 
+(function immediateA(a) {
+  return (function immediateA(b) {
+    console.log(a) ;
+  })(1) ;
+})(0) ;
