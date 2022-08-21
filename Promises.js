@@ -116,28 +116,44 @@
 // (error) => {console.log(error) ;} ,                 *               ) ;
 // ) ;                                                 *
 
-// THEN method :-
+// // THEN method :-
 
-const promiseObj = new Promise((res,rej)=>{ 
-  let num = 10 ;
-  res(num);
-}).then(
-    (value) => {console.log(value) ;
-    return value + 10 ;
-    }
-).then(
-    (value)=>{
-        console.log(value) ;
-        return value + 20 ;
-    }
-).then(
-    (value)=>{
-        console.log(value) ;
-    }
-) ;
-
-
+// const promiseObj = new Promise((res,rej)=>{ 
+//   let num = 10 ;
+//   res(num);
+// }).then(
+//     (value) => {console.log(value) ;
+//     return value + 10 ;
+//     }
+// ).then(
+//     (value)=>{
+//         console.log(value) ;
+//         return value + 20 ;
+//     }
+// ).then(
+//     (value)=>{
+//         console.log(value) ;
+//     }
+// ) ;
 
 
+// // CATCH method :-     // syntax:-  catch(callback)
 
+// // Where the callback is a function called when the Promise is Rejected. This function has 
+// // one argument error -> The Rejection Error
 
+const promiseName = new Promise((res,rej)=>{     
+    let req = 67                       
+    if(req === 34){                         
+    res("Request Success");                       
+    }else{                          
+    rej("Request rejected") ;                         
+    }                           
+ });
+promiseName
+           .then((value) => console.log(value))
+           .catch((error) => console.log(error)) ;
+
+                        
+
+// FINALLY method :
