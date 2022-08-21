@@ -48,19 +48,19 @@
 
 // // For solving Above problem , we use CallBack Function
 
-console.log("starting") ;
+// console.log("starting") ;
 
-function getName(name , callback){
-    setTimeout(() => {
-        console.log("Name Inside Set-Timeout") ;
-        callback (name) ;
-    }, 3000);
-}
-const nm = getName("Shivansh Rawat" , function callback(nm){
-    console.log(nm)
-}) ;
-console.log(nm) ;
-console.log("Ending") ;
+// function getName(name , callback){
+//     setTimeout(() => {
+//         console.log("Name Inside Set-Timeout") ;
+//         callback (name) ;
+//     }, 3000);
+// }
+// const nm = getName("Shivansh Rawat" , function callback(nm){
+//     console.log(nm)
+// }) ;
+// console.log(nm) ;
+// console.log("Ending") ;
 // // output => starting
 // //           Undefined
 // //           Ending
@@ -100,10 +100,41 @@ console.log("Ending") ;
 // }
 
 
+//                                          Promises Syntax
 
 
+//const promiseName = new Promise((res,rej)=>{     *         const promiseName = new Promise((res,rej)=>{
+// let req = true                                   *         let req = true
+// if(req == true){                                 *           if(req == true){
+// resolve("Request Success");                      *            resolve("Request Success");
+// }else{                                            *           }else{
+// reject("Request rejected") ;                      *             reject("Request rejected") ;
+// }                                                  *           }
+// }) ;                                               *           }) .then(
+// promiseName.then(                                  *                      (value) => {console.log(value) ;} ,
+// (value) => {console.log(value) ;} ,                 *                      (error) => {console.log(error) ;} ,
+// (error) => {console.log(error) ;} ,                 *               ) ;
+// ) ;                                                 *
 
+// THEN method :-
 
+const promiseObj = new Promise((res,rej)=>{ 
+  let num = 10 ;
+  res(num);
+}).then(
+    (value) => {console.log(value) ;
+    return value + 10 ;
+    }
+).then(
+    (value)=>{
+        console.log(value) ;
+        return value + 20 ;
+    }
+).then(
+    (value)=>{
+        console.log(value) ;
+    }
+) ;
 
 
 
