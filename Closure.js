@@ -14,9 +14,11 @@ Bar();                                                          // function foo 
 console.log(Bar) ;                                               // [Function: Bar]
 
 
+// ###########  var in Global scope  and  functional scope   ###########
 
 // // var is Global scoped it means it can accessible ouside of the Block  but  let and const are block scoped
 
+// Example --> 1
 let name = "Prakash" ;
 if(name === "Prakash") {
 // here if we use let then it gives "ReferenceError" in output
@@ -25,6 +27,47 @@ if(name === "Prakash") {
 
 console.log(name) ;                                                               // Prakash
 console.log(department) ;                     // Engineerig (due to var , we can access from outside of the block)
+
+
+// Example --> 2
+// var has a functional scope . so, Outside " console.log(name)"  shows Reference error .(name is not defined) 
+function demo() {
+    var name = "Prakash" ;
+    console.log(name) ;
+}
+demo() ;
+// console.log(name) ;                                  // it shows ReferenceError
+
+
+// ###########  var in Global scope  and  functional scope (Read it on your own)   ###########
+
+//// In this case counter create new execution context at each time on calling.so, the value always starts from 1.
+
+// function counter(){
+//     var count = 1;
+//     count++ ;
+// console.log(count) ;
+// }
+//                                                  // Output
+// counter() ;                                       // 2 
+// counter() ;                                           // 2 
+// counter() ;                                         // 2 
+
+
+
+// // In this case counter create only one new execution context on calling because var is declared outside. so ,   the value starts from 1 and increases on calling.
+
+// var count = 1;
+
+// function counter(){
+//     count++ ;
+// console.log(count) ;
+// }
+//                                                  // Output
+// counter() ;                                       // 2 
+// counter() ;                                           // 3 
+// counter() ;                                         // 4
+
 
 
 // // Closure:-
