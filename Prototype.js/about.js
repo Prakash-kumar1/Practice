@@ -233,22 +233,15 @@ console.log(nums6) ;
 // #### Polyfills for Filter done , Now we done Differnt Operations ####
 
 
-// Making Polyfill  for Reduce :-
+// Making Polyfill  for Reduce  (21-August Sunday - session):-
+
+// By default  intialValue  is 0 
+Array.prototype.myFilter = function(callbackfn , intialValue){
+    let acc  =  intialValue ;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 // #### Polyfills for Reduce done , Now we done Differnt Operations ####
