@@ -237,6 +237,20 @@ console.log(nums6) ;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // #### Polyfills for Reduce done , Now we done Differnt Operations ####
 
 
