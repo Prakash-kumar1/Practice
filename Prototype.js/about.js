@@ -76,11 +76,24 @@ console.log(nums.__proto__  ===  Array.prototype)   //true
 // nums.__proto__.__proto__.__proto__   gives  Null
 
 
+let person = {
+    name : "Prakash" ,
+    age : 23,
+    getInfo : function() {
+        // console.log((this.name)+ "is" +(this.age)+ "years old") ;
+        console.log(` ${this.name} is ${this.age} years old `) ;                
+    },
+} ;
 
+let person2 = {
+    name : "Anjali" ,
+} ;
 
-
-
-
+// Never ever do this in your code
+person2.__proto__ = person ;
+console.log(person2.age)               // 23
+console.log(person2.name)             // Anjali (local has more Priority)
+console.log(person2.getInfo())       // Anjali is 23 years old
 
 
 
