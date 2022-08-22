@@ -1,3 +1,5 @@
+// #################    Prototypes  and  it  works     #################
+
 // // Prototype  means Parent class or base class or Super class . Prototype mostly used for Methods
 
 // let mobile = function(model_no){
@@ -59,6 +61,37 @@ console.log(Mobile.prototype === Me.__proto__ ) ;
 console.log(Mobile === Me.__proto__.constructor ) ;
 console.log(Mobile === Mobile.prototype.constructor ) ;
 // output :=>  Both are True
+
+
+// #################    Prototypical Inheritance     #################
+
+
+let nums = [1,2,3,4,5] ;
+// All properties of array inherited(comes in) nums
+console.log(nums.__proto__  ===  Array.prototype)   //true
+// Prototype prints Available methods
+// __proto__ prints Parents methods
+// nums.__proto__   gives  Array methods
+// nums.__proto__.__proto__   gives  object methods
+// nums.__proto__.__proto__.__proto__   gives  Null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
