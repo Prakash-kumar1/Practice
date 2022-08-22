@@ -237,10 +237,44 @@ let Girl = {
 } ;
 Girl.getData() ;
 
+//  OR 
+
+
+// let Rajesh = {
+//     name : "Govind" ,
+//     age : 43,
+// } ;
+
+
+// let getData = function() {
+//     console.log(` ${this.name} is ${this.age} years old `) ;                
+// };
+
+// let Hema = {
+//     name : "Gayatari" ,
+//     age : 73,
+// } ;
+// getData.call(Hema) ;
+// getData.call(Rajesh) ;
 
 
 
+let Rajesh = {
+    name : "Govind" ,
+    age : 43,
+} ;
 
+
+let getData = function(place ,job) {
+    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft`) ;                
+};
+
+let Hema = {
+    name : "Gayatari" ,
+    age : 73,
+} ;
+getData.call(Hema , "Mumbai" ,"Engineer") ;
+getData.call(Rajesh , "chennai") ;
 
 
 
