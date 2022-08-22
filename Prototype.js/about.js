@@ -182,36 +182,58 @@
 // // // output =>  this ==>> (5) ['a', 'b', 'c', 'd', 'e']
 
 
-// // // Making Polyfill  for map :-
+// // Making Polyfill  for map :-
 
-// Array.prototype.myMap = function(callbackfn){
-//     console.log("this ==>>" , this);
+Array.prototype.myMap = function(callbackfn){
+    // console.log("this ==>>" , this);
+    let myArr = this ;
 
-// let newArr = [];
-//    for(let i=0; i<this.length; i++){
-//     newArr.push(callbackfn(this[i])) ;
-//    }
-//    return newArr ;
-// } ;                  
+let newArr = [];
+   for(let i=0; i<myArr.length; i++){
+    let data = callbackfn(myArr[i] , i , myArr) ;
+    newArr.push(data) ;
+   }
+   return newArr ;
+} ;       
 
-// let nums4 = [12,24,37,49] ;
-// let result = nums4.myMap(function (num){
-//     console.log(num);
-//     return num*2 ;
-// }) ;
-// console.log(result);
+// / #### Polyfills for map done , Now we done Differnt Operations ####
+
+let nums4 = [12,24,37,49] ;
+let result = nums4.myMap(function (num){
+    // console.log(num);
+    return num*2 ;
+}) ;
+console.log(result);
 // // Output ==>>  [ 24, 48, 74, 98 ]
 
-// #### Polyfills for map done , Now we done Differnt Operations ####
+// // #### Polyfills for map done , it works completely like map ####
 
 
-// Making Polyfill  for Filter :-
+// // Making Polyfill  for Filter :-
 
+ Array.prototype.myFilter = function(callbackfn){
+        // console.log("this ==>>" , this);
+        let myArr = this ;
+    
+    let newArr = [];
+       for(let i=0; i<myArr.length; i++){
+        if(callbackfn(myArr[i])){
+            newArr.push(this[i]) ;
+        }
+       }
+       return newArr ;
+    } ;       
 
+// // / #### Polyfills for map done , Now we done Differnt Operations ####
+
+let nums6 = [1,2,3,4,5].myFilter((num) => num > 2);
+console.log(nums6) ;
+// // // Output ==>>  [ 3,4,5 ]
 
 // #### Polyfills for Filter done , Now we done Differnt Operations ####
 
-// Making Polyfill  for Filter :-
+
+// Making Polyfill  for Reduce :-
 
 
 
@@ -219,25 +241,44 @@
 
 
 
-let Boy = {
-    name : "Govind" ,
-    age : 43,
-    getData : function() {
-        console.log(` ${this.name} is ${this.age} years old `) ;                
-    },
-} ;
-Boy.getData() ;
+// let Boy = {
+//     name : "Govind" ,
+//     age : 43,
+//     getData : function() {
+//         console.log(` ${this.name} is ${this.age} years old `) ;                
+//     },
+// } ;
+// Boy.getData() ;
 
-let Girl = {
-    name : "Gayatari" ,
-    age : 73,
-    getData : function() {
-        console.log(` ${this.name} is ${this.age} years old `) ;                
-    },
-} ;
-Girl.getData() ;
+// let Girl = {
+//     name : "Gayatari" ,
+//     age : 73,
+//     getData : function() {
+//         console.log(` ${this.name} is ${this.age} years old `) ;                
+//     },
+// } ;
+// Girl.getData() ;
 
-//  OR 
+// //  OR 
+
+
+// // let Rajesh = {
+// //     name : "Govind" ,
+// //     age : 43,
+// // } ;
+
+
+// // let getData = function() {
+// //     console.log(` ${this.name} is ${this.age} years old `) ;                
+// // };
+
+// // let Hema = {
+// //     name : "Gayatari" ,
+// //     age : 73,
+// // } ;
+// // getData.call(Hema) ;
+// // getData.call(Rajesh) ;
+
 
 
 // let Rajesh = {
@@ -246,35 +287,16 @@ Girl.getData() ;
 // } ;
 
 
-// let getData = function() {
-//     console.log(` ${this.name} is ${this.age} years old `) ;                
+// let getData = function(place ,job) {
+//     console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft`) ;                
 // };
 
 // let Hema = {
 //     name : "Gayatari" ,
 //     age : 73,
 // } ;
-// getData.call(Hema) ;
-// getData.call(Rajesh) ;
-
-
-
-let Rajesh = {
-    name : "Govind" ,
-    age : 43,
-} ;
-
-
-let getData = function(place ,job) {
-    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft`) ;                
-};
-
-let Hema = {
-    name : "Gayatari" ,
-    age : 73,
-} ;
-getData.call(Hema , "Mumbai" ,"Engineer") ;
-getData.call(Rajesh , "chennai") ;
+// getData.call(Hema , "Mumbai" ,"Engineer") ;
+// getData.call(Rajesh , "chennai") ;
 
 
 
@@ -295,7 +317,7 @@ getData.call(Rajesh , "chennai") ;
 
 
 
-// // #################  Object Prototypes      #################
+// // // #################  Object Prototypes      #################
 
 
 
