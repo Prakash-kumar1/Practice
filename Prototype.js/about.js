@@ -1,24 +1,24 @@
 // #################    Prototypes  and  it  works     #################
 
-// // Prototype  means Parent class or base class or Super class . Prototype mostly used for Methods
+// Prototype  means Parent class or base class or Super class . Prototype mostly used for Methods
 
-// let mobile = function(model_no){
-// // Instance Member
-//     this.model = model_no;
-//     this.price = 12000 ;
-// }
-// let samsung = new mobile('Galaxy');
-// let apple = new mobile('Pro max');
-// let POCO = new mobile('x2');
-// let Redmi = new mobile('xiaomi11');
-// // Adding color property
-// samsung.color = 'Blue' ;
-// // color is available for samsung in console
-// console.log(samsung) ;
-// // color is not available for apple , POCO , Redmi in console
-// console.log(apple) ;
-// console.log(POCO) ;
-// console.log(Redmi) ;
+let mobile = function(model_no){
+// Instance Member
+    this.model = model_no;
+    this.price = 12000 ;
+}
+let samsung = new mobile('Galaxy');
+let apple = new mobile('Pro max');
+let POCO = new mobile('x2');
+let Redmi = new mobile('xiaomi11');
+// Adding color property
+samsung.color = 'Blue' ;
+// color is available for samsung in console
+console.log(samsung) ;
+// color is not available for apple , POCO , Redmi in console
+console.log(apple) ;
+console.log(POCO) ;
+console.log(Redmi) ;
 
 // // using this approach , color property is only available for samsung. Assuming we have 1000 different company mobiles we want this color property for that too . writing this way code is too complicated. For solving this problem we use =>> " Prototype "
 
@@ -26,12 +26,12 @@
 // // Prototype Syntax ==>>  classname.Prototype.key = 'value' ;
 // // Prototype Member ==> whwn use .prototype that is Prototype Member
 
-// mobile.prototype.camera = 'Ultra pro MAX - HD' ;
-// // camera is available for all objects in console . click on prototype , we can see 
-// console.log(samsung) ;
-// console.log(apple) ;
-// console.log(POCO) ;
-// console.log(Redmi) ;
+mobile.prototype.camera = 'Ultra pro MAX - HD' ;
+// camera is available for all objects in console . click on prototype , we can see 
+console.log(samsung) ;
+console.log(apple) ;
+console.log(POCO) ;
+console.log(Redmi) ;
 
 // // In JS , function creates two objects . 
 // // 1 ==>> Constructor (Function name ) 
@@ -63,7 +63,7 @@ console.log(Mobile === Mobile.prototype.constructor ) ;
 // output :=>  Both are True
 
 
-// #################    Prototypical Inheritance     #################
+// #################    Prototypical Inheritance  (21-August session)   #################
 
 
 let nums = [1,2,3,4,5] ;
@@ -94,6 +94,84 @@ person2.__proto__ = person ;
 console.log(person2.age)               // 23
 console.log(person2.name)             // Anjali (local has more Priority)
 console.log(person2.getInfo())       // Anjali is 23 years old
+
+
+// ######### Polyfills (Creating own method)  ########
+
+// Making own method :- 
+
+Array.prototype.prakash = function(){
+    console.log("Prakash kumar method")
+} ;
+[].prakash();                  // [] is an inBuilt method
+// Output ==>>  Prakash kumar method
+
+let nums1 = [10,20,30,49] ;
+console.log(nums1.prakash()) ;
+// Output ==>>  Prakash kumar method
+
+
+// Making own method for  Functions :- 
+
+Function.prototype.logger = function() {
+    console.log("making own Prototype method for  Functions ")
+} ;
+
+function add() {}
+console.log(add.logger()) ;
+// output =>  making own Prototype method for  Functions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
