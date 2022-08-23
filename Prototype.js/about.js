@@ -284,6 +284,8 @@ Girl.getData() ;
 
 // For every person we are creating same function , which is no of use . leT,s see another way
 
+// #########  Call Method  #########
+// Example ==>> 1
 
 let Rajesh = {
     name : "Rajesh Saini" ,
@@ -304,24 +306,24 @@ let Hema = {
 getData.call(Hema) ;
 getData.call(Rajesh) ;
 
+// Example ==>> 2     passing  Multiple  Parameters
+
+let Prakash = {
+    name : "Prakash Kumar" ,
+    age : 23,
+} ;
 
 
-// let Rajesh = {
-//     name : "Govind" ,
-//     age : 43,
-// } ;
+let getInfo = function(place ,job,package) {
+    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft with the package of ${package} as a Fresher`) ;                
+};
 
-
-// let getData = function(place ,job) {
-//     console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft`) ;                
-// };
-
-// let Hema = {
-//     name : "Gayatari" ,
-//     age : 73,
-// } ;
-// getData.call(Hema , "Mumbai" ,"Engineer") ;
-// getData.call(Rajesh , "chennai") ;
+let Anjali = {
+    name : "Anjali Yadav" ,
+    age : 23,
+} ;
+getInfo.call(Anjali , "Delhi" ,"Electrical-Engineer") ;
+getInfo.call(Prakash , "Uttar Pradesh" , "Frontend-Engineer" , "50 LPA") ;
 
 
 
