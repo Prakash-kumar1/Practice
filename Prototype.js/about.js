@@ -151,6 +151,8 @@
 
 // // 3 - reduce 
 
+// Example no. ==>>1     In case of  Numbers
+
 // const numss = [2, 3, 4, 65, 6, 7, 8, 808];
 
 // const sum = numss.reduce((acc, curr, index, arr) => {
@@ -162,6 +164,15 @@
 
 // console.log(sum);
 
+// Example no. ==>>2     In case of  Strings
+
+const reduceStrings = ["sachin","tendular","breaks all" , "records","in Cricket"].reduce(
+    (acc , current) => {
+        console.log(acc , current) ;
+        return  acc + " " + current;
+    } ,10           // 10 is intial value.by default intial value is Zero.you can write anything in place of string.
+);
+console.log(reduceStrings) ;
 
 // // // Making Basic understandable  structure  for map :-
 // Array.prototype.myMap = function(){
@@ -236,23 +247,24 @@
 
 // // By default  intialValue  is 0 
 
-Array.prototype.myReduce = function (callbackFn, initialValue) {
-    let acc = initialValue;
-    for (let i = 0; i < this.length; i++) {
-      if (acc !== undefined) {
-        acc = callbackFn(acc, this[i]);
-      } else {
-        acc = this[i];
-      }
-    }
-    return acc;
-  };
+// Array.prototype.myReduce = function (callbackFn, initialValue) {
+//     console.log(this);                   // this gives Array
+//     let acc = initialValue;
+//     for (let i = 0; i < this.length; i++) {
+//       if (acc !== undefined) {
+//         acc = callbackFn(acc, this[i]);
+//       } else {
+//         acc = this[i];
+//       }
+//     }
+//     return acc;
+//   };
   
 // // #### Polyfills for Reduce done , Now we done Differnt Operations ####
 
 //   let reducedNum = [1, 2, 3, 4].myReduce((acc, current) => {
 //     // console.log(acc, current);
-//     return acc + current;
+//     return acc + current ;
 //   });
   
 //   console.log(reducedNum);                //10
@@ -470,7 +482,7 @@ Array.prototype.myReduce = function (callbackFn, initialValue) {
 // arjunData();
 
 
-// // // #################  Object Prototypes      #################
+// // // #################    Object Prototypes      #################
 
 
 
