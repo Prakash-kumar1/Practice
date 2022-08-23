@@ -222,28 +222,28 @@
 // // async await  is  a syntactic sugar (easy way of writing) of  Promise .
 
 
-function  person(name , age) {
-    this.name = name ;
-    this.age = age ;
+// function  person(name , age) {
+//     this.name = name ;
+//     this.age = age ;
 
-    console.log(this) ;
-    return this ;           //by default
-}
-const vasu = new person("Prakash Kumar" , 23) ;
-console.log("this Returned" , vasu) ;
-const govind = new person("govind" , 3) ;
-const rajesh = new person("rajesh" , 13) ;
+//     console.log(this) ;
+//     return this ;           //by default
+// }
+// const vasu = new person("Prakash Kumar" , 23) ;
+// console.log("this Returned" , vasu) ;
+// const govind = new person("govind" , 3) ;
+// const rajesh = new person("rajesh" , 13) ;
 
 
-function add() {
-    console.log("Example") ;
-    this.name = "anjali" ;
-// if I remove new then it will return 10 , because new excepts Empty Objects
-    // return 10 ;
-}
+// function add() {
+//     console.log("Example") ;
+//     this.name = "anjali" ;
+// // if I remove new then it will return 10 , because new excepts Empty Objects
+//     return 10 ;
+// }
 
-let sum = new add() ;
-console.log("Return Empty Object" , sum);
+// let sum = new add() ;
+// console.log("Return Empty Object" , sum);
 
 // // Output ==>>       Example
 // //                   Return Empty Object add { name: 'anjali' }
@@ -253,21 +253,21 @@ console.log("Return Empty Object" , sum);
 
 // // In Industries , we use Constructor Function
 
-// class Person {
-//     constructor(name , age) {
-//         this.name = name ;
-//         this.age = age ;
-//     }
-//     getName() {
-//         return this.name ;
-//     }
-//     getAge() {
-//         return this.age ;
-//     }
-// }
+class Person {
+    constructor(name , age) {
+        this.name = name ;
+        this.age = age ;
+    }
+    getName() {
+        return this.name ;
+    }
+    getAge() {
+        return this.age ;
+    }
+}
 
-// let praku = new Person("govind" , 56) ;
-// console.log(praku.age , praku.name) ;
+let praku = new Person("govind" , 56) ;
+console.log(praku.age , praku.name) ;
 
 // // Output ==>> 56 govind
 
@@ -336,12 +336,12 @@ console.log("Return Empty Object" , sum);
 // console.log(prak.getAge)
 
 
-// // // Output ==>>        36 govindVerma
-// // //                    RajeshVerma
-// // //                    64
+// // Output ==>>        36 govindVerma
+// //                    RajeshVerma
+// //                    64
 
 
-// // // Function Declaration are hoisted but  classes are not hoisted .
+// // Function Declaration are hoisted but  classes are not hoisted .
 
 
 // people() ;
