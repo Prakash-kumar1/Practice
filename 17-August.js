@@ -84,4 +84,4 @@ function multiply(num1,num2) {
 const triple = multiply(3) ;
 triple() ;
 
-// // 17 August session (Wednesday) and 18 August session (Thursday) by Aman (Microsoft)
+// // 17 August session (Wednesday) and 18 August session (Thursday) by Aman Sir(Microsoft)
