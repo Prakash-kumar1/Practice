@@ -2,7 +2,6 @@
 
 // // Asynchronous  Programming
 
-
 function obj(id){
     setTimeout(() => {
         console.log("reading data from the database....") ;
@@ -116,134 +115,134 @@ function githubLogin(){
 githubLogin() ;
 
 
-// // Adding some more in Example no.- 2
+// // // Adding some more in Example no.- 2
 
-function readDataInDB(display) {
-    setTimeout(() => {
-       console.log("reading account date in the DataBase") ;
-       let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
-           display(user) ;
-    }, 2000);
-   }
+// function readDataInDB(display) {
+//     setTimeout(() => {
+//        console.log("reading account date in the DataBase") ;
+//        let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
+//            display(user) ;
+//     }, 2000);
+//    }
    
-   function displayDataonScreen(userData){
-       console.log("returning the user data" , userData) ;
-       console.log("display the content in the Github Page") ;
-       getRepositries();
-   }
+//    function displayDataonScreen(userData){
+//        console.log("returning the user data" , userData) ;
+//        console.log("display the content in the Github Page") ;
+//        getRepositries();
+//    }
 
-   function getRepositries() {
-    console.log("getting the repos") ;
-    let repos = ["add" , "calculator" , "forms"];
-    console.log(repos) ;
-    getCommits(repos[0]) ;
-   }
+//    function getRepositries() {
+//     console.log("getting the repos") ;
+//     let repos = ["add" , "calculator" , "forms"];
+//     console.log(repos) ;
+//     getCommits(repos[0]) ;
+//    }
 
-   function getCommits(repo) {
-    let commits = {
+//    function getCommits(repo) {
+//     let commits = {
 
-    add: ["intial commit" , "add function"] ,
-    calculator: ["intial" , "design" , "add event listener" , "give color"] ,
-    forms : ["intial" , "forms UI" , "add functionality"] ,
+//     add: ["intial commit" , "add function"] ,
+//     calculator: ["intial" , "design" , "add event listener" , "give color"] ,
+//     forms : ["intial" , "forms UI" , "add functionality"] ,
 
-    };
-    console.log("commited" , commits[repo]) ;
-   }
+//     };
+//     console.log("commited" , commits[repo]) ;
+//    }
    
-   function githubLogin(){
-       console.log("Enterning the user ID as 11") ;
-       console.log("Clicking the Submit Button") ;
-       readDataInDB(displayDataonScreen) ;
-   }
-   githubLogin() ;
+//    function githubLogin(){
+//        console.log("Enterning the user ID as 11") ;
+//        console.log("Clicking the Submit Button") ;
+//        readDataInDB(displayDataonScreen) ;
+//    }
+//    githubLogin() ;
 
-//  This is also an example of Callback Hell :- when one function calling another function & 
-// that function calling another  function  like this it's  keep going . 
+// //  This is also an example of Callback Hell :- when one function calling another function & 
+// // that function calling another  function  like this it's  keep going . 
 
-// Promises :-->> Pending  , success(Resolved()) , failed(Reject())
-// Syntax  ===>>>         let Promises = new Promises((resolve , reject) => {
-//                         resolve() ;
-//                         reject() ;
-//                      }) ;
-
-
-
-let momPromise = new Promise((resolve , reject) => {
-    setTimeout(() => {
-        resolve("Collected All golds") ;
-        reject("killed by Adheera . ")
-    } , 5000) ;
- }) ;
-
- momPromise.then((result) => console.log("Climax: =>>" , result)) ;
-
-// //  Output :- It will wait for 5sec then print -->>  Climax: =>> Collected All golds
+// // Promises :-->> Pending  , success(Resolved()) , failed(Reject())
+// // Syntax  ===>>>         let Promises = new Promises((resolve , reject) => {
+// //                         resolve() ;
+// //                         reject() ;
+// //                      }) ;
 
 
 
-momPromise = new Promise((resolve , reject) => {
-    setTimeout(() => {
-        // resolve("Collected All golds") ;
-        reject("killed by Adheera . ")
-    } , 5000) ;
- }) ;
+// let momPromise = new Promise((resolve , reject) => {
+//     setTimeout(() => {
+//         resolve("Collected All golds") ;
+//         reject("killed by Adheera . ")
+//     } , 5000) ;
+//  }) ;
 
- momPromise
- .then((result) => console.log("Climax: =>>" , result))
-         .catch((error) => console.log(error)) ;
+//  momPromise.then((result) => console.log("Climax: =>>" , result)) ;
 
-// //  Output :- It will wait for 5sec then print -->>  killed by Adheera .
+// // //  Output :- It will wait for 5sec then print -->>  Climax: =>> Collected All golds
 
 
-// Example
 
-console.log("Entering the user id" , 1) ;
+// momPromise = new Promise((resolve , reject) => {
+//     setTimeout(() => {
+//         // resolve("Collected All golds") ;
+//         reject("killed by Adheera . ")
+//     } , 5000) ;
+//  }) ;
 
- function getUserData(id) {
- return new Promise((resolve , reject) => {
-    setTimeout(() => {
-        let user =  {id: id , userName: "prakash"} ;
-        resolve(user) ;
-    }, 2000);
- }) ;
-}
+//  momPromise
+//  .then((result) => console.log("Climax: =>>" , result))
+//          .catch((error) => console.log(error)) ;
 
-function getRepositries(userName) {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            let repos =  {
-                prakash : ["add" , "calculator" , "forms"] ,
-                govind : ["subtract" , "Telescope" , "paper"] ,
-                rajesh : ["Divide" , "Microscope" , "Replit"] ,
-            } ;
-             resolve(repos[userName]) ;
-        }, 3000);
-    }) ;
-}
+// // //  Output :- It will wait for 5sec then print -->>  killed by Adheera .
 
-function getCommits(repo) {
-    return new Promise((resolve , reject) => {
-        setTimeout(() => {
-            let commits = {
 
-                add: ["intial commit" , "add function"] ,
-                calculator: ["intial" , "design" , "add event listener" , "give color"] ,
-                forms : ["intial" , "forms UI" , "add functionality"] ,
-           };
-    resolve(commits[repo]) ;
-        }, 2000);
-    }) ;
-}
+// // Example
 
-getUserData(1)
-    .then((userData) =>{ 
-        console.log("userData =>> " , userData) ;
-        let repos = getRepositries(userData.userName) ;
-        return repos ;
-    })
-    .then((repos) => {
-        console.log("repos" , repos) ;
-        let commits = getCommits(repos[0]) ;
-        return commits ;
-    }) 
-    .then((commits) => console.log("commited" , commits)) ;
+// console.log("Entering the user id" , 1) ;
+
+//  function getUserData(id) {
+//  return new Promise((resolve , reject) => {
+//     setTimeout(() => {
+//         let user =  {id: id , userName: "prakash"} ;
+//         resolve(user) ;
+//     }, 2000);
+//  }) ;
+// }
+
+// function getRepositries(userName) {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             let repos =  {
+//                 prakash : ["add" , "calculator" , "forms"] ,
+//                 govind : ["subtract" , "Telescope" , "paper"] ,
+//                 rajesh : ["Divide" , "Microscope" , "Replit"] ,
+//             } ;
+//              resolve(repos[userName]) ;
+//         }, 3000);
+//     }) ;
+// }
+
+// function getCommits(repo) {
+//     return new Promise((resolve , reject) => {
+//         setTimeout(() => {
+//             let commits = {
+
+//                 add: ["intial commit" , "add function"] ,
+//                 calculator: ["intial" , "design" , "add event listener" , "give color"] ,
+//                 forms : ["intial" , "forms UI" , "add functionality"] ,
+//            };
+//     resolve(commits[repo]) ;
+//         }, 2000);
+//     }) ;
+// }
+
+// getUserData(1)
+//     .then((userData) =>{ 
+//         console.log("userData =>> " , userData) ;
+//         let repos = getRepositries(userData.userName) ;
+//         return repos ;
+//     })
+//     .then((repos) => {
+//         console.log("repos" , repos) ;
+//         let commits = getCommits(repos[0]) ;
+//         return commits ;
+//     }) 
+//     .then((commits) => console.log("commited" , commits)) ;
