@@ -164,15 +164,15 @@
 
 // console.log(sum);
 
-// Example no. ==>>2     In case of  Strings
+// // Example no. ==>>2     In case of  Strings
 
-const reduceStrings = ["sachin","tendular","breaks all" , "records","in Cricket"].reduce(
-    (acc , current) => {
-        console.log(acc , current) ;
-        return  acc + " " + current;
-    } ,10           // 10 is intial value.by default intial value is Zero.you can write anything in place of string.
-);
-console.log(reduceStrings) ;
+// const reduceStrings = ["sachin","tendular","breaks all" , "records","in Cricket"].reduce(
+//     (acc , current) => {
+//         console.log(acc , current) ;
+//         return  acc + " " + current;
+//     } ,10           // 10 is intial value.By default intial value is Zero.you can write anything in place of string.
+// );
+// console.log(reduceStrings) ;
 
 // // // Making Basic understandable  structure  for map :-
 // Array.prototype.myMap = function(){
@@ -485,10 +485,19 @@ console.log(reduceStrings) ;
 // // // #################    Object Prototypes      #################
 
 
+let Person11 = {
+    name : "Ritesh" ,
+    age : 27 ,
+};
+
+let Person12 = {
+    name : "Brijesh" ,
+    age : 47 ,
+};
 
 
-
-
+Person12.__proto__ = Person11 ;
+console.log(Object.getPrototypeOf(Person12))
 
 
 
