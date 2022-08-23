@@ -38,21 +38,21 @@
 
 // // // If we want to print {id: id , githubUserName: "Prakash-kumar"} ; then used  Callback function .
 
-function getUser(id , callback){
-    console.log(callback) ;
-    setTimeout(() => {
-        console.log("reading data from the database....") ;
-        let object = ( {id: id , githubUserName: "Prakash-kumar"} );
-        callback(object) ;
-    }, 2000) ;
-}
+// function getUser(id , callback){
+//     console.log(callback) ;
+//     setTimeout(() => {
+//         console.log("reading data from the database....") ;
+//         let object = ( {id: id , githubUserName: "Prakash-kumar"} );
+//         callback(object) ;
+//     }, 2000) ;
+// }
 
-console.log('before') ;
-const object = getUser(1 , function callback(object){
-    console.log(object) ;
- }) ;
+// console.log('before') ;
+// const object = getUser(1 , function callback(object){
+//     console.log(object) ;
+//  }) ;
 
-console.log('after') ;
+// console.log('after') ;
 
 // // we can also used  Arrow Function
 
@@ -62,7 +62,7 @@ console.log('after') ;
 //         console.log("I am eating my Breakfast") ;
 //         let object = ( {id: id , githubUserName: "Govind-verma"} );
 //         callbackfn(object) ;
-//     }, 20000) ;
+//     }, 3000) ;
 // }
 
 // console.log('Lunch') ;
@@ -73,9 +73,9 @@ console.log('after') ;
 // console.log('Dinner') ;
 
 
-// // // Example :- 1
+// // Example :- 1
 
-// // // // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
+// // // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
 
 // function prepareFood(startEating){
 //     setTimeout(() => {
@@ -97,11 +97,10 @@ console.log('after') ;
 //     console.log("order 2 rotis with butter chicken") ;
 //     console.log("Chef preparing the order") ;
 
+// // // prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
 //     prepareFood(eatRotis) ;
 // }
 // hotelVisit() ;
-
-// // // prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
 
 
 // // Example :- 2
@@ -116,8 +115,8 @@ console.log('after') ;
 //  }, 2000);
 // }
 
-// function displayDataonScreen(userData){
-//     console.log("returning the user data" , userData) ;
+// function displayDataonScreen(user){
+//     console.log("returning the user data" , user) ;
 //     console.log("display the content in the Github Page") ;
 // }
 
@@ -129,49 +128,50 @@ console.log('after') ;
 // githubLogin() ;
 
 
-// // // Adding some more in Example no.- 2
+// // Adding some more Callback function in Example no.- 2
 
-// function readDataInDB(display) {
-//     setTimeout(() => {
-//        console.log("reading account date in the DataBase") ;
-//        let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
-//            display(user) ;
-//     }, 2000);
-//    }
+function readDataInDB(display) {
+    setTimeout(() => {
+       console.log("reading account date in the DataBase") ;
+       let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
+           display(user) ;
+    }, 2000);
+   }
    
-//    function displayDataonScreen(userData){
-//        console.log("returning the user data" , userData) ;
-//        console.log("display the content in the Github Page") ;
-//        getRepositries();
-//    }
+   function displayDataonScreen(userData){
+       console.log("returning the user data" , userData) ;
+       console.log("display the content in the Github Page") ;
+       getRepositries();
+   }
 
-//    function getRepositries() {
-//     console.log("getting the repos") ;
-//     let repos = ["add" , "calculator" , "forms"];
-//     console.log(repos) ;
-//     getCommits(repos[0]) ;
-//    }
+   function getRepositries() {
+    console.log("getting the repos") ;
+    let repos = ["add" , "calculator" , "forms"];
+    console.log(repos) ;
+    getCommits(repos[0]) ;
+   }
 
-//    function getCommits(repo) {
-//     let commits = {
+   function getCommits(repo) {
+    let commits = {
 
-//     add: ["intial commit" , "add function"] ,
-//     calculator: ["intial" , "design" , "add event listener" , "give color"] ,
-//     forms : ["intial" , "forms UI" , "add functionality"] ,
+    add: ["intial commit" , "add function"] ,
+    calculator: ["intial" , "design" , "add event listener" , "give color"] ,
+    forms : ["intial" , "forms UI" , "add functionality"] ,
 
-//     };
-//     console.log("commited" , commits[repo]) ;
-//    }
+    };
+    console.log("commited" , commits[repo]) ;
+   }
    
-//    function githubLogin(){
-//        console.log("Enterning the user ID as 11") ;
-//        console.log("Clicking the Submit Button") ;
-//        readDataInDB(displayDataonScreen) ;
-//    }
-//    githubLogin() ;
+   function githubLogin(){
+       console.log("Enterning the user ID as 11") ;
+       console.log("Clicking the Submit Button") ;
+       readDataInDB(displayDataonScreen) ;
+   }
+   githubLogin() ;
 
 // //  This is also an example of Callback Hell :- when one function calling another function & 
 // // that function calling another  function  like this it's  keep going . 
+
 
 // // Promises :-->> Pending  , success(Resolved()) , failed(Reject())
 // // Syntax  ===>>>         let Promises = new Promises((resolve , reject) => {
