@@ -31,35 +31,35 @@ sleep() {
 let prakash = new Human ("Prakash" , 22 , "Alpha Male") ;
 console.log(prakash , prakash.think()) ;                         // Output :-    Human { name: 'Prakash', age: 22, gender: 'Alpha Male' } thinking
 
-
 let rani =  new Human ("Rinki" , 20 , "Female") ;
 console.log(rani , rani.eat()) ;                                  // Output :-      Human { name: 'Rinki', age: 20, gender: 'Female' } eating
 
 
-// // Example no. ==>> 2
+// Example no. ==>> 2
 
 
-// class Car {
-//     constructor(model , color , brand , type) {
-//         this.model = model ;
-//         this.color = color ;
-//         this.brand = brand ;
-//         this.type = type ;
-//     }
+class Car {
+    constructor(model , color , brand , type) {
+        this.model = model ;
+        this.color = color ;
+        this.brand = brand ;
+        this.type = type ;
+    }
 
-//     run() {
-//         return ("running") ;
-//     }
+    run() {
+        return ("running") ;
+    }
 
-//     playSongs() {
-//         console.log("Hollywood Songs")
-//     }
-// }
+    playSongs() {
+        // console.log("Hollywood Songs")
+        return("Hollywood Songs")
+    }
+}
 
-// let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
-// console.log(hondaCity , hondaCity.run()) ;
+let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
+console.log(hondaCity , hondaCity.run() , hondaCity.playSongs()) ;
 
-// // // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
+// // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
 
 
 // // // Inheritance :
