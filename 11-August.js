@@ -214,7 +214,7 @@
 
 
 // //  JavaScript is  Multi  Paradigm  Programming  Language , it supports 
-// // OOPs (" Object  Oriented  Programming  system")   and  Functional  Programming
+// // OOPs (" Object  Oriented  Programming  system")   and  Functional  Programming .
 
 // // In JavaScript Class and Function  both are  same .
 
