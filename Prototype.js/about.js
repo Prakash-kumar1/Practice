@@ -433,11 +433,38 @@
 // // Answer ==>>  yes , we need to do binding . so , we use Bind method
 
 
+let Anish = {
+    name : "Anish Rangan" ,
+    profession : "doctor",
+} ;
 
+let sachin = {
+    name : "sachin kashyam" ,
+    profession : "Data Enginneer",
+} ;
 
+let getInformation1 = function(place ,job,package , char = "naughty" , food) {
+    console.log(` ${this.name} profession is a ${this.profession} . I'm from ${place} . I'm a ${job} in Google with the package of ${package} as a Fresher. I am ${char} in nature , My favourite food is ${food}`) ;                
+};
 
+let Ananya = {
+    name : "Ananya Pandey" ,
+    profession : "Actress",
+} ;
 
+let Arjun = {
+    name : "Arjun kapoor" ,
+    profession : "Unemployed Flop Director son's",
+} ;
 
+let anishData = getInformation1.bind(Anish ,"Assam" , "Carpenter" , "14LPA" ,"Kind" ,"Biryani")
+// let sachinData = getInformation1.bind("London" , "Driverer" , "4LPA" ,"Angry", "Chicken")
+// let ananyaData = getInformation1.bind("Juhu Beach" , "Labour" , "Over-Confident" , "Pork")
+// let arjunData = getInformation1.bind("Chennai" , "Electrician" , "10LPA" )
+anishData()
+// sachinData()
+// ananyaData()
+// arjunData()
 
 
 // // // #################  Object Prototypes      #################
