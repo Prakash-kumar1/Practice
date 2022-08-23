@@ -236,19 +236,19 @@
 
 // // By default  intialValue  is 0 
 
-// Array.prototype.myReduce = function (callbackFn, initialValue) {
-//     let acc = initialValue;
-//     for (let i = 0; i < this.length; i++) {
-//       if (acc !== undefined) {
-//         acc = callbackFn(acc, this[i]);
-//       } else {
-//         acc = this[i];
-//       }
-//     }
-//     return acc;
-//   };
+Array.prototype.myReduce = function (callbackFn, initialValue) {
+    let acc = initialValue;
+    for (let i = 0; i < this.length; i++) {
+      if (acc !== undefined) {
+        acc = callbackFn(acc, this[i]);
+      } else {
+        acc = this[i];
+      }
+    }
+    return acc;
+  };
   
-// // // #### Polyfills for Reduce done , Now we done Differnt Operations ####
+// // #### Polyfills for Reduce done , Now we done Differnt Operations ####
 
 //   let reducedNum = [1, 2, 3, 4].myReduce((acc, current) => {
 //     // console.log(acc, current);
@@ -260,8 +260,9 @@
 // // #### Polyfills for Reduce done , Now we done Differnt Operations ####
 
 
-// // // ######### 22 - August Session ( Object Prototypes , Call , Bind , Apply)  ########
+// =====>>> ****************$$$$$$$$$$$$$@@@@@@@@@&&&&&&&&&&**************  <<<<========
 
+// // // ######### 22 - August Session ( Object Prototypes , Call , Bind , Apply)  ########
 
 
 // let Boy = {
@@ -432,39 +433,41 @@
 // // Question no.=>1  Is it possible to store all params inside a variable ??
 // // Answer ==>>  yes , we need to do binding . so , we use Bind method
 
+// // #########  Bind Method  ######### 
 
-let Anish = {
-    name : "Anish Rangan" ,
-    profession : "doctor",
-} ;
 
-let Sachin = {
-    name : "sachin kashyam" ,
-    profession : "Data Enginneer",
-} ;
+// let Anish = {
+//     name : "Anish Rangan" ,
+//     profession : "doctor",
+// } ;
 
-let getInformation1 = function(place ,job,package, food, char ="naughty and Fool" ) {
-    console.log(` ${this.name} profession is a ${this.profession} . I'm from ${place} . I'm a ${job} in Google with the package of ${package} as a Fresher. I am ${char} in nature , My favourite food is ${food}`) ;                
-};
+// let Sachin = {
+//     name : "sachin kashyam" ,
+//     profession : "Data Enginneer",
+// } ;
 
-let Ananya = {
-    name : "Ananya Pandey" ,
-    profession : "Actress",
-} ;
+// let getInformation1 = function(place ,job,package, food, char ="naughty and Fool" ) {
+//     console.log(` ${this.name} profession is a ${this.profession} . I'm from ${place} . I'm a ${job} in Google with the package of ${package} as a Fresher. I am ${char} in nature , My favourite food is ${food}`) ;                
+// };
 
-let Arjun = {
-    name : "Arjun kapoor" ,
-    profession : "Unemployed Flop Director son's",
-} ;
+// let Ananya = {
+//     name : "Ananya Pandey" ,
+//     profession : "Actress",
+// } ;
 
-let anishData = getInformation1.bind(Anish ,"Assam" , "Carpenter" , "14LPA","Biryani" ,"Kind" ) ;
-let sachinData = getInformation1.bind(Sachin,"London" , "Driver" , "4LPA" , "Chicken","Angry") ;
-let ananyaData = getInformation1.bind(Ananya,"Juhu Beach" , "Labour" , "undefined ", "Pork" )
-let arjunData = getInformation1.bind(Arjun,"Chennai" , "Electrician" , "100 Dollar","Poop" )
-anishData() ;
-sachinData() ;
-ananyaData() ;
-arjunData();
+// let Arjun = {
+//     name : "Arjun kapoor" ,
+//     profession : "Unemployed Flop Director son's",
+// } ;
+
+// let anishData = getInformation1.bind(Anish ,"Assam" , "Carpenter" , "14LPA","Biryani" ,"Kind" ) ;
+// let sachinData = getInformation1.bind(Sachin,"London" , "Driver" , "4LPA" , "Chicken","Angry") ;
+// let ananyaData = getInformation1.bind(Ananya,"Juhu Beach" , "Labour" , "undefined ", "Pork" )
+// let arjunData = getInformation1.bind(Arjun,"Chennai" , "Electrician" , "100 Dollar","Poop" )
+// anishData() ;
+// sachinData() ;
+// ananyaData() ;
+// arjunData();
 
 
 // // // #################  Object Prototypes      #################
