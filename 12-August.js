@@ -1,4 +1,4 @@
-// // How  Internet  works , Server , OSI Model , Computer Networks read it on your own ??
+// // How  Internet  works , Server , OSI Model , Computer Networks (Kunal Kushwaha youtube) ??
 
 // // class -->  it is a blue-print
 // // objects -->  instance of class  OR   Real time entity
@@ -39,112 +39,112 @@ console.log(rani , rani.eat()) ;                                  // Output :-  
 // // Example no. ==>> 2
 
 
-class Car {
-    constructor(model , color , brand , type) {
-        this.model = model ;
-        this.color = color ;
-        this.brand = brand ;
-        this.type = type ;
-    }
+// class Car {
+//     constructor(model , color , brand , type) {
+//         this.model = model ;
+//         this.color = color ;
+//         this.brand = brand ;
+//         this.type = type ;
+//     }
 
-    run() {
-        return ("running") ;
-    }
+//     run() {
+//         return ("running") ;
+//     }
 
-    playSongs() {
-        console.log("Hollywood Songs")
-    }
-}
+//     playSongs() {
+//         console.log("Hollywood Songs")
+//     }
+// }
 
-let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
-console.log(hondaCity , hondaCity.run()) ;
+// let hondaCity = new Car("2022" , "red" , "Maruti" , "Sedan") ;
+// console.log(hondaCity , hondaCity.run()) ;
 
-// // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
-
-
-// // Inheritance :
+// // // Output:- Car { model: '2022', color: 'red', brand: 'Maruti', type: 'Sedan' } running
 
 
-class Parent {
-    car() {
-        console.log("maruti espresso") ;
-    }
-}
-
-class Child {}
-
-let vasant =  new Parent() ;
-vasant.car() ;                                                                // Output :-   maruti espresso
-
-But grand child don't access the Properties
-
-let aditi = new Child() ;
-console.log(aditi) ;                                                        // Output :-   Child{}
-aditi.car() ;                                                              // Output :- TypeError: aditi.car is not a function 
+// // // Inheritance :
 
 
+// class Parent {
+//     car() {
+//         console.log("maruti espresso") ;
+//     }
+// }
 
-// For removing This error we use  " extends "
+// class Child {}
 
-class Parent {
-    car() {
-        console.log("maruti espresso") ;
-    }
-}
+// let vasant =  new Parent() ;
+// vasant.car() ;                                                                // Output :-   maruti espresso
 
-class Child extends Parent{}
+// // But grand child don't access the Properties
 
-let vasanth =  new Parent() ;
-vasanth.car() ;                                                              // Output :-   maruti espresso
-
-let aditya = new Child() ;
-aditya.car() ;                                                             // Output :-   maruti espresso
-
-
-// // // If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
+// let aditi = new Child() ;
+// console.log(aditi) ;                                                        // Output :-   Child{}
+// aditi.car() ;                                                              // Output :- TypeError: aditi.car is not a function 
 
 
-// // // Polymorphism :
 
-class grandParent {
-    house() {
-        console.log("Bunglow") ;
-    }
-}
+// // For removing This error we use  " extends "
 
-class Parent extends grandParent {
-    car() {
-        console.log("maruti espresso") ;
-    }
-}
+// class Parent {
+//     car() {
+//         console.log("maruti espresso") ;
+//     }
+// }
 
+// class Child extends Parent{}
 
-class Child extends Parent{
-    bike() {
-        console.log("Ducati") ;
-    }
-// If child want his own property
-car() {
-    console.log("Rolls Royce") ;
-}
-}
+// let vasanth =  new Parent() ;
+// vasanth.car() ;                                                              // Output :-   maruti espresso
+
+// let aditya = new Child() ;
+// aditya.car() ;                                                             // Output :-   maruti espresso
 
 
-let vinay = new grandParent() ;
-vinay.house() ;                                                            // Output :-  Bunglow
+// // // // If a parent has a property then child has used it , But  if a child has a extra property  then parent  don't  access  it .
 
-let vasanth =  new Parent() ;
-vasanth.car() ;                                                              // Output :-   maruti espresso
 
-let aditya = new Child() ;
-aditya.car() ;                                                              // Output :-   maruti espresso
-aditya.bike() ;                                                              // Output :-   Ducati
+// // // // Polymorphism :
 
-// Vasanth and aditya are children of grandParent so , they access it 
+// class grandParent {
+//     house() {
+//         console.log("Bunglow") ;
+//     }
+// }
 
-vasanth.house() ;                                                            // Output :-  Bunglow
-aditya.house() ;                                                             // Output :-  Bunglow
-vasanth.car() ;                                                               // Output :-   maruti espresso  
-// This is called Method Over-riding in polymorphism . Child property overides parent class 
-aditya.car() ;                                                               // Output :-   Rolls Royce
+// class Parent extends grandParent {
+//     car() {
+//         console.log("maruti espresso") ;
+//     }
+// }
+
+
+// class Child extends Parent{
+//     bike() {
+//         console.log("Ducati") ;
+//     }
+// // If child want his own property
+// car() {
+//     console.log("Rolls Royce") ;
+// }
+// }
+
+
+// let vinay = new grandParent() ;
+// vinay.house() ;                                                            // Output :-  Bunglow
+
+// let vasanth =  new Parent() ;
+// vasanth.car() ;                                                              // Output :-   maruti espresso
+
+// let aditya = new Child() ;
+// aditya.car() ;                                                              // Output :-   maruti espresso
+// aditya.bike() ;                                                              // Output :-   Ducati
+
+// // Vasanth and aditya are children of grandParent so , they access it 
+
+// vasanth.house() ;                                                            // Output :-  Bunglow
+// aditya.house() ;                                                             // Output :-  Bunglow
+// vasanth.car() ;                                                               // Output :-   maruti espresso  
+// // This is called Method Over-riding in polymorphism . Child property overides parent class 
+// aditya.car() ;                                                               // Output :-   Rolls Royce
 
