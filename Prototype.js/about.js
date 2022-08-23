@@ -376,60 +376,63 @@
 // //                     }
 
 
-let getInformation = function(place ,job,package , char = "notorious") {
-    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in Tesla with the package of ${package} as a Fresher. I am ${char}`) ;                
-};
+// let getInformation = function(place ,job,package , char = "notorious") {
+//     console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in Tesla with the package of ${package} as a Fresher. I am ${char}`) ;                
+// };
 
-let students = [
-    {
-        Obj : {
-        name : "Abhishek Kholpar" ,
-        age  : 21 ,
-        qualification : "12th pass" ,
-    },
+// let students = [
+//     {
+//         Obj : {
+//         name : "Abhishek Kholpar" ,
+//         age  : 21 ,
+//         qualification : "12th pass" ,
+//     },
 
-    params : ["Pune" , "Shy"]
-},
-    {
-        Obj : {
-        name : "Amit Kumar" ,
-        age  : 24 ,
-        qualification : "Graduation" ,
-    },
-    params : ["Delhi" , "Bold"]
-},
-    {
-        Obj : {
-        name : "Sameer Varshney" ,
-        age  : 21 ,
-        qualification : "Under Graduate" ,
-    },
-    params : ["Madhya Pardesh" , "Funny"]
-},
-    {
-        Obj : {
-        name : "Archana" ,
-        age  : 21 ,
-        qualification : "Doctor" ,
-    },
-    params : ["Hyderabad" , "Confident"]
-},
-    {Obj : {
-        name : "Arti" ,
-        age  : 41 ,
-        qualification : "Ph.d" ,
-    },
-    params : ["Jharkhand" , "Dull"]}
-]
+//     params : ["Pune" , "Shy"]
+// },
+//     {
+//         Obj : {
+//         name : "Amit Kumar" ,
+//         age  : 24 ,
+//         qualification : "Graduation" ,
+//     },
+//     params : ["Delhi" , "Bold"]
+// },
+//     {
+//         Obj : {
+//         name : "Sameer Varshney" ,
+//         age  : 21 ,
+//         qualification : "Under Graduate" ,
+//     },
+//     params : ["Madhya Pardesh" , "Funny"]
+// },
+//     {
+//         Obj : {
+//         name : "Archana" ,
+//         age  : 21 ,
+//         qualification : "Doctor" ,
+//     },
+//     params : ["Hyderabad" , "Confident"]
+// },
+//     {Obj : {
+//         name : "Arti" ,
+//         age  : 41 ,
+//         qualification : "Ph.d" ,
+//     },
+//     params : ["Jharkhand" , "Dull"]}
+// ]
 
-for(let data of students){
-//   console.log(data);                    // this will print Each Data
-// console.log(data.Obj , data.params);                      //// this will print Object and Parameters seperately
-getInformation.apply(data.Obj , data.params)                    //// this will print sentence
-}
+// for(let data of students){
+// //   console.log(data);                    // this will print Each Data
+// // console.log(data.Obj , data.params);                      //// this will print Object and Parameters seperately
+// getInformation.apply(data.Obj , data.params)                    //// this will print sentence
+// }
 
 
-// Is it possible to store all params inside a variable ??
+// // Question no.=>1  Is it possible to store all params inside a variable ??
+// // Answer ==>>  yes , we need to do binding . so , we use Bind method
+
+
 
 
 
