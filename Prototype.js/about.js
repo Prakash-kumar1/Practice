@@ -429,6 +429,7 @@ getInformation.apply(data.Obj , data.params)                    //// this will p
 }
 
 
+// Is it possible to store all params inside a variable ??
 
 
 
