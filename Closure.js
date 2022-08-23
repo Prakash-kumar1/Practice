@@ -41,7 +41,8 @@ demo() ;
 
 // ###########  var in Global scope  and  functional scope (Read it on your own)   ###########
 
-//// In this case counter create new execution context at each time on calling.so, the value always starts from 1.
+// // In this case count is inside the function.at each time on calling counter create a new execution context and after printing it 
+//  // whole memory destroys . so the value always starts from 1.
 
 // function counter(){
 //     var count = 1;
@@ -55,7 +56,9 @@ demo() ;
 
 
 
-// // In this case counter create only one new execution context on calling because var is declared outside. so ,   the value starts from 1 and increases on calling.
+//  // In this case counter create a new execution context and after printing it 
+//  // whole memory destroys .but value stored outside of execution context. so the value starts from 1 
+//  // and increases on calling.
 
 // var count = 1;
 
@@ -150,13 +153,5 @@ console.log(storing.getSumThree()) ;
 let store1 = add(10 , 40 ,50) ;   // calling
 console.log(store1.getSumTwo()) ;
 console.log(store1.getSumThree()) ;
-
-
-
-
-
-
-
-
 
 
