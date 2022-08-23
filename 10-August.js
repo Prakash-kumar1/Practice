@@ -157,36 +157,36 @@ function payment() {
 dinnerScenario() ;
 
 
-// // // Interview  Question : -->>  How  to  Optimized the Process ??
-// // // parellel  OR  concurrent  execution :
+ // Interview  Question : -->>  How  to  Optimized the Process ??
+ // parellel  OR  concurrent  execution :
 
-// function fn1() {
-//     return new Promise((res , rej) => {
-//         setTimeout(() => {
-//             console.log("process 1")
-//             res("1") ;
-//         }, 5000);
-//     })
-// }
+function fn1() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 1")
+            res("1") ;
+        }, 5000);
+    })
+}
 
-// function fn2() {
-//     return new Promise((res , rej) => {
-//         setTimeout(() => {
-//             console.log("process 2")
-//             res("2") ;
-//         }, 5000);
-//     }) ;
-// }
+function fn2() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 2")
+            res("2") ;
+        }, 5000);
+    }) ;
+}
 
-// // fn1()
-// //    .then(() => fn2())
-// //    .then(() => console.log("Process over")) ;
-// // //    it takes 10 seconds to print . so, we used Promises
+// fn1()
+//    .then(() => fn2())
+//    .then(() => console.log("Process over")) ;
+// //    it takes 10 seconds to print . so, we used Promises
 
 
-// Promise.all([fn1() , fn2()]).then((result) =>
-// console.log("process over" , result)
-// ) ;
+Promise.all( [fn1() , fn2()]).then((result) =>
+console.log("process over" , result)
+) ;
 // // it takes 5 seconds to print .
 
 
