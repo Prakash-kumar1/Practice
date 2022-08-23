@@ -264,77 +264,169 @@
 
 
 
-let Boy = {
-    name : "Govind" ,
-    age : 43,
-    getData : function() {
-        console.log(` ${this.name} is ${this.age} years old `) ;                
-    },
-} ;
-Boy.getData() ;
+// let Boy = {
+//     name : "Govind" ,
+//     age : 43,
+//     getData : function() {
+//         console.log(` ${this.name} is ${this.age} years old `) ;                
+//     },
+// } ;
+// Boy.getData() ;
 
-let Girl = {
-    name : "Gayatari" ,
-    age : 73,
-    getData : function() {
-        console.log(` ${this.name} is ${this.age} years old `) ;                
-    },
-} ;
-Girl.getData() ;
+// let Girl = {
+//     name : "Gayatari" ,
+//     age : 73,
+//     getData : function() {
+//         console.log(` ${this.name} is ${this.age} years old `) ;                
+//     },
+// } ;
+// Girl.getData() ;
 
-// For every person we are creating same function , which is no of use . leT,s see another way
+// // For every person we are creating same function , which is no of use . leT,s see another way
 
-// #########  Call Method  #########
-// Example ==>> 1
+// // #########  Call Method  #########
+// // Example ==>> 1
 
-let Rajesh = {
-    name : "Rajesh Saini" ,
-    age : 14,
-    food : "Dosa",
-} ;
+// let Rajesh = {
+//     name : "Rajesh Saini" ,
+//     age : 14,
+//     food : "Dosa",
+// } ;
 
-// getData forms closures with Objects .
-let getData = function() {
-    console.log(` ${this.name} is ${this.age} years old . He or she loves ${this.food}`) ;                
+// // getData forms closures with Objects .
+// let getData = function() {
+//     console.log(` ${this.name} is ${this.age} years old . He or she loves ${this.food}`) ;                
+// };
+
+// let Hema = {
+//     name : "Hema mane" ,
+//     age : 13,
+//     food : "Biryani",
+// } ;
+// getData.call(Hema) ;
+// getData.call(Rajesh) ;
+
+// // Example ==>> 2     passing  Multiple  Parameters
+
+// let Prakash = {
+//     name : "Prakash Kumar" ,
+//     age : 23,
+// } ;
+
+
+// let getInfo = function(place ,job,package , char = "joyful") {
+//     console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft with the package of ${package} as a Fresher. I am ${char}`) ;                
+// };
+
+// let Anjali = {
+//     name : "Anjali Yadav" ,
+//     age : 23,
+// } ;
+// getInfo.call(Anjali , "Delhi" ,"Electrical-Engineer" ) ;
+// getInfo.call(Prakash , "Uttar Pradesh" , "Frontend-Engineer" , "50 LPA") ;
+
+
+// // #########  Apply Method  #########  (accept parameters in array)
+
+// // Borrowing function for my object is known as function Borrowing .
+// // Example ==>> 1
+
+// let Shivansh = {
+//     name : "Shivansh Rawat" ,
+//     age : 23,
+// } ;
+
+
+// let getInform = function(place ,job,package , char = "notorious") {
+//     console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft with the package of ${package} as a Fresher. I am ${char}`) ;                
+// };
+
+// let Shweta = {
+//     name : "Shweta Kodam" ,
+//     age : 33,
+// } ;
+
+// let Raghavendra = {
+//     name : "Raghavendra S Yarogappa" ,
+//     age : 53,
+// } ;
+
+// getInform.apply(Shweta , ["Mumbai" ,"Content- Writer"] ) ;
+// getInform.apply(Shivansh , ["Uttrakhand" , "Frontend Developer" , "15 LPA"]) ;
+// getInform.apply(Raghavendra , ["TamilNadu" , "Accountant" , "5 LPA" , "Lovely"]) ;
+
+
+// // In this case , we have to use apply for each data in each time this is not good way => leT,s see another way
+
+// // Syntax ==>>         let anyName = {
+// //                           {
+// //                            object : {} ,
+// //                            params : [""],
+// //                           },
+                       
+// //                           {
+// //                            object : {} ,
+// //                            params : [""],
+// //                           },
+                       
+// //                           {
+// //                            object : {} ,
+// //                            params : [""],
+// //                           },
+// //                     }
+
+
+let getInformation = function(place ,job,package , char = "notorious") {
+    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in Tesla with the package of ${package} as a Fresher. I am ${char}`) ;                
 };
 
-let Hema = {
-    name : "Hema mane" ,
-    age : 13,
-    food : "Biryani",
-} ;
-getData.call(Hema) ;
-getData.call(Rajesh) ;
+let students = [
+    {
+        Obj : {
+        name : "Abhishek Kholpar" ,
+        age  : 21 ,
+        qualification : "12th pass" ,
+    },
 
-// Example ==>> 2     passing  Multiple  Parameters
+    params : ["Pune" , "Shy"]
+},
+    {
+        Obj : {
+        name : "Amit Kumar" ,
+        age  : 24 ,
+        qualification : "Graduation" ,
+    },
+    params : ["Delhi" , "Bold"]
+},
+    {
+        Obj : {
+        name : "Sameer Varshney" ,
+        age  : 21 ,
+        qualification : "Under Graduate" ,
+    },
+    params : ["Madhya Pardesh" , "Funny"]
+},
+    {
+        Obj : {
+        name : "Archana" ,
+        age  : 21 ,
+        qualification : "Doctor" ,
+    },
+    params : ["Hyderabad" , "Confident"]
+},
+    {Obj : {
+        name : "Arti" ,
+        age  : 41 ,
+        qualification : "Ph.d" ,
+    },
+    params : ["Jharkhand" , "Dull"]}
+]
 
-let Prakash = {
-    name : "Prakash Kumar" ,
-    age : 23,
-} ;
-
-
-let getInfo = function(place ,job,package) {
-    console.log(` ${this.name} is ${this.age} years old. I'm from ${place} . I'm a ${job} in microsoft with the package of ${package} as a Fresher`) ;                
-};
-
-let Anjali = {
-    name : "Anjali Yadav" ,
-    age : 23,
-} ;
-getInfo.call(Anjali , "Delhi" ,"Electrical-Engineer") ;
-getInfo.call(Prakash , "Uttar Pradesh" , "Frontend-Engineer" , "50 LPA") ;
-
-
-
-
-
-
-
-
-
-
-
+for(let data of students){
+//   console.log(data);                    // this will print Each Data
+// console.log(data.Obj , data.params);                      //// this will print Object and Parameters seperately
+getInformation.apply(data.Obj , data.params)                    //// this will print sentence
+}
 
 
 
