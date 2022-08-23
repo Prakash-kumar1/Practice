@@ -6,7 +6,7 @@ let p1 = Promise.resolve("p1 data") ;
 let p2 = Promise.resolve("p2 Print") ;
 console.log(p1 , p2) ;
 
-// Output : -   Promise { 'p1 data' } Promise { 'p2 Print' }
+// Output : - Promise { 'p1 data' } Promise { 'p2 Print' }
 
 
 //Question number-1: if set-time out and Promise have different time
