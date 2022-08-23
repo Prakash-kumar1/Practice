@@ -81,7 +81,10 @@ function payment() {
     }) ;
 }
 
-// // // main code
+// // // main code  in  3  Different methods :-
+
+// Ist method ==>>
+
 // function dinnerScenario() {
 //     console.log("entering into the Hotel") ;
 //     console.log("Calling  the server and order PavBhaji") ;
@@ -104,6 +107,7 @@ function payment() {
 
 
 // // OR  we can write main code this way
+// IInd method ==>>
 
 // function dinnerScenario() {
 //     console.log("entering into the Hotel") ;
@@ -122,20 +126,21 @@ function payment() {
 // })
 
 // .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
-// // But if we write false anywhere , it will throw error . so for catching error , we use ' .catch '
+// // But if we write false anywhere , it will throw error . so, for catching error , we use ' .catch '
 // .catch((error) => console.log("error block-->>" , error)) ;     
 
 // }
-
 // dinnerScenario() ;
 
 
 // // ######  Writing  Main  code  with  Async  and  Await
+// IIIrd method ==>>
+
 
   async function dinnerScenario() {
-    console.log("entering into the Hotel")
-    console.log("Calling  the server and order PavBhaji")
-    console.log("server informing the chef to prepare food");
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
     try{
         let foodMsg = await preparationofFood()
         console.log(foodMsg) ;
