@@ -227,7 +227,7 @@ function  person(name , age) {
     this.age = age ;
 
     console.log(this) ;
-    return this ;
+    return this ;           //by default
 }
 const vasu = new person("Prakash Kumar" , 23) ;
 console.log("this Returned" , vasu) ;
@@ -235,18 +235,19 @@ const govind = new person("govind" , 3) ;
 const rajesh = new person("rajesh" , 13) ;
 
 
-// function add() {
-//     console.log("Example") ;
-//     this.name = "anjali" ;
-//     // if I remove new then it will return 10 , because new excepts Empty Objects
-//     // return 10 ;
-// }
+function add() {
+    console.log("Example") ;
+    this.name = "anjali" ;
+// if I remove new then it will return 10 , because new excepts Empty Objects
+    // return 10 ;
+}
 
-// let sum = new add() ;
-// console.log("Return Empty Object" , sum);
+let sum = new add() ;
+console.log("Return Empty Object" , sum);
 
 // // Output ==>>       Example
 // //                   Return Empty Object add { name: 'anjali' }
+
 
 // OR  in the place of return and new keyword , we use Constructor method
 
