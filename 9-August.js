@@ -223,13 +223,15 @@ console.log("Entering the user id" , 1) ;
 }
 
 function getRepositries(userName) {
+    console.log(userName)
     return new Promise((resolve , reject) => {
         setTimeout(() => {
             let repos =  {
-                prakash : ["add" , "calculator" , "forms"] ,
-                govind : ["subtract" , "Telescope" , "paper"] ,
-                rajesh : ["Divide" , "Microscope" , "Replit"] ,
+                'prakash' : ["add" , "calculator" , "forms"] ,
+                'govind' : ["subtract" , "Telescope" , "paper"] ,
+                'rajesh' : ["Divide" , "Microscope" , "Replit"] ,
             } ;
+            console.log(repos['govind']) ;
              resolve(repos[userName]) ;
         }, 3000);
     }) ;
@@ -261,4 +263,4 @@ getUserData(1)
         return commits ;
     }) 
     .then((commits) => console.log("commited" , commits)) ;
-    
+  

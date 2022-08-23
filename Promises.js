@@ -1,72 +1,72 @@
 // // Read on JavaScript.info  and  javascripttutorial.net for Deep  Understanding
 
 // // Synchronous Programming :  Line by line
-// function foo(){
-//     console.log("Inside Function") ;
-// }
-// console.log("start") ;
-// foo() ;
-// console.log("End") ;
-// // output==> start
-// //           Inside Function
-// //           End
+function foo(){
+    console.log("Inside Function") ;
+}
+console.log("start") ;
+foo() ;
+console.log("End") ;
+// output==> start
+//           Inside Function
+//           End
 
 
-// // Asynchronous Programming :  
+// Asynchronous Programming :  
 
-// console.log("starting") ;
-// setTimeout(() => {
-//     console.log("Asynchronous Programming")
-// }, 1000);
-// console.log("Ending") ;
-// // output => starting
-// //           Ending
-// //           Inside Set-Timeout
-
-
-// // Example :-1  Iss example mein pahle starting print hoga , uske baad settime out web API mein chala jayega . uske baad 
-// // console.log(nm) ; ko  "Shivansh Rawat" print karna chaiye par woh undefined dega kyunki nm ki value 3 seconds baad print hogi 
-// // aur JS wait nahi karega toh wo nm ki value undefined dekar aage jakar ending print karega . After 3 seconds , console.log 
-// // print hoga jo setTimeout ke andar hai . it means , name("Shivansh Rawat") value  never Prints .
-
-// console.log("starting") ;
-
-// function getName(name){
-//     setTimeout(() => {
-//         console.log("Name Inside Set-Timeout") ;
-//         return name ;
-//     }, 3000);
-// }
-// const nm = getName("Shivansh Rawat") ;
-// console.log(nm) ;
-// console.log("Ending") ;
-
-// // output => starting
-// //           Undefined
-// //           Ending
-// //           Name Inside Set-Timeout
+console.log("starting") ;
+setTimeout(() => {
+    console.log("Asynchronous Programming")
+}, 1000);
+console.log("Ending") ;
+// output => starting
+//           Ending
+//           Inside Set-Timeout
 
 
-// // For solving Above problem , we use CallBack Function
+// Example :-1  Iss example mein pahle starting print hoga , uske baad settime out web API mein chala jayega . uske baad 
+// console.log(nm) ; ko  "Shivansh Rawat" print karna chaiye par woh undefined dega kyunki nm ki value 3 seconds baad print hogi 
+// aur JS wait nahi karega toh wo nm ki value undefined dekar aage jakar ending print karega . After 3 seconds , console.log 
+// print hoga jo setTimeout ke andar hai . it means , name("Shivansh Rawat") value  never Prints .
 
-// console.log("starting") ;
+console.log("starting") ;
 
-// function getName(name , callback){
-//     setTimeout(() => {
-//         console.log("Name Inside Set-Timeout") ;
-//         callback (name) ;
-//     }, 3000);
-// }
-// const nm = getName("Shivansh Rawat" , function callback(nm){
-//     console.log(nm)
-// }) ;
-// console.log(nm) ;
-// console.log("Ending") ;
-// // output => starting
-// //           Undefined
-// //           Ending
-// //           Name Inside Set-Timeout
-//               Shivansh Rawat
+function getName(name){
+    setTimeout(() => {
+        console.log("Name Inside Set-Timeout") ;
+        return name ;
+    }, 3000);
+}
+const nm = getName("Shivansh Rawat") ;
+console.log(nm) ;
+console.log("Ending") ;
+
+// output => starting
+//           Undefined
+//           Ending
+//           Name Inside Set-Timeout
+
+
+// For solving Above problem , we use CallBack Function
+
+console.log("starting") ;
+
+function getName(name , callback){
+    setTimeout(() => {
+        console.log("Name Inside Set-Timeout") ;
+        callback (name) ;
+    }, 3000);
+}
+const nm = getName("Shivansh Rawat" , function callback(nm){
+    console.log(nm)
+}) ;
+console.log(nm) ;
+console.log("Ending") ;
+// output => starting
+//           Undefined
+//           Ending
+//           Name Inside Set-Timeout
+ //              Shivansh Rawat
 
 
 // When there is large data , then callback function  becomes  callback-Hell (means , their is so many 
