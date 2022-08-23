@@ -222,17 +222,17 @@
 // // async await  is  a syntactic sugar (easy way of writing) of  Promise .
 
 
-// function  person(name , age) {
-//     this.name = name ;
-//     this.age = age ;
+function  person(name , age) {
+    this.name = name ;
+    this.age = age ;
 
-//     console.log(this) ;
-//     return this ;
-// }
-// const vasu = new person("Prakash Kumar" , 23) ;
-// console.log("this Returned" , vasu) ;
-// const govind = new person("govind" , 3) ;
-// const rajesh = new person("rajesh" , 13) ;
+    console.log(this) ;
+    return this ;
+}
+const vasu = new person("Prakash Kumar" , 23) ;
+console.log("this Returned" , vasu) ;
+const govind = new person("govind" , 3) ;
+const rajesh = new person("rajesh" , 13) ;
 
 
 // function add() {
