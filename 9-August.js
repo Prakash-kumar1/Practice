@@ -130,44 +130,44 @@
 
 // // Adding some more Callback function in Example no.- 2
 
-function readDataInDB(display) {
-    setTimeout(() => {
-       console.log("reading account date in the DataBase") ;
-       let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
-           display(user) ;
-    }, 2000);
-   }
+// function readDataInDB(display) {
+//     setTimeout(() => {
+//        console.log("reading account date in the DataBase") ;
+//        let user = ( {id: 198 , githubUserName: "shivanshRawat"} );
+//            display(user) ;
+//     }, 2000);
+//    }
    
-   function displayDataonScreen(userData){
-       console.log("returning the user data" , userData) ;
-       console.log("display the content in the Github Page") ;
-       getRepositries();
-   }
+//    function displayDataonScreen(userData){
+//        console.log("returning the user data" , userData) ;
+//        console.log("display the content in the Github Page") ;
+//        getRepositries();
+//    }
 
-   function getRepositries() {
-    console.log("getting the repos") ;
-    let repos = ["add" , "calculator" , "forms"];
-    console.log(repos) ;
-    getCommits(repos[0]) ;
-   }
+//    function getRepositries() {
+//     console.log("getting the repos") ;
+//     let repos = ["add" , "calculator" , "forms"];
+//     console.log(repos) ;
+//     getCommits(repos[2]) ;
+//    }
 
-   function getCommits(repo) {
-    let commits = {
+//    function getCommits(repo) {
+//     let commits = {
 
-    add: ["intial commit" , "add function"] ,
-    calculator: ["intial" , "design" , "add event listener" , "give color"] ,
-    forms : ["intial" , "forms UI" , "add functionality"] ,
+//     add: ["intial commit" , "add function"] ,
+//     calculator: ["intial" , "design" , "add event listener" , "give color"] ,
+//     forms : ["intial" , "forms UI" , "add functionality"] ,
 
-    };
-    console.log("commited" , commits[repo]) ;
-   }
+//     };
+//     console.log("commited" , commits[repo]) ;
+//    }
    
-   function githubLogin(){
-       console.log("Enterning the user ID as 11") ;
-       console.log("Clicking the Submit Button") ;
-       readDataInDB(displayDataonScreen) ;
-   }
-   githubLogin() ;
+//    function githubLogin(){
+//        console.log("Enterning the user ID as 11") ;
+//        console.log("Clicking the Submit Button") ;
+//        readDataInDB(displayDataonScreen) ;
+//    }
+//    githubLogin() ;
 
 // //  This is also an example of Callback Hell :- when one function calling another function & 
 // // that function calling another  function  like this it's  keep going . 
@@ -181,16 +181,16 @@ function readDataInDB(display) {
 
 
 
-// let momPromise = new Promise((resolve , reject) => {
-//     setTimeout(() => {
-//         resolve("Collected All golds") ;
-//         reject("killed by Adheera . ")
-//     } , 5000) ;
-//  }) ;
+let momPromise = new Promise((resolve , reject) => {
+    setTimeout(() => {
+        resolve("Collected All golds") ;
+        reject("killed by Adheera . ")
+    } , 5000) ;
+ }) ;
 
-//  momPromise.then((result) => console.log("Climax: =>>" , result)) ;
+ momPromise.then((result) => console.log("Climax: =>>" , result)) ;
 
-// // //  Output :- It will wait for 5sec then print -->>  Climax: =>> Collected All golds
+// //  Output :- It will wait for 5sec then print -->>  Climax: =>> Collected All golds
 
 
 
