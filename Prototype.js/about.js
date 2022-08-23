@@ -184,26 +184,26 @@
 
 // // Making Polyfill  for map :-
 
-Array.prototype.myMap = function(callbackfn){
-    // console.log("this ==>>" , this);
-    let myArr = this ;
+// Array.prototype.myMap = function(callbackfn){
+//     // console.log("this ==>>" , this);
+//     let myArr = this ;
 
-let newArr = [];
-   for(let i=0; i<myArr.length; i++){
-    let data = callbackfn(myArr[i] , i , myArr) ;
-    newArr.push(data) ;
-   }
-   return newArr ;
-} ;       
+// let newArr = [];
+//    for(let i=0; i<myArr.length; i++){
+//     let data = callbackfn(myArr[i] , i , myArr) ;
+//     newArr.push(data) ;
+//    }
+//    return newArr ;
+// } ;       
 
-// / #### Polyfills for map done , Now we done Differnt Operations ####
+// // / #### Polyfills for map done , Now we done Differnt Operations ####
 
-let nums4 = [12,24,37,49] ;
-let result = nums4.myMap(function (num){
-    // console.log(num);
-    return num*2 ;
-}) ;
-console.log(result);
+// let nums4 = [12,24,37,49] ;
+// let result = nums4.myMap(function (num){
+//     // console.log(num);
+//     return num*2 ;
+// }) ;
+// console.log(result);
 // // Output ==>>  [ 24, 48, 74, 98 ]
 
 // // #### Polyfills for map done , it works completely like map ####
@@ -211,24 +211,23 @@ console.log(result);
 
 // // Making Polyfill  for Filter :-
 
- Array.prototype.myFilter = function(callbackfn){
-        // console.log("this ==>>" , this);
-        let myArr = this ;
+//  Array.prototype.myFilter = function(callbackfn){
+//         // console.log("this ==>>" , this);
+//         let myArr = this ;
     
-    let newArr = [];
-       for(let i=0; i<myArr.length; i++){
-        if(callbackfn(myArr[i])){
-            newArr.push(this[i]) ;
-        }
-       }
-       return newArr ;
-    } ;       
+//     let newArr = [];
+//        for(let i=0; i<myArr.length; i++){
+//         if(callbackfn(myArr[i])){
+//             newArr.push(this[i]) ;
+//         }
+//        }
+//        return newArr ;
+//     } ;       
 
-// // / #### Polyfills for map done , Now we done Differnt Operations ####
+//  // / #### Polyfills for Filter done , Now we done Differnt Operations ####
 
-let nums6 = [1,2,3,4,5].myFilter((num) => num > 2);
-console.log(nums6) ;
-// // // Output ==>>  [ 3,4,5 ]
+// let nums6 = [1,2,3,4,5].myFilter((num) => num > 2);
+// // Output ==>>  [ 3,4,5 ]
 
 // #### Polyfills for Filter done , Now we done Differnt Operations ####
 
@@ -244,44 +243,49 @@ console.log(nums6) ;
 // // #### Polyfills for Reduce done , Now we done Differnt Operations ####
 
 
-
-// let Boy = {
-//     name : "Govind" ,
-//     age : 43,
-//     getData : function() {
-//         console.log(` ${this.name} is ${this.age} years old `) ;                
-//     },
-// } ;
-// Boy.getData() ;
-
-// let Girl = {
-//     name : "Gayatari" ,
-//     age : 73,
-//     getData : function() {
-//         console.log(` ${this.name} is ${this.age} years old `) ;                
-//     },
-// } ;
-// Girl.getData() ;
-
-// //  OR 
+// // // ######### 22 - August Session ( Object Prototypes , Call , Bind , Apply)  ########
 
 
-// // let Rajesh = {
-// //     name : "Govind" ,
-// //     age : 43,
-// // } ;
+
+let Boy = {
+    name : "Govind" ,
+    age : 43,
+    getData : function() {
+        console.log(` ${this.name} is ${this.age} years old `) ;                
+    },
+} ;
+Boy.getData() ;
+
+let Girl = {
+    name : "Gayatari" ,
+    age : 73,
+    getData : function() {
+        console.log(` ${this.name} is ${this.age} years old `) ;                
+    },
+} ;
+Girl.getData() ;
+
+// For every person we are creating same function , which is no of use . leT,s see another way
 
 
-// // let getData = function() {
-// //     console.log(` ${this.name} is ${this.age} years old `) ;                
-// // };
+let Rajesh = {
+    name : "Rajesh Saini" ,
+    age : 14,
+    food : "Dosa",
+} ;
 
-// // let Hema = {
-// //     name : "Gayatari" ,
-// //     age : 73,
-// // } ;
-// // getData.call(Hema) ;
-// // getData.call(Rajesh) ;
+// getData forms closures with Objects .
+let getData = function() {
+    console.log(` ${this.name} is ${this.age} years old . He or she loves ${this.food}`) ;                
+};
+
+let Hema = {
+    name : "Hema mane" ,
+    age : 13,
+    food : "Biryani",
+} ;
+getData.call(Hema) ;
+getData.call(Rajesh) ;
 
 
 
