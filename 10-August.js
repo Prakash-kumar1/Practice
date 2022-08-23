@@ -9,35 +9,35 @@
 // // leaving the hotel . 
 
 
-// function preparationofFood(callbackOfeatingFood){
-//     setTimeout(() => {
-//         console.log("Prepareing the PavBhaji... ") ;
-//         console.log("server  delivering food to the table") ;
-//         callbackOfeatingFood(payingBillandTips) ;                  // eatingFood
-//     }, 3000);
-// }
+function preparationofFood(callbackOfeatingFood){
+    setTimeout(() => {
+        console.log("Prepareing the PavBhaji... ") ;
+        console.log("server  delivering food to the table") ;
+        callbackOfeatingFood(payingBillandTips) ;                  // eatingFood
+    }, 3000);
+}
 
-// function payingBillandTips() {
-//         console.log("paying the bill") ;
-//         console.log("leaving the hotel ") ;
-// }
+function payingBillandTips() {
+        console.log("paying the bill") ;
+        console.log("leaving the hotel ") ;
+}
 
-// function eatingFood(callbackOfPayment) {
-//     setTimeout(() => {
-//         console.log("eating the PavBhaji... ") ;
-//         callbackOfPayment() ;                                      // payingBillandTips
-//     }, 8000);
-// }
+function eatingFood(callbackOfPayment) {
+    setTimeout(() => {
+        console.log("eating the PavBhaji... ") ;
+        callbackOfPayment() ;                                      // payingBillandTips
+    }, 8000);
+}
 
-// // //main code
+// //main code
 
-// function dinnerScenario() {
-//     console.log("entering into the Hotel") ;
-//     console.log("Calling  the server and order PavBhaji") ;
-//     console.log("server informing the chef to prepare food") ;
-// preparationofFood(eatingFood) ;    
-// }
-// dinnerScenario() ;
+function dinnerScenario() {
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
+preparationofFood(eatingFood) ;    
+}
+dinnerScenario() ;
 
 
 // // Using Promises for Above example
@@ -85,56 +85,56 @@ function payment() {
 
 // Ist method ==>>
 
-// function dinnerScenario() {
-//     console.log("entering into the Hotel") ;
-//     console.log("Calling  the server and order PavBhaji") ;
-//     console.log("server informing the chef to prepare food") ;
-// preparationofFood()
-//           .then(() =>{
-//            console.log("food prepared succesfully & delievered") ;
-//             eatingFood().then(() => {
-//                 console.log(" succesfully ate the food");
-//                 payment()
-//                 .then(()=> console.log("process over go to bed and sleep"))
-//                 .catch((error) => console.log("error " , error)) ;    
-//             } )
-//             .catch((error) => console.log(error.message)) ; 
-// })
-//           .catch((error) => console.log("error block-->>" , error)) ;        
-// }
+function dinnerScenario() {
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
+preparationofFood()
+          .then(() =>{
+           console.log("food prepared succesfully & delievered") ;
+            eatingFood().then(() => {
+                console.log(" succesfully ate the food");
+                payment()
+                .then(()=> console.log("process over go to bed and sleep"))
+                .catch((error) => console.log("error " , error)) ;    
+            } )
+            .catch((error) => console.log(error.message)) ; 
+})
+          .catch((error) => console.log("error block-->>" , error)) ;        
+}
 
-// dinnerScenario() 
+dinnerScenario() 
 
 
-// // OR  we can write main code this way
+// OR  we can write main code this way
 // IInd method ==>>
 
-// function dinnerScenario() {
-//     console.log("entering into the Hotel") ;
-//     console.log("Calling  the server and order PavBhaji") ;
-//     console.log("server informing the chef to prepare food") ;
+function dinnerScenario() {
+    console.log("entering into the Hotel") ;
+    console.log("Calling  the server and order PavBhaji") ;
+    console.log("server informing the chef to prepare food") ;
 
-// preparationofFood()
-// .then((success) =>{
-//     console.log("food prepared succesfully & delievered" , success) ;
-//     return eatingFood() ;
-// })
+preparationofFood()
+.then((success) =>{
+    console.log("food prepared succesfully & delievered" , success) ;
+    return eatingFood() ;
+})
 
-// .then((atemsg) =>{
-//     console.log("succesfully ate food" , atemsg) ;
-//     return payment() ;
-// })
+.then((atemsg) =>{
+    console.log("succesfully ate food" , atemsg) ;
+    return payment() ;
+})
 
-// .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
-// // But if we write false anywhere , it will throw error . so, for catching error , we use ' .catch '
-// .catch((error) => console.log("error block-->>" , error)) ;     
+.then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
+// But if we write false anywhere , it will throw error . so, for catching error , we use ' .catch '
+.catch((error) => console.log("error block-->>" , error)) ;     
 
-// }
-// dinnerScenario() ;
+}
+dinnerScenario() ;
 
 
 // // ######  Writing  Main  code  with  Async  and  Await
-// IIIrd method ==>>
+// // IIIrd method ==>>
 
 
   async function dinnerScenario() {
@@ -157,8 +157,8 @@ function payment() {
 dinnerScenario() ;
 
 
- // Interview  Question : -->>  How  to  Optimized the Process ??
- // parellel  OR  concurrent  execution :
+//  // Interview  Question : -->>  How  to  Optimized the Process ??
+//  // parellel  OR  concurrent  execution :
 
 function fn1() {
     return new Promise((res , rej) => {
@@ -174,41 +174,42 @@ function fn2() {
         setTimeout(() => {
             console.log("process 2")
             res("2") ;
-        }, 5000);
+        }, 3000);
     }) ;
 }
 
-// fn1()
-//    .then(() => fn2())
-//    .then(() => console.log("Process over")) ;
-// //    it takes 10 seconds to print . so, we used Promises
+fn1()
+   .then(() => fn2())
+   .then(() => console.log("Process over")) ;
+// //    it takes 10 seconds to print(We are wasting time) . so, we used ==>>> " Promise.all "
 
 
-Promise.all( [fn1() , fn2()]).then((result) =>
-console.log("process over" , result)
-) ;
-// // it takes 5 seconds to print .
+// // process 2 completes in 3sec ,process 1 completes in 5 sec. when both completes then results will come together.
+Promise.all( [fn1() , fn2()])
+                             .then((result) => console.log("process over" , result) 
+                             ) ;            // it takes 5 seconds to print .
+
 
 
 // // if i reject any of the function then it will automatically reject whole function . we can solve problem this way
 
-// function fn1() {
-//     return new Promise((res , rej) => {
-//         setTimeout(() => {
-//             console.log("process 1")
-//             rej("rejected") ;
-//         }, 5000);
-//     })
-// }
+function fn1() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 1")
+            rej("rejected") ;
+        }, 15000);
+    })
+}
 
-// function fn2() {
-//     return new Promise((res , rej) => {
-//         setTimeout(() => {
-//             console.log("process 2")
-//             res("Accepted") ;
-//         }, 5000);
-//     }) ;
-// }
+function fn2() {
+    return new Promise((res , rej) => {
+        setTimeout(() => {
+            console.log("process 2")
+            res("Accepted") ;
+        }, 8000);
+    }) ;
+}
 
 // Promise.all([fn1() , fn2()])
 // .then((result) => console.log("process over" , result))
@@ -218,12 +219,12 @@ console.log("process over" , result)
 // .finally(() => console.log("closing connection")) ;
 
 
-// // Whoever completeing first , i want to print that data
+// // Whoever completeing first , i want to print that data. we used ==>>  Promise.race
 
-// Promise.race([fn1() , fn2()])
-// .then((result) => console.log("process over" , result))
+Promise.race([fn1() , fn2()])
+.then((result) => console.log("process over" , result))
 
-// .catch((err) => console.log("error block-->>" , err))  
+.catch((err) => console.log("error block-->>" , err))  
 
-// .finally(() => console.log("closing connection")) ;
+.finally(() => console.log("closing connection")) ;
 
