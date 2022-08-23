@@ -2,19 +2,33 @@
 
 // // Asynchronous  Programming
 
-function obj(id){
-    setTimeout(() => {
-        console.log("reading data from the database....") ;
-        return{id: id , githubUserName: "Prakash-kumar"} ;
-    }, 2000) ;
-}
+// console.log('before') ;
 
-console.log('before') ;
-let user = getUser(1) ;
-console.log(user) ;
+// setTimeout(() => {
+//     console.log("reading data from the database....") ;
+//     return{id: 1 , githubUserName: "Prakash-kumar"} ;
+// }, 2000) ;
+
+// console.log('after') ;
+// // Output :- before
+// //            after
+// //            reading data from the database....
+
+
+
+// function getUser(id){
+//     setTimeout(() => {
+//         console.log("reading data from the database....") ;
+//         return{id: id , githubUserName: "Prakash-kumar"} ;
+//     }, 2000) ;
+// }
+
+// console.log('before') ;
+// let user = getUser(1) ;
+// console.log(user) ;
 // // it give result after 2sec . so, my JS program don't wait. by this time the value (Output) is " Undefined " .
 // // and again it will print After
-console.log('after') ;
+// console.log('after') ;
 
 // // Output :- before
 // //           undefined
@@ -22,7 +36,7 @@ console.log('after') ;
 // //           reading data from the database....
 
 
-// // If we want to print {id: id , githubUserName: "Prakash-kumar"} ; then used  Callback function .
+// // // If we want to print {id: id , githubUserName: "Prakash-kumar"} ; then used  Callback function .
 
 function getUser(id , callback){
     console.log(callback) ;
@@ -40,79 +54,79 @@ const object = getUser(1 , function callback(object){
 
 console.log('after') ;
 
-// we can also used  Arrow Function
+// // we can also used  Arrow Function
 
-function gitUser(id , callbackfn){
-    console.log(callbackfn) ;
-    setTimeout(() => {
-        console.log("I am eating my Breakfast") ;
-        let object = ( {id: id , githubUserName: "Govind-verma"} );
-        callbackfn(object) ;
-    }, 20000) ;
-}
+// function gitUser(id , callbackfn){
+//     console.log(callbackfn) ;
+//     setTimeout(() => {
+//         console.log("I am eating my Breakfast") ;
+//         let object = ( {id: id , githubUserName: "Govind-verma"} );
+//         callbackfn(object) ;
+//     }, 20000) ;
+// }
 
-console.log('Lunch') ;
-const objec = gitUser(5 , (objec) => {
-    console.log(objec) ;
- }) ;
+// console.log('Lunch') ;
+// const objec = gitUser(5 , (objec) => {
+//     console.log(objec) ;
+//  }) ;
 
-console.log('Dinner') ;
-
-
-// // Example :- 1
-
-// // // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
-
-function prepareFood(startEating){
-    setTimeout(() => {
-        console.log("food is prepared") ;
-        console.log("deliever to the table") ;
-        startEating() ;
-    }, 10000);
-}
-
-function eatRotis(){
-    setTimeout(() => {
-        console.log("Eating Rotis with Daal") ;
-        console.log("Paying the Bill") ;
-    }, 5000);
-}
-
-function hotelVisit() {
-    console.log("Entering into the hotel") ;
-    console.log("order 2 rotis with butter chicken") ;
-    console.log("Chef preparing the order") ;
-
-    prepareFood(eatRotis) ;
-}
-hotelVisit() ;
-
-// // prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
+// console.log('Dinner') ;
 
 
-// Example :- 2
+// // // Example :- 1
 
-// enter userID --> calling my database with userID --> get the userData --> display the userData in Github page .
+// // // // Hotel --> Entering hotel , Order food --> preparing --> delievered to table ---> eating --> pay bill
 
-function readDataInDB(display) {
- setTimeout(() => {
-    console.log("reading account date in the DataBase") ;
-    let user = ( {id: 11 , githubUserName: "Pro-Abhi"} );
-        display(user) ;
- }, 2000);
-}
+// function prepareFood(startEating){
+//     setTimeout(() => {
+//         console.log("food is prepared") ;
+//         console.log("deliever to the table") ;
+//         startEating() ;
+//     }, 10000);
+// }
 
-function displayDataonScreen(userData){
-    console.log("returning the user data" , userData) ;
-    console.log("display the content in the Github Page") ;
-}
+// function eatRotis(){
+//     setTimeout(() => {
+//         console.log("Eating Rotis with Daal") ;
+//         console.log("Paying the Bill") ;
+//     }, 5000);
+// }
 
-function githubLogin(){
-    console.log("Enterning the user ID as 11") ;
-    console.log("Clicking the Submit Button") ;
-    readDataInDB(displayDataonScreen) ;
-}
-githubLogin() ;
+// function hotelVisit() {
+//     console.log("Entering into the hotel") ;
+//     console.log("order 2 rotis with butter chicken") ;
+//     console.log("Chef preparing the order") ;
+
+//     prepareFood(eatRotis) ;
+// }
+// hotelVisit() ;
+
+// // // prepareFood is my Higher order function , eatRotis my callback function which passed as a parameter 
+
+
+// // Example :- 2
+
+// // enter userID --> calling my database with userID --> get the userData --> display the userData in Github page .
+
+// function readDataInDB(display) {
+//  setTimeout(() => {
+//     console.log("reading account date in the DataBase") ;
+//     let user = ( {id: 11 , githubUserName: "Pro-Abhi"} );
+//         display(user) ;
+//  }, 2000);
+// }
+
+// function displayDataonScreen(userData){
+//     console.log("returning the user data" , userData) ;
+//     console.log("display the content in the Github Page") ;
+// }
+
+// function githubLogin(){
+//     console.log("Enterning the user ID as 11") ;
+//     console.log("Clicking the Submit Button") ;
+//     readDataInDB(displayDataonScreen) ;
+// }
+// githubLogin() ;
 
 
 // // // Adding some more in Example no.- 2
