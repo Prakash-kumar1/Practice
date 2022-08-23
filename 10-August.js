@@ -81,72 +81,75 @@ function payment() {
     }) ;
 }
 
-// // main code
-function dinnerScenario() {
-    console.log("entering into the Hotel") ;
-    console.log("Calling  the server and order PavBhaji") ;
-    console.log("server informing the chef to prepare food") ;
-preparationofFood()
-          .then(() =>{
-           console.log("food prepared succesfully & delievered") ;
-            eatingFood().then(() => {
-                console.log(" succesfully ate the food");
-                payment()
-                .then(()=> console.log("process over go to bed and sleep"))
-                .catch((error) => console.log("error " , error)) ;    
-            } )
-            .catch((error) => console.log(error.message)) ; 
-})
-          .catch((error) => console.log("error block-->>" , error)) ;        
-}
-
-dinnerScenario() 
-
-// // // OR  we can write main code this way
-
-// // function dinnerScenario() {
-// //     console.log("entering into the Hotel") ;
-// //     console.log("Calling  the server and order PavBhaji") ;
-// //     console.log("server informing the chef to prepare food") ;
-
-// // preparationofFood()
-
-// // .then((success) =>{
-// //     console.log("food prepared succesfully & delievered" , success) ;
-// //     return eatingFood()
-// // })
-
-// // .then((atemsg) =>{
-// //     console.log("succesfully ate food" , atemsg) ;
-// //     return payment() ;
-// // })
-
-// // .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
-// // // But if we write false anywhere , it will throw error . so for catching error , we use ' .catch '
-// // .catch((error) => console.log("error block-->>" , error)) ;     
-
-// // }
-
-// // dinnerScenario() 
-
-
-//   async function dinnerScenario() {
-//     console.log("entering into the Hotel")
-//     console.log("Calling  the server and order PavBhaji")
-//     console.log("server informing the chef to prepare food");
-//     try{
-//         let foodMsg = await preparationofFood()
-//         console.log(foodMsg) ;
-        
-//         let ateMsg = await eatingFood()
-//         console.log(ateMsg) ;
-        
-//         let paymentMsg = await payment()
-//         console.log(paymentMsg) ;
-//     } catch (err){
-//         console.log("error block-->>" , err) ;
-//     }
+// // // main code
+// function dinnerScenario() {
+//     console.log("entering into the Hotel") ;
+//     console.log("Calling  the server and order PavBhaji") ;
+//     console.log("server informing the chef to prepare food") ;
+// preparationofFood()
+//           .then(() =>{
+//            console.log("food prepared succesfully & delievered") ;
+//             eatingFood().then(() => {
+//                 console.log(" succesfully ate the food");
+//                 payment()
+//                 .then(()=> console.log("process over go to bed and sleep"))
+//                 .catch((error) => console.log("error " , error)) ;    
+//             } )
+//             .catch((error) => console.log(error.message)) ; 
+// })
+//           .catch((error) => console.log("error block-->>" , error)) ;        
 // }
+
+// dinnerScenario() 
+
+
+// // OR  we can write main code this way
+
+// function dinnerScenario() {
+//     console.log("entering into the Hotel") ;
+//     console.log("Calling  the server and order PavBhaji") ;
+//     console.log("server informing the chef to prepare food") ;
+
+// preparationofFood()
+// .then((success) =>{
+//     console.log("food prepared succesfully & delievered" , success) ;
+//     return eatingFood() ;
+// })
+
+// .then((atemsg) =>{
+//     console.log("succesfully ate food" , atemsg) ;
+//     return payment() ;
+// })
+
+// .then((payMsg)=> console.log("process over go to bed and sleep" , payMsg)) 
+// // But if we write false anywhere , it will throw error . so for catching error , we use ' .catch '
+// .catch((error) => console.log("error block-->>" , error)) ;     
+
+// }
+
+// dinnerScenario() ;
+
+
+// // ######  Writing  Main  code  with  Async  and  Await
+
+  async function dinnerScenario() {
+    console.log("entering into the Hotel")
+    console.log("Calling  the server and order PavBhaji")
+    console.log("server informing the chef to prepare food");
+    try{
+        let foodMsg = await preparationofFood()
+        console.log(foodMsg) ;
+        
+        let ateMsg = await eatingFood()
+        console.log(ateMsg) ;
+        
+        let paymentMsg = await payment()
+        console.log(paymentMsg) ;
+    } catch (err){
+        console.log("error block-->>" , err) ;
+    }
+}
+dinnerScenario() ;
 
 
 // // // Interview  Question : -->>  How  to  Optimized the Process ??
