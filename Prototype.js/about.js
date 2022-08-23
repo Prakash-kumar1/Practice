@@ -484,6 +484,7 @@
 
 // // // #################    Object Prototypes      #################
 
+// Example ==>>
 
 let Person11 = {
     name : "Ritesh" ,
@@ -497,24 +498,59 @@ let Person12 = {
 
 
 Person12.__proto__ = Person11 ;
-console.log(Object.getPrototypeOf(Person12))
+console.log(Object.getPrototypeOf(Person12)) ;
+
+// // Checking property is present or not
+
+// console.log(Object.hasOwn(Person12 , "age")) ;               //true
+// console.log(Object.hasOwn(Person12 , "food")) ;              //false
 
 
+// // Changing Property
+// Person11["name"] = "Abhishek kholpar" ;
+// console.log(Person11) ;
+// // output ===>>      { name: 'Abhishek kholpar', age: 27 }
+
+// Person11["name"] = "Satyanarayan Agrahari" ;
+// console.log(Person11) ;
+// // output ===>>      { name: 'Satyanarayan Agrahari', age: 27 }
 
 
+// // How to stop in changing Property ??
+
+// Object.freeze(Person11) ;
+
+// Person11["name"] = "Durgawati " ;
+// // Now it don't change
+// console.log(Person11) ;
 
 
+// // Adding Property
+Person11["place"] = "Uttar Pradesh" ;
+console.log(Person11.place) ;          //Uttar Pradesh
+
+// OR we can use defineProperty
+
+Object.defineProperty(Person12 , "place" ,{
+    value : "Russia" ,
+// by default writable is false , so we can't change
+    writable : true
+})
+console.log(Person12.place) ;          //Russia
+
+// if writable is true then we can change
+Person12.place = "assam"
+console.log(Person12.place) ;             //assam
+
+// Arugments  are  also type of Objects and it is a In-built methods for Function
+
+function subtract(n1,n2,n3){
+    console.log(arguments[0] , arguments[1] , arguments[2]) ;
+    return n1+n2+n3 ;
+}
+subtract(5,7,16) ;
 
 
-
-
-
-
-
-
-
-
-
-
+console.log(typeof arguments) ;           //object
 
 
