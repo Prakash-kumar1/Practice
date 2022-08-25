@@ -9,17 +9,25 @@
 <body>
 
 
+<div>
+    <input type="text" class="inputClass">
+    <button class="buttonClass">SEARCH</button>
+</div>
 
 
-
-
-
-
-
-
-
-
-    
-    <script src="./news.js"></script>
 </body>
+<script src="./news.js">
+    var inputClass = document.querySelector('.inputClass')
+    var buttonClass = document.querySelector('.buttonClass')
+    var container = document.querySelector('.buttonClass')
+    buttonClass.addEventListener('click' , function(event){
+        fetch('https://newsapi.org/v2/everything?q=tesla&from=2022-07-25&sortBy=publishedAt&apiKey=38d589f25d60454e9de0c974b7be65fa')
+        .then(result=>result.json())
+        .then(data=>{
+            let articles = data["articles"]
+            console.log(articles)
+        }).catch(err=>alert("Error"))
+    
+    })
+</script>
 </html>
