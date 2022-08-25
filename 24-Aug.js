@@ -146,3 +146,4 @@ console.log(evalute("mul")(4)(2));
 console.log(evalute("sub")(4)(2));
 console.log(evalute("divide")(4)(2));
 
+// <!-- Weather App by Rohith sir on 24 August session -->
