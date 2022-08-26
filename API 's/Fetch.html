@@ -1,4 +1,4 @@
-<!-- The Fetch API provides an interface for Fetching resources (including across network)
+<!-- <!-- The Fetch API provides an interface for Fetching resources (including across network)
 it returns a Promise that resolves to a Response Object -->
 
 <!-- syntax ==>>  fetch(resource , init) -->
@@ -20,8 +20,10 @@ Body.arrayBuffer() => It returns a promise that resolves with an ArrayBuffer rep
 Body.blob() =>   It returns a promise that resolves with an Blob representation of Request Body . 
 Body.formData() =>  It returns a promise that resolves with an Form Data representation of Request Body . 
 Body.json() =>  It returns a promise that resolves with a JSON representation of Request Body . 
+Body.text() =>  It returns a promise that resolves with a USV String (text) representation of Request Body . 
 
 
+A fetch() promise only rejects when there is network Error  -->
 
 
 
