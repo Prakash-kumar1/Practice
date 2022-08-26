@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS APP</title>
+</head>
+<body>
+        <input type="text" value="s">
+        <button class="submit">Submit</button>
+    <div class="container" style="width: 300px ; height:300px"></div>
+</div>
+</body>
+</html>
+
+<script>
+    let btn = document.querySelector(".submit")
+    let input = document.querySelector("input")
+    let container = document.querySelector(".container")
+   
+    btn.addEventListener('click',function(){
+
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
+        .then(result=>result.json())
+        .then(meals=>{
+            // let menu = meals["meals"]
+            // console.log(menu) ;
+            console.log(meals) ;
+            meals.map((meal)=>{
+                const div = document.createElement("div");
+                div.innerHTML=`${meal.meals}`
+            })
+            }).catch(err => alert("error"))
+    })
+</script>
