@@ -1,3 +1,5 @@
+// Fetching Text from another file
+
 document.getElementById("btn").addEventListener("click",
 makeRequest) ;
 
@@ -28,6 +30,7 @@ function makeRequest(){
                       })
                       .then((data) => {
                       console.log(data) ;
+                      document.getElementById("print").innerText = data ;
                       })
 }
 
