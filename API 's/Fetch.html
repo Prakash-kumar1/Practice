@@ -6,9 +6,20 @@ it returns a Promise that resolves to a Response Object -->
 <!-- resource => This defines the resource that you wish to fetch . it can be URL object , Request Object and URL OF resource -->
 <!-- init => (Optional) => method , header , Body  -->
 
+syntax Example => fetch('https://pokemon.com/post',{
+                    method : 'POST' ,
+                    headers : {
+                        'Accept' : 'application/json' ,
+                        'Content-Type' : 'application/json'
+                    } ,
+            body : body ,
+            cache : 'default'
+})
 
-
-
+Body.arrayBuffer() => It returns a promise that resolves with an ArrayBuffer representation of Request Body . 
+Body.blob() =>   It returns a promise that resolves with an Blob representation of Request Body . 
+Body.formData() =>  It returns a promise that resolves with an Form Data representation of Request Body . 
+Body.json() =>  It returns a promise that resolves with a JSON representation of Request Body . 
 
 
 
