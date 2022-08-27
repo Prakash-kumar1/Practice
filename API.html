@@ -60,7 +60,7 @@ submitBtn.addEventListener("click", () => {
 <!-- ######$$$$$******    Food API  Completed      ######$$$$$******-->
 
 
-<!-- ######$$$$$******     Started Making a Weather API        ######$$$$$******-->
+<!-- ######$$$$$******     Started Making a Weather API        ######$$$$$****** -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,10 +71,36 @@ submitBtn.addEventListener("click", () => {
   <title>Weather API</title>
 </head>
 <body>
-  
+  <div>
+    <input type="text" placeholder="Enter Your City" class="cityName">
+    <button type="submit" class="submitButton">Submit</button>
+  </div>
 </body>
 </html>
+<script>
+  // Query Selectors
+  var cityName = document.querySelector(".cityName")
+  var Btn1 = document.querySelector(".submitButton")
+  // event Listener
+  Btn1.addEventListener('click' , function(name){
 
+//By using fetch keyword , we using API's data
+// Syntax ==>> 
+
+  // fetch(`API`)  => Fetching API Data
+  //            .then(response => response.json()) ==>>  converting  Text  to JSON
+  //            .then(data => {
+  //             console.log(data)
+  //            }).catch(err => alert("Invalid city name"))
+
+  fetch(`API`)
+             .then(response => response.json())
+             .then(data => {
+              console.log(data)
+             }).catch(err => alert("Invalid city name"))
+
+  })
+</script>
 
 
 
