@@ -1,0 +1,46 @@
+<!-- ######$$$$$******     Started Making a Weather API        ######$$$$$****** -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="Enter Your City" class="cityName">
+    <button type="submit" class="submitButton">Submit</button>
+  </div>
+</body>
+</html>
+
+<script>
+  // Query Selectors
+  var cityName = document.querySelector(".cityName")
+  var Btn1 = document.querySelector(".submitButton")
+  // event Listener
+  Btn1.addEventListener('click' , function(name){
+
+//By using fetch keyword , we using API's data
+// Syntax ==>> 
+
+  // fetch(`API`)  => Fetching API Data
+  //            .then(response => response.json()) ==>>  converting  Text  to JSON
+  //            .then(data => {
+  //             console.log(data)
+  //            }).catch(err => alert("Invalid city name"))
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=de1dbea6b8bcb086db3b8f1f4ec05784`)
+             .then(response => response.json())
+             .then(data => {
+              console.log(data)
+             }).catch(err => alert("Invalid city name"))
+
+  })
+</script>
+
+
+
+<!-- ######$$$$$******    Weather API  Completed      ######$$$$$******-->
