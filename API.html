@@ -1,7 +1,7 @@
 <!-- ######$$$$$******     Started Making a Food API        ######$$$$$******-->
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -54,7 +54,7 @@ submitBtn.addEventListener("click", () => {
     })
     .catch((err) => alert("error"));
 });
-</script> -->
+</script>
 
 
 <!-- ######$$$$$******    Food API  Completed      ######$$$$$******-->
@@ -76,7 +76,7 @@ submitBtn.addEventListener("click", () => {
     <button type="submit" class="submitButton">Submit</button>
   </div>
 </body>
-</html>
+
 <script>
   // Query Selectors
   var cityName = document.querySelector(".cityName")
@@ -93,7 +93,7 @@ submitBtn.addEventListener("click", () => {
   //             console.log(data)
   //            }).catch(err => alert("Invalid city name"))
 
-  fetch(`API`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=de1dbea6b8bcb086db3b8f1f4ec05784`)
              .then(response => response.json())
              .then(data => {
               console.log(data)
@@ -101,7 +101,7 @@ submitBtn.addEventListener("click", () => {
 
   })
 </script>
-
+</html>
 
 
 
