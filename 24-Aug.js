@@ -10,7 +10,7 @@ function main(){
 main() ;
 
 
-// Functional Programming are of 3 Types
+// Functional Programming means Passing the arguments and getting the Results .There are  3 Types
 // Pure Function , HOF , Currying Functions
 
 // Normal Function
@@ -20,7 +20,7 @@ function add(a,b,c,d){
 console.log(add(1,2,3,4)) ;     //10
 
 
-// Currying Function
+// Currying Function :- Currying is a process in functional programming  in which we can transform a function with multiple arguments into a sequence of nesting function . It returns a new function that excepts the next argument inline .
 
 // Example:-1
 function sum(a){
@@ -45,7 +45,7 @@ function power(a){
            return a**b**c**d ;
         }
      }  
-    }
+  }
 }
 // this is the way , you can pass argument in  Currying Function
 console.log(power(2)(2)(1)(0)) ;      //4
@@ -84,7 +84,6 @@ console.log(addition6(1,2))       //12
 
 
 // Currrying --  Currying is a process in functional programming  in which we can transform a function with multiple arguments into a sequence of nesting function . It returns a new function that excepts the next argument inline .
-
 
 // //                                     OR
 
@@ -146,4 +145,6 @@ console.log(evalute("mul")(4)(2));
 console.log(evalute("sub")(4)(2));
 console.log(evalute("divide")(4)(2));
 
+
 // <!-- Weather App by Rohith sir on 24 August session -->
+
