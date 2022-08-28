@@ -100,7 +100,55 @@ li.remove() ;                     //Carnage Removed
 li1.remove() ;         // The  Vampire => Morbious  Removed
 
 
+
 // ###@@@$$$***  Traversing  The  DOM  ###@@@$$$***
+
+
+// Parent  Node  Traversal
+
+let ul2 = document.querySelector('ul')
+console.log(ul2) ;
+console.log(ul2.parentNode) ;                    //It will Give a Div
+console.log(ul2.parentElement) ;                 //It will Give a Div
+console.log(ul2.parentNode.parentNode) ;          //It will Give a Body
+console.log(ul2.parentElement.parentElement) ;    //It will Give a Body
+console.log(ul2.parentNode.parentNode.parentNode) ;          //It will Give a Whole HTML Page
+console.log(ul2.parentNode.parentNode.parentNode.parentNode) ;          //It will Give a  Document (Window Object)
+console.log(ul2.parentNode.parentNode.parentNode.parentNode.parentNode) ;          //It will Give a Null .
+
+//    OR  We can apply on HTML
+
+const html = document.documentElement ;
+console.log(html.parentNode) ;                          //It will Give a  Document (Window Object)
+console.log(html.parentElement) ;                        //It will Give a Null .
+
+
+// Child  Node  Traversal
+
+let ul3 = document.querySelector('ul')
+console.log(ul3.childNodes) ;                       //it gives a Node List of 11 
+// if we put 2 li in a line then node list will be 10 , because There is no Intendations , And  Intendations  are count as a Text Node .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
