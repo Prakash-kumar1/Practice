@@ -67,7 +67,8 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 
 // Methods ==>> Get , Post , Put , Patch , Delete
 
-
+// GET ===>>>  get some data from the Server
+// POST ===>>>  get some data from the Server
 
 
 
