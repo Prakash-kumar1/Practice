@@ -67,8 +67,10 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 
 // Methods ==>> Get , Post , Put , Patch , Delete
 
-// GET ===>>>  get some data from the Server
-// POST ===>>>  get some data from the Server
+// GET ===>>>  get some data from the Server.
+// POST ===>>>  storing some data in the Server. (adding new data)
+// PUT ===>>     Replace  the  Entire Data .
+// PATCH ==>>    Replace  the  Particular Data .
 
 
 
