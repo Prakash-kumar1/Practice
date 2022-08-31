@@ -57,10 +57,15 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 // if there is error , it will stop . don't go further
 // console.log(validateUserName("Gayatri") ("123"))      //Error
 
+// ###$$$$%%%%*****  READ ON IT YOUR OWN  ###$$$$%%%%*****
 
 // 7 layers of OSI Model (Networking concepts) by Kunal Kushwaha
+// Fetch
+// Https  vs  Http
+// methods in https
+// status code
 
-
+// Methods ==>> Get , Post , Put , Patch , Delete
 
 
 
