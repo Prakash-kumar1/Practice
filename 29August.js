@@ -60,7 +60,7 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 // ###$$$$%%%%*****  READ ON IT YOUR OWN  ###$$$$%%%%*****
 
 // 7 layers of OSI Model (Networking concepts) by Kunal Kushwaha
-// Fetch
+// Fetch  AND  Blob
 // Https  vs  Http
 // methods in https
 // status code
@@ -71,6 +71,7 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 // POST ===>>>  storing some data in the Server. (adding new data)
 // PUT ===>>     Replace  the  Entire Data .
 // PATCH ==>>    Replace  the  Particular Data .
+// DELETE ===>>  Deleting the  Data .
 
 
 
