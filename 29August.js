@@ -58,6 +58,8 @@ console.log(validateUserName("Govind Verma") ("123"))      //true
 // console.log(validateUserName("Gayatri") ("123"))      //Error
 
 
+// 7 layers of OSI Model (Networking concepts) by Kunal Kushwaha
+
 
 
 
