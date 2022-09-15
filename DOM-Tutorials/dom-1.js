@@ -127,13 +127,7 @@ console.log(html.parentElement) ;                        //It will Give a Null .
 
 let ul3 = document.querySelector('ul')
 console.log(ul3.childNodes) ;                       //it gives a Node List of 11 
-// if we put 2 li in a line then node list will be 10 , because There is no Intendations , And  Intendations  are count as a Text Node .
-
-
-
-
-
-
+// if we put 2 li in a line then node list will be 10 , because There is no Intendations and intendations are count as a text node   
 
 
 
