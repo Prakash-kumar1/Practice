@@ -51,21 +51,6 @@ console.log(d) ;
 // getsubtract override the getsum function. the value of getsum not print in class.js Terminal.
 
 
-const getsubtract = require('./Maths');
-
-let l =  getsubtract(10,12)
-console.log(l) ;
-
-let m =  getsubtract(100,12)
-console.log(m) ;
-
-let n =  getsubtract(0,0)
-console.log(n) ;
-
-let k =  getsubtract(10,-12)
-console.log(k) ;
-
-
 // xxxxxxxxxxxx  completed xxxxxxxxxxxx
 
 
@@ -77,18 +62,18 @@ console.log(spp(8,9))
 
 // xxx xxxxxxxxxxxx  Pure Function(Output same) xxxxxxxxxxxx
 
- function sum(num1,num2){
+ function addition(num1,num2){
         return num1+num2
     }
-    console.log(sum(8,9))
-    console.log(sum(8,9))
-    console.log(sum(8,9))
+    console.log(addition(8,9))
+    console.log(addition(8,9))
+    console.log(addition(8,9))
 
 
     // xxx xxxxxxxxxxxx  ImPure Function (Output not same)xxxxxxxxxxxx
 
- function sum(num1,num2){
-        return Math.random(num1+num2)
+ function sum(num3,num4){
+        return Math.random(num3+num4)
     }
     console.log(sum(8,9))
     console.log(sum(8,9))
@@ -101,7 +86,7 @@ console.log(spp(8,9))
 
 // xxx xxxxxxxxxxxx  setTimeout Function xxxxxxxxxxxx
 
-setTimeout(function(){
+setTimeout(()=>{
     console.log("Namaste Javascript")
 }, 2000)
 //  After 2 second it will print Namaste Javascript only one Time
@@ -109,24 +94,24 @@ setTimeout(function(){
 
 // xxx xxxxxxxxxxxx  setInterval Function xxxxxxxxxxxx
 
-setInterval(function(){
-    console.log("Namaste Javascript")
-}, 2000)
+// setInterval(function(){
+//     console.log("Namaste Javascript")
+// }, 2000)
 //  After 2 -2  second it will print Namaste Javascript multiple Times.
 
 
 
 // In JavaScript we can also pass a Function as a Parameter and Function as a Return .
 
-function add() {
-    console.log('add') ;
+function message() {
+    console.log('Hi everyone, I love you all') ;
 }
 
 function printadd(a) {
     a() ;
 }
 
-printadd(add)
+printadd(message)
 
 
 // In JavaScript we can also pass a  Function as a Return .
@@ -160,7 +145,7 @@ console.log('second')
 console.log('third')
 console.log('fourth')
 setTimeout(function(){
- console.log("Namaste Javascript")
+ console.log("Namaste Javascript Developers !!")
     }, 0)
     console.log('sixth')
 console.log('fifth') ;
@@ -179,12 +164,13 @@ console.log('fourth')
 
     //  OR 
 
-    console.log('first')
-    setTimeout(function(){
-     console.log("Namaste Javascript")
+    console.log('first') ;
+
+    setTimeout(()=>{
+     console.log("Good Afternoon Javascript developers!!")
      }, 0)
 
-     let i = 0
+     let i = 0 ;
      while(i<=100){
         console.log('second' , i)
         i++ ;
@@ -197,14 +183,15 @@ console.log('fourth')
 
 // // xxxxxxx Using Recursion.  xxxxxxx
 
-function add(n){
-    let sum = n+10
-    console.log(sum , n)
-    add(sum)
-} add(10)
+// function print(n){
+//     let sum = n+10
+//     console.log(sum , n)
+//     print(sum)
+// } 
+// print(10)
 
 
-// Callback Function  --- > > > A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+// // Callback Function  --- > > > A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
 
 
 function inhotel(message , Callback){
