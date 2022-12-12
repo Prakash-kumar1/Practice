@@ -27,7 +27,7 @@ countdown(10) ;
 function countdown(n){
 //base condition
 if(n <= 0){
-    console.log('ended');
+    console.log('ended')
     return ;
 }
 console.log(n) ;
