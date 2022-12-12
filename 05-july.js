@@ -243,10 +243,9 @@ let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'r
 bros.splice( 4 , 0 , 'Sachin')
 console.log(bros)
 
-// // Adding same Element in two places
+// Adding same Element in two places
 bros.splice( 7 , 0 , 'Sachin')
 console.log(bros)
-
 
 // Replacing Element in Middle
 bros.splice( 4 , 2, 'Sachin')
@@ -256,87 +255,88 @@ console.log(bros)
 bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
 console.log(bros) ;
 
-
 // How to find which element remove : -->  By Printing splice value.
 console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
 
 
-// Using Slice property to get data 
+//!!@@##$$** --->>  Using Slice property to get data !!@@##$$** --->> 
+
 // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
 let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
 // it will start from index value 1 and stopped at index value 3 before index value 4
-// console.log(brothers.slice( 1 , 4)) ;
+console.log(brothers.slice( 1 , 4)) ;
 
-// let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
-// console.log(sisters.slice(1,2)) ;
+const sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
+console.log(sisters.slice(1,2)) ;
 
-// // // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
-// // // (statrting value >= ending value ) then it give an empty Array . 
-// console.log(sisters.slice(3,2))
-// console.log(sisters.slice(3,3))        
+ // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
+ // (statrting value >= ending value ) then it give an empty Array . 
+console.log(sisters.slice(3,2))
+console.log(sisters.slice(3,3))        
 
-// // // if only give start value then it starts from that value and print whole data to the end.
-// console.log(sisters.slice(2));    
+// if only give start value then it starts from that value and print whole data to the end.
+console.log(sisters.slice(2));    
 
-// // // // all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
-// // let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
-// // let slicedpets = pets.slice(1,5) ;
-// // console.log(pets,slicedpets) ;
+// all other methods affect the original Array but only slice doesn't affect original array because it  create a new Array for data . 
+let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo']
+let slicedpets = pets.slice(1,5) ;
+console.log(pets,slicedpets) ;
 
-// // // // splice method also affect original Array , it change index value .
-// let pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo'] ;
-// console.log(pets[0],pets[1],pets[2]) ;
+// splice method also affect original Array , it change index value .
+pets = ['dog' , 'cow' , 'ox' , 'pigeon' , 'buffalo'] ;
+console.log(pets[0],pets[1],pets[2]) ;
 
-// pets.splice(1,0,'Lion') ;
-// console.log(pets[0],pets[1],pets[2],pets[3]) ; 
+pets.splice(1,0,'Lion') ;
+console.log(pets[0],pets[1],pets[2],pets[3]) ; 
 
-// // // // In slice , we can only print Reverse of an Array. this is special property of slice method 
-// // // // slice negative value method explain in Notes . check there 
+// In slice , we can only print Reverse of an Array. this is special property of slice method 
+// slice negative value method explain in Notes . check there 
 
-// // // Checking present values in Array using Loop
-// // let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// // Checking present values in Array using Loop
+let bros1 = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// function brothrs(bro){
-//     for(let i=0; i<bros.length; i++){
-//         if(bros[i] == bro) return true
-//     }
-//     return false
-// }
+function brothrs(bro){
+    for(let i=0; i<bros1.length; i++){
+        if(bros1[i] == bro) return true
+    }
+    return false
+}
 
-// console.log(brothrs('shivansh')) ;
-// console.log(brothrs('shiva')) ;
-// console.log(brothrs('hema')) ;
-// console.log(brothrs('anish')) ;
+console.log(brothrs('shivansh')) ;
+console.log(brothrs('shiva')) ;
+console.log(brothrs('hema')) ;
+console.log(brothrs('anish')) ;
 
-// //     //  OR we can use .includes method 
+//     // -->>  OR we can use .includes method 
 
-    // console.log(bros.includes('shivansh'))
-    // console.log(bros.includes('shiva'))
-    // console.log(bros.includes('hema'))
-    // console.log(bros.includes('anish'))   
+    console.log(bros1.includes('shivansh'))
+    console.log(bros1.includes('shiva'))
+    console.log(bros1.includes('hema'))
+    console.log(bros1.includes('anish'))   
 
-// // // if we don't want to search whole array we can put starting value in includes method
+ // if we don't want to search whole array we can put starting value in includes method
 
-// console.log(bros.includes('shivansh' , 4))
-//     console.log(bros.includes('rinki', 7))
-//     console.log(bros.includes('hema' , 5))
-//     console.log(bros.includes('govind', 2))   
+console.log(bros1.includes('shivansh' , 4))
+    console.log(bros1.includes('rinki', 7))
+    console.log(bros1.includes('hema' , 5))
+    console.log(bros1.includes('govind', 2))   
 
-// //Question no. - 1 : print first Repeating numbers??
 
-// let lefthand = [1,3,4,3,2,5,7,1,4]
-// let righthand = [ ]
+//Question no. - 1 : print first Repeating numbers??
 
-// for(let i=0; i<lefthand.length; i++){
-//     if(righthand.includes(lefthand[i])){
-//     console.log(lefthand[i])
-//     // if we use break then it only print the Number which repeat itself First 
-//     break ;
-// }else{
-//     righthand.push(lefthand[i])
-// }
-// }
+let lefthand = [1,3,4,3,2,5,7,1,4]
+let righthand = [ ]
+
+for(let i=0; i<lefthand.length; i++){
+    if(righthand.includes(lefthand[i])){
+    console.log(lefthand[i])
+    // if we use break then it only print the Number which repeat itself First 
+    break ;
+}else{
+    righthand.push(lefthand[i])
+}
+}
 
 
 // // Question no -2 : Print only first non-repeating Number ??
@@ -352,33 +352,33 @@ let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' 
 // }
 // }
 
-// // Finding Index Value of data 
-// let bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
-// // if value is present , it give index position .
-// console.log(bros.indexOf('sameer'))
-// console.log(bros.indexOf('shivansh'))
-// console.log(bros.indexOf('rajesh'))
+// Finding Index Value of data 
+let bros5 = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+// if value is present , it give index position .
+console.log(bros5.indexOf('sameer'))
+console.log(bros5.indexOf('shivansh'))
+console.log(bros5.indexOf('rajesh'))
 
-// // if value is not present , it give (-1) .
-// console.log(bros.indexOf('pinki'))
-// console.log(bros.indexOf('gayatari'))
+// if value is not present , it give (-1) .
+console.log(bros5.indexOf('pinki'))
+console.log(bros5.indexOf('gayatari'))
 
-// // if value is present at both places then it will give index position of First value
-// console.log(bros.indexOf('shivansh'))
-// console.log(bros.indexOf('rinki'))
+// if value is present at both places then it will give index position of First value
+console.log(bros5.indexOf('shivansh'))
+console.log(bros5.indexOf('rinki'))
 
-// // we also give starting index position from which we satrt 
-// console.log(bros.indexOf('shivansh' ,4))
-// console.log(bros.indexOf('rinki',8))
-// console.log(bros.indexOf('hema',4))
+// we also give starting index position from which we satrt 
+console.log(bros5.indexOf('shivansh' ,4))
+console.log(bros5.indexOf('rinki',8))
+console.log(bros5.indexOf('hema',4))
 
-// // Reversing the Array
-// bros.reverse()
-// console.log(bros) ;
+// Reversing the Array
+bros5.reverse()
+console.log(bros5) ;
 
-// // Sorting the Array
-// bros.sort()
-// console.log(bros)
+// Sorting the Array
+bros5.sort()
+console.log(bros)
 
 // let nums = [3,9,5,2,6,1,0,4,7]
 // console.log(nums.sort()) ;
@@ -601,282 +601,4 @@ let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' 
 // console.log(nums.every((num) => {
 //     return num <= 5 ;
 // }));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
