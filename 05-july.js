@@ -233,39 +233,39 @@ friends3.push('Chicken')
 friends3.push('Egg Roll')
 console.log(friends3.length , friends3)
 
-// // xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
-// // Linked List Example
+// xxxxxxxxxxxxxxxxxx -->>  Adding Or Replacing Element in Array  -->> xxxxxxxxxxxxxxxxxx
+// Linked List Example
 
-// let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+let bros = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
 
-// // Adding Element in Middle
-// // splice syntax : .splice(index-value , values want to be removed , adding values)
-// bros.splice( 4 , 0 , 'Sachin')
-// console.log(bros)
+// Adding Element in Middle
+// splice syntax : .splice(index-value , values want to be removed , adding values)
+bros.splice( 4 , 0 , 'Sachin')
+console.log(bros)
 
-// // // / Adding same Element in two places
-// bros.splice( 7 , 0 , 'Sachin')
-// console.log(bros)
-
-
-// // // Replacing Element in Middle
-// bros.splice( 4 , 2, 'Sachin')
-// console.log(bros)
-
-// // // Adding  &  Replacing  Multiple Element in Middle
-// bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
-// console.log(bros) ;
+// // Adding same Element in two places
+bros.splice( 7 , 0 , 'Sachin')
+console.log(bros)
 
 
-// // // How to find which element remove : -->  By Printing splice value.
-// // console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
+// Replacing Element in Middle
+bros.splice( 4 , 2, 'Sachin')
+console.log(bros)
+
+// Adding  &  Replacing  Multiple Element in Middle
+bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli')
+console.log(bros) ;
 
 
-// // // // Using Slice property to get data 
-// // // // slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
-// let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+// How to find which element remove : -->  By Printing splice value.
+console.log(bros.splice( 4 , 3, 'Sachin' , 'Tendulkar' , 'Virat' , 'Kohli'))
 
-// // // it will start from index value 1 and stopped at index value 3 before index value 4
+
+// Using Slice property to get data 
+// slice syntax : .slice(where i want to start taking data , i want to take data before only this value)
+let brothers = ['soniv' , 'prakash' , 'shivansh' , 'govind' , 'sameer' , 'hema' , 'rinki' , 'rajesh']
+
+// it will start from index value 1 and stopped at index value 3 before index value 4
 // console.log(brothers.slice( 1 , 4)) ;
 
 // let sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
