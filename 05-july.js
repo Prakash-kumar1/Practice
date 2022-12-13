@@ -456,40 +456,41 @@ console.log(bros)
 //     }
 //     }
 
-// // Array change into String
+// Array change into String
 // .toString change Array into String
-// bros = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
-// console.log(bros.toString())
+const bros3 = ['soniv','prakash','shivansh','hema','govind','sameer','hema','rinki','rajesh','shivansh','rinki']
+console.log(bros3.toString())
 
-// // .join method - it joins two string with any parameter which  passes.
-// console.log(bros.join("*"))
-// console.log(bros.join("----->"))
-// console.log(bros.join("+-*/----->"))
+// .join method - it joins two string with any parameter which  passes.
+console.log(bros3.join("*"))
+console.log(bros3.join("----->"))
+console.log(bros3.join("+-*/----->"))
 
-// // .concat method - it joins two Array in one Array
-// let names = ['soniv','prakash','shivansh','hema','govind','sameer']
-// let nums = [1,2,3,4,5,6,7,8]
-// console.log(names.concat(nums))
+// .concat method - it joins two Array in one Array
+let names8 = ['soniv','prakash','shivansh','hema','govind','sameer']
+let nums8 = [1,2,3,4,5,6,7,8]
+console.log(names8.concat(nums8))
+
+//!!!@@@###$$$$%%%^^^&&&***--++>>> !!!@@@###$$$$%%%^^^&&&***--++>>> !!!@@@###$$$$%%%^^^&&&***--++>>> !!!@@@###$$$$%%%^^^&&&***--++>>>  
 
 
-// let nums = [1,2,1,2,3,4,2,8,9]
-// // print the number in new array which is greater than 3
+let nums3 = [1,2,1,2,3,4,2,8,9]
+// print the number in new array which is greater than 3
 // let newArr = []
-
-// for(let i=0; i<nums.length; i++){
-//     if(nums[i] >= 3){
-//         newArr.push(nums[i])
+// for(let i=0; i<nums3.length; i++){
+//     if(nums3[i] >= 3){
+//         newArr.push(nums3[i])
 //     }
 // }
 // console.log(newArr)
  
 //         // OR  use  filter()  method
 
-//  let newArr = nums.filter((nums) => {
-// console.log(`${nums} ---->>  ${nums >= 3}`);
-// return nums >= 3
-//  })        
-// console.log(newArr)
+ let newArr1 = nums3.filter((nums3) => {
+console.log(`${nums3} ---->>  ${nums3 >= 3}`);
+return nums3 >= 3
+ })        
+console.log(newArr1)
 
 // // Example number - 2 :
 
@@ -564,41 +565,42 @@ console.log(bros)
 //  })    
 //   console.log(sum) ;
 
-// // Example Number-9: 
-// let nums = [1,2,3,4,5,6,7,8,9]
-// let sum = nums.reduce(function(previous,currentvalue){
-// console.log('previous' , previous , previous+currentvalue)
-//     return previous + currentvalue
-//  }, 10)
-// //  here 10 becomes previous value so it starts from 10    
-//   console.log(sum) ;
+// Example Number-9: 
+let numbers2 = [1,2,3,4,5,6,7,8,9]
+let sum = numbers2.reduce(function(previous,currentvalue){
+console.log('previous' , previous , previous+currentvalue)
+    return previous + currentvalue
+ }, 10)
+//  here 10 becomes previous value so it starts from 10    
+  console.log(sum) ;
 
 
-// // Every method : - It checkes all the values and passes through condition , if all the value passes condition
-// //                   it gives "true"  , any one value not passes the condition it gives "false"
-// // Example Number-1:
-// let nums = [1,2,3,4,5,6,1]
-// console.log(nums.every((num) => {
-//     return num <= 5 ;
-// }));
+// Every method : - It checkes all the values and passes through condition , if all the value passes condition
+//                   it gives "true"  , any one value not passes the condition it gives "false"
+// Example Number-1:
+let numbers1 = [1,2,3,4,5,6,1]
+console.log(numbers1.every((num) => {
+    return num <= 5 ;
+}));
 
-// //  Example Number-2:
-// let nums = [1,2,3,4,1]
-// console.log(nums.every((num) => {
-//     return num <= 5 ;
-// }));
+//  Example Number-2:
+numbers1 = [1,2,3,4,1]
+console.log(numbers1.every((num) => {
+    return num <= 5 ;
+}));
 
-// // SOME method : - It checkes all the values and passes through condition , if any value passes condition it gives
-// //              "true"  , if all value not passes the condition it gives "false"(opposite of every method)
-// // Example Number-1:
-// let nums = [1,6,7,8,5,9,11]
-// console.log(nums.some((num) => {
-//     return num < 5 ;
-// }));
 
-// //  Example Number-2:
-// let nums = [6,7,8,14,9]
-// console.log(nums.every((num) => {
-//     return num <= 5 ;
-// }));
+// SOME method : - It checkes all the values and passes through condition , if any value passes condition it gives
+//              "true"  , if all value not passes the condition it gives "false"(opposite of every method)
+// Example Number-1:
+let numbers = [1,6,7,8,5,9,11]
+console.log(numbers.some((num) => {
+    return num < 5 ;
+}));
+
+//  Example Number-2:
+let nums4 = [6,7,8,14,9]
+console.log(nums4.some((num) => {
+    return num <= 5 ;
+}));
 
