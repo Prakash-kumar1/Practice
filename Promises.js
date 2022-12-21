@@ -21,7 +21,7 @@ setTimeout(() => {
 console.log("Ending") ;
 // output => starting
 //           Ending
-//           Inside Set-Timeout
+//           Asynchronous Programming
 
 
 // Example :-1  Iss example mein pahle starting print hoga , uske baad settime out web API mein chala jayega . uske baad 
@@ -81,8 +81,8 @@ console.log("Ending") ;
 
 // there are 3 state of promise :-
 // Pending --> Intial state , Not yet Resolved  or  Rejected
-// Resolved -->  Promise  Completed
-// Rejected -->  Promise  Failed
+// Fullfilled -->  Promise  Completed, it returns a Value.
+// Rejected -->  Promise  Failed, it returns a Reason.
 
 // // Syntax of Promise ==> This syntax code is also known as "Producing Code"
 
