@@ -81,7 +81,8 @@ console.log(spp(8,9))
     console.log(sum(8,9))
 
 
-// xxxx  ->   setTimeout Function and setInterval Function both are "Higher Order Function" (HOF) because it taking function as a Parameter.  <- xxxx
+// xxxx  ->   setTimeout Function and setInterval Function both are "Higher Order Function" (HOF) because it 
+//             taking function as a Parameter.  <- xxxx
 
 
 // xxx xxxxxxxxxxxx  setTimeout Function xxxxxxxxxxxx
@@ -193,7 +194,25 @@ console.log('fourth')
 
 // // Callback Function  --- > > > A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
 
-
+// Example:- 1
+function myFirst() {
+    myDisplayer("Hello");
+  }
+  
+  function mySecond() {
+    myDisplayer("Goodbye");
+  }
+  
+  myFirst();
+  mySecond();
+// Output =>> Goodbye
+// @@@###$$$-->> OR @@@###$$$-->>
+//   mySecond();
+//   myFirst();
+// Output =>> Hello
+  
+  
+// Example:- 2
 function inhotel(message , Callback){
     console.log(message);
     Callback();
