@@ -6,7 +6,7 @@ function foo(){
 
 
 let Bar = function(){
-    console.log("function foo called") ;
+    console.log("Anonymous function of Bar called") ;
 } ;
 
 foo() ;                                            // output => function foo called
@@ -16,7 +16,7 @@ console.log(Bar) ;                                               // [Function: B
 
 // ###########  var in Global scope  and  functional scope   ###########
 
-// // var is Global scoped it means it can accessible ouside of the Block  but  let and const are block scoped
+// var is Global scoped it means it can accessible ouside of the Block  but  let and const are block scoped
 
 // Example --> 1
 let name = "Prakash" ;
@@ -26,17 +26,17 @@ if(name === "Prakash") {
 }
 
 console.log(name) ;                                                               // Prakash
-console.log(department) ;                     // Engineerig (due to var , we can access from outside of the block)
+console.log(department) ;                     // Engineerig (due to var, we can access from outside of the block)
 
 
 // Example --> 2
-// var has a functional scope . so, Outside " console.log(name)"  shows Reference error .(name is not defined) 
+// var has a functional scope. so, Outside "console.log(name1)" shows Reference error. (name is not defined) 
 function demo() {
-    var name = "Prakash" ;
-    console.log(name) ;
+    var name1 = "Prakash kumar" ;
+    console.log(name1) ;
 }
 demo() ;
-// console.log(name) ;                                  // it shows ReferenceError
+// console.log(name1) ;                                  // it shows ReferenceError
 
 
 // ###########  var in Global scope  and  functional scope (Read it on your own)   ###########
@@ -44,51 +44,51 @@ demo() ;
 // // In this case count is inside the function.at each time on calling counter create a new execution context and after printing it 
 //  // whole memory destroys . so the value always starts from 1.
 
-// function counter(){
-//     var count = 1;
-//     count++ ;
-// console.log(count) ;
-// }
-//                                                  // Output
-// counter() ;                                       // 2 
-// counter() ;                                           // 2 
-// counter() ;                                         // 2 
+function counter(){
+    var count = 1;
+    count++ ;
+console.log(count) ;
+}
+                                                 // Output
+counter() ;                                         // 2 
+counter() ;                                         // 2 
+counter() ;                                         // 2 
 
 
 
-//  // In this case counter create a new execution context and after printing it 
-//  // whole memory destroys .but value stored outside of execution context. so the value starts from 1 
-//  // and increases on calling.
+// In this case counter create a new execution context and after printing it 
+// whole memory destroys .but value stored outside of execution context. so the value starts from 1 
+// and increases on calling.
 
-// var count = 1;
+var count = 1;
 
-// function counter(){
-//     count++ ;
-// console.log(count) ;
-// }
-//                                                  // Output
-// counter() ;                                       // 2 
-// counter() ;                                           // 3 
-// counter() ;                                         // 4
-
-
-
-// // Closure:-
-
-// // / For Every Closure we have 3 scopes :-
-// // (a) => Local(own) Scope
-// // (b) => Outer Function Scope (inner function access the outer function variable)
-// // (c) => Global Scope
+function counter(){
+    count++ ;
+console.log(count) ;
+}
+                                                 // Output
+counter() ;                                       // 2 
+counter() ;                                           // 3 
+counter() ;                                         // 4
 
 
-// //  Definition =>> 1 :  A Closure is a function having access to the parent scope , it preserve the data 
-// //                         from outside .
+
+// Closure:-
+
+//  For Every Closure we have 3 scopes :-
+// (a) => Local(own) Scope
+// (b) => Outer Function Scope (inner function access the outer function variable)
+// (c) => Global Scope
+
+
+//  Definition =>> 1 :  A Closure is a function having access to the parent scope , it preserve the data 
+//                         from outside .
 
 let i = 10 ;
 function show() {
     let j = 20 ;
     console.log(j) ;
-// // outer variable i access inside function . this is closure
+ // outer variable i access inside function . this is closure
     console.log(i) ;
 }
 show() ;
