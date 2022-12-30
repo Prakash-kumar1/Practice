@@ -1,13 +1,8 @@
 //         //               Array
 
- // // Defination : JavaScript मे Array एक Special Variable होता है. Javascript Arrays मे आप एक या एक से ज्यादा Value को एक ही समय मे Add कर सकते है
- // // JavaScript मे Array को एक Unit या लगातार Memory Location मे Elements के Group को Represent करने के लिए उपयोग किया जाता है. प्रत्येक Elements जो आप Array मे Enter करते हो वह Zero से Start होने वाले Unique Number के साथ Array मे Stored किया जाता है.
- 
-// // // JavaScript मे Arrays का उपयोग एक Single Variable मे एक से अधिक Value को Store करने के लिये किया जाता है. Array एक ही प्रकार के Elements को एक Fixed Size मे Sequential के रूप मे Store करता है.
-
-// // // उदाहरण के लिए यदि आप कुछ समय मे किसी User की Location को Track करना चाहते है तो आप एक Array मे X और y Value को Included कर सकते है Array x और y के Examples की तुलना मे अधिक है Indexed के माध्यम से आप Data या Elements को Array मे Stored कर सकते है या और आप Elements को Array से प्राप्त कर सकते है.
-// // // Array used Square Brackets.
-// // // All the Array are named in Pulural in terms of Semantics.
+// Defination : An array is a collection of similar data elements stored at contiguous memory locations. It is the 
+// simplest data structure where each data element can be accessed directly by only using its index number.
+// Array used in Square Brackets. All the Array are named in Pulural in terms of Semantics. Type of array is Object.
 
 let names1 = ["Vasanath" , "Shivansh" , "Ziya" , "Prakash" , "Abdul" , "Rajesh"]
 console.log(names1);
@@ -21,9 +16,10 @@ console.log(names1[1]);
 console.log(names1[17]);
 
 
+// // Defination of Object : an object is a standalone entity, with properties and type. Object used Curly Braces.
+//example=>  A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc.
+//           The same way, JavaScript objects can have properties, which define their characteristics.
 
-// // Defination of Object : Javascript Object उन Properties का एक Collection है जहां हर Properties का एक Name और एक Value होती है जो Hash, Map या अन्य Languages मे Dictionary के समान होता है. एक String का Name कोई भी String हो सकता है जिसमे खाली String भी शामिल होते है. Value कोई भी अन्य Value हो सकती है जैसे String, Boolean, Number, Null, लेकिन यह Undefined नही हो सकती.
-// // Object used Curly Braces .
 
 let rajnifamily = {
     name : "Santosh" ,
@@ -126,8 +122,8 @@ for(let i=0; i<nums.length; i++){
 // Adding Element in Array and  Removing the Element from Array
 
 
-// In Array , we can add any Datatype like Number , String , Boolean & also a Array
-// Removing the Element from Array is called "Popping" . (removes from last never remove middle or Ist element . )
+// In Array, we can add any Datatype like Number, String, Boolean & also a Array
+// Removing the Element from Array is called "Popping". (removes from last never remove middle or Ist element)
 
 // In nums we stores Address not values . 
 let nums1 = [1,2,3,4,5,6,7,8]
@@ -147,7 +143,8 @@ console.log('Removing 2nd value',nums1)
 nums1.pop()
 console.log('Removing 3rd value',nums1)
 
-// Always Remember , If we want to remove the element from middle we can't removed . because all element stored in stack ( Last in First Out ) .so the element is in last only that Removed.it removes only step by step.
+// Always Remember, If we want to remove the element from middle we can't removed . because all element stored 
+// in stack ( Last in First Out ) .so the element is in last only that Removed.it removes only step by step.
 
 console.log(nums1.pop(209775))
 // It doesn't care what parameter passed. 
@@ -270,7 +267,9 @@ console.log(brothers.slice( 1 , 4)) ;
 const sisters = ['chinki' , 'pinki' , 'rinki' , 'tinki' , 'neha']
 console.log(sisters.slice(1,2)) ;
 
- // slice always check the statrting value is less than ending value or not . if statrting value  is less than ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
+ // slice always check the statrting value is less than ending value or not . if statrting value  is less than 
+//  ending value then it give data .  if statrting value  is Greater than OR Equal to Ending value
+
  // (statrting value >= ending value ) then it give an empty Array . 
 console.log(sisters.slice(3,2))
 console.log(sisters.slice(3,3))        
@@ -491,6 +490,7 @@ console.log(`${nums3} ---->>  ${nums3 >= 3}`);
 return nums3 >= 3
  })        
 console.log(newArr1)
+
 
 // // Example number - 2 :
 
