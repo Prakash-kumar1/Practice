@@ -26,10 +26,13 @@ console.log(getpin(1))
 
 console.log(typeof 5)
 console.log(typeof '5')
+
+// parseInt converts into Number
 console.log(typeof parseInt('5'))
 console.log( parseInt(5.9867))
-console.log( parseFloat(5.9867))
 console.log( parseInt(null))
+
+console.log( parseFloat(5.9867))
 
 
 // xxxxxxxxxx calling function from Another folder  xxxxxxxxxx 
@@ -192,7 +195,9 @@ console.log('fourth')
 // print(10)
 
 
-// // Callback Function  --- > > > A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+// Callback Function --->>>  A JavaScript callback is a function which is to be executed after another 
+// function has finished execution. A more formal definition would be - Any function that is passed as an argument 
+// to another function. so, that it can be executed in that other function is called as a callback function.
 
 // Example:- 1
 function myFirst() {
@@ -246,3 +251,7 @@ inhotel('My pizza' , zomato)
 inhotel('My Samosa' , swiggy)
 
 
+// Question-1 =>  What is JavaScript ??
+// answer -> JavaScript was invented by Brendan Eich in 1995.
+//           JavaScript is a scripting language that enables you to create dynamically 
+//           updating content, control multimedia, animate images, and pretty much everything else.
