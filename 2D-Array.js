@@ -9,6 +9,7 @@
 
 // ###$$%%^^&&**-->>  Creating 2D array  ###$$%%^^&&**-->>
 
+// // ###$$%%^^&&**-->>  Putting values in 2D array  ###$$%%^^&&**-->>
 // let arr = [ [], [], []]
 //  arr[0][0] = "Rahul" ;
 //  arr[0][1] = "Lenovo" ;
@@ -27,4 +28,37 @@
 //  arr[3][2] = 900 ;
 
 
-let arr = [ [], [], []]
+// ###$$%%^^&&**-->>  Printing values in 2D array  ###$$%%^^&&**-->>
+let arr2 = [ 
+                ["Rahul", "Lenovo", 300],
+                ["Sonam", "MacBook", 500],
+                ["Dinesh", "Hp", 700],
+                ["Kartik", "Dell", 900],
+          ] ;
+
+for(let i=0; i<4; i++){
+    for(let j=0; j<3; j++){
+        console.log(arr2[i][j] + " ") ;
+    }
+}
+
+
+// ###$$%%^^&&**-->>  Creating 2D array using another method like Constructor  ###$$%%^^&&**-->>
+
+const data = new Array (
+                ["Rahul", "Lenovo", 300, "Dosa"],
+                ["Sonam", "MacBook", 500, "Chicken"],
+                ["Dinesh", "Hp", 700, "Mutton"],
+                ["Kartik", "Dell", 900, "EggRoll"],
+                ["Govind", "Android", 1900, "Upma"],
+                ["Rajesh", "Knight", 5400, "Litti-Chokha"],
+                        )
+
+for(let i=0; i<6; i++){
+    for(let j=0; j<4; j++){
+        console.log(data[i][j] + " ") ;
+    }
+}
+
+
+ 
