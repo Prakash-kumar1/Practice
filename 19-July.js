@@ -1,11 +1,11 @@
-// // // Findind each value in Object
+// // Findind each value in Object
 
-// // // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
-// // Object.
+// // in array we use For loop  for finding values but in Object we use "For in loop" .it is used to get keys of 
+// Object.
 
-// // In object if i want to access one by one then using ""For in Loop " "
-// // if i want only keys i used " Object.keys "
-// // / if i want only values i used " Object.values "
+// In object if i want to access one by one then using ""For in Loop " "
+// if i want only keys i used " Object.keys "
+// / if i want only values i used " Object.values "
 
 
 let car = {
