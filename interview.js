@@ -27,19 +27,21 @@
 // Question no-5=> What is callback Function ??
 // Answer => A callback function is a function passed into another function as an argument, which is then invoked inside 
 //           the outer function to complete some kind of routine or action.
+//  Example ==>>>  
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
+}
 
-// Here is a quick example:
+// callback function
+function callMe() {
+    console.log('I am callback function');
+}
 
-// function myFirst() {
-//     myDisplayer("Hello");
-//   }
-  
-//   function mySecond() {
-//     myDisplayer("Goodbye");
-//   }
-  
-//   myFirst();
-//   mySecond();
+// passing function as an argument
+greet('Peter', callMe);
+
 
 
 //   Question no-6=> What is Promise ??
@@ -60,26 +62,26 @@
 //   Question no-8=> how to handle error in async await ??
 //   Answer =>  For handling error in async await, we can use try and catch.
 
-//   async function thisThrows() {
-//     throw new Error("Thrown from thisThrows()");
-// }
+  async function thisThrows() {
+    throw new Error("Thrown from thisThrows()");
+}
 
-// async function run() {
-//     try {
-//         await thisThrows();
-//     } catch (e) {
-//         console.error(e);
-//     } finally {
-//         console.log('We do cleanup here');
-//     }
-// }
+async function run() {
+    try {
+        await thisThrows();
+    } catch (e) {
+        console.error(e);
+    } finally {
+        console.log('We do cleanup here');
+    }
+}
 
-// run();
+run();
 
-// // Output:
-// // Error: Thrown from thisThrows()
-// //   ...stacktrace
-// // We do cleanup here
+// Output:
+// Error: Thrown from thisThrows()
+//   ...stacktrace
+// We do cleanup here
 
 
 // Question no-9=> What is a React Router ??
@@ -126,17 +128,17 @@
 // Question no-17=> Write Polyfill for map ??
 // Answer => // // Making Polyfill  for map :-
 
-// Array.prototype.myMap = function(callbackfn){
-//     // console.log("this ==>>" , this);
-//     let myArr = this ;
+Array.prototype.myMap = function(callbackfn){
+    // console.log("this ==>>" , this);
+    let myArr = this ;
 
-// let newArr = [];
-//    for(let i=0; i<myArr.length; i++){
-//     let data = callbackfn(myArr[i] , i , myArr) ;
-//     newArr.push(data) ;
-//    }
-//    return newArr ;
-// } ;       
+let newArr = [];
+   for(let i=0; i<myArr.length; i++){
+    let data = callbackfn(myArr[i] , i , myArr) ;
+    newArr.push(data) ;
+   }
+   return newArr ;
+} ;       
 
 // // #### Polyfills for map done , Now we done Differnt Operations ####
 
@@ -145,16 +147,16 @@
 //            into a sequence of nesting function . It returns a new function that excepts the next argument inline .
 
 //  Example:-1
-// function sum(a){
-//     return (b) =>{
-//      return (c) =>{
-//         return (d) =>{
-//            return a+b+c+d ;
-//         }
-//      }  
-//     }
-// }
-// console.log(sum(10)(20)(30)(40)) ;
+function sum(a){
+    return (b) =>{
+     return (c) =>{
+        return (d) =>{
+           return a+b+c+d ;
+        }
+     }  
+    }
+}
+console.log(sum(10)(20)(30)(40)) ;
 
 
 // Question no-19=> What is debouncing and throttling ??
