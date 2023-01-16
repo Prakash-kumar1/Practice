@@ -154,4 +154,12 @@ let store1 = add(10 , 40 ,50) ;   // calling
 console.log(store1.getSumTwo()) ;
 console.log(store1.getSumThree()) ;
 
-
+// Interview questions
+// function name(message, num){
+  
+// }
+// let sum = name("monu",4)
+// sum()
+// sum()
+// sum()
+// sum() // monu

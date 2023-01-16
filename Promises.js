@@ -287,3 +287,21 @@ async function showHobby(){
     }
     }
 showHobby() ;
+
+
+// Interview questions
+function promisify(number, increase){
+    return new Promise(resolve => setTimeout(() => resolve(number * 2 + increase), 100))
+    }
+    
+    async function double(number, increase) {
+    const value = await promisify(number, increase); return value;
+    }
+    
+    async function run() {
+    let result; result = await double(5, 0)
+    result = await double(10, result)
+    result = await double(20, result)
+    console.log(result)
+    }
+    run();
