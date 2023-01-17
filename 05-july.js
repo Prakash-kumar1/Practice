@@ -51,7 +51,12 @@ console.log(rajnifamily['name'] , rajnifamily['Wife']['name'] )
 console.log(rajnifamily['Occupation'])
 console.log(rajnifamily['Wife']['age'])
 console.log(rajnifamily['Wife']['Daughter']['name'])
-console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food'])
+console.log(rajnifamily['Food'] , rajnifamily['Wife']['Food'] , rajnifamily['Wife']['Daughter']['Food']) ;
+
+// Adding key value pair in objects
+rajnifamily.brother = "Rahul" ,
+console.log(rajnifamily)
+
 
 // // Array accepts Boolean , Number ,String & Objects. 
 
