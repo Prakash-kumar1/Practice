@@ -20,7 +20,9 @@ function add(a,b,c,d){
 console.log(add(1,2,3,4)) ;     //10
 
 
-// Currying Function :- Currying is a process in functional programming  in which we can transform a function with multiple arguments into a sequence of nesting function . It returns a new function that excepts the next argument inline .
+// Currying Function :- Currying is a process in functional programming in which we can transform a function with 
+//                      multiple arguments into a sequence of nesting function . It returns a new function that 
+//                      excepts the next argument inline .
 
 // Example:-1
 function sum(a){
@@ -83,31 +85,7 @@ let addition6 = addition5.bind(this,2,7)
 console.log(addition6(1,2))       //12
 
 
-// Currrying --  Currying is a process in functional programming  in which we can transform a function with multiple arguments into a sequence of nesting function . It returns a new function that excepts the next argument inline .
-
-// //                                     OR
-
-// // A function takes one argument at a time and return a new function expecting the next argument , then we will crete a new function which will take us another argument
-
-
-// // NOTE- THE NUMBER OF ARGUMNETS A FUNCTION TAKES IS ALSO CALLED ARITY.
-//  here a , b is arity
-// function mul(a,b) {
-//     // code 
-// }
-
-// So, currying break down a function that takes multiple arguments into a series of function that each take only one arguments
-
-// // Q1 --  sum(2)(6)(3)
-
-// function summ(a, b, c) {
-//     return a + b + c;
-// }
-// console.log(summ(2, 6, 3));
-
-// // or USING CURRY
-
-
+// Example:-7
 function sum(a) {
     return function(b) {
         return function(c) {
@@ -145,6 +123,4 @@ console.log(evalute("mul")(4)(2));
 console.log(evalute("sub")(4)(2));
 console.log(evalute("divide")(4)(2));
 
-
-// <!-- Weather App by Rohith sir on 24 August session -->
-
+// Interview Question:=>  Infinite Currying
