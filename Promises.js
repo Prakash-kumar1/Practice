@@ -57,10 +57,10 @@ function getName(name , callback){
         callback (name) ;
     }, 3000);
 }
-const nm = getName("Shivansh Rawat" , function callback(nm){
-    console.log(nm)
+const nm1 = getName("Shivansh Rawat" , function callback(nm1){
+    console.log(nm1)
 }) ;
-console.log(nm) ;
+console.log(nm1) ;
 console.log("Ending") ;
 // output => starting
 //           Undefined
@@ -68,12 +68,12 @@ console.log("Ending") ;
 //           Name Inside Set-Timeout
  //              Shivansh Rawat
 
+// question:-2=>>  what is callback hell ??
+// answer =>>  The phenomenon which happens when we nest multiple callbacks within a function is called a callback 
+//             hell. The shape of the resulting code structure resembles a pyramid and hence callback hell
+//       is also called the “pyramid of the doom”. It makes the code very difficult to understand and maintain.
 
-// When there is large data , then callback function  becomes  callback-Hell (means , their is so many 
-// callback function inside callbacks) it is difficult to understand .
-
-
-// For solving  Callback Hell , we used ====>>  " Promises "
+// ***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 
 // Definition-->>  A promise is an object representing the eventual Completetion or failure of an 
 //                 Asynchronous operation . a JS promise object contains both the producing code and calls
@@ -84,7 +84,7 @@ console.log("Ending") ;
 // Fullfilled -->  Promise  Completed, it returns a Value.
 // Rejected -->  Promise  Failed, it returns a Reason.
 
-// // Syntax of Promise ==> This syntax code is also known as "Producing Code"
+// Syntax of Promise ==> This syntax code is also known as "Producing Code"
 
 // const promise anyName = new Promise((resolve,reject)=>{
 //     Do Asynchronous operation
@@ -92,33 +92,26 @@ console.log("Ending") ;
 //     reject(Error)
 // })
 
-// // Function returning  a  Promise : syntax :
+// Promise Example :- 
+const bucket = ['coffee', 'chips', 'vegetables', 'rice', 'salt'] ;
 
-// function myFunction(){
-//     return new Promise((resolve , reject)=>{
+const friedRice = new Promise((res, rej)=>{
+    if(bucket.includes("vegetables") && bucket.includes("salt") && bucket.includes("rice")) {
+        res("Fried Rice") ;
+    } else {
+        rej("Couldn't make it")
+    }
+})
 
-//     })
-// }
+// how to consume Promise
+friedRice.then((myfriedRice) => {
+    console.log("let's eat together", myfriedRice) ;
+}
+// jab promise reject hoga
+).catch((error)=>{console.log(error)})
 
 
-//                                          Promises Syntax
-
-
-//const promiseName = new Promise((res,rej)=>{     *         const promiseName = new Promise((res,rej)=>{
-// let req = true                                   *         let req = true
-// if(req == true){                                 *           if(req == true){
-// resolve("Request Success");                      *            resolve("Request Success");
-// }else{                                            *           }else{
-// reject("Request rejected") ;                      *             reject("Request rejected") ;
-// }                                                  *           }
-// }) ;                                               *           }) .then(
-// promiseName.then(                                  *                      (value) => {console.log(value) ;} ,
-// (value) => {console.log(value) ;} ,                 *                      (error) => {console.log(error) ;} ,
-// (error) => {console.log(error) ;} ,                 *               ) ;
-// ) ;                                                 *
-
-// // THEN method :-
-
+// promise chaining example
 const promiseObj = new Promise((res,rej)=>{ 
   let num = 10 ;
   res(num);
@@ -175,7 +168,7 @@ prakash
 
  //    Example=>1  for using Catch , we give intentionally  Error
 
-const promiseObj = new Promise((res,rej)=>{ 
+const promiseObj1 = new Promise((res,rej)=>{ 
   let num = 10 ;
   res(num);
 }).then(
@@ -213,7 +206,7 @@ function getHobbies(name , callback){
     }, 1000);
 }
 
-const nm = getName("Shivansh Rawat" , (nm)=>{ getHobbies(nm , hobby =>{console.log(hobby)})
+const nm2 = getName("Shivansh Rawat" , (nm2)=>{ getHobbies(nm2 , hobby =>{console.log(hobby)})
                                                  
 }) ;
 
@@ -254,6 +247,27 @@ console.log("Ending Promise") ;
 // //                                                    [ 'cricket', 'Reading', 'Dancing' ]   
 // //                                                     Ending Promise
 
+// ***********************************************************************************************************************************************************************************************************************************************************8
+//                              "async and await make promises easier to write"
+
+//           async makes a function return a Promise                        await makes a function wait for a Promise
+
+// Example ==>> 1
+
+	// const getData = async() => {
+	// 	var y = await "Hello World";
+	// 	console.log(y);
+	// }
+	
+	// console.log(1);
+	// getData();
+	// console.log(2);
+
+
+// Question no:-1 ==>>   why we use async await instead of promises ??
+// answer :-   Async/Await is used to work with promises in asynchronous functions. 
+//          It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises easier to read & use.
+
 
 // //  Solving  Above Promise Example  by using  Async and Await  && for error  try and catch
 
@@ -289,7 +303,32 @@ async function showHobby(){
 showHobby() ;
 
 
-// Interview questions
+//   Question no-8=> how to handle error in async await ??
+//   Answer =>  For handling error in async await, we can use try and catch.
+
+async function thisThrows() {
+    throw new Error("Thrown from thisThrows()");
+}
+
+async function run() {
+    try {
+        await thisThrows();
+    } catch (e) {
+        console.error(e);
+    } finally {
+        console.log('We do cleanup here');
+    }
+}
+
+run();
+
+// Output:
+// Error: Thrown from thisThrows()
+//   ...stacktrace
+// We do cleanup here
+
+
+// Interview questions => 1
 function promisify(number, increase){
     return new Promise(resolve => setTimeout(() => resolve(number * 2 + increase), 100))
     }
@@ -305,3 +344,59 @@ function promisify(number, increase){
     console.log(result)
     }
     run();
+
+
+    
+// Question no-20=> flatten array using recursion ??
+// Answer => 
+function flattenArray(inpuArray){
+    let outputArray = [] ;
+    recursion(0, inpuArray, outputArray) ;
+    return outputArray ;
+}
+
+function recursion(index, inpuArray, outputArray){
+    if(index >= inpuArray.length) return;
+
+    if(Array.isArray(inpuArray[index])){
+        recursion(0, inpuArray[index], outputArray)
+    } else{
+        outputArray.push(inpuArray[index])
+    }
+    recursion(index + 1, inpuArray, outputArray )
+}
+let flatArray = flattenArray([1,2,[3,[4,[5]],6],7,[8,9],10])
+console.log(flatArray) ;
+
+// // 17 August session (Wednesday) and 18 August session (Thursday) by Aman (Microsoft)
+
+// Question no. => 1  Promise Question
+
+Promise.resolve('Success!')
+  .then(() => {
+    throw Error('Oh noes!')
+  })
+  .catch(error => {
+    return 'actually, that worked'
+  })
+  .then(data => {
+    throw Error('The fails!')
+  })
+  .catch(error => console.log(error.message))
+
+
+// Question no. => 2  Promise Question
+
+  new Promise((resolve, reject) => {
+    resolve('Welcome!!')
+  })
+  .then(() => {
+    throw Error('Do not go anywhere')
+  })
+  .catch(error => {
+    return "Come to the village"
+  })
+  .catch(error => console.log(error.message))
+
+
+  
