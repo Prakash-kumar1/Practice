@@ -92,7 +92,7 @@ console.log("Ending") ;
 //     reject(Error)
 // })
 
-// Promise Example :- 
+// Promise Example :1- 
 const bucket = ['coffee', 'chips', 'vegetables', 'rice', 'salt'] ;
 
 const friedRice = new Promise((res, rej)=>{
@@ -109,6 +109,28 @@ friedRice.then((myfriedRice) => {
 }
 // jab promise reject hoga
 ).catch((error)=>{console.log(error)})
+
+// Promise Example :2-
+
+function prom(a, b){
+    return new Promise(function(resolve, reject){
+        console.log("Fetching data please wait ==>>  pending state")
+        var c = a/b;
+        setTimeout(()=>{
+            if(a,b){
+                resolve(`Your answer is : ${c}`)
+            }else{
+                reject("Failed to calculate")
+            }
+        }, 2000)
+    }) ;
+}
+
+prom(9, 0).then((result) => {
+    console.log(result)
+}).catch((error)=> {
+    console.log(error)
+})
 
 
 // promise chaining example
@@ -396,7 +418,61 @@ Promise.resolve('Success!')
   .catch(error => {
     return "Come to the village"
   })
-  .catch(error => console.log(error.message))
+  .catch(error => console.log(error.message));
 
 
-  
+//!!!@@@@@___----===>>>>   Free Code camp Promise example  <<<----===== !!!@@@@@___----===>>>>  
+let stocks = {
+    Fruits : ["strawberry", "Banana", "grapes", "apple"],
+    liquid : ["water", "ice"],
+    holder : ["cone", "cup", "stick"],
+    toppings : ["chocolate", "peanuts"]
+    };
+    
+    let is_shop_open = true
+    
+    let order = (time, work) => {
+    return new Promise((res, rej) => {
+    if (is_shop_open){
+    setTimeout(() => {
+    res(work()) ;
+    }, time)
+    }else{
+    rej(console.log("our shop is closed"))
+    }
+    })
+    }
+    
+    order(2000, () => console.log(`make ${stocks.Fruits[0]} shake`))
+    .then(() => {
+    return order(0000, ()=> console.log("Production has started"))
+})
+    .then(() => {
+    return order(2000, ()=> console.log("the fruit was chopped"))
+})
+    .then(() => {
+    return order(1000, ()=> console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was selected`))
+})
+    .then(() => {
+    return order(1000, ()=> console.log("start the machine"))
+})
+    .then(() => {
+    return order(2000, ()=> console.log(`ice-cream placed on ${stocks.holder[1]}`))
+})
+    .then(() => {
+    return order(3000, ()=> console.log(`${stocks.toppings[0]} was selected`))
+})
+    .then(() => {
+    return order(2000, ()=> console.log("ice=cream was served"))
+})
+// For handling error
+    .catch(()=> console.log("customer left"))
+
+// finally will run in both cases
+.finally(() => {
+    console.log("day ended, our shop is closed")
+})
+
+
+
+
