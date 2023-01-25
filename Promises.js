@@ -288,7 +288,18 @@ console.log("Ending Promise") ;
 
 // Question no:-1 ==>>   why we use async await instead of promises ??
 // answer :-   Async/Await is used to work with promises in asynchronous functions. 
-//          It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises easier to read & use.
+//          It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises 
+//            easier to read & use.
+
+// Basic Example of Async/await
+const getData = async() => {
+    var y = await "Hello World";
+    console.log(y);
+}
+
+console.log(1);
+getData();
+console.log(2);
 
 
 // //  Solving  Above Promise Example  by using  Async and Await  && for error  try and catch
@@ -429,7 +440,7 @@ let stocks = {
     toppings : ["chocolate", "peanuts"]
     };
     
-    let is_shop_open = true
+    let is_shop_open = true ;
     
     let order = (time, work) => {
     return new Promise((res, rej) => {
@@ -475,4 +486,53 @@ let stocks = {
 
 
 
+// above FreeCode Camp example of Async and await
+    
+function time(ms){
+return new Promise((resolve, reject)=>{
+if(is_shop_open){
+setTimeout(resolve, ms)
+}else{
+reject(console.log("Shop is Closed"))
+}
+})
+} ;
+
+async function kitchen(){
+
+try{
+
+await time(2000)
+console.log(`${stocks.Fruits[0]} was selected`)
+
+await time(0000)
+console.log("Start the production")
+
+await time(2000)
+console.log("cut the Fruit") ;
+
+await time(1000)
+console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`) ;
+
+await time(1000)
+console.log("Start the machine") ;
+
+await time(2000)
+console.log(`ice-cream placed on ${stocks.holder[0]}`) ;
+
+await time(3000)
+console.log(`${stocks.toppings[0]} was selected`) ;
+
+await time(2000)
+console.log("served Ice-Cream") ;
+
+}catch(error){
+console.log("customer left", error)
+
+}finally{
+console.log("day ended, Shop is Closed")
+}
+
+}
+kitchen()
 
