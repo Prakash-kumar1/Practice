@@ -99,12 +99,33 @@ console.log(sum(2)(6));        //it will not accept because one parameter is mis
 console.log(sum(2));            //it will not accept because Two parameter is missing
 
 
-// // Q2--
+// Example:-8
+let userObj = {
+    name: "Prakash Kumar",
+    age: 23,
+    food: "Chicken Biryani",
+    occupation: "Frontend Developer",
+    package: "13LPA",
+}
 
-// // evaluate("sum")(4)(2) => 6
-// // evaluate("mul")(4)(2) => 8
-// // evaluate("sub")(4)(2) => 2
-// // evaluate("divide")(4)(2) => 2
+function userInfo(obj){
+    return function(userInfo){
+        return obj[userInfo] ;
+    }
+}
+
+let response = userInfo(userObj) ;
+console.log(response('food')) ;
+console.log(response('name')) ;
+console.log(response('package')) ;
+
+
+// Q2--
+
+// evaluate("sum")(4)(2) => 6
+// evaluate("mul")(4)(2) => 8
+// evaluate("sub")(4)(2) => 2
+// evaluate("divide")(4)(2) => 2
 
 function evalute(operation) {
     return function(a) {
@@ -123,4 +144,16 @@ console.log(evalute("mul")(4)(2));
 console.log(evalute("sub")(4)(2));
 console.log(evalute("divide")(4)(2));
 
-// Interview Question:=>  Infinite Currying
+
+//!!!@@@###$$$%%%++++>>>>>  Interview Question:=>  Infinite Currying in JavaScript   //!!!@@@###$$$%%%++++>>>>>  
+
+function addition(a){
+    return function(b){
+        if(b) return addition(a+b) ;
+        return a ;
+    }
+}
+
+console.log(addition(4)(5)(6)(7)(8)(9)(10)(11)(12)(13)(14)(15)())
+
+
