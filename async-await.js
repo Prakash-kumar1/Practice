@@ -67,7 +67,16 @@ console.log("3 : Anjali yadav")
 // 5.	Promise chains can become difficult to understand sometimes.	      Using Async/Await makes it easier to read and understand the 
 //                                                                           flow of the program as compared to promise chains.  
 
-
+// / Basic Example-4  of Async/await
+async function printName() {
+    let names = ['prakash' , 'kumar']
+    for(let name of names){
+        await setTimeout(() => {
+            console.log(name) ;
+        } , 1000);
+    }
+}
+printName()
 
 
 
