@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bubcap.css" />
+    <script src="./bubbleCapture.js" defer></script>
+    <title>Event Bubbling | Capturing | delegation</title>
+  </head>
+  <body>
+    <main>
+      <div class="grandparent box">
+        Grandparent
+        <div class="parent box">
+          Parent
+          <div class="child box">Child</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- Question no:-1 =>>  what is Event bubbling in JavaScript ??
+Answer =>>  The Event bubbling in JavaScript is a type of event propagation. The event triggers the innermost target element
+         & consecutively triggers the parent element of the target element in the same hierarchy until it triggers the outermost element. -->

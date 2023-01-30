@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./basic.js" defer></script/> -->
+    <title>click event</title>
+</head>
+<body>
+    <div class="my-buttons">
+        <h1>Click events examples</h1>
+        <button id="one">My Button one</button>
+        <button id="two">My Button Two</button>
+        <button id="three">My Button three</button>
+    </div>
+    
+    <script>
+
+        const firstButton = document.querySelector("#one") ;
+        firstButton.addEventListener("click", ()=>{
+            console.log(this) ;
+        })
+
+        const secondButton = document.querySelector("#two") ;
+        secondButton.addEventListener("click", function(){
+            console.log(this) ;
+        })
+
+// jab bhi mai kisi bhi element pe event listener add hoga 
+// js Engine --- line by line execute karta hai 
+// browser ---- js Engine + extra features 
+// browser ----- js Engine + WebApi
+
+// jab browser ko pata chala ki user ne event perform kia 
+// jo hum listen kar rahe hai 
+// browser ----- 2 kaam karega
+// 1.) callback function hai vo js Engine ko degi ...... 
+// 2.)  callback function ke sath browser jo event hua hai uski information bhi dega
+// ye info hamein ek object ke form mai milegi 
+
+// // e => Event
+// Question no:2 =>>         What is difference between target and currentTarget?
+// Answer =>>>          currentTarget is the element to which the event is attached. It will never change. 
+//                      Event. target is the element that triggered the event.
+
+const thirdButton = document.querySelector("#three");
+thirdButton.addEventListener("click", function(e){
+            console.log(e) ;
+            console.log(e.target) ;
+            console.log(e.currentTarget) ;
+
+            console.log(this.textContent) ;
+        })
+
+// *********************************************************************************************************************************************************************************************
+
+// !!!@@@###$$$===>>>>>    selecting all Buttons 
+const allButtons = document.querySelectorAll(".my-buttons button") ;
+console.log(allButtons) ;
+
+// using forEach method for printing data
+allButtons.forEach((button)=>{
+    button.addEventListener("click", (e)=>{
+        console.log(e.currentTarget.textContent)
+    })
+})
+
+
+// !!!@@@###$$$===>>>>>  little practice with click event
+const allButton = document.querySelectorAll(".my-buttons button")
+// console.log(allButtons.length);
+
+allButton.forEach(button =>{
+    button.addEventListener("click", (e)=>{
+        // console.log(e.target);
+        e.target.style.backgroundColor = "yellow";
+        e.target.style.color = "#333";
+    })
+})
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
