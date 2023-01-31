@@ -1,4 +1,4 @@
-// !!!@@@==>>>  Read all promise methods and async- awit here  <,===!!!@@@==>>>
+// !!!@@@==>>>  Read all promise methods and async- await here  <,===!!!@@@==>>>
 // https://www.javascripttutorial.net/es6/javascript-promise-all/
 
 
