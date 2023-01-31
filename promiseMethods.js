@@ -96,7 +96,6 @@ Promise.race([pr1, pr2]).then((value) => console.log(value))
 //                                                                           flow of the program as compared to promise chains.  
 
 
-
 // Basic Example of Async/await
 	const getData = async() => {
 		var y = await "Hello World";
