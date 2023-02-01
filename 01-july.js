@@ -200,21 +200,16 @@ console.log('fourth')
 // to another function. so, that it can be executed in that other function is called as a callback function.
 
 // Example:- 1
-function myFirst() {
-    myDisplayer("Hello");
-  }
-  
-  function mySecond() {
-    myDisplayer("Goodbye");
-  }
-  
-  myFirst();
-  mySecond();
-// Output =>> Goodbye
-// @@@###$$$-->> OR @@@###$$$-->>
-//   mySecond();
-//   myFirst();
-// Output =>> Hello
+function fname(callback){
+    console.log("Prakash")
+    callback() ;
+}
+
+function lname(){
+    console.log("kumar")
+}
+
+fname(lname) ;
   
   
 // Example:- 2
