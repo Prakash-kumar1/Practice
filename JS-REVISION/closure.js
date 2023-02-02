@@ -84,13 +84,14 @@ myFunc2();
 // // Question no. => 3  Basic  Question
 
 var sum = 0.1+0.2
-// console.log(sum)
+console.log(sum)       // output is =>>  0.30000000000000004
 
 if(sum == 0.3){
   console.log("true")
 }else{
   console.log("false") ;
 }
+// it returns false
 
 
 // // Question no. => 4   what will be the Output ??
@@ -117,8 +118,100 @@ function multiply(num1,num2) {
   console.log(num1*num2)
  return (num1*num2)
 }
+console.log ( multiply(3,4)) ;
 
-const triple = multiply(3) ;
-triple() ;
+
+// // setTimeout will go into WebAPI with reference  of  i , JS don't wait . so,JS increases the value of i = 1,2,3,4,5 . after 1 sec ,
+// //  i will come from setTimeout then it will print 5 times 5 .
+
+for(var i = 0; i<5; i++){
+  setTimeout(() => {
+      console.log(i) ; 
+  }, 1000);
+}
+
+// But for printing 1,2,3,4 in case of var, we use function inside for loop 
+
+for(var i = 0; i<5; i++){
+  function a(i){
+    setTimeout(() => {
+        console.log(i) ; 
+    }, 1000);
+  }
+  a(i) ;
+}
+
+
+// / // In this case count is inside the function.at each time on calling counter create a new execution context and after printing it 
+//  // whole memory destroys . so the value always starts from 1.
+
+function counter(){
+    var count = 1;
+    count++ ;
+console.log(count) ;
+}
+                                                 // Output
+counter() ;                                       // 2 
+counter() ;                                           // 2 
+counter() ;                                         // 2 
+
+
+
+//  // In this case counter create a new execution context and after printing it 
+//  // whole memory destroys .but value stored outside of execution context. so the value starts from 1 
+//  // and increases on clling.
+
+
+var count = 1;
+
+function counter(){
+    count++ ;
+console.log(count) ;
+}
+                                                 // Output
+counter() ;                                       // 2 
+counter() ;                                           // 3 
+counter() ;                                         // 4
+
+
+// // In this case variable age  &  function check present inside the counter execution context 
+// var count = 1;
+
+function counter(){
+    var age = 10; 
+    function check(){
+        console.log("Inside counter" , age , count) ;
+    }
+    check() ;
+    count++ ;
+console.log(count) ;
+}
+                                                 // Output
+counter() ;                                       // 2 
+counter() ;                                           // 3 
+counter() ;                                         // 4
+
+
+//// Interview Question n0. =>> 1   Print only on when 3rd  time calls ??
+
+function print(){
+  let count = 1 ;
+  return function counter() {
+if(count % 3 === 0){
+  console.log("Printing" , count) ;
+} 
+console.log(count) ;
+    count += 1 ;   
+  };
+}
+
+let coin = print() ;
+coin() ;
+coin() ;
+coin() ;
+coin() ;
+
+
+
 
 // // 17 August session (Wednesday) and 18 August session (Thursday) by Aman Sir(Microsoft)
