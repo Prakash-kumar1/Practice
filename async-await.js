@@ -48,6 +48,31 @@ test() ;
 console.log("3 : Anjali yadav")
 
 
+//   Question no-8=> how to handle error in async await ??
+//   Answer =>  For handling error in async await, we can use try and catch.
+
+async function thisThrows() {
+    throw new Error("Thrown from thisThrows()");
+}
+
+async function run() {
+    try {
+        await thisThrows();
+    } catch (e) {
+        console.error(e);
+    } finally {
+        console.log('We do cleanup here');
+    }
+}
+
+run();
+
+// Output:
+// Error: Thrown from thisThrows()
+//   ...stacktrace
+// We do cleanup here
+
+
 // *************************************************************************************************************************************************************************************************************************************
 
 
