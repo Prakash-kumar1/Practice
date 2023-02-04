@@ -113,15 +113,9 @@ let person = {
 console.log(person.fullname()) ;
 
 
- person = {
-    fname : "Prakash" ,
-    lname : "kumar" ,
-    fullname() {
-        return `${person.fname} ${person.lname}` ;
-    },
-}; 
 //  in this if we call the person it will print fname,lname and in fullname it will print "virat-kohli"
 person.fullname = "Virat Kohli";
+console.log(person.fullname)
 console.log(person) ;
 
 
