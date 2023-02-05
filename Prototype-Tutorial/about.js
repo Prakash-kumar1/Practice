@@ -188,7 +188,7 @@ let temp = [];
    return temp ;
 } ;       
 
-// / #### Polyfills for map done , Now we done Differnt Operations ####
+//  #### Polyfills for map done , Now we done Differnt Operations ####
 
 let nums4 = [12,24,37,49] ;
 let result = nums4.myMap(function (num){
