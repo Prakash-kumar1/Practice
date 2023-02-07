@@ -1,10 +1,7 @@
 // Question no. - 1: What is Debouncing in Javascript ??
-// answer :- Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the 
-//           performance of the web page. In other words, it limits the rate at which a function gets invoked.
-
-// Debouncing in JavaScript is a practice used to improve browser performance. There might be some functionality in a web page that 
-// requires time-consuming computations. If such a method is invoked frequently, it might
-//  greatly affect the performance of the browser, as JavaScript is a single-threaded language. 
+// answer:-  Debouncing in JS is a practice used to improve browser performance. There might be some functionality in a web  
+// page that requires time-consuming computations. If such a method is invoked frequently, it might  greatly affect the
+//  performance of the browser. Debouncing limits the rate at which a function gets invoked.
 
 // Basic Example
 let counter = 0 ;
@@ -30,8 +27,8 @@ const betterFunction = myDebounce(getData, 1000)
 
 
 // Question no. - 2: What is Throttling in Javascript ??
-// answer :- Throttling or sometimes also called throttle function is a practice used in websites. Throttling is used to  call a
-//            function after every millisecond or a particular interval of time only the first click is executed immediately.
+// answer :- Throttling is used to  call a  function after every millisecond or a particular
+//            interval of time only the first click is executed immediately.
 
 const myThrottle = (fxn, d) => {
     return function(...args){
