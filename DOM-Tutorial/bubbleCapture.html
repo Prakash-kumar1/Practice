@@ -7,20 +7,65 @@
     <link rel="stylesheet" href="./bubcap.css" />
     <script src="./bubbleCapture.js" defer></script>
     <title>Event Bubbling | Capturing | delegation</title>
+
+    <style>
+      
+      body * {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid red ;
+      }
+
+      .modalContainer{
+        display: none;
+        position: absolute;
+        top: 0;
+        background-color: rgba(221, 221, 221, 0.5);
+        width: 100vw ;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modalContainer{
+        width: 500px ;
+        height: 400px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+    </style>
+
   </head>
+
   <body>
     <main>
-      <div class="grandparent box">
-        Grandparent
-        <div class="parent box">
-          Parent
+      <div class="grandparent box">Grandparent
+        <div class="parent box">Parent
           <div class="child box">Child</div>
         </div>
       </div>
+
+
+      <div>DIV
+        <form action=""> Form
+          <button>Button</button>
+        </form>
+      </div>
+
+      <button class="modalButton">open Modal</button>
+      <div class="modalContainer">
+        <div class="modal">Modal Content</div>
+      </div>
+
     </main>
   </body>
 </html>
 
-<!-- Question no:-1 =>>  what is Event bubbling in JavaScript ??
-Answer =>>  The Event bubbling in JavaScript is a type of event propagation. The event triggers the innermost target element
-         & consecutively triggers the parent element of the target element in the same hierarchy until it triggers the outermost element. -->
+<!-- Question no:-1 =>>  what is Event Propogation in JavaScript ??
+Answer =>> Event propagation is a mechanism that defines how events propagate or travel through the DOM tree 
+            to arrive at its target and what happens to it afterward.. -->
+
+
