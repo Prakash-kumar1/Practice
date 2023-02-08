@@ -3,14 +3,14 @@
 // page that requires time-consuming computations. If such a method is invoked frequently, it might  greatly affect the
 //  performance of the browser. Debouncing limits the rate at which a function gets invoked.
 
-// Basic Example
+// Basic Example:  This is Debounce polyfill
 let counter = 0 ;
 
 function getData(){
     console.log("fetching data =>>" + counter++)
 }
 
-function myDebounce(call, delay){
+const myDebounce = (call, delay)=>{
     let timer;
     return function(...args){
         if(timer) clearTimeout(timer)
@@ -27,8 +27,10 @@ const betterFunction = myDebounce(getData, 1000)
 
 
 // Question no. - 2: What is Throttling in Javascript ??
-// answer :- Throttling is used to  call a  function after every millisecond or a particular
-//            interval of time only the first click is executed immediately.
+//answer :-  Throttling is a Technique to limit the execution of a event handler function even when this event triggers 
+//           continously due to user action like scrolling, resizing Window.
+//                                    Throttling is used to  call a  function after every millisecond or a particular 
+//                                    interval of time only the first click is executed immediately.
 
 const myThrottle = (fxn, d) => {
     return function(...args){
@@ -95,5 +97,48 @@ console.timeEnd() ;
 // console.time() ;
 // console.log(calc(5)) ;
 // console.timeEnd() ;
+
+
+// *****************************************************************************************************************************************************************************************************
+
+// Ques-1: Create a button UI and add debounce as follows :
+// ----->>>  show "Button pressed <x> Times"  every time button is pressed.
+// ----->>>  Increase "Triggered <y> Times"  count after 800ms of debounce.
+
+const btn = document.querySelector(".increment_btn") ; 
+const btnPress = document.querySelector(".increment_pressed") ; 
+const count = document.querySelector(".increment_count") ; 
+
+var pressedCount = 0 ;
+var triggerCount = 0 ;
+
+// myDebounce is a polyfill of Debouncing & taking from above
+const debouncedCount = myDebounce(()=>{
+    triggerCount += 1 ;
+    count.innerHTML = triggerCount
+}, 800) ;
+
+btn.addEventListener("click", ()=>{
+   btnPress.innerHTML = ++pressedCount ;
+   debouncedCount() ;
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
