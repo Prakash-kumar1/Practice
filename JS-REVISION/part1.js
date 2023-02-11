@@ -532,6 +532,36 @@ for(let user of users){
 }
 
 
+//Example-2  <!-- render this on web page in react JS =>>  coding monks (Newton school) -->
+const country =  [
+{
+    "State": "Uttar Pradesh",
+    "Capital": "Lucknow"
+},
+{
+    "State": "Gujarat",
+    "Capital": "Gandhinagar"
+},
+{
+    "State": "Karnataka",
+    "Capital": "Bengaluru"
+},
+{
+    "State": "Punjab",
+    "Capital": "Chandigarh"
+},
+{
+    "State": "Maharashtra",
+    "Capital": "Mumbai"
+}
+]
+
+for(let data of country){
+    console.log(data.State)
+    console.log(data.Capital)
+}
+
+
 // nested destructuring 
 const usersData = [
     {userId: 1,firstName: 'harshit', gender: 'male'},
@@ -972,9 +1002,7 @@ console.log(animal.length)
 console.log(animal[3])
 
 
-// Sets (it is iterable)
-// store data  
-// sets also have its own methods
+// Sets are iterables and store data. sets also have its own methods
 // No index-based access 
 // Order is not guaranteed
 // unique items only (no duplicates allowed)
