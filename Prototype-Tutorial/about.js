@@ -502,7 +502,6 @@ Function.prototype.myBind = function(context = {}, ...args){
 }
 
 
-
 // // #################    Object Prototypes      #################
 
 // Example ==>>
