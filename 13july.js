@@ -72,6 +72,7 @@ for(let i=0; i<6; i++){
 console.log(sum1)
 
 
+
 // Question Number-4 : find the sum of Diagonal Element in matrix ?
 let matrix1 = [
         [1, 2, 3, 4],
