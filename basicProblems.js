@@ -103,3 +103,5 @@ for(let i in arr6){
   }
 }
 console.log(NewArray) ;
+
+
