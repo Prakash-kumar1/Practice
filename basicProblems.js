@@ -22,7 +22,6 @@ for(let i=0; i<arr1.length; i++){
 console.log(min);
 
 
-
 // //Search an element in the given array:-
 
 let array1=[1,2,3,4];
