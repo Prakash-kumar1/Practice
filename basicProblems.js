@@ -35,7 +35,6 @@ for(let i=0; i<array1.length; i++){
 }
 
 
-
 //sorting an array:-
  array = [1, 7, 2, 8, 3, 4, 5, 0, 9];
 
@@ -48,6 +47,7 @@ for (let i = 1; i < array.length; i++)
         }
 
 console.log(array);
+
 
 //delete an element from an array:-
 
@@ -65,7 +65,6 @@ console.log(array3);
 // let array=[1,23,4,5,6];
 // array.forEach((res,i,output)=>output[i]=res+10)
 // console.log(array)
-
 
 
 //Square each element of an array:-
@@ -101,5 +100,4 @@ for(let i in arr6){
   }
 }
 console.log(NewArray) ;
-
 
