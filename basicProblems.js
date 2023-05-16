@@ -49,7 +49,6 @@ for (let i = 1; i < array.length; i++)
 
 console.log(array);
 
-
 //delete an element from an array:-
 
 let array3 = [12,34,2,45,67,32];
